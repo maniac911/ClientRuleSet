@@ -94,12 +94,24 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p output/MRS/domainset
+          mkdir -p output/MRS/domainset .tmp-mrs-domain
 
           count=0
+          skipped=0
           while IFS= read -r -d '' src; do
             base="$(basename "$src" .txt)"
+            cleaned=".tmp-mrs-domain/${base}.txt"
             out="output/MRS/domainset/${base}.mrs"
+
+            # Some upstream compatibility/deprecated files intentionally contain
+            # only comments (e.g. reject_sukka.txt). Mihomo panics with
+            # "empty rule" if such a file is passed to convert-ruleset.
+            sed -e '/^[[:space:]]*#/d' -e '/^[[:space:]]*$/d' "$src" > "$cleaned"
+            if [ ! -s "$cleaned" ]; then
+              echo "Skip empty/deprecated domain set: ${base}"
+              skipped=$((skipped + 1))
+              continue
+            fi
 
             echo "MRS(domain): ${base}"
             docker run --rm \
@@ -107,14 +119,15 @@ jobs:
               -w /work \
               "${MIHOMO_IMAGE}" \
               convert-ruleset domain text \
-              "/work/${src}" \
+              "/work/${cleaned}" \
               "/work/${out}"
 
             test -s "$out"
             count=$((count + 1))
           done < <(find official-dist/Clash/domainset -maxdepth 1 -type f -name '*.txt' -print0 | sort -z)
 
-          echo "Compiled ${count} domain MRS rule sets."
+          rm -rf .tmp-mrs-domain
+          echo "Compiled ${count} domain MRS rule sets; skipped ${skipped} empty/deprecated files."
           test "$count" -gt 0
 
       - name: Compile pure China IP CIDR sets to MRS
@@ -127,8 +140,12 @@ jobs:
           # may mix DOMAIN and IP-CIDR entries), so they must remain text.
           for name in china_ip china_ip_ipv6; do
             src="official-dist/Clash/ip/${name}.txt"
+            cleaned="${src}.clean"
             out="output/MRS/ipcidr/${name}.mrs"
             test -f "$src"
+
+            # Remove Sukka's comment header; conversion only needs CIDRs.
+            sed -e '/^[[:space:]]*#/d' -e '/^[[:space:]]*$/d' "$src" > "$cleaned"
 
             echo "MRS(ipcidr): ${name}"
             docker run --rm \
@@ -136,9 +153,10 @@ jobs:
               -w /work \
               "${MIHOMO_IMAGE}" \
               convert-ruleset ipcidr text \
-              "/work/${src}" \
+              "/work/${cleaned}" \
               "/work/${out}"
 
+            rm -f "$cleaned"
             test -s "$out"
           done
 
