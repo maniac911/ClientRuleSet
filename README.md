@@ -1,17 +1,5 @@
-# maniac911/Surge binary rule sets
+# This is a Robot-managed repo containing only output
+# The source code is located at [Sukkaw/Surge](https://github.com/Sukkaw/Surge)
+# Please follow the development at the source code repo instead
 
-Automatically generated from Sukka's official published rules.
-
-- Upstream generated rules commit: `714ea3df63d45fd37b3db5965c9501a82bfe9342`
-- sing-box compiler: `ghcr.io/sagernet/sing-box:v1.14.0-rc.4`
-- Mihomo compiler: `docker.io/metacubex/mihomo:v1.19.30`
-
-## Layout
-
-- `SRS/domainset/*.srs` — sing-box domain-only rules
-- `SRS/non_ip/*.srs` — sing-box non-IP rules
-- `SRS/ip/*.srs` — sing-box IP rules
-- `MRS/domainset/*.mrs` — Mihomo `behavior: domain`
-- `MRS/ipcidr/china_ip*.mrs` — Mihomo `behavior: ipcidr`
-
-Mihomo classical rules intentionally remain in Sukka's official text format because MRS does not support classical behavior.
+![GitHub repo size](https://img.shields.io/github/repo-size/sukkalab/ruleset.skk.moe?style=flat-square)
