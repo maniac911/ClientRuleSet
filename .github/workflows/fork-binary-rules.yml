@@ -6,7 +6,6 @@ on:
       - master
     paths:
       - ".github/workflows/fork-binary-rules.yml"
-      - "ForkExtras/**"
   schedule:
     # Run after Sukka's normal 05:17 / 17:17 UTC builds.
     - cron: "47 6 * * *"
@@ -15,7 +14,6 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 concurrency:
   group: fork-binary-rules
@@ -24,10 +22,7 @@ concurrency:
 env:
   DIST_BRANCH: rules-dist
   UPSTREAM_DIST_REPO: https://github.com/SukkaLab/ruleset.skk.moe.git
-  # Keep SRS compiler aligned with the 1.14 series used by sing-box MT.
-  # As of 2026-09-03, v1.14.0-rc.4 is the latest official 1.14 testing image.
   SING_BOX_IMAGE: ghcr.io/sagernet/sing-box:v1.14.0-rc.4
-  # Current stable Mihomo release used only for convert-ruleset.
   MIHOMO_IMAGE: docker.io/metacubex/mihomo:v1.19.30
 
 jobs:
@@ -35,16 +30,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Disable upstream-only deployment workflows in this fork
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          # These workflows deploy to Sukka's own GitHub/GitLab/Cloudflare and
-          # depend on Sukka-only secrets. They should not run in this fork.
-          gh workflow disable main.yml --repo "${GITHUB_REPOSITORY}" || true
-          gh workflow disable toggle-dist-repo-visibility.yml --repo "${GITHUB_REPOSITORY}" || true
-
       - name: Checkout fork source
         uses: actions/checkout@v4
         with:
@@ -74,7 +59,6 @@ jobs:
             out="output/SRS/${rel%.json}.srs"
             mkdir -p "$(dirname "$out")"
 
-            echo "SRS: ${rel}"
             docker run --rm \
               -v "$PWD:/work" \
               -w /work \
@@ -103,9 +87,7 @@ jobs:
             cleaned=".tmp-mrs-domain/${base}.txt"
             out="output/MRS/domainset/${base}.mrs"
 
-            # Some upstream compatibility/deprecated files intentionally contain
-            # only comments (e.g. reject_sukka.txt). Mihomo panics with
-            # "empty rule" if such a file is passed to convert-ruleset.
+            # Skip compatibility/deprecated files that contain comments only.
             sed -e '/^[[:space:]]*#/d' -e '/^[[:space:]]*$/d' "$src" > "$cleaned"
             if [ ! -s "$cleaned" ]; then
               echo "Skip empty/deprecated domain set: ${base}"
@@ -113,7 +95,6 @@ jobs:
               continue
             fi
 
-            echo "MRS(domain): ${base}"
             docker run --rm \
               -v "$PWD:/work" \
               -w /work \
@@ -136,18 +117,16 @@ jobs:
           set -euo pipefail
           mkdir -p output/MRS/ipcidr
 
-          # Sukka's other Clash/ip files are classical rules (for example they
-          # may mix DOMAIN and IP-CIDR entries), so they must remain text.
+          # Other Clash/ip files are classical/mixed rules and intentionally
+          # remain in Sukka's official text format.
           for name in china_ip china_ip_ipv6; do
             src="official-dist/Clash/ip/${name}.txt"
             cleaned="${src}.clean"
             out="output/MRS/ipcidr/${name}.mrs"
             test -f "$src"
 
-            # Remove Sukka's comment header; conversion only needs CIDRs.
             sed -e '/^[[:space:]]*#/d' -e '/^[[:space:]]*$/d' "$src" > "$cleaned"
 
-            echo "MRS(ipcidr): ${name}"
             docker run --rm \
               -v "$PWD:/work" \
               -w /work \
@@ -160,14 +139,13 @@ jobs:
             test -s "$out"
           done
 
-      - name: Normalize ownership and write build metadata
+      - name: Normalize ownership and write metadata
         shell: bash
         run: |
           set -euo pipefail
           sudo chown -R "$(id -u):$(id -g)" output
 
           upstream_sha="$(cat upstream-dist-commit.txt)"
-          built_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
 
           cat > output/README.md <<EOF
           # maniac911/Surge binary rule sets
@@ -175,7 +153,6 @@ jobs:
           Automatically generated from Sukka's official published rules.
 
           - Upstream generated rules commit: \`${upstream_sha}\`
-          - Built at: \`${built_at}\`
           - sing-box compiler: \`${SING_BOX_IMAGE}\`
           - Mihomo compiler: \`${MIHOMO_IMAGE}\`
 
@@ -199,17 +176,21 @@ jobs:
         run: |
           set -euo pipefail
 
-          git clone --depth 1 "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" publish-repo
-          cd publish-repo
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
-          if git ls-remote --exit-code --heads origin "${DIST_BRANCH}" >/dev/null 2>&1; then
-            git fetch --depth 1 origin "${DIST_BRANCH}"
-            git checkout -B "${DIST_BRANCH}" "origin/${DIST_BRANCH}"
+          if git ls-remote --exit-code --heads "$repo_url" "${DIST_BRANCH}" >/dev/null 2>&1; then
+            # Clone the distribution branch directly. This avoids the shallow
+            # clone problem where origin/rules-dist is not created locally.
+            git clone --depth 1 --branch "${DIST_BRANCH}" "$repo_url" publish-repo
           else
+            git clone --depth 1 "$repo_url" publish-repo
+            cd publish-repo
             git checkout --orphan "${DIST_BRANCH}"
             git rm -rf . >/dev/null 2>&1 || true
+            cd ..
           fi
 
+          cd publish-repo
           rsync -a --delete --exclude='.git' ../output/ ./
 
           git config user.name "github-actions[bot]"
