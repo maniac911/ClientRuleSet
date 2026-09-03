@@ -1,4 +1,4 @@
-name: Fork Binary Rules
+name: Fork Full Rules Mirror
 
 on:
   push:
@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fork-binary-rules
+  group: fork-full-rules-mirror
   cancel-in-progress: true
 
 env:
@@ -36,12 +36,26 @@ jobs:
           fetch-depth: 1
 
       - name: Clone Sukka official generated rules
+        shell: bash
         run: |
           set -euo pipefail
           git clone --depth 1 --branch master "${UPSTREAM_DIST_REPO}" official-dist
           git -C official-dist rev-parse HEAD > upstream-dist-commit.txt
 
-      - name: Pull compilers
+      - name: Mirror every official generated output
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+
+          # Mirror the complete published output repository instead of maintaining
+          # a platform allow-list. If Sukka adds a new client/output directory in
+          # the future, it will automatically appear in rules-dist on the next run.
+          rsync -a \
+            --exclude='.git' \
+            official-dist/ output/
+
+      - name: Pull binary rule compilers
         run: |
           set -euo pipefail
           docker pull "${SING_BOX_IMAGE}"
@@ -51,6 +65,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          rm -rf output/SRS
           mkdir -p output/SRS
 
           count=0
@@ -78,6 +93,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          rm -rf output/MRS
           mkdir -p output/MRS/domainset .tmp-mrs-domain
 
           count=0
@@ -87,7 +103,7 @@ jobs:
             cleaned=".tmp-mrs-domain/${base}.txt"
             out="output/MRS/domainset/${base}.mrs"
 
-            # Skip compatibility/deprecated files that contain comments only.
+            # Compatibility/deprecated files may contain comments only.
             sed -e '/^[[:space:]]*#/d' -e '/^[[:space:]]*$/d' "$src" > "$cleaned"
             if [ ! -s "$cleaned" ]; then
               echo "Skip empty/deprecated domain set: ${base}"
@@ -117,8 +133,8 @@ jobs:
           set -euo pipefail
           mkdir -p output/MRS/ipcidr
 
-          # Other Clash/ip files are classical/mixed rules and intentionally
-          # remain in Sukka's official text format.
+          # Other Clash/ip files are classical/mixed rules and remain as the
+          # mirrored official text files under Clash/ip/.
           for name in china_ip china_ip_ipv6; do
             src="official-dist/Clash/ip/${name}.txt"
             cleaned="${src}.clean"
@@ -139,7 +155,7 @@ jobs:
             test -s "$out"
           done
 
-      - name: Normalize ownership and write metadata
+      - name: Write fork mirror metadata
         shell: bash
         run: |
           set -euo pipefail
@@ -147,29 +163,44 @@ jobs:
 
           upstream_sha="$(cat upstream-dist-commit.txt)"
 
-          cat > output/README.md <<EOF
-          # maniac911/Surge binary rule sets
+          cat > output/FORK-README.md <<EOF
+          # maniac911/Surge full rules mirror
 
-          Automatically generated from Sukka's official published rules.
+          This branch is an automatic full mirror of Sukka's official generated
+          rule output repository, plus binary formats generated for this fork.
 
-          - Upstream generated rules commit: \`${upstream_sha}\`
-          - sing-box compiler: \`${SING_BOX_IMAGE}\`
-          - Mihomo compiler: \`${MIHOMO_IMAGE}\`
+          - Upstream output commit: \`${upstream_sha}\`
+          - sing-box SRS compiler: \`${SING_BOX_IMAGE}\`
+          - Mihomo MRS compiler: \`${MIHOMO_IMAGE}\`
 
-          ## Layout
+          ## Mirrored upstream outputs
 
-          - \`SRS/domainset/*.srs\` — sing-box domain-only rules
-          - \`SRS/non_ip/*.srs\` — sing-box non-IP rules
-          - \`SRS/ip/*.srs\` — sing-box IP rules
-          - \`MRS/domainset/*.mrs\` — Mihomo \`behavior: domain\`
-          - \`MRS/ipcidr/china_ip*.mrs\` — Mihomo \`behavior: ipcidr\`
+          Everything published by SukkaLab/ruleset.skk.moe is mirrored here,
+          including current and future output directories. Current examples include:
 
-          Mihomo classical rules intentionally remain in Sukka's official text format because MRS does not support classical behavior.
+          - \`List/\` — Surge
+          - \`Clash/\` — Mihomo / Clash-compatible clients
+          - \`LegacyClashPremium/\` — legacy Clash Premium
+          - \`Surfboard/\` — Surfboard for Android
+          - \`sing-box/\` — sing-box source-format Headless Rules
+          - \`Modules/\` — Surge modules and related generated content
+
+          ## Extra binary outputs
+
+          - \`SRS/domainset/*.srs\`
+          - \`SRS/non_ip/*.srs\`
+          - \`SRS/ip/*.srs\`
+          - \`MRS/domainset/*.mrs\`
+          - \`MRS/ipcidr/china_ip*.mrs\`
+
+          Mihomo classical/mixed rules remain available as the mirrored text files
+          under \`Clash/non_ip/\` and \`Clash/ip/\` because MRS does not represent
+          classical rule behavior.
           EOF
 
           find output -type f -not -name FILES.txt -printf '%P\n' | sort > output/FILES.txt
 
-      - name: Publish binary rules to rules-dist branch
+      - name: Publish full mirror to rules-dist branch
         shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -179,8 +210,6 @@ jobs:
           repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           if git ls-remote --exit-code --heads "$repo_url" "${DIST_BRANCH}" >/dev/null 2>&1; then
-            # Clone the distribution branch directly. This avoids the shallow
-            # clone problem where origin/rules-dist is not created locally.
             git clone --depth 1 --branch "${DIST_BRANCH}" "$repo_url" publish-repo
           else
             git clone --depth 1 "$repo_url" publish-repo
@@ -198,9 +227,9 @@ jobs:
           git add -A
 
           if git diff --cached --quiet; then
-            echo "No binary rule changes."
+            echo "No mirror or binary rule changes."
             exit 0
           fi
 
-          git commit -m "chore: update Sukka binary rule sets"
+          git commit -m "chore: update full Sukka rules mirror"
           git push origin "HEAD:${DIST_BRANCH}"
