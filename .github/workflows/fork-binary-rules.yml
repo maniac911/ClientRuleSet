@@ -1,0 +1,207 @@
+name: Fork Binary Rules
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/fork-binary-rules.yml"
+      - "ForkExtras/**"
+  schedule:
+    # Run after Sukka's normal 05:17 / 17:17 UTC builds.
+    - cron: "47 6 * * *"
+    - cron: "47 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: fork-binary-rules
+  cancel-in-progress: true
+
+env:
+  DIST_BRANCH: rules-dist
+  UPSTREAM_DIST_REPO: https://github.com/SukkaLab/ruleset.skk.moe.git
+  # Keep SRS compiler aligned with the 1.14 series used by sing-box MT.
+  # As of 2026-09-03, v1.14.0-rc.4 is the latest official 1.14 testing image.
+  SING_BOX_IMAGE: ghcr.io/sagernet/sing-box:v1.14.0-rc.4
+  # Current stable Mihomo release used only for convert-ruleset.
+  MIHOMO_IMAGE: docker.io/metacubex/mihomo:v1.19.30
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Disable upstream-only deployment workflows in this fork
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # These workflows deploy to Sukka's own GitHub/GitLab/Cloudflare and
+          # depend on Sukka-only secrets. They should not run in this fork.
+          gh workflow disable main.yml --repo "${GITHUB_REPOSITORY}" || true
+          gh workflow disable toggle-dist-repo-visibility.yml --repo "${GITHUB_REPOSITORY}" || true
+
+      - name: Checkout fork source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Clone Sukka official generated rules
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch master "${UPSTREAM_DIST_REPO}" official-dist
+          git -C official-dist rev-parse HEAD > upstream-dist-commit.txt
+
+      - name: Pull compilers
+        run: |
+          set -euo pipefail
+          docker pull "${SING_BOX_IMAGE}"
+          docker pull "${MIHOMO_IMAGE}"
+
+      - name: Compile all sing-box Headless Rules to SRS
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output/SRS
+
+          count=0
+          while IFS= read -r -d '' src; do
+            rel="${src#official-dist/sing-box/}"
+            out="output/SRS/${rel%.json}.srs"
+            mkdir -p "$(dirname "$out")"
+
+            echo "SRS: ${rel}"
+            docker run --rm \
+              -v "$PWD:/work" \
+              -w /work \
+              "${SING_BOX_IMAGE}" \
+              rule-set compile \
+              --output "/work/${out}" \
+              "/work/${src}"
+
+            test -s "$out"
+            count=$((count + 1))
+          done < <(find official-dist/sing-box -type f -name '*.json' -print0 | sort -z)
+
+          echo "Compiled ${count} SRS rule sets."
+          test "$count" -gt 0
+
+      - name: Compile Mihomo domain rule sets to MRS
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output/MRS/domainset
+
+          count=0
+          while IFS= read -r -d '' src; do
+            base="$(basename "$src" .txt)"
+            out="output/MRS/domainset/${base}.mrs"
+
+            echo "MRS(domain): ${base}"
+            docker run --rm \
+              -v "$PWD:/work" \
+              -w /work \
+              "${MIHOMO_IMAGE}" \
+              convert-ruleset domain text \
+              "/work/${src}" \
+              "/work/${out}"
+
+            test -s "$out"
+            count=$((count + 1))
+          done < <(find official-dist/Clash/domainset -maxdepth 1 -type f -name '*.txt' -print0 | sort -z)
+
+          echo "Compiled ${count} domain MRS rule sets."
+          test "$count" -gt 0
+
+      - name: Compile pure China IP CIDR sets to MRS
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output/MRS/ipcidr
+
+          # Sukka's other Clash/ip files are classical rules (for example they
+          # may mix DOMAIN and IP-CIDR entries), so they must remain text.
+          for name in china_ip china_ip_ipv6; do
+            src="official-dist/Clash/ip/${name}.txt"
+            out="output/MRS/ipcidr/${name}.mrs"
+            test -f "$src"
+
+            echo "MRS(ipcidr): ${name}"
+            docker run --rm \
+              -v "$PWD:/work" \
+              -w /work \
+              "${MIHOMO_IMAGE}" \
+              convert-ruleset ipcidr text \
+              "/work/${src}" \
+              "/work/${out}"
+
+            test -s "$out"
+          done
+
+      - name: Normalize ownership and write build metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo chown -R "$(id -u):$(id -g)" output
+
+          upstream_sha="$(cat upstream-dist-commit.txt)"
+          built_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+
+          cat > output/README.md <<EOF
+          # maniac911/Surge binary rule sets
+
+          Automatically generated from Sukka's official published rules.
+
+          - Upstream generated rules commit: \`${upstream_sha}\`
+          - Built at: \`${built_at}\`
+          - sing-box compiler: \`${SING_BOX_IMAGE}\`
+          - Mihomo compiler: \`${MIHOMO_IMAGE}\`
+
+          ## Layout
+
+          - \`SRS/domainset/*.srs\` — sing-box domain-only rules
+          - \`SRS/non_ip/*.srs\` — sing-box non-IP rules
+          - \`SRS/ip/*.srs\` — sing-box IP rules
+          - \`MRS/domainset/*.mrs\` — Mihomo \`behavior: domain\`
+          - \`MRS/ipcidr/china_ip*.mrs\` — Mihomo \`behavior: ipcidr\`
+
+          Mihomo classical rules intentionally remain in Sukka's official text format because MRS does not support classical behavior.
+          EOF
+
+          find output -type f -not -name FILES.txt -printf '%P\n' | sort > output/FILES.txt
+
+      - name: Publish binary rules to rules-dist branch
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          git clone --depth 1 "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" publish-repo
+          cd publish-repo
+
+          if git ls-remote --exit-code --heads origin "${DIST_BRANCH}" >/dev/null 2>&1; then
+            git fetch --depth 1 origin "${DIST_BRANCH}"
+            git checkout -B "${DIST_BRANCH}" "origin/${DIST_BRANCH}"
+          else
+            git checkout --orphan "${DIST_BRANCH}"
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+
+          rsync -a --delete --exclude='.git' ../output/ ./
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No binary rule changes."
+            exit 0
+          fi
+
+          git commit -m "chore: update Sukka binary rule sets"
+          git push origin "HEAD:${DIST_BRANCH}"
