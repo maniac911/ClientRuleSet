@@ -3,7 +3,7 @@
 This branch is an automatic full mirror of Sukka's official generated
 rule output repository, plus binary formats generated for this fork.
 
-- Upstream output commit: `b8a7ea1dde528c3365b757eb469cde49b1383f9e`
+- Upstream output commit: `348209a429b902602a1d86c7ac8f1522a392be5c`
 - sing-box SRS compiler: `ghcr.io/sagernet/sing-box:v1.14.0-rc.4`
 - Mihomo MRS compiler: `docker.io/metacubex/mihomo:v1.19.30`
 
