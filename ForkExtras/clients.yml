@@ -33,10 +33,14 @@ clients:
   quantumultx:
     enabled: true
     adapter: quantumultx
+    native_writer: quantumultx
     output: QuantumultX
-    # Quantumult X remote filters should normally be loaded with force-policy.
-    # This placeholder is required syntactically inside generated filter files.
-    policy_placeholder: direct
+    # Quantumult X remote filters require a policy field. Consumers should use
+    # force-policy=... in filter_remote; reject is a fail-visible placeholder.
+    policy_placeholder: reject
+    experimental:
+      # Port filters stay in _report until remote-filter compatibility is verified.
+      port_rules: false
 
   surfboard:
     enabled: true
