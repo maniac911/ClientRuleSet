@@ -1,0 +1,22 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/my_direct",
+        "domain": [
+          "domain:engage.cloudflareclient.com"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/my_direct",
+        "process": [
+          "nmap"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet ip/domestic",
+        "ip": [
+          "140.205.1.0/24",
+          "162.14.0.0/18"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,384 @@
+# Xray / v2rayN unsupported source rules
+
+# domainset/reject_extra.json
+URL-REGEX,/\d+/resolve  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# domainset/reject_phishing.json
+URL-REGEX,/\d+/resolve  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# domainset/reject.json
+URL-REGEX,/\d+/resolve  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# ip/reject.json
+IP-ASN,1012  # Xray routing has no native IP-ASN rule field.
+IP-ASN,14651  # Xray routing has no native IP-ASN rule field.
+IP-ASN,18044  # Xray routing has no native IP-ASN rule field.
+IP-ASN,401111  # Xray routing has no native IP-ASN rule field.
+IP-ASN,5111  # Xray routing has no native IP-ASN rule field.
+IP-ASN,54625  # Xray routing has no native IP-ASN rule field.
+IP-ASN,60539  # Xray routing has no native IP-ASN rule field.
+IP-ASN,60842  # Xray routing has no native IP-ASN rule field.
+IP-ASN,61302  # Xray routing has no native IP-ASN rule field.
+IP-ASN,62489  # Xray routing has no native IP-ASN rule field.
+IP-ASN,62853  # Xray routing has no native IP-ASN rule field.
+IP-ASN,7257  # Xray routing has no native IP-ASN rule field.
+IP-ASN,7480  # Xray routing has no native IP-ASN rule field.
+IP-ASN,7719  # Xray routing has no native IP-ASN rule field.
+IP-ASN,945  # Xray routing has no native IP-ASN rule field.
+
+# ip/telegram_asn.json
+IP-ASN,211157  # Xray routing has no native IP-ASN rule field.
+IP-ASN,44907  # Xray routing has no native IP-ASN rule field.
+IP-ASN,59930  # Xray routing has no native IP-ASN rule field.
+IP-ASN,62014  # Xray routing has no native IP-ASN rule field.
+IP-ASN,62041  # Xray routing has no native IP-ASN rule field.
+
+# non_ip/ai.json
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# non_ip/cloudmounter.json
+AND,((DOMAIN-SUFFIX,files.1drv.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,storage.live.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.box.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,api.onedrive.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,www.googleapis.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+
+# non_ip/direct.json
+PROCESS-NAME,qbittorrent*  # Xray process routing supports exact process name/path/folder matching, not shell-style globs.
+USER-AGENT,^%E8%BF%85%E9%9B%B7$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/domestic.json
+USER-AGENT,^%E4%BC%98%E9%85%B7.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^TeslaMap$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/download.json
+URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# non_ip/global.json
+USER-AGENT,^Roam.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/microsoft_cdn.json
+URL-REGEX,^http://www\.microsoft\.com/pki/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^http://www\.microsoft\.com/pkiops/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# non_ip/my_reject.json
+AND,((DOMAIN-KEYWORD,genuine), (DOMAIN-KEYWORD,autodesk))  # Compound source expressions are not flattened because that could change matching semantics.
+
+# non_ip/neteasemusic.json
+USER-AGENT,^%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^NeteaseMusic.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/reject-no-drop.json
+AND,((PROTOCOL,UDP), (DOMAIN-SUFFIX,googlevideo.com))  # Compound source expressions are not flattened because that could change matching semantics.
+
+# non_ip/reject-url-regex.json
+URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(adgateway|adv)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(EcomResourceServer/AdPlayPage/adinfo|MobileAdServer/)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https://app\.variflight\.com/v4/advert/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https://img-ys011\.didistatic\.com/static/ad_oss/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://.+\.58cdn\.com\.cn/brandads/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://.+\.iydsj\.com/api/.+/ad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://.+\.kingsoft-office-service\.com/ad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(114\.115\.217\.129|home\.umetrip\.com)/gateway/api/umetrip/native$  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|atrace)\.chelaile\.net\.cn/adpub/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|b)\.zhuishushenqi\.com/advert  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|www)\.zhihu\.com/.*(featured-comment-ad|recommendations|community-ad)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|www)\.zhihu\.com/(fringe|adx|commercial|ad-style-service|banners|mqtt)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(discardrp|startup)\.umetrip\.com/gateway/api/umetrip/native  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(ggic|ggic2)\.cmvideo\.cn/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://3gimg\.qq\.com/tencentMapTouch/app/activity/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://7n\.bczcdn\.com/launchad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://a\.qiumibao\.com/activities/config\.php  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://a\.sfansclub\.com/business/t/(ad/|boot/screen/index)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.alimusic\.common\.mobileservice\.startinit/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.queryadvertise/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.o2o\.ad\.gateway\.get/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.home\.welcome/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsresources/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://act\.vip\.iqiyi\.com/interact/api/show\.do  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://act\.vip\.iqiyi\.com/interact/api/v\d/show  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://adpai\.thepaper\.cn/.+&ad=  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://adse\.ximalaya\.com/[a-z]{4}/(feed|loading)\?appid=  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://adse\.ximalaya\.com/ting\?appid=  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://aes\.acfun\.cn/s\?adzones  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://agent-count\.pconline\.com\.cn/counter/adAnalyse/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api-mifit\.huami\.com/discovery/mi/discovery/(homepage_ad|sleep_ad|sport_ad|sport_summary_ad|sport_training_ad|step_detail_ad|training_video_ad)\?  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api-release\.wuta-cam\.com/ad_tree  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.bilibili\.com/pgc/season/(rank/cn|app/related/recommend)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.catch\.gift/api/v\d/pagead/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.chelaile\.net\.cn/goocity/advert/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.daydaycook\.com\.cn/daydaycook/server/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.gaoqingdianshi\.com/api/v\d/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.gotokeep\.com/ads/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.intsig\.net/user/cs/operating/app/get_startpic/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.jr\.mi\.com/(v\d/adv/|jr/api/playScreen)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.jxedt\.com/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.k\.sohu\.com/api/news/adsense  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.kkmh\.com/.+(ad|advertisement)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.m\.jd\.com/client\.action\?functionId=start  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.m\.mi\.com/v\d/app/start  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.mgzf\.com/renter-operation/home/startHomePage  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.psy-1\.com/cosleep/startup  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.qiuduoduo\.cn/guideimage  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.rr\.tv/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.smzdm\.com/v\d/util/loading  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.tv\.sohu\.com/agg/api/app/config/bootstrap  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.videozhishi\.com/api/getAdvertising  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.wallstreetcn\.com/apiv\d/advertising/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.xiachufang\.com/v\d/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.zhihu\.com/(market/popover|launch|ad-style-service|app_config|real_time|ab/api|commercial_api/launch|commercial_api/real_time|search/top|search/tab)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.zhuishushenqi\.com/(notification/shelfMessage|recommend|splashes/ios|user/bookshelf-updated)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api01pbmp\.zhuishushenqi\.com/gameAdvert  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api5\.futunn\.com/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.10086\.cn/biz-orange/DN/(findSale|homeSale)/getsaleAdver  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.58\.com/api/home/(advertising/|appadv/|invite/popupAdv)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.58\.com/api/log/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.api\.ke\.com/config/config/bootpage  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/resource/abtest  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/v\d/(splash/|param|dm/ad|dataflow/report)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/v\d/rank.*rid=(168|5)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/v\d/search/(defaultword|hot|recommend|resource)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.mixcapp\.com/mixc/api/v\d/ad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.wy\.guahao\.com/json/white/dayquestion/getpopad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app3\.qdaily\.com/app3/boot_advertisements\.json  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://asp\.cntv\.myalicdn\.com/.+\?maxbr=850  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://atrace\.chelaile\.net\.cn/exhibit\?&adv_image  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://b-api\.ins\.miaopai\.com/1/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://b?dsp-x\.jd\.com/adx/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://c\.m\.163\.com/nc/gl/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://c\.tieba\.baidu\.com/c/s/splashSchedule  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cap\.caocaokeji\.cn/advert-bss/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://capi\.mwee\.cn/app-api/V12/app/getstartad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cdn\.api\.fotoable\.com/Advertise/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cdn\.moji\.com/(adoss|adlink)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://channel\.beitaichufang\.com/channel/api/v\d/promote/ios/start/page  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://client\.mail\.163\.com/apptrack/confinfo/searchMultiAds  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cms\.daydaycook\.com\.cn/api/cms/advertisement/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cmsapi\.wifi8\.com/v\d/(emptyAd/info|adNew/config)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cmsapi\.wifi8\.com/v\d/(emptyAd|adNew)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cntv\.hls\.cdn\.myqcloud\.com/.+\?maxbr=850  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://counter\.ksosoft\.com/ad\.php  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cover\.baidu\.com/cover/page/dspSwitchAds/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://ctrl\.(playcvn|zmzapi)\.(com|net)/app/(ads|init)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dict-mobile\.iciba\.com/interface/index\.php\?.+(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dili\.bdatu\.com/jiekou/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dsp-impr2\.youdao\.com/adload.s\?  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dsp\.toutiao\.com/api/xunfei/ads/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dspsdk\.abreader\.com/v\d/api/ad\?  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://edit\.sinaapp\.com/ua\?t=adv  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://foodie-api\.yiruikecorp\.com/v\d/(banner|notice)/overview  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://games\.mobileapi\.hupu\.com/.+/(interfaceAdMonitor|interfaceAd|status/init)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://gateway\.shouqiev\.com/fsda/app/bootImage\.json  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://gw-passenger\.01zhuanche\.com/gw-passenger/(car-rest/webservice/passenger/recommendADs|zhuanche-passenger-token/leachtoken/webservice/homepage/queryADs)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://gw\.aihuishou\.com/app-portal/home/getadvertisement  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://home\.mi\.com/cgi-op/api/v1/recommendation/(banner|carousel/banners|myTab|openingBanner)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://hui\.sohu\.com/predownload2/\?  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://huichuan\.sm\.cn/jsad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://i\.ys7\.com/api/ads  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://iapi\.bishijie\.com/actopen/advertising/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://iface\.iqiyi\.com/api/getNewAdInfo  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://iflow\.uczzd\.cn/log/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://images\.client\.vip\.xunlei\.com/.+/advert/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://imeclient\.openspeech\.cn/adservice/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://img\.jiemian\.com/ads/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://img\.meituan\.net/midas/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://ios\.wps\.cn/ad-statistics-service  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://issuecdn\.baidupcs\.com/issue/netdisk/guanggao/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.client\.10010\.com/mobileService/customer/accountListData\.htm  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.client\.10010\.com/uniAdmsInterface/(getWelcomeAd|getHomePageAd)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.ibuscloud\.com/v\d/app/getStartPage  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.yap\.yahoo\.com/v18/getAds\.do  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\d\.amap\.com/ws/valueadded/alimama/splash_screen/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://manga\.bilibili\.com/twirp/comic\.v\d\.comic/(flash|Flash|ListFlash)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mangaapi\.manhuaren\.com/v\d/public/getStartPageAds  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mapi\.dangdang\.com/index\.php\?action=init  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mapi\.mafengwo\.cn/(travelguide/)?ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://media\.qyer\.com/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mi\.gdt\.qq\.com/gdt_mview\.fcg  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mob\.mddcloud\.com\.cn/api/(ad|advert)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mobile-api2011\.elong\.com/(adgateway|adv)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mobile-pic\.cache\.iciba\.com/feeds_ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mp\.weixin\.qq\.com/mp/(advertisement_report|ad_complaint|ad_video|getappmsgad|report)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mrobot\.(pcauto|pconline)\.com\.cn/v\d/ad2p  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mrobot\.pcauto\.com\.cn/xsp/s/auto/info/preload\.xsp  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mrobot\.pconline\.com\.cn/s/onlineinfo/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://ms\.jr\.jd\.com/gw/generic/base/na/m/adInfo  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://msspjh\.emarbox\.com/getAdConfig  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://newsso\.map\.qq\.com/\?&attime=  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://nnapp\.cloudbae\.cn/mc/api/advert/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://nochange\.ggsafe\.com/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://notch\.qdaily\.com/api/v\d/boot_ad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://oimage([a-z])\d\.ydstatic\.com/.+adpublish  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://open\.qyer\.com/qyer/(config/get|startpage/)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://p\d\.meituan\.net/(adunion|display|linglong|mmc|wmbanner)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://pic1\.chelaile\.net\.cn/adv/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://portal-xunyou\.qingcdn\.com/api/v\d/ios/(ads/|configs/splash_ad|configs/ad_urls)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://premiumyva\.appspot\.com/vmclickstoadvertisersite  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://pss\.txffp\.com/piaogen/images/launchScreen/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://qt\.qq\.com/lua/mengyou/get_splash_screen_info  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://r\.inews\.qq\.com/(adsBlacklist|getBannerAds|getFullScreenPic|getQQNewsRemoteConfig|getNewsRemoteConfig|searchHotCatList|getSplash|upLoadLoc)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://res-release\.wuta-cam\.com/json/ads_component_cache\.json  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://res\.kfc\.com\.cn/advertisement/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://richmanapi\.jxedt\.com/api/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://s1\.api\.tv\.itc\.cn/v\d/mobile/control/switch\.json  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://s3plus\.meituan\.net/.+/linglong/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://sdkapp\.uve\.weibo\.com/interface/sdk/(sdkad|actionad)\.php  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://service\.4gtv\.tv/4gtv/Data/(GetAD|ADLog)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://service\.iciba\.com/popo/open/screens/v\d\?adjson  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://smkmp\.96225\.com/smkcenter/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://snailsleep\.net/snail/v\d/(adTask/|screen/qn/get)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://sp\.kaola\.com/api/openad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://static\.vuevideo\.net/styleAssets/.+/splash_ad  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://static\.vuevideo\.net/styleAssets/advertisement/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://static1\.keepcdn\.com/.+\d{3}x\d{4}  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://support\.you\.163\.com/xhr/boot/getBootMedia\.json  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://szextshort\.weixin\.qq\.com/cgi-bin/mmoc-bin/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://thor\.weidian\.com/ares/home\.splash/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://tqt\.weibo\.cn/.+advert\.index  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://tqt\.weibo\.cn/api/advert/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://tqt\.weibo\.cn/overall/redirect\.php\?r=(tqtad|tqt_sdkad)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://v\.cctv\.com/.+\?maxbr=850  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://vv\.video\.qq\.com/getvmind\?  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://wap\.ngchina\.cn/news/adverts/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://wbapp\.uve\.weibo\.com/wbapplua/wbpullad\.lua  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.cntv\.cn/nettv/adp/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.dandanzan\.com/res/gdsefse\.js  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.flyertea\.com/source/plugin/mobile/mobile\.php\?module=advis  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.myhug\.cn/ad/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.shihuo\.cn/app3/saveAppInfo  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.zhihu\.com/terms/privacy/confirm  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://y\.gtimg\.cn/music/common/upload/targeted_ads  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# non_ip/reject.json
+URL-REGEX,/\d+/resolve  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+
+# non_ip/sogouinput.json
+USER-AGENT,^com\.sogou\.sogouinput\.BaseKeyboard$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^SogouInput$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream_eu.json
+USER-AGENT,^BBCiPlayer.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^ITV_Player.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream_hk.json
+USER-AGENT,^mytv.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Viu.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream_jp.json
+USER-AGENT,^AbemaTV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Niconico.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream_kr.json
+USER-AGENT,^Naver TV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream_tw.json
+USER-AGENT,^Anime.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^com\.kktv\.ios\.kktv.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^KKTV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^LINE TV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream_us.json
+USER-AGENT,^discovery\+.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^DPlus.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^encoreTVB.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^FOX NOW.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^FOXPlus.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Hulu.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^PeacockMobile.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^PPlus.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^TVer-Release.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+
+# non_ip/stream.json
+USER-AGENT,^.*Spotify.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^AbemaTV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^All4.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Anime.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^AppleTV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Argo.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^BBCiPlayer.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^com\.apple\.tv.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^com\.google\.ios\.youtube.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^com\.google\.ios\.youtubemusic.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^com\.kktv\.ios\.kktv.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^DAZN.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Deezer.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^discovery\+.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Disney\+.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^DPlus.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^encoreTVB.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^FOX NOW.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^FOXPlus.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^HBO NOW.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^HBOMAX.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Himalaya.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Hulu.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^HWTVMobile.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^InstantVideo\.US.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^ITV_Player.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^JOOX.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^KKTV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^LINE TV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^My5.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^mytv.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Naver TV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Niconico.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Overcast.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Pandora.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^PBS.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^PeacockMobile.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^PPlus.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Prime Video.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^SoundCloud.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^TaiwanGood.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^TIDAL.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^TikTok.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^TVer-Release.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^Viu.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^WeMusic.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^WeTV.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^YouTube.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.
+USER-AGENT,^YouTubeMusic.*$  # Xray native routing can express this through attrs, but v2rayN RulesItem import has no attrs field.

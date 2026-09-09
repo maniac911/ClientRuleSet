@@ -1,0 +1,23 @@
+{
+  "source": "Sukka FileOutput universal rule model",
+  "target": "v2rayN RulesItem JSON for Xray Core",
+  "outbound_tag": "proxy",
+  "source_files": 61,
+  "generated_files": 52,
+  "emitted_rules": 67,
+  "unsupported_rules": 333,
+  "unsupported_by_type": {
+    "AND": 42,
+    "IP-ASN": 20,
+    "PROCESS-NAME": 1,
+    "URL-REGEX": 192,
+    "USER-AGENT": 78
+  },
+  "warnings": 327,
+  "notes": [
+    "Files are top-level List<RulesItem> JSON accepted by current v2rayN routing-rule import.",
+    "Xray-native sourceIP/sourcePort/attrs are intentionally omitted here because current v2rayN RulesItem does not expose them.",
+    "Different selector families are separate RulesItem objects to avoid accidental Xray AND semantics.",
+    "Sukka no-resolve has no direct per-rule Xray/v2rayN equivalent; see warnings.txt."
+  ]
+}

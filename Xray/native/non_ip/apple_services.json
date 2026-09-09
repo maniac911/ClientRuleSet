@@ -1,0 +1,52 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_services",
+        "domain": [
+          "domain:me.com",
+          "domain:apple.co",
+          "domain:apple.com",
+          "domain:appsto.re",
+          "domain:apple.news",
+          "domain:icloud.com",
+          "domain:itunes.com",
+          "domain:aaplimg.com",
+          "domain:appstore.com",
+          "domain:apple-dns.net",
+          "domain:cdn-apple.com",
+          "domain:apple-mapkit.com",
+          "domain:apple-cloudkit.com",
+          "domain:icloud-content.com",
+          "domain:organicfruitapps.com",
+          "domain:push-apple.com.akadns.net"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_services",
+        "ip": [
+          "17.0.0.0/8"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_services",
+        "process": [
+          "com.apple.geod",
+          "mapspushd",
+          "com.apple.Maps",
+          "apsd",
+          "fmfd",
+          "findmydevice-user-agent",
+          "CoreLocationAgent",
+          "WeatherWidget"
+        ]
+      }
+    ]
+  }
+}

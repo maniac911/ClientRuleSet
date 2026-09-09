@@ -1,0 +1,19 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet domainset/icloud_private_relay",
+        "domain": [
+          "full:mask.icloud.com",
+          "full:mask-h2.icloud.com",
+          "full:mask.apple-dns.net",
+          "full:mask-api.icloud.com",
+          "full:mask-canary.icloud.com",
+          "full:canary.mask.apple-dns.net"
+        ]
+      }
+    ]
+  }
+}

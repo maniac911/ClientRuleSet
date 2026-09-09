@@ -1,15 +1,17 @@
-# Xray / v2rayN
+# Xray
 
-These JSON files are generated directly from Sukka's universal FileOutput data and are formatted as the top-level `List<RulesItem>` accepted by current v2rayN's routing-rule import.
+This output is split into two targets because current v2rayN exposes only a subset of Xray routing fields through its RulesItem import model.
 
-Supported mappings include exact/suffix/keyword/regex domains, wildcard domains converted to anchored Xray regex, IPv4/IPv6 CIDR, GEOIP, exact process name/path, destination port, TCP/UDP network, and Xray sniffed protocols HTTP/TLS/QUIC/BitTorrent.
+## v2rayN
 
-Not emitted for the v2rayN target: USER-AGENT/URL-REGEX (v2rayN does not expose Xray attrs), source IP/source port (supported by Xray Core but absent from current v2rayN RulesItem), IP-ASN, process globs, and AND/OR/NOT expressions that cannot be flattened without changing semantics. See `_report/unsupported.txt`.
+`Xray/v2rayN/**` contains top-level `List<RulesItem>` JSON for v2rayN's Routing Rule -> Import from File / Clipboard / URL workflow. It preserves domain/IP/destination-port/network/protocol/exact-process fields and audits Xray-only fields in `v2rayN/_report/unsupported.txt`.
 
-The generated outbound tag defaults to `proxy`, matching v2rayN's normal proxy routing tag. Change `xray.outbound_tag` in `ForkExtras/clients.yml` if needed.
+Example:
 
-In v2rayN, open the routing-rule editor and use Import Rules from File / Clipboard / URL with one of these files, for example:
+`https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Xray/v2rayN/non_ip/ai.json`
 
-`https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Xray/non_ip/ai.json`
+## native
 
-Do not combine different selector families into one Xray rule object: Xray treats fields in one rule as conditions that must match together. This exporter intentionally emits separate RulesItem objects to preserve Sukka's rule-list OR semantics.
+`Xray/native/**` contains native Xray routing fragments shaped as `{ "routing": { "rules": [...] } }`. These are not standalone runnable Xray configs: merge the routing section into a complete Xray config with inbounds/outbounds, or use them while building a v2rayN Custom Xray config. Native output additionally preserves `sourceIP`, `sourcePort`, and maps USER-AGENT patterns to Xray `attrs["user-agent"]`.
+
+Xray joins different selector fields inside one rule with AND semantics, so this exporter emits separate rule objects for independent Sukka selectors. Truly non-lossless concepts such as arbitrary URL-REGEX, IP-ASN, process globs and unparsed AND/OR/NOT source expressions remain audited.

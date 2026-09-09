@@ -1,0 +1,22 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_cn",
+        "domain": [
+          "domain:apple.com.cn",
+          "domain:cn.apple.com",
+          "domain:icloud.com.cn",
+          "domain:cn.ls.apple.com",
+          "full:api.smoot.apple.cn",
+          "domain:cn-ssl.ls.apple.com",
+          "full:gs-loc-cn.apple.com",
+          "domain:gspe19-cn-ssl.ls.apple.com",
+          "full:appleintelligencefeedback.care.apple.com"
+        ]
+      }
+    ]
+  }
+}

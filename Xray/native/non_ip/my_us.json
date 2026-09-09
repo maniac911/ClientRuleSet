@@ -1,0 +1,19 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/my_us",
+        "domain": [
+          "full:jav.guru",
+          "full:cableav.tv",
+          "domain:mandaom.com",
+          "full:copymanga.site",
+          "domain:crunchyroll.com",
+          "full:www.coinbase.com"
+        ]
+      }
+    ]
+  }
+}

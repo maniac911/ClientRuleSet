@@ -1,0 +1,18 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_intelligence",
+        "domain": [
+          "full:cp4.cloudflare.com",
+          "full:apple-relay.apple.com",
+          "full:gspe1-ssl.ls.apple.com",
+          "full:apple-relay.cloudflare.com",
+          "full:apple-relay.fastly-edge.com"
+        ]
+      }
+    ]
+  }
+}

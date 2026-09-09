@@ -1,0 +1,20 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/my_git",
+        "domain": [
+          "full:github.com",
+          "full:github.dev",
+          "full:api.github.com",
+          "domain:huggingface.co",
+          "full:alive.github.com",
+          "domain:githubcopilot.com",
+          "full:android.googlesource.com"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/sogouinput",
+        "domain": [
+          "domain:beacon.qq.com",
+          "domain:get.sogou.com",
+          "domain:ime.sogou.com",
+          "domain:sginput.qq.com",
+          "domain:macime.sogou.com",
+          "domain:pinyin.sogou.com",
+          "domain:shouji.sogou.com",
+          "domain:account.sogou.com",
+          "full:oth.str.mdt.qq.com"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/sogouinput",
+        "process": [
+          "SogouInput",
+          "SogouTaskManager",
+          "SogouServices"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/sogouinput",
+        "attrs": {
+          "user-agent": "^SogouInput$"
+        }
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/sogouinput",
+        "attrs": {
+          "user-agent": "^com\\.sogou\\.sogouinput\\.BaseKeyboard$"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/stream_kr",
+        "domain": [
+          "domain:tv.naver.com",
+          "domain:smartmediarep.com"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/stream_kr",
+        "attrs": {
+          "user-agent": "^Naver TV.*$"
+        }
+      }
+    ]
+  }
+}
