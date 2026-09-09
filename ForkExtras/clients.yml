@@ -65,6 +65,15 @@ clients:
     native_writer: egern
     output: Egern
 
+  xray:
+    enabled: true
+    adapter: xray
+    native_writer: xray
+    output: Xray
+    # v2rayN's normal proxy outbound tag. Change this only if your imported
+    # routing profile uses a different outbound tag.
+    outbound_tag: proxy
+
   surfboard:
     enabled: true
     adapter: passthrough
