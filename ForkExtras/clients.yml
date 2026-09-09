@@ -74,6 +74,18 @@ clients:
     # Change it if the target profile/config uses another outbound tag.
     outbound_tag: proxy
 
+  v2box:
+    enabled: true
+    adapter: v2box
+    native_writer: v2box
+    output: V2Box
+    # V2Box route objects embed their outbound action, so publish all three
+    # useful variants instead of forcing one policy into every rule set.
+    tags:
+      - proxy
+      - direct
+      - block
+
   surfboard:
     enabled: true
     adapter: passthrough
