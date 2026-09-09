@@ -78,6 +78,31 @@ Loon applies the policy outside the downloaded subscription list, for example:
 https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Loon/non_ip/ai.list, PROXY
 ```
 
+## Egern
+
+Egern uses a native writer and publishes Egern's own YAML rule-set format rather than relying on Surge compatibility mode:
+
+```text
+Sukka FileOutput
+      -> Egern intermediate JSON
+      -> Egern adapter
+      -> Egern/*.yaml
+```
+
+The native mapping follows Egern's documented rule-set fields: exact/suffix/keyword/regex/wildcard domains, URL regex, User-Agent, IPv4/IPv6 CIDR, GEOIP, ASN, destination ports and protocol sets are emitted. Process rules, source-IP/source-port rules, logical expressions and unknown source concepts are reported in `Egern/_report/unsupported.txt` instead of being guessed.
+
+Egern exposes `no_resolve` once for the whole rule-set file, while Sukka keeps resolving and no-resolve IP rules separately. If one Sukka source contains both, `*.yaml` keeps the non-IP plus no-resolve IP entries and sets `no_resolve: true`; the resolving IP entries are written to `*-resolve.yaml`. Load both under the same policy. `Egern/_report/splits.txt` lists every source that was split.
+
+Example:
+
+```yaml
+rules:
+  - rule_set:
+      match: https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Egern/non_ip/ai.yaml
+      policy: Proxy
+      update_interval: 86400
+```
+
 ## Hiddify
 
 Hiddify does not need another text-rule dialect. Hiddify Core is built on sing-box routing and uses remote binary rule sets, so this adapter compiles Sukka's existing sing-box headless rule-set JSON directly to SRS:
@@ -98,4 +123,4 @@ https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Hiddify/non
 
 The outbound action is selected in Hiddify's routing rule; it is not embedded in the SRS file.
 
-Current adapters: Surge, Clash/Mihomo, sing-box, Hiddify, Shadowrocket, Quantumult X, Stash, Loon, plus passthrough for upstream-native outputs.
+Current adapters: Surge, Clash/Mihomo, sing-box, Hiddify, Shadowrocket, Quantumult X, Stash, Loon, Egern, plus passthrough for upstream-native outputs.

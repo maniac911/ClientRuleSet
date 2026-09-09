@@ -59,6 +59,12 @@ clients:
     native_writer: loon
     output: Loon
 
+  egern:
+    enabled: true
+    adapter: egern
+    native_writer: egern
+    output: Egern
+
   surfboard:
     enabled: true
     adapter: passthrough
