@@ -1,0 +1,12 @@
+domain_wildcard_set:
+  - download*.mediafire.com
+  - ftp.??.debian.org
+  - ftp.??.freebsd.org
+  - s3.*.backblazeb2.com
+  - "*.s3.*.backblazeb2.com"
+  - cdn-*.comaps.app
+  - cdn-*.comaps.tech
+  - cdn-*.organicmaps.app
+  - dl-*.mypikpak.com
+url_regex_set:
+  - ^http://(.+)\.gvt\d\.com/edgedl

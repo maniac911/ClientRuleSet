@@ -1,0 +1,14 @@
+{
+  "source": "Sukka FileOutput universal rule model",
+  "format": "Egern native YAML rule set",
+  "source_files": 61,
+  "generated_files": 55,
+  "emitted_rules": 375205,
+  "unsupported_rules": 116,
+  "unsupported_by_type": {
+    "AND": 42,
+    "PROCESS-NAME": 74
+  },
+  "mixed_no_resolve_sources": 1,
+  "no_resolve_note": "Egern rule-set no_resolve is file-wide. Mixed Sukka IP semantics are preserved by keeping no-resolve IP rules in the canonical YAML and emitting DNS-resolving IP rules in a sibling *-resolve.yaml file."
+}

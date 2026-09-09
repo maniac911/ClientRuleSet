@@ -1,0 +1,4 @@
+# Egern mixed no-resolve rule sets
+# When a source appears below, load BOTH the canonical YAML and its -resolve.yaml sibling under the same policy.
+
+ip/reject.yaml -> ip/reject-resolve.yaml (737 resolve rules)
