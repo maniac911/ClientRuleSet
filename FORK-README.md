@@ -3,7 +3,7 @@
 This branch is built automatically from this fork's current `master`
 after synchronizing `SukkaW/Surge` into the fork.
 
-- Fork source commit: `4fb39c9d137bb09f060448fe670333aab9b3bc37`
+- Fork source commit: `5a5b4b2e16414bd416fe48d898f2736e7e52427e`
 - Upstream source: `SukkaW/Surge`
 - sing-box SRS compiler: `ghcr.io/sagernet/sing-box:v1.14.0-rc.4`
 - Mihomo MRS compiler: `docker.io/metacubex/mihomo:v1.19.30`
