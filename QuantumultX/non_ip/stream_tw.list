@@ -1,0 +1,57 @@
+#########################################
+# Sukka's Ruleset - Stream Services: Taiwan
+# Last Updated: 2026-09-09T15:16:09.413Z
+# Size: 38
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# - KKTV
+# - LiTV
+# - 4gtv
+# - Line TV
+# - HBO Asia
+# - Bahamut
+# - Friday TW
+# - MangaFox
+#
+# $content-hash-v1$:x5hQeczAnC-9akapCMVGyGX1L_ptZPKzFTf3rWG_LnQ$
+#########################################
+HOST-SUFFIX,4gtv.tv,reject
+HOST-SUFFIX,kktv.me,reject
+HOST-SUFFIX,kk.stream,reject
+HOST-SUFFIX,linetv.tw,reject
+HOST-SUFFIX,fanfox.net,reject
+HOST-SUFFIX,hboasia.com,reject
+HOST-SUFFIX,kktv.com.tw,reject
+HOST-SUFFIX,mangafox.me,reject
+HOST-SUFFIX,viblast.com,reject
+HOST,www.litv.tv,reject
+HOST-SUFFIX,hbogoasia.hk,reject
+HOST-SUFFIX,hbogoasia.id,reject
+HOST-SUFFIX,hbogoasia.ph,reject
+HOST-SUFFIX,hbogoasia.sg,reject
+HOST-SUFFIX,hbogoasia.tw,reject
+HOST,cdi.ofiii.com,reject
+HOST-SUFFIX,hbogoasia.com,reject
+HOST-SUFFIX,bahamut.com.tw,reject
+HOST,video.friday.tw,reject
+HOST-SUFFIX,ani.gamer.com.tw,reject
+HOST-SUFFIX,api.gamer.com.tw,reject
+HOST,ana.video.friday.tw,reject
+HOST,hbolb.onwardsmg.com,reject
+HOST,players.brightcove.net,reject
+HOST,gamer-cds.cdn.hinet.net,reject
+HOST,gamer2-cds.cdn.hinet.net,reject
+HOST,manifest.prod.boltdns.net,reject
+HOST,hbounify-prod.evergent.com,reject
+HOST,ntdfreepc-tgc.cdn.hinet.net,reject
+HOST,d3c7rimkq79yfu.cloudfront.net,reject
+HOST,4gtvfreepcvod-cds.cdn.hinet.net,reject
+HOST,litvfreemobile-hichannel.cdn.hinet.net,reject
+HOST,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,reject
+USER-AGENT,com.kktv.ios.kktv*,reject
+USER-AGENT,KKTV*,reject
+USER-AGENT,LINE TV*,reject
+USER-AGENT,Anime*,reject
+################## EOF ##################

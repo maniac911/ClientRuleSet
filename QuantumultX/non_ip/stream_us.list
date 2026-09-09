@@ -1,0 +1,76 @@
+#########################################
+# Sukka's Ruleset - Stream Services: North America
+# Last Updated: 2026-09-09T15:16:09.412Z
+# Size: 52
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# - Fox Now
+# - Fox+
+# - Hulu
+# - Hulu Japan
+# - Vudu
+# - Pluto TV
+# - SHOWTIME
+# - encoreTVB
+# - Discovery+
+# - Paramount+
+# - Peacock
+# - Crackle
+# - Tubi TV
+#
+# $content-hash-v1$:PBtdEZY7-ql0-UMy199ovWA64GmCwWYdkuTwEV73mhs$
+#########################################
+HOST-SUFFIX,fox.com,reject
+HOST-SUFFIX,hulu.jp,reject
+HOST-SUFFIX,hulu.tv,reject
+HOST-SUFFIX,hulu.us,reject
+HOST-SUFFIX,sho.com,reject
+HOST,tubi.tv,reject
+HOST-SUFFIX,cbsi.com,reject
+HOST-SUFFIX,hulu.com,reject
+HOST-SUFFIX,pluto.tv,reject
+HOST,vudu.com,reject
+HOST-SUFFIX,dnitv.com,reject
+HOST-SUFFIX,foxdcg.com,reject
+HOST-SUFFIX,happyon.jp,reject
+HOST-SUFFIX,huluim.com,reject
+HOST,tubitv.com,reject
+HOST-SUFFIX,uplynk.com,reject
+HOST-SUFFIX,foxplus.com,reject
+HOST,www.tubi.tv,reject
+HOST-SUFFIX,showtime.com,reject
+HOST-SUFFIX,cbsivideo.com,reject
+HOST-SUFFIX,disco-api.com,reject
+HOST-SUFFIX,encoretvb.com,reject
+HOST-SUFFIX,hjholdings.jp,reject
+HOST-SUFFIX,peacocktv.com,reject
+HOST-SUFFIX,cbsaavideo.com,reject
+HOST-SUFFIX,hulustream.com,reject
+HOST,www.tubitv.com,reject
+HOST-SUFFIX,theplatform.com,reject
+HOST-SUFFIX,discoveryplus.in,reject
+HOST-SUFFIX,discoveryplus.com,reject
+HOST-SUFFIX,paramountplus.com,reject
+HOST,athome.fandango.com,reject
+HOST-SUFFIX,discoveryplus.co.uk,reject
+HOST,prod-api.crackle.com,reject
+HOST,edge.api.brightcove.com,reject
+HOST,cbsi.live.ott.irdeto.com,reject
+HOST,dashasiafox.akamaized.net,reject
+HOST-SUFFIX,production-public.tubi.io,reject
+HOST,cbsservice.aws.syncbak.com,reject
+HOST,staticasiafox.akamaized.net,reject
+HOST,bcbolt446c5271-a.akamaihd.net,reject
+HOST,cbsplaylistserver.aws.syncbak.com,reject
+USER-AGENT,FOX NOW*,reject
+USER-AGENT,FOXPlus*,reject
+USER-AGENT,Hulu*,reject
+USER-AGENT,encoreTVB*,reject
+USER-AGENT,TVer-Release*,reject
+USER-AGENT,DPlus*,reject
+USER-AGENT,discovery+*,reject
+USER-AGENT,PPlus*,reject
+USER-AGENT,PeacockMobile*,reject
+################## EOF ##################

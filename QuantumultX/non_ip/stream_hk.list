@@ -1,0 +1,48 @@
+#########################################
+# Sukka's Ruleset - Stream Services: Hong Kong
+# Last Updated: 2026-09-09T15:16:09.412Z
+# Size: 36
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# - Now E
+# - ViuTV
+# - myTV Super
+# - HBO Asia
+# - Bilibili International
+#
+# $content-hash-v1$:U05d-zWl7vLQxZ83uoxYCGwSO9x1l1xSAr3vP0BeDgY$
+#########################################
+HOST-SUFFIX,viu.tv,reject
+HOST-SUFFIX,tvb.com,reject
+HOST-SUFFIX,viu.com,reject
+HOST-SUFFIX,nowe.com,reject
+HOST-SUFFIX,bilibili.tv,reject
+HOST-SUFFIX,hboasia.com,reject
+HOST-SUFFIX,viu.now.com,reject
+HOST-SUFFIX,biliintl.com,reject
+HOST-SUFFIX,hbogoasia.hk,reject
+HOST-SUFFIX,hbogoasia.id,reject
+HOST-SUFFIX,hbogoasia.ph,reject
+HOST-SUFFIX,hbogoasia.sg,reject
+HOST-SUFFIX,hbogoasia.tw,reject
+HOST-SUFFIX,hbogoasia.com,reject
+HOST-SUFFIX,mytvsuper.com,reject
+HOST-SUFFIX,psg.cdn.hgc.com.hk,reject
+HOST,hbolb.onwardsmg.com,reject
+HOST,apm-misaka.biliapi.net,reject
+HOST,players.brightcove.net,reject
+HOST,manifest.prod.boltdns.net,reject
+HOST,hbounify-prod.evergent.com,reject
+HOST,dfp6rglgjqszk.cloudfront.net,reject
+HOST,d1k2us671qcoau.cloudfront.net,reject
+HOST,d2anahhhmp1ffz.cloudfront.net,reject
+HOST,upos-bstar-mirrorakam.akamaized.net,reject
+HOST,upos-bstar1-mirrorakam.akamaized.net,reject
+HOST,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,reject
+HOST-KEYWORD,nowtv100,reject
+HOST-KEYWORD,rthklive,reject
+USER-AGENT,Viu*,reject
+USER-AGENT,mytv*,reject
+################## EOF ##################

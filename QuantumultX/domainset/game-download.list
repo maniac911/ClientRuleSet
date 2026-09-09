@@ -1,0 +1,66 @@
+#########################################
+# Sukka's Ruleset - Game Download
+# Last Updated: 2026-09-09T15:16:09.699Z
+# Size: 52
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains domains for Gam download CDN domains for Steam, Epic, Blizzard, Gog, Ubisoft, EA, Xbox, PlayStation, Riot, Bethesda and more.
+# No China CDN domains are included. Those domains are included in non_ip/domestic
+#
+# $content-hash-v1$:YWq-NzCmoG6AzO0Mhtu00ICFn0nYn8DykoRSfahewRk$
+#########################################
+HOST-SUFFIX,cdn.ea.com,reject
+HOST-SUFFIX,cdn.ubi.com,reject
+HOST-SUFFIX,dyn.riotcdn.net,reject
+HOST-SUFFIX,cdn.blizzard.com,reject
+HOST-SUFFIX,cdn.nintendo.net,reject
+HOST-SUFFIX,epicgamescdn.com,reject
+HOST-SUFFIX,steamcontent.com,reject
+HOST,dist.blizzard.com,reject
+HOST,download.xbox.com,reject
+HOST-SUFFIX,dl.playstation.net,reject
+HOST,xvcf1.xboxlive.com,reject
+HOST,xvcf2.xboxlive.com,reject
+HOST,cdn-patch.swtor.com,reject
+HOST,level3.blizzard.com,reject
+HOST,steam.ru.qtlglb.com,reject
+HOST,assets1.xboxlive.com,reject
+HOST,assets2.xboxlive.com,reject
+HOST,steam.eca.qtlglb.com,reject
+HOST,origin-a.akamaihd.net,reject
+HOST,steam.apac.qtlglb.com,reject
+HOST,steam.naeu.qtlglb.com,reject
+HOST-SUFFIX,wup.shop.nintendo.net,reject
+HOST-SUFFIX,download.dm.origin.com,reject
+HOST-SUFFIX,download.epicgames.com,reject
+HOST,gog-cdn-fastly.gog.com,reject
+HOST-SUFFIX,wup.eshop.nintendo.net,reject
+HOST,download2.epicgames.com,reject
+HOST,download3.epicgames.com,reject
+HOST,download4.epicgames.com,reject
+HOST,packagespc.xboxlive.com,reject
+HOST,steampipe.akamaized.net,reject
+HOST,blzddist1-a.akamaihd.net,reject
+HOST,blzddist2-a.akamaihd.net,reject
+HOST,blzddist3-a.akamaihd.net,reject
+HOST-SUFFIX,content.cdp.bethesda.net,reject
+HOST-SUFFIX,content.steampowered.com,reject
+HOST,static.hikarifield.co.jp,reject
+HOST-SUFFIX,download.cdp.bethesda.net,reject
+HOST,blizzard.gcdn.cloudn.co.kr,reject
+HOST,blzddistkr1-a.akamaihd.net,reject
+HOST,dlgarenanow-a.akamaihd.net,reject
+HOST,download.hikarifield.co.jp,reject
+HOST-SUFFIX,egdownload.fastly-edge.com,reject
+HOST,steampipe-kr.akamaized.net,reject
+HOST,gog-cdn-fastly-cp77.gog.com,reject
+HOST,fastly-download.epicgames.com,reject
+HOST,edge.steam-dns.top.comcast.net,reject
+HOST,content-origin.steampowered.com,reject
+HOST,steampipe-partner.akamaized.net,reject
+HOST,epicgames-download1.akamaized.net,reject
+HOST,pf-cdn-content-prod.azureedge.net,reject
+HOST,gamedownloads-rockstargames-com.akamaized.net,reject
+################## EOF ##################

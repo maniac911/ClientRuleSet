@@ -1,0 +1,58 @@
+#########################################
+# Sukka's Ruleset - Reject (REJECT-DROP)
+# Last Updated: 2026-09-09T15:16:09.724Z
+# Size: 54
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# $content-hash-v1$:gvt9ZoUrrQHdSLOZ8T3bdpYTttryl1XumcFE0dFx2pg$
+#########################################
+HOST-SUFFIX,pipi.cn,reject
+HOST-SUFFIX,ule.com,reject
+HOST-SUFFIX,adobe.io,reject
+HOST-SUFFIX,jr.mi.com,reject
+HOST-SUFFIX,cool3c.com,reject
+HOST-SUFFIX,ulecdn.com,reject
+HOST,ad.12306.cn,reject
+HOST-SUFFIX,tongdun.net,reject
+HOST-SUFFIX,look.163.com,reject
+HOST-SUFFIX,adobestats.io,reject
+HOST-SUFFIX,lmk.mipay.com,reject
+HOST-SUFFIX,mall.10010.cn,reject
+HOST,push.12306.cn,reject
+HOST-SUFFIX,api.miwifi.com,reject
+HOST,epay.10010.com,reject
+HOST-SUFFIX,httpizza.ele.me,reject
+HOST-SUFFIX,mibi.xiaomi.com,reject
+HOST-SUFFIX,microfin.ele.me,reject
+HOST,daisydiskapp.com,reject
+HOST-SUFFIX,game.meituan.com,reject
+HOST-SUFFIX,xiaomimobile.com,reject
+HOST-SUFFIX,easytomessage.com,reject
+HOST-SUFFIX,hybrid.xiaomi.com,reject
+HOST-SUFFIX,logan.sankuai.com,reject
+HOST-SUFFIX,mtvod.meituan.net,reject
+HOST-SUFFIX,unicompayment.com,reject
+HOST-SUFFIX,video.goofish.com,reject
+HOST-SUFFIX,0.0.198.in-addr.arpa,reject
+HOST-SUFFIX,contents.meituan.com,reject
+HOST,fyb-2.cdn.bcebos.com,reject
+HOST-SUFFIX,genuine.autodesk.com,reject
+HOST,mpush-api.aliyun.com,reject
+HOST-SUFFIX,jr.airstarfinance.net,reject
+HOST-SUFFIX,mtvod-ali.meituan.net,reject
+HOST-SUFFIX,newbuy.chinaunicom.cn,reject
+HOST,app-download.fliggy.com,reject
+HOST-SUFFIX,expenses-fe.meituan.com,reject
+HOST,userlocation.googleapis.com,reject
+HOST,loan-supermarket.faas.ele.me,reject
+HOST,locationhistory-pa.googleapis.com,reject
+HOST-SUFFIX,video-zb.cloudvideocdn.taobao.com,reject
+HOST,locationhistoryaggregates-pa.googleapis.com,reject
+HOST,locationhistoryplacedetails-pa.googleapis.com,reject
+HOST-KEYWORD,bahoom,reject
+HOST-KEYWORD,-flv.meituan.net,reject
+HOST-KEYWORD,-live.meituan.net,reject
+HOST-KEYWORD,-fin.meituan.com,reject
+################## EOF ##################

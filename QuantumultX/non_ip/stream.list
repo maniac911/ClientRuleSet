@@ -1,0 +1,393 @@
+#########################################
+# Sukka's Ruleset - Stream Services: All
+# Last Updated: 2026-09-09T15:16:09.411Z
+# Size: 335
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# - 4gtv
+# - AbemaTV
+# - Amazon Prime Video
+# - All4
+# - Apple TV
+# - Apple Music TV
+# - Bahamut
+# - BBC
+# - Bilibili International
+# - Crackle
+# - DAZN
+# - Deezer
+# - Disney+
+# - Discovery+
+# - DMM
+# - encoreTVB
+# - encoreTVB JP
+# - Friday TW
+# - Fox Now
+# - Fox+
+# - HBO Go / HBO Now / HBO Max / Max
+# - HBO Asia
+# - Himalaya FM
+# - Hulu
+# - HWTV
+# - iQiYi Global
+# - ITV
+# - JOOX
+# - KKBOX
+# - KKTV
+# - Line TV
+# - MangaFox
+# - My5
+# - myTV Super
+# - Netflix
+# - Naver TV
+# - niconico
+# - NHK Plus
+# - Now E
+# - Overcast FM
+# - Paramount+
+# - PBS
+# - Peacock
+# - Pandora
+# - Pornhub
+# - Pluto TV
+# - SoundCloud
+# - SHOWTIME
+# - Spotify
+# - TaiwanGood
+# - TIDAL
+# - TikTok
+# - TVB Anywhere
+# - Twitch
+# - Tubi TV
+# - ViuTV
+# - Vudu
+# - WeTV
+# - YouTube
+# - YouTube Music
+#
+# $content-hash-v1$:WbWigfkS-k8c_fGxmOrnokcBmrwRBQWEaXSanwdJnh0$
+#########################################
+HOST-SUFFIX,iq.com,reject
+HOST-SUFFIX,kfs.io,reject
+HOST-SUFFIX,my5.tv,reject
+HOST-SUFFIX,viu.tv,reject
+HOST-SUFFIX,4gtv.tv,reject
+HOST-SUFFIX,5itv.tv,reject
+HOST-SUFFIX,dmm.com,reject
+HOST-SUFFIX,fox.com,reject
+HOST-SUFFIX,hbo.com,reject
+HOST-SUFFIX,hulu.tv,reject
+HOST-SUFFIX,hulu.us,reject
+HOST-SUFFIX,itv.com,reject
+HOST-SUFFIX,kktv.me,reject
+HOST-SUFFIX,max.com,reject
+HOST-SUFFIX,pbs.org,reject
+HOST-SUFFIX,scdn.co,reject
+HOST-SUFFIX,sho.com,reject
+HOST,tubi.tv,reject
+HOST-SUFFIX,tvb.com,reject
+HOST-SUFFIX,tver.jp,reject
+HOST-SUFFIX,viu.com,reject
+HOST-SUFFIX,abema.io,reject
+HOST-SUFFIX,abema.tv,reject
+HOST-SUFFIX,ameba.jp,reject
+HOST-SUFFIX,cbsi.com,reject
+HOST-SUFFIX,dazn.com,reject
+HOST-SUFFIX,dmc.nico,reject
+HOST-SUFFIX,hulu.com,reject
+HOST-SUFFIX,joox.com,reject
+HOST-SUFFIX,nowe.com,reject
+HOST-SUFFIX,pluto.tv,reject
+HOST-SUFFIX,pscdn.co,reject
+HOST-SUFFIX,spoti.fi,reject
+HOST,vudu.com,reject
+HOST-SUFFIX,wetv.vip,reject
+HOST-SUFFIX,ameblo.jp,reject
+HOST-SUFFIX,bbc.co.uk,reject
+HOST-SUFFIX,dmm.co.jp,reject
+HOST-SUFFIX,dnitv.com,reject
+HOST-SUFFIX,dzcdn.net,reject
+HOST-SUFFIX,hbogo.com,reject
+HOST-SUFFIX,jtvnw.net,reject
+HOST-SUFFIX,kk.stream,reject
+HOST-SUFFIX,kkbox.com,reject
+HOST-SUFFIX,kktix.com,reject
+HOST-SUFFIX,linetv.tw,reject
+HOST-SUFFIX,socdm.com,reject
+HOST-SUFFIX,tidal.com,reject
+HOST-SUFFIX,tiktok.us,reject
+HOST-SUFFIX,ttvnw.net,reject
+HOST-SUFFIX,twitch.tv,reject
+HOST-SUFFIX,bbci.co.uk,reject
+HOST-SUFFIX,dazndn.com,reject
+HOST-SUFFIX,deezer.com,reject
+HOST-SUFFIX,dssott.com,reject
+HOST-SUFFIX,fanfox.net,reject
+HOST-SUFFIX,foxdcg.com,reject
+HOST-SUFFIX,hbomax.com,reject
+HOST-SUFFIX,hbonow.com,reject
+HOST-SUFFIX,huluim.com,reject
+HOST-SUFFIX,indazn.com,reject
+HOST-SUFFIX,muscdn.com,reject
+HOST-SUFFIX,musical.ly,reject
+HOST-SUFFIX,netflix.ca,reject
+HOST-SUFFIX,nflxso.net,reject
+HOST-SUFFIX,ocnttv.com,reject
+HOST-SUFFIX,tiktok.com,reject
+HOST-SUFFIX,tiktokv.us,reject
+HOST,tubitv.com,reject
+HOST-SUFFIX,uplynk.com,reject
+HOST-SUFFIX,aiv-cdn.net,reject
+HOST-SUFFIX,amebame.com,reject
+HOST-SUFFIX,bamgrid.com,reject
+HOST-SUFFIX,bilibili.tv,reject
+HOST-SUFFIX,foxplus.com,reject
+HOST-SUFFIX,hayabusa.io,reject
+HOST-SUFFIX,hboasia.com,reject
+HOST-SUFFIX,ipstatp.com,reject
+HOST-SUFFIX,isnssdk.com,reject
+HOST-SUFFIX,kktv.com.tw,reject
+HOST-SUFFIX,mangafox.me,reject
+HOST-SUFFIX,netflix.com,reject
+HOST-SUFFIX,netflix.net,reject
+HOST-SUFFIX,nflxext.com,reject
+HOST-SUFFIX,nflximg.com,reject
+HOST-SUFFIX,nflximg.net,reject
+HOST-SUFFIX,overcast.fm,reject
+HOST-SUFFIX,pandora.com,reject
+HOST-SUFFIX,phprcdn.com,reject
+HOST-SUFFIX,pornhub.com,reject
+HOST-SUFFIX,spotify.com,reject
+HOST-SUFFIX,tiktokv.com,reject
+HOST-SUFFIX,tiktokw.com,reject
+HOST-SUFFIX,viblast.com,reject
+HOST-SUFFIX,viu.now.com,reject
+HOST,www.tubi.tv,reject
+HOST-SUFFIX,youtube.com,reject
+HOST-SUFFIX,abema-tv.com,reject
+HOST-SUFFIX,biliintl.com,reject
+HOST-SUFFIX,c4assets.com,reject
+HOST-SUFFIX,channel4.com,reject
+HOST-SUFFIX,channel5.com,reject
+HOST-SUFFIX,dazn-api.com,reject
+HOST-SUFFIX,discomax.com,reject
+HOST-SUFFIX,hayabusa.dev,reject
+HOST-SUFFIX,hbogoasia.hk,reject
+HOST-SUFFIX,hbogoasia.id,reject
+HOST-SUFFIX,hbogoasia.ph,reject
+HOST-SUFFIX,hbogoasia.sg,reject
+HOST-SUFFIX,hbogoasia.tw,reject
+HOST-SUFFIX,himalaya.com,reject
+HOST-SUFFIX,kkbox.com.tw,reject
+HOST-SUFFIX,nicovideo.jp,reject
+HOST-SUFFIX,showtime.com,reject
+HOST-SUFFIX,tv.naver.com,reject
+HOST-SUFFIX,wetvinfo.com,reject
+HOST-SUFFIX,winticket.jp,reject
+HOST-SUFFIX,amebaownd.com,reject
+HOST-SUFFIX,byspotify.com,reject
+HOST-SUFFIX,cbsivideo.com,reject
+HOST-SUFFIX,disco-api.com,reject
+HOST-SUFFIX,encoretvb.com,reject
+HOST-SUFFIX,ext-twitch.tv,reject
+HOST-SUFFIX,hbogoasia.com,reject
+HOST-SUFFIX,hbomaxcdn.com,reject
+HOST-SUFFIX,ibytedtos.com,reject
+HOST-SUFFIX,indaznlab.com,reject
+HOST-SUFFIX,mytvsuper.com,reject
+HOST-SUFFIX,nflxvideo.net,reject
+HOST-SUFFIX,peacocktv.com,reject
+HOST-SUFFIX,primevideo.cc,reject
+HOST-SUFFIX,primevideo.tv,reject
+HOST-SUFFIX,tidalhifi.com,reject
+HOST-SUFFIX,tospotify.com,reject
+HOST-SUFFIX,twitchcdn.net,reject
+HOST-SUFFIX,twitchsvc.net,reject
+HOST-SUFFIX,amazonvideo.cc,reject
+HOST-SUFFIX,applemusic.com,reject
+HOST-SUFFIX,bahamut.com.tw,reject
+HOST-SUFFIX,cbsaavideo.com,reject
+HOST-SUFFIX,disneyplus.com,reject
+HOST-SUFFIX,hayabusa.media,reject
+HOST-SUFFIX,hulustream.com,reject
+HOST-SUFFIX,intl.iqiyi.com,reject
+HOST-SUFFIX,nflxsearch.net,reject
+HOST-SUFFIX,primevideo.com,reject
+HOST-SUFFIX,primevideo.org,reject
+HOST-SUFFIX,skyking.com.tw,reject
+HOST-SUFFIX,soundcloud.com,reject
+HOST-SUFFIX,spotify.design,reject
+HOST-SUFFIX,spotifycdn.com,reject
+HOST-SUFFIX,spotifycdn.net,reject
+HOST-SUFFIX,spotilocal.com,reject
+HOST-SUFFIX,tik-tokapi.com,reject
+HOST,www.tubitv.com,reject
+HOST-SUFFIX,amazonvideo.com,reject
+HOST-SUFFIX,amebaowndme.com,reject
+HOST-SUFFIX,byteoversea.com,reject
+HOST-SUFFIX,disney-plus.net,reject
+HOST-SUFFIX,googlevideo.com,reject
+HOST-SUFFIX,kkbox-prime.com,reject
+HOST-SUFFIX,prime-video.com,reject
+HOST-SUFFIX,primevideo.info,reject
+HOST-SUFFIX,spotifyjobs.com,reject
+HOST-SUFFIX,theplatform.com,reject
+HOST,video.friday.tw,reject
+HOST-SUFFIX,withyoutube.com,reject
+HOST-SUFFIX,youtubekids.com,reject
+HOST-SUFFIX,aiv-delivery.net,reject
+HOST-SUFFIX,ani.gamer.com.tw,reject
+HOST-SUFFIX,api.gamer.com.tw,reject
+HOST,bbc.mp-pxcdn.com,reject
+HOST-SUFFIX,discoveryplus.in,reject
+HOST-SUFFIX,media-amazon.com,reject
+HOST-SUFFIX,spotifycodes.com,reject
+HOST-SUFFIX,atv-ps.amazon.com,reject
+HOST-SUFFIX,discoveryplus.com,reject
+HOST-SUFFIX,dmm-extension.com,reject
+HOST-SUFFIX,dokusho-ojikan.jp,reject
+HOST-SUFFIX,fls-na.amazon.com,reject
+HOST,ocvideo.apple.com,reject
+HOST-SUFFIX,paramountplus.com,reject
+HOST-SUFFIX,smartmediarep.com,reject
+HOST-SUFFIX,spotifycharts.com,reject
+HOST-SUFFIX,tvlicensing.co.uk,reject
+HOST-SUFFIX,youtubegaming.com,reject
+HOST,hamifans.emome.net,reject
+HOST-SUFFIX,intl-rcd.iqiyi.com,reject
+HOST-SUFFIX,pornhubpremium.com,reject
+HOST-SUFFIX,psg.cdn.hgc.com.hk,reject
+HOST-SUFFIX,spotifynewsroom.jp,reject
+HOST,ana.video.friday.tw,reject
+HOST,athome.fandango.com,reject
+HOST-SUFFIX,discoveryplus.co.uk,reject
+HOST-SUFFIX,disneystreaming.com,reject
+HOST,hbolb.onwardsmg.com,reject
+HOST,linear.tv.apple.com,reject
+HOST-SUFFIX,amazonvideodirect.cc,reject
+HOST,hls.itunes.apple.com,reject
+HOST-SUFFIX,location-plus.nhk.jp,reject
+HOST,prod-api.crackle.com,reject
+HOST-SUFFIX,spotifyforbrands.com,reject
+HOST-SUFFIX,youtube-nocookie.com,reject
+HOST-SUFFIX,youtubeeducation.com,reject
+HOST-SUFFIX,amazonprimevideos.com,reject
+HOST,cache.video.iqiyi.com,reject
+HOST,apm-misaka.biliapi.net,reject
+HOST,players.brightcove.net,reject
+HOST-SUFFIX,spotify-everywhere.com,reject
+HOST,youtube.googleapis.com,reject
+HOST,edge.api.brightcove.com,reject
+HOST,gamer-cds.cdn.hinet.net,reject
+HOST,youtubei.googleapis.com,reject
+HOST,cbsi.live.ott.irdeto.com,reject
+HOST,gamer2-cds.cdn.hinet.net,reject
+HOST,hls-amt.itunes.apple.com,reject
+HOST,np-edge.itunes.apple.com,reject
+HOST,uts-api.itunes.apple.com,reject
+HOST,cdn.registerdisney.go.com,reject
+HOST,dashasiafox.akamaized.net,reject
+HOST-SUFFIX,dcalivedazn.akamaized.net,reject
+HOST-SUFFIX,dcblivedazn.akamaized.net,reject
+HOST,manifest.prod.boltdns.net,reject
+HOST-SUFFIX,netflix.com.edgesuite.net,reject
+HOST-SUFFIX,production-public.tubi.io,reject
+HOST-SUFFIX,spotify-com.akamaized.net,reject
+HOST-SUFFIX,avodmp4s3ww-a.akamaihd.net,reject
+HOST,cbsservice.aws.syncbak.com,reject
+HOST,hbounify-prod.evergent.com,reject
+HOST,play-edge.itunes.apple.com,reject
+HOST-SUFFIX,intl-subscription.iqiyi.com,reject
+HOST,itvpnpmobile-a.akamaihd.net,reject
+HOST,staticasiafox.akamaized.net,reject
+HOST,dfp6rglgjqszk.cloudfront.net,reject
+HOST,dmqdd6hw24ucf.cloudfront.net,reject
+HOST,bcbolt446c5271-a.akamaihd.net,reject
+HOST,d151l6v8er5bdm.cloudfront.net,reject
+HOST,d184dfn36gombl.cloudfront.net,reject
+HOST,d1k2us671qcoau.cloudfront.net,reject
+HOST,d1sgwhnao7452x.cloudfront.net,reject
+HOST,d1v5ir2lpwr8os.cloudfront.net,reject
+HOST,d1xfray82862hr.cloudfront.net,reject
+HOST,d22qjgkvxw22r6.cloudfront.net,reject
+HOST,d25xi40x97liuc.cloudfront.net,reject
+HOST,d27xxe7juh1us6.cloudfront.net,reject
+HOST,d2anahhhmp1ffz.cloudfront.net,reject
+HOST,d3196yreox78o9.cloudfront.net,reject
+HOST,d349g9zuie06uo.cloudfront.net,reject
+HOST,d3c7rimkq79yfu.cloudfront.net,reject
+HOST,4gtvfreepcvod-cds.cdn.hinet.net,reject
+HOST,ds-linear-abematv.akamaized.net,reject
+HOST,cbsplaylistserver.aws.syncbak.com,reject
+HOST,akmcdnoversea-tw.inter.ptqy.gitv.tv,reject
+HOST,upos-bstar-mirrorakam.akamaized.net,reject
+HOST,upos-bstar1-mirrorakam.akamaized.net,reject
+HOST-SUFFIX,dca-ll-livedazn-dznlivejp.s.llnwi.net,reject
+HOST,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv,reject
+HOST,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,reject
+HOST-KEYWORD,avoddashs,reject
+HOST-KEYWORD,bbcfmt,reject
+HOST-KEYWORD,uk-live,reject
+HOST-KEYWORD,voddazn,reject
+HOST-KEYWORD,jooxweb-api,reject
+HOST-KEYWORD,nowtv100,reject
+HOST-KEYWORD,rthklive,reject
+HOST-KEYWORD,netflixdnstest,reject
+HOST-KEYWORD,dualstack.apiproxy-,reject
+HOST-KEYWORD,dualstack.ichnaea-web-,reject
+HOST-KEYWORD,apiproxy-device-prod-nlb-,reject
+HOST-KEYWORD,-spotify-com,reject
+HOST-KEYWORD,-tiktokcdn-com,reject
+HOST-KEYWORD,tvbanywhere,reject
+USER-AGENT,AbemaTV*,reject
+USER-AGENT,InstantVideo.US*,reject
+USER-AGENT,Prime Video*,reject
+USER-AGENT,All4*,reject
+USER-AGENT,AppleTV*,reject
+USER-AGENT,com.apple.tv*,reject
+USER-AGENT,Anime*,reject
+USER-AGENT,BBCiPlayer*,reject
+USER-AGENT,DAZN*,reject
+USER-AGENT,Deezer*,reject
+USER-AGENT,Disney+*,reject
+USER-AGENT,DPlus*,reject
+USER-AGENT,discovery+*,reject
+USER-AGENT,encoreTVB*,reject
+USER-AGENT,TVer-Release*,reject
+USER-AGENT,FOX NOW*,reject
+USER-AGENT,FOXPlus*,reject
+USER-AGENT,HBO NOW*,reject
+USER-AGENT,HBOMAX*,reject
+USER-AGENT,Himalaya*,reject
+USER-AGENT,Hulu*,reject
+USER-AGENT,HWTVMobile*,reject
+USER-AGENT,ITV_Player*,reject
+USER-AGENT,JOOX*,reject
+USER-AGENT,WeMusic*,reject
+USER-AGENT,com.kktv.ios.kktv*,reject
+USER-AGENT,KKTV*,reject
+USER-AGENT,LINE TV*,reject
+USER-AGENT,My5*,reject
+USER-AGENT,mytv*,reject
+USER-AGENT,Argo*,reject
+USER-AGENT,Naver TV*,reject
+USER-AGENT,Niconico*,reject
+USER-AGENT,Overcast*,reject
+USER-AGENT,PPlus*,reject
+USER-AGENT,PBS*,reject
+USER-AGENT,PeacockMobile*,reject
+USER-AGENT,Pandora*,reject
+USER-AGENT,SoundCloud*,reject
+USER-AGENT,*Spotify*,reject
+USER-AGENT,TaiwanGood*,reject
+USER-AGENT,TIDAL*,reject
+USER-AGENT,TikTok*,reject
+USER-AGENT,Viu*,reject
+USER-AGENT,WeTV*,reject
+USER-AGENT,com.google.ios.youtube*,reject
+USER-AGENT,YouTube*,reject
+USER-AGENT,com.google.ios.youtubemusic*,reject
+USER-AGENT,YouTubeMusic*,reject
+################## EOF ##################

@@ -1,0 +1,30 @@
+#########################################
+# Sukka's Ruleset - Apple Domains
+# Last Updated: 2026-09-09T15:16:09.709Z
+# Size: 25
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains domains of Apple, Inc.
+#
+# $content-hash-v1$:ZtcWBsW43bLw_JLYTvr6BMAoEalYNAQBrfgSIRRKrt0$
+#########################################
+HOST-SUFFIX,me.com,reject
+HOST-SUFFIX,apple.co,reject
+HOST-SUFFIX,apple.com,reject
+HOST-SUFFIX,appsto.re,reject
+HOST-SUFFIX,apple.news,reject
+HOST-SUFFIX,icloud.com,reject
+HOST-SUFFIX,itunes.com,reject
+HOST-SUFFIX,aaplimg.com,reject
+HOST-SUFFIX,appstore.com,reject
+HOST-SUFFIX,apple-dns.net,reject
+HOST-SUFFIX,cdn-apple.com,reject
+HOST-SUFFIX,apple-mapkit.com,reject
+HOST-SUFFIX,apple-cloudkit.com,reject
+HOST-SUFFIX,icloud-content.com,reject
+HOST-SUFFIX,organicfruitapps.com,reject
+HOST-SUFFIX,push-apple.com.akadns.net,reject
+IP-CIDR,17.0.0.0/8,reject
+################## EOF ##################

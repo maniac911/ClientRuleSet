@@ -1,0 +1,41 @@
+#########################################
+# Sukka's Ruleset - Reject And Drop
+# Last Updated: 2026-09-09T15:16:09.733Z
+# Size: 28
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file This file contains rules for domain should be used with REJECT-DROP policy.
+#
+# $content-hash-v1$:uL6Z_c2CsVw0DE5xM5RHvXCigdERzSkrYwwme5uVeIQ$
+#########################################
+HOST-SUFFIX,null,reject
+HOST-SUFFIX,jpush.cn,reject
+HOST-SUFFIX,jpush.io,reject
+HOST-SUFFIX,getui.com,reject
+HOST-SUFFIX,getui.net,reject
+HOST-SUFFIX,undefined,reject
+HOST-SUFFIX,gepush.com,reject
+HOST-SUFFIX,slackb.com,reject
+HOST-SUFFIX,trace.qq.com,reject
+HOST-SUFFIX,beacon.qq.com,reject
+HOST-SUFFIX,geo2.adobe.com,reject
+HOST,data.bilibili.com,reject
+HOST-SUFFIX,easytomessage.com,reject
+HOST-SUFFIX,femetrics.qagr.io,reject
+HOST,stats.grafana.org,reject
+HOST-SUFFIX,tracking.miui.com,reject
+HOST-SUFFIX,data.grammarly.com,reject
+HOST-SUFFIX,data.microsoft.com,reject
+HOST,stat.youpin.mi.com,reject
+HOST,dataflow.biliapi.com,reject
+HOST,nom.telemetrydeck.com,reject
+HOST-SUFFIX,telemetry.mozilla.org,reject
+HOST-SUFFIX,femetrics.grammarly.io,reject
+HOST-SUFFIX,tracking.intl.miui.com,reject
+HOST-SUFFIX,f-log-assistant.grammarly.io,reject
+HOST-SUFFIX,f-log-extension.grammarly.io,reject
+HOST-SUFFIX,in.applicationinsights.azure.com,reject
+HOST-WILDCARD,f-log*.grammarly.io,reject
+################## EOF ##################

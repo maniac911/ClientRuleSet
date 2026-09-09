@@ -1,0 +1,67 @@
+#########################################
+# Sukka's Ruleset - Microsoft CDN
+# Last Updated: 2026-09-09T15:16:12.192Z
+# Size: 53
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains Microsoft's domains using their China mainland CDN servers.
+#
+# This file contains data from:
+#   - https://github.com/felixonmars/dnsmasq-china-list
+#
+# $content-hash-v1$:UEX-58v6yiLewCKJ9v3CalUDecEDNiGCgE8BOp_1kos$
+#########################################
+HOST-SUFFIX,sdx.microsoft.com,reject
+HOST,res.cdn.office.net,reject
+HOST,res-1.cdn.office.net,reject
+HOST,res-2.cdn.office.net,reject
+HOST-SUFFIX,download.microsoft.com,reject
+HOST-SUFFIX,b.c2r.ts.cdn.office.net,reject
+HOST-SUFFIX,ctldl.windowsupdate.com,reject
+HOST-SUFFIX,f.c2r.ts.cdn.office.net,reject
+HOST-SUFFIX,officecdn.microsoft.com,reject
+HOST-SUFFIX,storeedge.microsoft.com,reject
+HOST-SUFFIX,download.windowsupdate.com,reject
+HOST-SUFFIX,dl.delivery.mp.microsoft.com,reject
+HOST,res-h3.public.cdn.office.net,reject
+HOST,statics.teams.cdn.office.net,reject
+HOST-SUFFIX,vz.download.prss.microsoft.com,reject
+HOST-SUFFIX,lex.download.prss.microsoft.com,reject
+HOST-SUFFIX,mbs.download.prss.microsoft.com,reject
+HOST-SUFFIX,rsm.download.prss.microsoft.com,reject
+HOST-SUFFIX,msdn.download.prss.microsoft.com,reject
+HOST-SUFFIX,myvs.download.prss.microsoft.com,reject
+HOST-SUFFIX,volic.download.prss.microsoft.com,reject
+HOST-SUFFIX,lexuat.download.prss.microsoft.com,reject
+HOST-SUFFIX,oemsoc.download.prss.microsoft.com,reject
+HOST-SUFFIX,vscode.download.prss.microsoft.com,reject
+HOST-SUFFIX,windbg.download.prss.microsoft.com,reject
+HOST-SUFFIX,download.visualstudio.microsoft.com,reject
+HOST-SUFFIX,surface.download.prss.microsoft.com,reject
+HOST-SUFFIX,cbdstest.download.prss.microsoft.com,reject
+HOST-SUFFIX,software.download.prss.microsoft.com,reject
+HOST-SUFFIX,surface.downloads.prss.microsoft.com,reject
+HOST-SUFFIX,vlportal.download.prss.microsoft.com,reject
+HOST-SUFFIX,itacademy.download.prss.microsoft.com,reject
+HOST-SUFFIX,msproduct.download.prss.microsoft.com,reject
+HOST-SUFFIX,oemsocuat.download.prss.microsoft.com,reject
+HOST-SUFFIX,officemkt.download.prss.microsoft.com,reject
+HOST-SUFFIX,osrelease.download.prss.microsoft.com,reject
+HOST-SUFFIX,dreamspark.download.prss.microsoft.com,reject
+HOST-SUFFIX,msdprod-ad.download.prss.microsoft.com,reject
+HOST-SUFFIX,collaborate.download.prss.microsoft.com,reject
+HOST-SUFFIX,mpnbenefits.download.prss.microsoft.com,reject
+HOST-SUFFIX,azuremigrate.download.prss.microsoft.com,reject
+HOST-SUFFIX,itacademyuat.download.prss.microsoft.com,reject
+HOST-SUFFIX,officemktuat.download.prss.microsoft.com,reject
+HOST-SUFFIX,azurestackhub.download.prss.microsoft.com,reject
+HOST-SUFFIX,dreamsparkuat.download.prss.microsoft.com,reject
+HOST-SUFFIX,collaborateppe.download.prss.microsoft.com,reject
+HOST-SUFFIX,mpnbenefitsrtl.download.prss.microsoft.com,reject
+HOST-SUFFIX,azuremigratetest.download.prss.microsoft.com,reject
+HOST-SUFFIX,azurestackhubuat.download.prss.microsoft.com,reject
+HOST-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com,reject
+HOST-SUFFIX,storecorefulfillment.download.prss.microsoft.com,reject
+################## EOF ##################

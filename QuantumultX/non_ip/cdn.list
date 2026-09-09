@@ -1,0 +1,96 @@
+#########################################
+# Sukka's Ruleset - CDN Domains
+# Last Updated: 2026-09-09T15:16:09.710Z
+# Size: 83
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains object storage and static assets CDN domains.
+#
+# $content-hash-v1$:0nwDT0mEDqKIpBGvGsDqUJG0R-8o4VKvME9fsjH0_r4$
+#########################################
+HOST,cdn-msp.jmcomic.me,reject
+HOST,cdn-msp.18comic.org,reject
+HOST,cdn-msp.18comic.vip,reject
+HOST,cdn-msp.jmcomic-zzz.one,reject
+HOST-KEYWORD,-files.gitbook.io,reject
+HOST-KEYWORD,vod-adaptive.akamaized.net,reject
+HOST-KEYWORD,web-assets.zendesk,reject
+HOST-KEYWORD,-res.cloudinary.com,reject
+HOST-KEYWORD,dsn.algolia.net,reject
+HOST-KEYWORD,-thumbs.pornhost.com,reject
+HOST-KEYWORD,-cdn.eporner.com,reject
+HOST-KEYWORD,cdn.adultempire.com,reject
+HOST-KEYWORD,-assets.dmm.co.jp,reject
+HOST-KEYWORD,static.trustpilot.com,reject
+HOST-KEYWORD,scripts.trustpilot.com,reject
+HOST-KEYWORD,images.trustpilot.com,reject
+HOST-KEYWORD,cdn.trustpilot.net,reject
+HOST-KEYWORD,assets.trustpilot.net,reject
+HOST-KEYWORD,images.trustpilot.net,reject
+HOST-KEYWORD,-assets.worldsex.com,reject
+HOST-KEYWORD,-thumbs.worldsex.com,reject
+HOST-KEYWORD,99avcdn,reject
+HOST-KEYWORD,-images.disco-api.com,reject
+HOST-KEYWORD,static.grammarly.com,reject
+HOST-WILDCARD,cdn.*.office.net,reject
+HOST-WILDCARD,cdn.*.microsoft.com,reject
+HOST-WILDCARD,cdn-*.microsoft.com,reject
+HOST-WILDCARD,appcenter-filemanagement-*.cloudapp.net,reject
+HOST-WILDCARD,proxy-*.dailymotion.com,reject
+HOST-WILDCARD,static?.tgstat.ru,reject
+HOST-WILDCARD,static??.tgstat.ru,reject
+HOST-WILDCARD,ocsp.*.amazontrust.com,reject
+HOST-WILDCARD,s3.*.wasabisys.com,reject
+HOST-WILDCARD,object-storage-*.vexxhost.net,reject
+HOST-WILDCARD,i?.nhentai.net,reject
+HOST-WILDCARD,t?.nhentai.net,reject
+HOST-WILDCARD,cdn?-dl.pornhost.com,reject
+HOST-WILDCARD,cdn-msp?.18comic.vip,reject
+HOST-WILDCARD,cdn-msp?.jmcomic.me,reject
+HOST-WILDCARD,cdn-msp?.jmcomic-zzz.one,reject
+HOST-WILDCARD,cdn-msp?.18comic.org,reject
+HOST-WILDCARD,file?.mikuclub.fun,reject
+HOST-WILDCARD,cdn?.mikuclub.fun,reject
+HOST-WILDCARD,assets*.freshdesk.com,reject
+HOST-WILDCARD,cdns.*.gigya.com,reject
+HOST-WILDCARD,sdk.*.braze.eu,reject
+HOST-WILDCARD,img?.porngo.com,reject
+HOST-WILDCARD,img??.porngo.com,reject
+HOST-WILDCARD,th-*.pornone.com,reject
+HOST-WILDCARD,s???.pornone.com,reject
+HOST-WILDCARD,*-intake-*-datadoghq.com,reject
+HOST-WILDCARD,*-intake.*.datadoghq.com,reject
+HOST-WILDCARD,video-thumbnail2.fc2.com,reject
+HOST-WILDCARD,video?-thumbnail?.fc2.com,reject
+HOST-WILDCARD,video-thumbnail?.liaoningmovie.net,reject
+HOST-WILDCARD,video?-thumbnail?.liaoningmovie.net,reject
+HOST-WILDCARD,vip-videoprem*-thumbnail?.fc2.com,reject
+HOST-WILDCARD,blog-imgs-??.2nt.com,reject
+HOST-WILDCARD,blog-imgs-??.fc2.com,reject
+HOST-WILDCARD,rr?---??.ouo.si,reject
+HOST-WILDCARD,s3-*.figma.com,reject
+HOST-WILDCARD,cdn.*.dmm.co.jp,reject
+HOST-WILDCARD,*.kuaikan-cdn?.com,reject
+HOST-WILDCARD,*.fsvod?.com,reject
+HOST-WILDCARD,image*.cloudokyo.cloud,reject
+HOST-WILDCARD,video*.cloudokyo.cloud,reject
+HOST-WILDCARD,v.rn???.xyz,reject
+HOST-WILDCARD,s?.maxstream.org,reject
+HOST-WILDCARD,s??.maxstream.org,reject
+HOST-WILDCARD,stream?.kissjav.com,reject
+HOST-WILDCARD,stream??.kissjav.com,reject
+HOST-WILDCARD,chunk-*.mux.com,reject
+HOST-WILDCARD,*.skyearth?.xyz,reject
+HOST-WILDCARD,*.img.*.sendibm?.com,reject
+HOST-WILDCARD,cdn?.18girlssex.com,reject
+HOST-WILDCARD,uploads-*.insided.com,reject
+HOST-WILDCARD,img-*.now.com,reject
+HOST-WILDCARD,assets.*.imaga.co,reject
+HOST-WILDCARD,cdn*.pigav.com,reject
+HOST-WILDCARD,fastly-*.allmovie.com,reject
+HOST-WILDCARD,cdn*.porn87.com,reject
+HOST-WILDCARD,cdn*.pornhost.com,reject
+HOST-WILDCARD,cdn*.boysfood.com,reject
+################## EOF ##################

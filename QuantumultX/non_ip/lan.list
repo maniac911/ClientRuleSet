@@ -1,0 +1,62 @@
+#########################################
+# Sukka's Ruleset - LAN
+# Last Updated: 2026-09-09T15:16:09.795Z
+# Size: 49
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file includes rules for LAN DOMAIN and reserved TLDs.
+#
+# $content-hash-v1$:oVxxxuOjFFj91XjBUiM_v9bCjUUJGpv8av08Dh0xBco$
+#########################################
+HOST-SUFFIX,lan,reject
+HOST-SUFFIX,home,reject
+HOST-SUFFIX,local,reject
+HOST,unifi,reject
+HOST-SUFFIX,router,reject
+HOST,pi.hole,reject
+HOST,aterm.me,reject
+HOST-SUFFIX,internal,reject
+HOST-SUFFIX,home.arpa,reject
+HOST,ntt.setup,reject
+HOST-SUFFIX,ui.direct,reject
+HOST-SUFFIX,tplogin.cn,reject
+HOST-SUFFIX,localdomain,reject
+HOST-SUFFIX,plex.direct,reject
+HOST-SUFFIX,tplinkap.net,reject
+HOST-SUFFIX,asusrouter.com,reject
+HOST,homerouter.cpe,reject
+HOST,mobile.hotspot,reject
+HOST-SUFFIX,tplinkwifi.net,reject
+HOST-SUFFIX,10.in-addr.arpa,reject
+HOST,router.asus.com,reject
+HOST-SUFFIX,routerlogin.com,reject
+HOST-SUFFIX,routerlogin.net,reject
+HOST-SUFFIX,tplinkmodem.net,reject
+HOST,repeater.asus.com,reject
+HOST-SUFFIX,tplinkplclogin.net,reject
+HOST-SUFFIX,tplinkrepeater.net,reject
+HOST-SUFFIX,16.172.in-addr.arpa,reject
+HOST-SUFFIX,17.172.in-addr.arpa,reject
+HOST-SUFFIX,18.172.in-addr.arpa,reject
+HOST-SUFFIX,19.172.in-addr.arpa,reject
+HOST-SUFFIX,20.172.in-addr.arpa,reject
+HOST-SUFFIX,21.172.in-addr.arpa,reject
+HOST-SUFFIX,22.172.in-addr.arpa,reject
+HOST-SUFFIX,23.172.in-addr.arpa,reject
+HOST-SUFFIX,24.172.in-addr.arpa,reject
+HOST-SUFFIX,25.172.in-addr.arpa,reject
+HOST-SUFFIX,26.172.in-addr.arpa,reject
+HOST-SUFFIX,27.172.in-addr.arpa,reject
+HOST-SUFFIX,28.172.in-addr.arpa,reject
+HOST-SUFFIX,29.172.in-addr.arpa,reject
+HOST-SUFFIX,30.172.in-addr.arpa,reject
+HOST-SUFFIX,31.172.in-addr.arpa,reject
+HOST,console.gl-inet.com,reject
+HOST-SUFFIX,168.192.in-addr.arpa,reject
+HOST-SUFFIX,254.169.in-addr.arpa,reject
+HOST-SUFFIX,huaweimobilewifi.com,reject
+HOST,instant.arubanetworks.com,reject
+HOST,setmeup.arubanetworks.com,reject
+################## EOF ##################

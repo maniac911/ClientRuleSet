@@ -1,0 +1,22 @@
+#########################################
+# Sukka's Ruleset - Apple China Special Domains
+# Last Updated: 2026-09-09T15:16:09.707Z
+# Size: 9
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains domains of Apple, Inc that have host service specific for the Mainland China.
+#
+# $content-hash-v1$:Ukyj03Cscuc3rHy8G2E6Tw6BNyuiuC9iO6XId1uyrVc$
+#########################################
+HOST-SUFFIX,apple.com.cn,reject
+HOST-SUFFIX,cn.apple.com,reject
+HOST-SUFFIX,icloud.com.cn,reject
+HOST-SUFFIX,cn.ls.apple.com,reject
+HOST,api.smoot.apple.cn,reject
+HOST-SUFFIX,cn-ssl.ls.apple.com,reject
+HOST,gs-loc-cn.apple.com,reject
+HOST-SUFFIX,gspe19-cn-ssl.ls.apple.com,reject
+HOST,appleintelligencefeedback.care.apple.com,reject
+################## EOF ##################

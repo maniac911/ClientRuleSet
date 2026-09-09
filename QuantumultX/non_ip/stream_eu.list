@@ -1,0 +1,24 @@
+#########################################
+# Sukka's Ruleset - Stream Services: Europe
+# Last Updated: 2026-09-09T15:16:09.412Z
+# Size: 10
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# - ITV
+# - BBC
+#
+# $content-hash-v1$:P4nCg1T_al-6DyeMWgLDQG0H6JJIN8a00V3PYopnEuU$
+#########################################
+HOST-SUFFIX,itv.com,reject
+HOST-SUFFIX,bbc.co.uk,reject
+HOST-SUFFIX,bbci.co.uk,reject
+HOST,bbc.mp-pxcdn.com,reject
+HOST-SUFFIX,tvlicensing.co.uk,reject
+HOST,itvpnpmobile-a.akamaihd.net,reject
+HOST-KEYWORD,bbcfmt,reject
+HOST-KEYWORD,uk-live,reject
+USER-AGENT,ITV_Player*,reject
+USER-AGENT,BBCiPlayer*,reject
+################## EOF ##################

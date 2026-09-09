@@ -1,0 +1,45 @@
+#########################################
+# Sukka's Ruleset - Stream Services: Japan
+# Last Updated: 2026-09-09T15:16:09.413Z
+# Size: 27
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# - DMM
+# - AbemaTV
+# - niconico
+# - Hulu Japan
+# - encoreTVB JP
+# - NHK Plus
+#
+# $content-hash-v1$:VRM0Q97bMDkuJohkeBsKSKC__NuZ7c-lAtiOce1F8qU$
+#########################################
+HOST-SUFFIX,dmm.com,reject
+HOST-SUFFIX,hulu.jp,reject
+HOST-SUFFIX,tver.jp,reject
+HOST-SUFFIX,abema.io,reject
+HOST-SUFFIX,abema.tv,reject
+HOST-SUFFIX,ameba.jp,reject
+HOST-SUFFIX,dmc.nico,reject
+HOST-SUFFIX,ameblo.jp,reject
+HOST-SUFFIX,dmm.co.jp,reject
+HOST-SUFFIX,socdm.com,reject
+HOST-SUFFIX,happyon.jp,reject
+HOST-SUFFIX,amebame.com,reject
+HOST-SUFFIX,hayabusa.io,reject
+HOST-SUFFIX,abema-tv.com,reject
+HOST-SUFFIX,hayabusa.dev,reject
+HOST-SUFFIX,nicovideo.jp,reject
+HOST-SUFFIX,winticket.jp,reject
+HOST-SUFFIX,amebaownd.com,reject
+HOST-SUFFIX,hjholdings.jp,reject
+HOST-SUFFIX,hayabusa.media,reject
+HOST-SUFFIX,amebaowndme.com,reject
+HOST-SUFFIX,dmm-extension.com,reject
+HOST-SUFFIX,dokusho-ojikan.jp,reject
+HOST-SUFFIX,location-plus.nhk.jp,reject
+HOST,ds-linear-abematv.akamaized.net,reject
+USER-AGENT,AbemaTV*,reject
+USER-AGENT,Niconico*,reject
+################## EOF ##################

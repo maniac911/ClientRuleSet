@@ -1,0 +1,23 @@
+#########################################
+# Sukka's Ruleset - Apple IP
+# Last Updated: 2026-09-09T15:16:09.760Z
+# Size: 10
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains IPs owned/used by Apple, Inc.
+#
+# $content-hash-v1$:dorVEo7E7kC0mx2-OeiFUyuEmTE9y_Afx6y_-tJevJo$
+#########################################
+IP-CIDR,17.0.0.0/8,reject
+IP-CIDR,63.92.224.0/19,reject
+IP-CIDR,65.199.22.0/23,reject
+IP-CIDR,139.178.128.0/18,reject
+IP-CIDR,144.178.0.0/19,reject
+IP-CIDR,144.178.36.0/22,reject
+IP-CIDR,144.178.48.0/20,reject
+IP-CIDR,192.35.50.0/24,reject
+IP-CIDR,198.183.17.0/24,reject
+IP-CIDR,205.180.175.0/24,reject
+################## EOF ##################

@@ -1,0 +1,24 @@
+#########################################
+# Sukka's Ruleset - TW
+# Last Updated: 2026-09-09T15:16:09.729Z
+# Size: 13
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# $content-hash-v1$:CeopiQb5UzPYvcb_R2LIBJZ0sd5ml3fe2X6X5Eg3ghE$
+#########################################
+HOST,javdb.com,reject
+HOST,mhgui.com,reject
+HOST,avbebe.com,reject
+HOST,hanime1.me,reject
+HOST,yymanhua.com,reject
+HOST-SUFFIX,cdn.hinet.net,reject
+HOST,av.jkforum.net,reject
+HOST,www.yymanhua.com,reject
+HOST,www.manhuagui.com,reject
+HOST-WILDCARD,*.ffzy-online?.com,reject
+HOST-WILDCARD,*.ffzy-play?.com,reject
+HOST-WILDCARD,*.lz-cdn?.com,reject
+HOST-WILDCARD,*.lz-cdn??.com,reject
+################## EOF ##################

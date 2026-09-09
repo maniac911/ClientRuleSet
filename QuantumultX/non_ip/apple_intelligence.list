@@ -1,0 +1,18 @@
+#########################################
+# Sukka's Ruleset - Apple Intelligence
+# Last Updated: 2026-09-09T15:16:09.708Z
+# Size: 5
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains domains of OpenAI, Claude.
+#
+# $content-hash-v1$:aLMAeLIJsea-W1cQ4sGokQh5jqMtLNa0gCtqeFd0FjM$
+#########################################
+HOST,cp4.cloudflare.com,reject
+HOST,apple-relay.apple.com,reject
+HOST,gspe1-ssl.ls.apple.com,reject
+HOST,apple-relay.cloudflare.com,reject
+HOST,apple-relay.fastly-edge.com,reject
+################## EOF ##################

@@ -1,0 +1,57 @@
+#########################################
+# Sukka's Ruleset - Reject No Drop
+# Last Updated: 2026-09-09T15:16:09.735Z
+# Size: 45
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file This file contains rules for domain should be used with REJECT-NO-DROP policy.
+#
+# $content-hash-v1$:Zw0Fx1Sas4aip9GJ8pFP_n8CL7dGdJADg4ZJoOYuR48$
+#########################################
+HOST-SUFFIX,bvmlt.top,reject
+HOST-SUFFIX,gjfzpt.cn,reject
+HOST-SUFFIX,p2cdn.com,reject
+HOST-SUFFIX,uhabo.com,reject
+HOST-SUFFIX,xycdn.com,reject
+HOST-SUFFIX,yfcdn.net,reject
+HOST-SUFFIX,yfp2p.net,reject
+HOST-SUFFIX,bsccdn.net,reject
+HOST-SUFFIX,p2p.qq.com,reject
+HOST-SUFFIX,ppio.cloud,reject
+HOST-SUFFIX,szbdyd.com,reject
+HOST-SUFFIX,saxysec.com,reject
+HOST-SUFFIX,yfcloud.com,reject
+HOST-SUFFIX,kuiniuca.com,reject
+HOST-SUFFIX,p2p.huya.com,reject
+HOST-SUFFIX,pkoplink.com,reject
+HOST-SUFFIX,cdnnodedns.cn,reject
+HOST-SUFFIX,p2ptun.qq.com,reject
+HOST-SUFFIX,tianwenca.com,reject
+HOST-SUFFIX,mountaintoys.cn,reject
+HOST-SUFFIX,nexusedgeio.com,reject
+HOST-SUFFIX,onethingpcs.com,reject
+HOST-SUFFIX,pcdn.yximgs.com,reject
+HOST-SUFFIX,ietheivaicai.com,reject
+HOST,stun.douyucdn.cn,reject
+HOST-SUFFIX,mcdn.bilivideo.cn,reject
+HOST,stun1.douyucdn.cn,reject
+HOST-SUFFIX,p2plog.douyucdn.cn,reject
+HOST-SUFFIX,p2perrorlog.douyucdn.cn,reject
+HOST-SUFFIX,p2pupdate.gamedl.qq.com,reject
+HOST-SUFFIX,p2pupgrade.gamedl.qq.com,reject
+HOST,livewebbs2pcdn.msstatic.com,reject
+HOST,qn-cdnfile1pcdn.msstatic.com,reject
+HOST,upos-sz-302kodo.bilivideo.com,reject
+HOST,upos-sz-302ppio.bilivideo.com,reject
+HOST-KEYWORD,-p2p.pull.yximgs.com,reject
+HOST-KEYWORD,-p2p-v2.pull.yximgs.com,reject
+HOST-WILDCARD,p2p*.qq.com,reject
+HOST-WILDCARD,p2p-*.douyucdn.cn,reject
+HOST-WILDCARD,p2pchunk-*.douyucdn.cn,reject
+HOST-WILDCARD,dyp2p-*.douyucdn.cn,reject
+HOST-WILDCARD,p2plive-*.douyucdn.cn,reject
+HOST-WILDCARD,stun*.douyucdn.cn,reject
+HOST-WILDCARD,upos-sz-302*.bilivideo.com,reject
+################## EOF ##################

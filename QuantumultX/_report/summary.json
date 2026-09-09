@@ -1,0 +1,32 @@
+{
+  "source": "Sukka FileOutput universal rule model",
+  "policy_placeholder": "reject",
+  "generated_files": 61,
+  "emitted_rules": 374340,
+  "emitted_by_type": {
+    "HOST": 9641,
+    "HOST-KEYWORD": 211,
+    "HOST-SUFFIX": 363372,
+    "HOST-WILDCARD": 96,
+    "IP-ASN": 20,
+    "IP-CIDR": 897,
+    "IP6-CIDR": 25,
+    "USER-AGENT": 78
+  },
+  "unsupported_rules": 304,
+  "unsupported_by_type": {
+    "#": 4,
+    "AND": 42,
+    "DST-PORT": 1,
+    "PROCESS-NAME": 74,
+    "URL-REGEX": 183
+  },
+  "experimental": {
+    "port_rules_enabled": false,
+    "port_rules_emitted": 0
+  },
+  "notes": [
+    "Sukka no-resolve modifiers are omitted because this Quantumult X payload format does not preserve that modifier.",
+    "PROCESS-NAME, PROCESS-PATH, URL-REGEX, SRC-IP and PROTOCOL are not guessed or rewritten into different semantics."
+  ]
+}
