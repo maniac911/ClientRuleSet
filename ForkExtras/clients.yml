@@ -2,6 +2,10 @@ version: 1
 
 # Add or remove client outputs here. An enabled client loads
 # ForkExtras/Clients/adapters/<adapter>.cjs automatically.
+#
+# native_writer enables a build-time hook that injects a fork-only writer into
+# Sukka's universal FileOutput fanout inside the Actions runner. The upstream
+# Build/ tree in git remains unchanged.
 clients:
   surge:
     enabled: true
@@ -23,6 +27,7 @@ clients:
   shadowrocket:
     enabled: true
     adapter: shadowrocket
+    native_writer: shadowrocket
     output: Shadowrocket
 
   quantumultx:
