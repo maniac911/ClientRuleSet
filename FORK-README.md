@@ -1,32 +1,27 @@
-# maniac911/Surge full rules mirror
+# maniac911/ClientRuleSet generated rules
 
-This branch is an automatic full mirror of Sukka's official generated
-rule output repository, plus binary formats generated for this fork.
+This branch is built automatically from this fork's current `master`
+after synchronizing `SukkaW/Surge` into the fork.
 
-- Upstream output commit: `52e5d2ba600f467ea22a4984bffe4ab72e4f8d34`
+- Fork source commit: `4fb39c9d137bb09f060448fe670333aab9b3bc37`
+- Upstream source: `SukkaW/Surge`
 - sing-box SRS compiler: `ghcr.io/sagernet/sing-box:v1.14.0-rc.4`
 - Mihomo MRS compiler: `docker.io/metacubex/mihomo:v1.19.30`
 
-## Mirrored upstream outputs
+## Build flow
 
-Everything published by SukkaLab/ruleset.skk.moe is mirrored here,
-including current and future output directories. Current examples include:
+`SukkaW/Surge -> sync to fork master -> pnpm build -> client Release selection -> rules-dist`
 
-- `List/` — Surge
-- `Clash/` — Mihomo / Clash-compatible clients
-- `LegacyClashPremium/` — legacy Clash Premium
-- `Surfboard/` — Surfboard for Android
-- `sing-box/` — sing-box source-format Headless Rules
-- `Modules/` — Surge modules and related generated content
+Fork-only source rules can live under `ForkExtras/Source/`. During the
+workflow they are overlaid onto `Source/` only inside the runner, so
+the upstream source tree remains easy to synchronize.
 
-## Extra binary outputs
+## Published layout
 
-- `SRS/domainset/*.srs`
-- `SRS/non_ip/*.srs`
-- `SRS/ip/*.srs`
-- `MRS/domainset/*.mrs`
-- `MRS/ipcidr/china_ip*.mrs`
-
-Mihomo classical/mixed rules remain available as the mirrored text files
-under `Clash/non_ip/` and `Clash/ip/` because MRS does not represent
-classical rule behavior.
+- `Surge/` — Surge rules (upstream Build internally calls this `List/`).
+- `Surge/Modules/` — Surge modules and their auxiliary rule files.
+- `Clash/domainset/`, `Clash/non_ip/`, `Clash/ip/` — full generated Mihomo/Clash text outputs.
+- `Clash/Release/` — ready-to-use Clash/Mihomo release rules: convertible rules are MRS, non-convertible rules are copied as text.
+- `sing-box/domainset/`, `sing-box/non_ip/`, `sing-box/ip/` — full generated sing-box JSON outputs.
+- `sing-box/Release/` — ready-to-use sing-box release rules: JSON is compiled to SRS when possible, otherwise copied as JSON.
+- `LegacyClashPremium/`, `Surfboard/` and related generated files — other upstream outputs.
