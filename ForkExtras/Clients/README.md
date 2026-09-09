@@ -123,4 +123,37 @@ https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Hiddify/non
 
 The outbound action is selected in Hiddify's routing rule; it is not embedded in the SRS file.
 
-Current adapters: Surge, Clash/Mihomo, sing-box, Hiddify, Shadowrocket, Quantumult X, Stash, Loon, Egern, plus passthrough for upstream-native outputs.
+## Xray / v2rayN
+
+Xray is split into two outputs because current v2rayN exposes only a subset of Xray routing fields through its `RulesItem` import model.
+
+```text
+Sukka FileOutput
+      -> Xray intermediate
+      -> Xray/v2rayN/**   (v2rayN RulesItem JSON)
+      -> Xray/native/**   (native Xray routing fragments)
+```
+
+`Xray/v2rayN/**` is intended for v2rayN's Routing Rule import from File / Clipboard / URL. It preserves the fields v2rayN exposes directly: domain, IP, destination port, network, protocol and exact process rules.
+
+`Xray/native/**` preserves additional Xray capabilities such as `sourceIP` and `sourcePort`. USER-AGENT patterns are mapped to Xray `attrs["user-agent"]` regular expressions; this depends on Xray HTTP attribute/sniffing behavior and is therefore documented separately from v2rayN's RulesItem import.
+
+Native files are routing fragments shaped as:
+
+```json
+{
+  "routing": {
+    "rules": []
+  }
+}
+```
+
+They are not standalone runnable Xray configs. Merge the routing section into a complete Xray config with inbounds/outbounds, including when building a v2rayN Custom Xray profile.
+
+Example v2rayN rule-import URL:
+
+```text
+https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Xray/v2rayN/non_ip/ai.json
+```
+
+Current adapters: Surge, Clash/Mihomo, sing-box, Hiddify, Shadowrocket, Quantumult X, Stash, Loon, Egern, Xray/v2rayN, Xray native, plus passthrough for upstream-native outputs.

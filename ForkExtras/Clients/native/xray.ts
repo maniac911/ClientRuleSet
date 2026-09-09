@@ -36,6 +36,9 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
   private readonly ports = new Set<string>();
   private readonly networks = new Set<string>();
   private readonly protocols = new Set<string>();
+  private readonly sourceIps = new Set<string>();
+  private readonly sourcePorts = new Set<string>();
+  private readonly userAgents = new Set<string>();
   private readonly unsupported: AuditItem[] = [];
   private readonly warnings: AuditItem[] = [];
 
@@ -68,7 +71,7 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     if (/[*?]/u.test(trimmed)) {
       this.addUnsupported(
         `${type},${trimmed}`,
-        'Xray process routing uses exact name/path matching; v2rayN import has no process glob field.'
+        'Xray process routing supports exact process name/path/folder matching, not shell-style globs.'
       );
       return;
     }
@@ -88,7 +91,7 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     }
     this.addUnsupported(
       `${sourceType},${value}`,
-      'No lossless v2rayN/Xray routing mapping is enabled for this protocol value.'
+      'No lossless Xray routing mapping is enabled for this protocol value.'
     );
   }
 
@@ -100,7 +103,7 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     if (noResolve) {
       this.addWarning(
         `${type},${trimmed},no-resolve`,
-        'v2rayN/Xray has no per-rule no-resolve flag; behavior depends on the routing domainStrategy.'
+        'Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.'
       );
     }
   }
@@ -137,40 +140,24 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
       case 'PROCESS-PATH': this.addProcess('PROCESS-PATH', value); return;
       case 'DEST-PORT':
       case 'DST-PORT': this.add(this.ports, 'port', value); return;
+      case 'SRC-IP': this.add(this.sourceIps, 'sourceIP', value); return;
+      case 'SRC-PORT': this.add(this.sourcePorts, 'sourcePort', value); return;
+      case 'USER-AGENT': this.add(this.userAgents, 'userAgent', globToRegexp(value)); return;
       case 'PROTOCOL':
       case 'NETWORK': this.addProtocol(value, type); return;
-      case 'USER-AGENT':
       case 'URL-REGEX':
-        this.addUnsupported(
-          trimmed,
-          'v2rayN RulesItem does not expose Xray attrs, so this match cannot be imported losslessly.'
-        );
-        return;
-      case 'SRC-IP':
-        this.addUnsupported(
-          trimmed,
-          'Xray Core supports sourceIP, but the current v2rayN RulesItem import schema does not expose it.'
-        );
-        return;
-      case 'SRC-PORT':
-        this.addUnsupported(
-          trimmed,
-          'Xray Core supports sourcePort, but the current v2rayN RulesItem import schema does not expose it.'
-        );
+        this.addUnsupported(trimmed, 'Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.');
         return;
       case 'IP-ASN':
-        this.addUnsupported(trimmed, 'Xray routing has no native IP-ASN rule field in the current target schema.');
+        this.addUnsupported(trimmed, 'Xray routing has no native IP-ASN rule field.');
         return;
       case 'AND':
       case 'OR':
       case 'NOT':
-        this.addUnsupported(
-          trimmed,
-          'v2rayN import RulesItem cannot preserve this source logical expression without changing matching semantics.'
-        );
+        this.addUnsupported(trimmed, 'Compound source expressions are not flattened because that could change matching semantics.');
         return;
       default:
-        this.addUnsupported(trimmed, 'No lossless v2rayN/Xray mapping is enabled for this source rule type.');
+        this.addUnsupported(trimmed, 'No lossless Xray mapping is enabled for this source rule type.');
     }
   }
 
@@ -183,12 +170,7 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     this.add(this.domains, 'domain', `regexp:${globToRegexp(value)}`);
   }
   writeUserAgents(values: Set<string>): void {
-    for (const value of values) {
-      this.addUnsupported(
-        `USER-AGENT,${value}`,
-        'v2rayN RulesItem does not expose Xray attrs, so User-Agent matching is not imported.'
-      );
-    }
+    for (const value of values) this.add(this.userAgents, 'userAgent', globToRegexp(value));
   }
   writeProcessNames(values: Set<string>): void {
     for (const value of values) this.addProcess('PROCESS-NAME', value);
@@ -200,7 +182,7 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     for (const value of values) {
       this.addUnsupported(
         `URL-REGEX,${value}`,
-        'v2rayN RulesItem does not expose Xray attrs/URL matching.'
+        'Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.'
       );
     }
   }
@@ -214,25 +196,13 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     for (const value of values) this.addIp('GEOIP', value, noResolve);
   }
   writeIpAsns(values: Set<string>, _noResolve: boolean): void {
-    for (const value of values) {
-      this.addUnsupported(`IP-ASN,${value}`, 'Xray routing has no native IP-ASN rule field in the current target schema.');
-    }
+    for (const value of values) this.addUnsupported(`IP-ASN,${value}`, 'Xray routing has no native IP-ASN rule field.');
   }
   writeSourceIpCidrs(values: string[]): void {
-    for (const value of values) {
-      this.addUnsupported(
-        `SRC-IP,${value}`,
-        'Xray Core supports sourceIP, but the current v2rayN RulesItem import schema does not expose it.'
-      );
-    }
+    for (const value of values) this.add(this.sourceIps, 'sourceIP', value);
   }
   writeSourcePorts(values: Set<string>): void {
-    for (const value of values) {
-      this.addUnsupported(
-        `SRC-PORT,${value}`,
-        'Xray Core supports sourcePort, but the current v2rayN RulesItem import schema does not expose it.'
-      );
-    }
+    for (const value of values) this.add(this.sourcePorts, 'sourcePort', value);
   }
   writeDestinationPorts(values: Set<string>): void {
     for (const value of values) this.add(this.ports, 'port', value);
@@ -252,7 +222,7 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
     _contentHash: string | null
   ): string[] {
     return JSON.stringify({
-      version: 1,
+      version: 2,
       category: this.type,
       domains: [...this.domains],
       ips: [...this.ips],
@@ -260,6 +230,9 @@ abstract class XrayBaseStrategy extends BaseWriteStrategy {
       ports: [...this.ports],
       networks: [...this.networks],
       protocols: [...this.protocols],
+      sourceIps: [...this.sourceIps],
+      sourcePorts: [...this.sourcePorts],
+      userAgents: [...this.userAgents],
       unsupported: this.unsupported,
       warnings: this.warnings
     }, null, 2).split('\n');

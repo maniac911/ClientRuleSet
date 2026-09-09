@@ -70,8 +70,8 @@ clients:
     adapter: xray
     native_writer: xray
     output: Xray
-    # v2rayN's normal proxy outbound tag. Change this only if your imported
-    # routing profile uses a different outbound tag.
+    # Used by both Xray/v2rayN RulesItem files and Xray/native routing fragments.
+    # Change it if the target profile/config uses another outbound tag.
     outbound_tag: proxy
 
   surfboard:
