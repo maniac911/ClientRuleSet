@@ -48,6 +48,12 @@ clients:
     native_writer: stash
     output: Stash
 
+  loon:
+    enabled: true
+    adapter: loon
+    native_writer: loon
+    output: Loon
+
   surfboard:
     enabled: true
     adapter: passthrough
