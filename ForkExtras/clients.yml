@@ -24,6 +24,11 @@ clients:
     output: sing-box
     release: true
 
+  hiddify:
+    enabled: true
+    adapter: hiddify
+    output: Hiddify
+
   shadowrocket:
     enabled: true
     adapter: shadowrocket

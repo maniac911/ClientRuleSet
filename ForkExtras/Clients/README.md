@@ -78,4 +78,24 @@ Loon applies the policy outside the downloaded subscription list, for example:
 https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Loon/non_ip/ai.list, PROXY
 ```
 
-Current adapters: Surge, Clash/Mihomo, sing-box, Shadowrocket, Quantumult X, Stash, Loon, plus passthrough for upstream-native outputs.
+## Hiddify
+
+Hiddify does not need another text-rule dialect. Hiddify Core is built on sing-box routing and uses remote binary rule sets, so this adapter compiles Sukka's existing sing-box headless rule-set JSON directly to SRS:
+
+```text
+Sukka sing-box source JSON
+      -> sing-box rule-set compile
+      -> Hiddify/*.srs
+```
+
+The output preserves the existing `domainset`, `non_ip` and `ip` layout. It is binary-only on purpose: if any source rule set cannot compile to SRS, the adapter records it in `Hiddify/_report/failed.txt` and fails the build instead of silently publishing a different format.
+
+Example Rule Set URL for Hiddify routing settings:
+
+```text
+https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Hiddify/non_ip/ai.srs
+```
+
+The outbound action is selected in Hiddify's routing rule; it is not embedded in the SRS file.
+
+Current adapters: Surge, Clash/Mihomo, sing-box, Hiddify, Shadowrocket, Quantumult X, Stash, Loon, plus passthrough for upstream-native outputs.
