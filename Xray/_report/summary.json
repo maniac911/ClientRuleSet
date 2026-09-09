@@ -1,0 +1,22 @@
+{
+  "source": "Sukka FileOutput universal rule model",
+  "target": "v2rayN RulesItem JSON for Xray Core",
+  "outbound_tag": "proxy",
+  "source_files": 61,
+  "generated_files": 52,
+  "emitted_v2rayn_rules": 67,
+  "unsupported_rules": 333,
+  "unsupported_by_type": {
+    "AND": 42,
+    "IP-ASN": 20,
+    "PROCESS-NAME": 1,
+    "URL-REGEX": 192,
+    "USER-AGENT": 78
+  },
+  "warnings": 327,
+  "notes": [
+    "Different selector families are emitted as separate v2rayN RulesItem objects so Xray does not accidentally AND unrelated Sukka source rules.",
+    "Sukka no-resolve cannot be represented per rule by v2rayN/Xray; see warnings.txt and choose an appropriate v2rayN routing domainStrategy.",
+    "Xray Core has source/sourcePort/attrs capabilities, but current v2rayN RulesItem import does not expose those fields, so they are not emitted."
+  ]
+}

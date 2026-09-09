@@ -1,0 +1,26 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/my_proxy",
+    "domain": [
+      "full:ip.cn",
+      "domain:ip.sb",
+      "domain:ipwho.is",
+      "domain:db-ip.com",
+      "domain:ipdata.co",
+      "domain:ip-api.com",
+      "domain:nextdns.io",
+      "domain:ipstack.com",
+      "domain:ipregistry.co",
+      "full:fonts.gstatic.cn",
+      "domain:ipgeolocation.io",
+      "full:sglong.wechat.com",
+      "full:sgshort.wechat.com",
+      "full:fonts.googleapis.cn",
+      "domain:services.googleapis.cn",
+      "full:sgminorshort.wechat.com"
+    ]
+  }
+]

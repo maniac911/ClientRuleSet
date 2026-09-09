@@ -1,0 +1,18 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/stream_eu",
+    "domain": [
+      "domain:itv.com",
+      "domain:bbc.co.uk",
+      "domain:bbci.co.uk",
+      "full:bbc.mp-pxcdn.com",
+      "domain:tvlicensing.co.uk",
+      "full:itvpnpmobile-a.akamaihd.net",
+      "keyword:bbcfmt",
+      "keyword:uk-live"
+    ]
+  }
+]

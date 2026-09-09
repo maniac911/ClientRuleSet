@@ -1,0 +1,20 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/my_direct",
+    "domain": [
+      "domain:engage.cloudflareclient.com"
+    ]
+  },
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/my_direct",
+    "process": [
+      "nmap"
+    ]
+  }
+]

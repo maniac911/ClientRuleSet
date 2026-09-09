@@ -1,0 +1,12 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/neteasemusic",
+    "domain": [
+      "domain:music.126.net",
+      "domain:music.163.com"
+    ]
+  }
+]

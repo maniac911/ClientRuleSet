@@ -1,0 +1,11 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/gitlab",
+    "domain": [
+      "domain:gitlab.com"
+    ]
+  }
+]
