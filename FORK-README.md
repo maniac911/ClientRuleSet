@@ -1,27 +1,7 @@
 # maniac911/ClientRuleSet generated rules
 
-This branch is built automatically from this fork's current `master`
-after synchronizing `SukkaW/Surge` into the fork.
+Built from fork source commit: f7095c49af8f1ac87f7dea1380abceb1281af378
 
-- Fork source commit: `5a5b4b2e16414bd416fe48d898f2736e7e52427e`
-- Upstream source: `SukkaW/Surge`
-- sing-box SRS compiler: `ghcr.io/sagernet/sing-box:v1.14.0-rc.4`
-- Mihomo MRS compiler: `docker.io/metacubex/mihomo:v1.19.30`
+Build flow: SukkaW/Surge -> fork master -> pnpm build -> ForkExtras client adapters -> rules-dist
 
-## Build flow
-
-`SukkaW/Surge -> sync to fork master -> pnpm build -> client Release selection -> rules-dist`
-
-Fork-only source rules can live under `ForkExtras/Source/`. During the
-workflow they are overlaid onto `Source/` only inside the runner, so
-the upstream source tree remains easy to synchronize.
-
-## Published layout
-
-- `Surge/` — Surge rules (upstream Build internally calls this `List/`).
-- `Surge/Modules/` — Surge modules and their auxiliary rule files.
-- `Clash/domainset/`, `Clash/non_ip/`, `Clash/ip/` — full generated Mihomo/Clash text outputs.
-- `Clash/Release/` — ready-to-use Clash/Mihomo release rules: convertible rules are MRS, non-convertible rules are copied as text.
-- `sing-box/domainset/`, `sing-box/non_ip/`, `sing-box/ip/` — full generated sing-box JSON outputs.
-- `sing-box/Release/` — ready-to-use sing-box release rules: JSON is compiled to SRS when possible, otherwise copied as JSON.
-- `LegacyClashPremium/`, `Surfboard/` and related generated files — other upstream outputs.
+Client enable/disable settings live in ForkExtras/clients.yml on master.

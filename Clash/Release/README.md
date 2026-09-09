@@ -1,12 +1,11 @@
-# Clash Release
+# Clash / Mihomo Release
 
-Ready-to-use output selected from the generated Clash rules.
+Preferred client-facing output.
 
-- `domainset/*.mrs`: Mihomo `behavior: domain`, `format: mrs`.
-- `domainset/*.txt`: fallback text domain rules when MRS conversion is not possible.
-- `non_ip/*.mrs`: classical source that contained only DOMAIN/DOMAIN-SUFFIX and was losslessly converted; use `behavior: domain`.
-- `non_ip/*.txt`: mixed classical rules; use `behavior: classical`, `format: text`.
-- `ip/*.mrs`: pure CIDR/IP-CIDR/IP-CIDR6 rules converted to MRS; use `behavior: ipcidr`.
-- `ip/*.txt`: mixed/non-convertible IP rules copied unchanged; normally use `behavior: classical`, `format: text`.
+- domainset/*.mrs: behavior domain, format mrs.
+- non_ip/*.mrs: only when classical source was purely DOMAIN/DOMAIN-SUFFIX.
+- non_ip/*.txt: mixed classical rules preserved.
+- ip/*.mrs: pure CIDR/IP-CIDR/IP-CIDR6, behavior ipcidr.
+- ip/*.txt: mixed rules preserved.
 
-Conversion summary: domainset MRS=10, domainset text=1, non_ip MRS=13, non_ip text=25, ip MRS=11, ip text=9.
+Build summary: {"domainMRS":10,"domainText":1,"nonIpMRS":13,"nonIpText":25,"ipMRS":11,"ipText":9}
