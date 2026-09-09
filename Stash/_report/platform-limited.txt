@@ -1,0 +1,108 @@
+# Stash platform-limited rules
+# PROCESS-NAME / PROCESS-PATH work only where Stash can inspect local processes.
+# Stash documentation says iOS/tvOS (including the iOS build on Apple silicon)
+# ignores process rules because of Network Extension limitations.
+
+# non_ip/apple_services.list
+PROCESS-NAME,apsd
+PROCESS-NAME,com.apple.geod
+PROCESS-NAME,com.apple.Maps
+PROCESS-NAME,CoreLocationAgent
+PROCESS-NAME,findmydevice-user-agent
+PROCESS-NAME,fmfd
+PROCESS-NAME,mapspushd
+PROCESS-NAME,WeatherWidget
+
+# non_ip/cloudmounter.list
+AND,((DOMAIN-SUFFIX,files.1drv.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,storage.live.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,upload.box.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN,api.onedrive.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN,www.googleapis.com),(PROCESS-NAME,*CloudMounter))
+
+# non_ip/direct.list
+PROCESS-NAME,amuled
+PROCESS-NAME,aria2c
+PROCESS-NAME,BaiduNetdisk_mac
+PROCESS-NAME,BitComet
+PROCESS-NAME,clash
+PROCESS-NAME,ClashX
+PROCESS-NAME,cloudflared
+PROCESS-NAME,DownloadService
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,LocalSend
+PROCESS-NAME,Logi Options
+PROCESS-NAME,Logi Options Daemon
+PROCESS-NAME,NetTransport
+PROCESS-NAME,parsecd
+PROCESS-NAME,privoxy
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,qbittorrent-nox
+PROCESS-NAME,qbittorrent*
+PROCESS-NAME,ss-local
+PROCESS-NAME,SunloginClient_Desktop
+PROCESS-NAME,SunloginClient_Helper
+PROCESS-NAME,tailscaled
+PROCESS-NAME,Thunder
+PROCESS-NAME,ThunderVIP
+PROCESS-NAME,Transmission
+PROCESS-NAME,transmission-daemon
+PROCESS-NAME,transmission-qt
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,uTorrent
+PROCESS-NAME,UUBooster
+PROCESS-NAME,v2ray
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
+PROCESS-NAME,xray
+
+# non_ip/my_direct.list
+PROCESS-NAME,nmap
+
+# non_ip/my_reject.list
+PROCESS-NAME,LemonAgent
+PROCESS-NAME,LemonDaemon
+PROCESS-NAME,LemonMonitor
+PROCESS-NAME,LemonService
+PROCESS-NAME,Tencent Lemon
+
+# non_ip/sogouinput.list
+PROCESS-NAME,SogouInput
+PROCESS-NAME,SogouServices
+PROCESS-NAME,SogouTaskManager
+
+# non_ip/stream_hk.list
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+
+# non_ip/stream_tw.list
+PROCESS-NAME,com.linecorp.linetv
+
+# non_ip/stream_us.list
+PROCESS-NAME,com.hulu.plus
+
+# non_ip/stream.list
+PROCESS-NAME,com.amazon.avod.thirdpartyclient
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.hulu.plus
+PROCESS-NAME,com.linecorp.linetv
+PROCESS-NAME,com.netflix.mediaclient
+PROCESS-NAME,com.tencent.ibg.joox
+PROCESS-NAME,com.twgood.android
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+PROCESS-NAME,music
+PROCESS-NAME,tv
+PROCESS-NAME,tv.twitch.android.app

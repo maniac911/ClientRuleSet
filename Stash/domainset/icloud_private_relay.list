@@ -1,0 +1,19 @@
+#########################################
+# Sukka's Ruleset - iCloud Private Relay
+# Last Updated: 2026-09-09T15:32:29.659Z
+# Size: 6
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains domains for iCloud Private Relay Endpoint.
+#
+# $content-hash-v1$:RFxb8kIwz560ySP1c9L2BJEeGFs09kD5dZCtZtQUFWI$
+#########################################
+mask.icloud.com
+mask-h2.icloud.com
+mask.apple-dns.net
+mask-api.icloud.com
+mask-canary.icloud.com
+canary.mask.apple-dns.net
+################## EOF ##################
