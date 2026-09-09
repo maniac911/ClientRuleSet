@@ -1,0 +1,31 @@
+[
+  {
+    "name": "route.FF712FEB-B8D1-CA5D-2F76-51839D446832",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_git · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "github.com",
+      "github.dev",
+      "api.github.com",
+      "alive.github.com",
+      "android.googlesource.com"
+    ]
+  },
+  {
+    "name": "route.A2E68588-94F5-26EA-6103-06FFD145D14B",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_git · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)huggingface\\.co$",
+      "regexp:(^|\\.)githubcopilot\\.com$"
+    ]
+  }
+]

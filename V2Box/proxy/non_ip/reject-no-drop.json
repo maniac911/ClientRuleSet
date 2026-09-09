@@ -1,0 +1,90 @@
+[
+  {
+    "name": "route.381CCCBD-4F42-D8BC-BCBC-EF6B6EEB5834",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-no-drop · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "stun.douyucdn.cn",
+      "stun1.douyucdn.cn",
+      "livewebbs2pcdn.msstatic.com",
+      "qn-cdnfile1pcdn.msstatic.com",
+      "upos-sz-302kodo.bilivideo.com",
+      "upos-sz-302ppio.bilivideo.com"
+    ]
+  },
+  {
+    "name": "route.F0FB8575-A785-BADC-8DAD-AA9FF7F79DD4",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-no-drop · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)bvmlt\\.top$",
+      "regexp:(^|\\.)gjfzpt\\.cn$",
+      "regexp:(^|\\.)p2cdn\\.com$",
+      "regexp:(^|\\.)uhabo\\.com$",
+      "regexp:(^|\\.)xycdn\\.com$",
+      "regexp:(^|\\.)yfcdn\\.net$",
+      "regexp:(^|\\.)yfp2p\\.net$",
+      "regexp:(^|\\.)bsccdn\\.net$",
+      "regexp:(^|\\.)p2p\\.qq\\.com$",
+      "regexp:(^|\\.)ppio\\.cloud$",
+      "regexp:(^|\\.)szbdyd\\.com$",
+      "regexp:(^|\\.)saxysec\\.com$",
+      "regexp:(^|\\.)yfcloud\\.com$",
+      "regexp:(^|\\.)kuiniuca\\.com$",
+      "regexp:(^|\\.)p2p\\.huya\\.com$",
+      "regexp:(^|\\.)pkoplink\\.com$",
+      "regexp:(^|\\.)cdnnodedns\\.cn$",
+      "regexp:(^|\\.)p2ptun\\.qq\\.com$",
+      "regexp:(^|\\.)tianwenca\\.com$",
+      "regexp:(^|\\.)mountaintoys\\.cn$",
+      "regexp:(^|\\.)nexusedgeio\\.com$",
+      "regexp:(^|\\.)onethingpcs\\.com$",
+      "regexp:(^|\\.)pcdn\\.yximgs\\.com$",
+      "regexp:(^|\\.)ietheivaicai\\.com$",
+      "regexp:(^|\\.)mcdn\\.bilivideo\\.cn$",
+      "regexp:(^|\\.)p2plog\\.douyucdn\\.cn$",
+      "regexp:(^|\\.)p2perrorlog\\.douyucdn\\.cn$",
+      "regexp:(^|\\.)p2pupdate\\.gamedl\\.qq\\.com$",
+      "regexp:(^|\\.)p2pupgrade\\.gamedl\\.qq\\.com$"
+    ]
+  },
+  {
+    "name": "route.F12B0BDD-BC9A-423B-8D9C-B311243A8F8E",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "keyword",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-no-drop · DOMAIN-KEYWORD · proxy",
+    "isEnable": true,
+    "list": [
+      "-p2p.pull.yximgs.com",
+      "-p2p-v2.pull.yximgs.com"
+    ]
+  },
+  {
+    "name": "route.E78857DF-45A9-6697-9FED-7F19115E080D",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-no-drop · DOMAIN-REGEX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:^p2p.*\\.qq\\.com$",
+      "regexp:^p2p-.*\\.douyucdn\\.cn$",
+      "regexp:^p2pchunk-.*\\.douyucdn\\.cn$",
+      "regexp:^dyp2p-.*\\.douyucdn\\.cn$",
+      "regexp:^p2plive-.*\\.douyucdn\\.cn$",
+      "regexp:^stun.*\\.douyucdn\\.cn$",
+      "regexp:^upos-sz-302.*\\.bilivideo\\.com$"
+    ]
+  }
+]

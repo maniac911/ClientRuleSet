@@ -1,0 +1,18 @@
+[
+  {
+    "name": "route.3446694E-8227-6B4F-1CA0-3303E139F094",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/apple_intelligence · DOMAIN · direct",
+    "isEnable": true,
+    "list": [
+      "cp4.cloudflare.com",
+      "apple-relay.apple.com",
+      "gspe1-ssl.ls.apple.com",
+      "apple-relay.cloudflare.com",
+      "apple-relay.fastly-edge.com"
+    ]
+  }
+]

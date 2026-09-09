@@ -1,0 +1,33 @@
+[
+  {
+    "name": "route.A370DFC3-676D-A61B-4B06-C1E39D0290C1",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/apple_cn · DOMAIN · block",
+    "isEnable": true,
+    "list": [
+      "api.smoot.apple.cn",
+      "gs-loc-cn.apple.com",
+      "appleintelligencefeedback.care.apple.com"
+    ]
+  },
+  {
+    "name": "route.A31839EE-D830-F6F3-4AEF-D9780F857769",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/apple_cn · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)apple\\.com\\.cn$",
+      "regexp:(^|\\.)cn\\.apple\\.com$",
+      "regexp:(^|\\.)icloud\\.com\\.cn$",
+      "regexp:(^|\\.)cn\\.ls\\.apple\\.com$",
+      "regexp:(^|\\.)cn-ssl\\.ls\\.apple\\.com$",
+      "regexp:(^|\\.)gspe19-cn-ssl\\.ls\\.apple\\.com$"
+    ]
+  }
+]

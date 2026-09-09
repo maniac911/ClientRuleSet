@@ -1,0 +1,63 @@
+[
+  {
+    "name": "route.2C0559DC-FA9F-19CA-10E0-4968486D92B0",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-drop · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "data.bilibili.com",
+      "stats.grafana.org",
+      "stat.youpin.mi.com",
+      "dataflow.biliapi.com",
+      "nom.telemetrydeck.com"
+    ]
+  },
+  {
+    "name": "route.7CA55E1F-F7B7-788D-8526-3A53F9339A1C",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-drop · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)null$",
+      "regexp:(^|\\.)jpush\\.cn$",
+      "regexp:(^|\\.)jpush\\.io$",
+      "regexp:(^|\\.)getui\\.com$",
+      "regexp:(^|\\.)getui\\.net$",
+      "regexp:(^|\\.)undefined$",
+      "regexp:(^|\\.)gepush\\.com$",
+      "regexp:(^|\\.)slackb\\.com$",
+      "regexp:(^|\\.)trace\\.qq\\.com$",
+      "regexp:(^|\\.)beacon\\.qq\\.com$",
+      "regexp:(^|\\.)geo2\\.adobe\\.com$",
+      "regexp:(^|\\.)easytomessage\\.com$",
+      "regexp:(^|\\.)femetrics\\.qagr\\.io$",
+      "regexp:(^|\\.)tracking\\.miui\\.com$",
+      "regexp:(^|\\.)data\\.grammarly\\.com$",
+      "regexp:(^|\\.)data\\.microsoft\\.com$",
+      "regexp:(^|\\.)telemetry\\.mozilla\\.org$",
+      "regexp:(^|\\.)femetrics\\.grammarly\\.io$",
+      "regexp:(^|\\.)tracking\\.intl\\.miui\\.com$",
+      "regexp:(^|\\.)f-log-assistant\\.grammarly\\.io$",
+      "regexp:(^|\\.)f-log-extension\\.grammarly\\.io$",
+      "regexp:(^|\\.)in\\.applicationinsights\\.azure\\.com$"
+    ]
+  },
+  {
+    "name": "route.D4E5E30B-C39B-43ED-63BA-84BBA6F243E8",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/reject-drop · DOMAIN-REGEX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:^f-log.*\\.grammarly\\.io$"
+    ]
+  }
+]

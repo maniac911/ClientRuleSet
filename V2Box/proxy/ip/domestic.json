@@ -1,0 +1,15 @@
+[
+  {
+    "name": "route.A55EE785-B503-4EAC-8B61-D6D1E7E013FC",
+    "type": "IP",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [
+      "140.205.1.0/24",
+      "162.14.0.0/18"
+    ],
+    "remark": "ClientRuleSet ip/domestic · IP-CIDR · proxy",
+    "isEnable": true,
+    "list": []
+  }
+]

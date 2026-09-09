@@ -1,0 +1,19 @@
+[
+  {
+    "name": "route.31F932A8-7DB0-6FC8-A8C9-FA9D6C0F5E78",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet domainset/icloud_private_relay · DOMAIN · block",
+    "isEnable": true,
+    "list": [
+      "mask.icloud.com",
+      "mask-h2.icloud.com",
+      "mask.apple-dns.net",
+      "mask-api.icloud.com",
+      "mask-canary.icloud.com",
+      "canary.mask.apple-dns.net"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "route.B4EEB011-86A6-D5D1-26F8-209C2A7D585E",
+    "type": "IP",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [
+      "162.159.200.1/32",
+      "162.159.200.123/32",
+      "185.199.108.0/22"
+    ],
+    "remark": "ClientRuleSet ip/cdn · IP-CIDR · block",
+    "isEnable": true,
+    "list": []
+  }
+]

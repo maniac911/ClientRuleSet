@@ -1,0 +1,30 @@
+[
+  {
+    "name": "route.D22B003F-7E4B-F485-792E-3580EC00CEFF",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_us · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "jav.guru",
+      "cableav.tv",
+      "copymanga.site",
+      "www.coinbase.com"
+    ]
+  },
+  {
+    "name": "route.3DB5860B-06CA-91C5-89B9-FA16E12F99D1",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_us · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)mandaom\\.com$",
+      "regexp:(^|\\.)crunchyroll\\.com$"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "route.8E37715E-B8A9-BDF7-A008-660C71FD109C",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/gitlab · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)gitlab\\.com$"
+    ]
+  }
+]

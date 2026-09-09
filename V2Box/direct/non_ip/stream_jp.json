@@ -1,0 +1,49 @@
+[
+  {
+    "name": "route.5FF4689B-FD5C-50ED-9C08-4E2A4296A201",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_jp · DOMAIN · direct",
+    "isEnable": true,
+    "list": [
+      "ds-linear-abematv.akamaized.net"
+    ]
+  },
+  {
+    "name": "route.5F28F109-854C-4840-06DB-0A283558E888",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_jp · DOMAIN-SUFFIX · direct",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)dmm\\.com$",
+      "regexp:(^|\\.)hulu\\.jp$",
+      "regexp:(^|\\.)tver\\.jp$",
+      "regexp:(^|\\.)abema\\.io$",
+      "regexp:(^|\\.)abema\\.tv$",
+      "regexp:(^|\\.)ameba\\.jp$",
+      "regexp:(^|\\.)dmc\\.nico$",
+      "regexp:(^|\\.)ameblo\\.jp$",
+      "regexp:(^|\\.)dmm\\.co\\.jp$",
+      "regexp:(^|\\.)socdm\\.com$",
+      "regexp:(^|\\.)happyon\\.jp$",
+      "regexp:(^|\\.)amebame\\.com$",
+      "regexp:(^|\\.)hayabusa\\.io$",
+      "regexp:(^|\\.)abema-tv\\.com$",
+      "regexp:(^|\\.)hayabusa\\.dev$",
+      "regexp:(^|\\.)nicovideo\\.jp$",
+      "regexp:(^|\\.)winticket\\.jp$",
+      "regexp:(^|\\.)amebaownd\\.com$",
+      "regexp:(^|\\.)hjholdings\\.jp$",
+      "regexp:(^|\\.)hayabusa\\.media$",
+      "regexp:(^|\\.)amebaowndme\\.com$",
+      "regexp:(^|\\.)dmm-extension\\.com$",
+      "regexp:(^|\\.)dokusho-ojikan\\.jp$",
+      "regexp:(^|\\.)location-plus\\.nhk\\.jp$"
+    ]
+  }
+]

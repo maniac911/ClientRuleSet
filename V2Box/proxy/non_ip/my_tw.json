@@ -1,0 +1,48 @@
+[
+  {
+    "name": "route.BAA97AAC-BD29-C6B8-D4FD-5DEB0BF25B2F",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_tw · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "javdb.com",
+      "mhgui.com",
+      "avbebe.com",
+      "hanime1.me",
+      "yymanhua.com",
+      "av.jkforum.net",
+      "www.yymanhua.com",
+      "www.manhuagui.com"
+    ]
+  },
+  {
+    "name": "route.E4C8F454-13B3-4F7D-17B4-A786F0992EE4",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_tw · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)cdn\\.hinet\\.net$"
+    ]
+  },
+  {
+    "name": "route.A4A43289-F72E-94F4-C3AB-10F34B454DA8",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_tw · DOMAIN-REGEX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:^.*\\.ffzy-online.\\.com$",
+      "regexp:^.*\\.ffzy-play.\\.com$",
+      "regexp:^.*\\.lz-cdn.\\.com$",
+      "regexp:^.*\\.lz-cdn..\\.com$"
+    ]
+  }
+]

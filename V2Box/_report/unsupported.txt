@@ -1,0 +1,462 @@
+# V2Box unsupported source rules
+
+# domainset/reject_extra.json
+URL-REGEX,/\d+/resolve  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# domainset/reject_phishing.json
+URL-REGEX,/\d+/resolve  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# domainset/reject.json
+URL-REGEX,/\d+/resolve  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# ip/reject.json
+IP-ASN,1012  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,14651  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,18044  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,401111  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,5111  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,54625  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,60539  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,60842  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,61302  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,62489  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,62853  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,7257  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,7480  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,7719  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,945  # V2Box route-object import has no verified IP-ASN selector.
+
+# ip/telegram_asn.json
+IP-ASN,211157  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,44907  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,59930  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,62014  # V2Box route-object import has no verified IP-ASN selector.
+IP-ASN,62041  # V2Box route-object import has no verified IP-ASN selector.
+
+# non_ip/ai.json
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# non_ip/apple_services.json
+PROCESS-NAME,apsd  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.apple.geod  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.apple.Maps  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,CoreLocationAgent  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,findmydevice-user-agent  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,fmfd  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,mapspushd  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,WeatherWidget  # Process routing is not emitted for V2Box iOS route imports.
+
+# non_ip/cloudmounter.json
+AND,((DOMAIN-SUFFIX,files.1drv.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,storage.live.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.box.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,api.onedrive.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,www.googleapis.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+
+# non_ip/direct.json
+PROCESS-NAME,amuled  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,aria2c  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,BaiduNetdisk_mac  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,BitComet  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,clash  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,ClashX  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,cloudflared  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,DownloadService  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,fdm  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,Folx  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,LocalSend  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,Logi Options  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,Logi Options Daemon  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,NetTransport  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,parsecd  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,privoxy  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,qBittorrent  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,qbittorrent-nox  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,qbittorrent*  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,ss-local  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,SunloginClient_Desktop  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,SunloginClient_Helper  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,tailscaled  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,Thunder  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,ThunderVIP  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,Transmission  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,transmission-daemon  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,transmission-qt  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,trojan  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,trojan-go  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,uTorrent  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,UUBooster  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,v2ray  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,WebTorrent  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,WebTorrent Helper  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,xray  # Process routing is not emitted for V2Box iOS route imports.
+USER-AGENT,%E8%BF%85%E9%9B%B7  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/domestic.json
+USER-AGENT,%E4%BC%98%E9%85%B7*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,TeslaMap  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/download.json
+URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# non_ip/global.json
+USER-AGENT,Roam*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/microsoft_cdn.json
+URL-REGEX,^http://www\.microsoft\.com/pki/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^http://www\.microsoft\.com/pkiops/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# non_ip/my_direct.json
+PROCESS-NAME,nmap  # Process routing is not emitted for V2Box iOS route imports.
+
+# non_ip/my_reject.json
+AND,((DOMAIN-KEYWORD,genuine), (DOMAIN-KEYWORD,autodesk))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+DEST-PORT,7680  # Destination-port is not emitted in the verified V2Box route-object subset.
+PROCESS-NAME,LemonAgent  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,LemonDaemon  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,LemonMonitor  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,LemonService  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,Tencent Lemon  # Process routing is not emitted for V2Box iOS route imports.
+
+# non_ip/neteasemusic.json
+USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,NeteaseMusic*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/reject-no-drop.json
+AND,((PROTOCOL,UDP), (DOMAIN-SUFFIX,googlevideo.com))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+
+# non_ip/reject-url-regex.json
+URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(adgateway|adv)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(EcomResourceServer/AdPlayPage/adinfo|MobileAdServer/)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https://app\.variflight\.com/v4/advert/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https://img-ys011\.didistatic\.com/static/ad_oss/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://.+\.58cdn\.com\.cn/brandads/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://.+\.iydsj\.com/api/.+/ad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://.+\.kingsoft-office-service\.com/ad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(114\.115\.217\.129|home\.umetrip\.com)/gateway/api/umetrip/native$  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|atrace)\.chelaile\.net\.cn/adpub/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|b)\.zhuishushenqi\.com/advert  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|www)\.zhihu\.com/.*(featured-comment-ad|recommendations|community-ad)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(api|www)\.zhihu\.com/(fringe|adx|commercial|ad-style-service|banners|mqtt)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(discardrp|startup)\.umetrip\.com/gateway/api/umetrip/native  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://(ggic|ggic2)\.cmvideo\.cn/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://3gimg\.qq\.com/tencentMapTouch/app/activity/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://7n\.bczcdn\.com/launchad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://a\.qiumibao\.com/activities/config\.php  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://a\.sfansclub\.com/business/t/(ad/|boot/screen/index)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.alimusic\.common\.mobileservice\.startinit/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.queryadvertise/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.o2o\.ad\.gateway\.get/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.home\.welcome/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsresources/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://act\.vip\.iqiyi\.com/interact/api/show\.do  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://act\.vip\.iqiyi\.com/interact/api/v\d/show  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://adpai\.thepaper\.cn/.+&ad=  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://adse\.ximalaya\.com/[a-z]{4}/(feed|loading)\?appid=  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://adse\.ximalaya\.com/ting\?appid=  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://aes\.acfun\.cn/s\?adzones  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://agent-count\.pconline\.com\.cn/counter/adAnalyse/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api-mifit\.huami\.com/discovery/mi/discovery/(homepage_ad|sleep_ad|sport_ad|sport_summary_ad|sport_training_ad|step_detail_ad|training_video_ad)\?  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api-release\.wuta-cam\.com/ad_tree  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.bilibili\.com/pgc/season/(rank/cn|app/related/recommend)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.catch\.gift/api/v\d/pagead/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.chelaile\.net\.cn/goocity/advert/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.daydaycook\.com\.cn/daydaycook/server/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.gaoqingdianshi\.com/api/v\d/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.gotokeep\.com/ads/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.intsig\.net/user/cs/operating/app/get_startpic/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.jr\.mi\.com/(v\d/adv/|jr/api/playScreen)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.jxedt\.com/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.k\.sohu\.com/api/news/adsense  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.kkmh\.com/.+(ad|advertisement)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.m\.jd\.com/client\.action\?functionId=start  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.m\.mi\.com/v\d/app/start  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.mgzf\.com/renter-operation/home/startHomePage  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.psy-1\.com/cosleep/startup  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.qiuduoduo\.cn/guideimage  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.rr\.tv/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.smzdm\.com/v\d/util/loading  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.tv\.sohu\.com/agg/api/app/config/bootstrap  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.videozhishi\.com/api/getAdvertising  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.wallstreetcn\.com/apiv\d/advertising/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.xiachufang\.com/v\d/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.zhihu\.com/(market/popover|launch|ad-style-service|app_config|real_time|ab/api|commercial_api/launch|commercial_api/real_time|search/top|search/tab)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api\.zhuishushenqi\.com/(notification/shelfMessage|recommend|splashes/ios|user/bookshelf-updated)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api01pbmp\.zhuishushenqi\.com/gameAdvert  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://api5\.futunn\.com/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.10086\.cn/biz-orange/DN/(findSale|homeSale)/getsaleAdver  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.58\.com/api/home/(advertising/|appadv/|invite/popupAdv)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.58\.com/api/log/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.api\.ke\.com/config/config/bootpage  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/resource/abtest  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/v\d/(splash/|param|dm/ad|dataflow/report)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/v\d/rank.*rid=(168|5)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.bilibili\.com/x/v\d/search/(defaultword|hot|recommend|resource)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.mixcapp\.com/mixc/api/v\d/ad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app\.wy\.guahao\.com/json/white/dayquestion/getpopad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://app3\.qdaily\.com/app3/boot_advertisements\.json  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://asp\.cntv\.myalicdn\.com/.+\?maxbr=850  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://atrace\.chelaile\.net\.cn/exhibit\?&adv_image  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://b-api\.ins\.miaopai\.com/1/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://b?dsp-x\.jd\.com/adx/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://c\.m\.163\.com/nc/gl/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://c\.tieba\.baidu\.com/c/s/splashSchedule  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cap\.caocaokeji\.cn/advert-bss/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://capi\.mwee\.cn/app-api/V12/app/getstartad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cdn\.api\.fotoable\.com/Advertise/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cdn\.moji\.com/(adoss|adlink)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://channel\.beitaichufang\.com/channel/api/v\d/promote/ios/start/page  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://client\.mail\.163\.com/apptrack/confinfo/searchMultiAds  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cms\.daydaycook\.com\.cn/api/cms/advertisement/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cmsapi\.wifi8\.com/v\d/(emptyAd/info|adNew/config)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cmsapi\.wifi8\.com/v\d/(emptyAd|adNew)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cntv\.hls\.cdn\.myqcloud\.com/.+\?maxbr=850  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://counter\.ksosoft\.com/ad\.php  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://cover\.baidu\.com/cover/page/dspSwitchAds/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://ctrl\.(playcvn|zmzapi)\.(com|net)/app/(ads|init)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dict-mobile\.iciba\.com/interface/index\.php\?.+(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dili\.bdatu\.com/jiekou/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dsp-impr2\.youdao\.com/adload.s\?  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dsp\.toutiao\.com/api/xunfei/ads/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://dspsdk\.abreader\.com/v\d/api/ad\?  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://edit\.sinaapp\.com/ua\?t=adv  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://foodie-api\.yiruikecorp\.com/v\d/(banner|notice)/overview  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://games\.mobileapi\.hupu\.com/.+/(interfaceAdMonitor|interfaceAd|status/init)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://gateway\.shouqiev\.com/fsda/app/bootImage\.json  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://gw-passenger\.01zhuanche\.com/gw-passenger/(car-rest/webservice/passenger/recommendADs|zhuanche-passenger-token/leachtoken/webservice/homepage/queryADs)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://gw\.aihuishou\.com/app-portal/home/getadvertisement  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://home\.mi\.com/cgi-op/api/v1/recommendation/(banner|carousel/banners|myTab|openingBanner)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://hui\.sohu\.com/predownload2/\?  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://huichuan\.sm\.cn/jsad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://i\.ys7\.com/api/ads  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://iapi\.bishijie\.com/actopen/advertising/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://iface\.iqiyi\.com/api/getNewAdInfo  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://iflow\.uczzd\.cn/log/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://images\.client\.vip\.xunlei\.com/.+/advert/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://imeclient\.openspeech\.cn/adservice/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://img\.jiemian\.com/ads/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://img\.meituan\.net/midas/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://ios\.wps\.cn/ad-statistics-service  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://issuecdn\.baidupcs\.com/issue/netdisk/guanggao/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.client\.10010\.com/mobileService/customer/accountListData\.htm  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.client\.10010\.com/uniAdmsInterface/(getWelcomeAd|getHomePageAd)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.ibuscloud\.com/v\d/app/getStartPage  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\.yap\.yahoo\.com/v18/getAds\.do  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://m\d\.amap\.com/ws/valueadded/alimama/splash_screen/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://manga\.bilibili\.com/twirp/comic\.v\d\.comic/(flash|Flash|ListFlash)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mangaapi\.manhuaren\.com/v\d/public/getStartPageAds  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mapi\.dangdang\.com/index\.php\?action=init  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mapi\.mafengwo\.cn/(travelguide/)?ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://media\.qyer\.com/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mi\.gdt\.qq\.com/gdt_mview\.fcg  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mob\.mddcloud\.com\.cn/api/(ad|advert)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mobile-api2011\.elong\.com/(adgateway|adv)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mobile-pic\.cache\.iciba\.com/feeds_ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mp\.weixin\.qq\.com/mp/(advertisement_report|ad_complaint|ad_video|getappmsgad|report)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mrobot\.(pcauto|pconline)\.com\.cn/v\d/ad2p  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mrobot\.pcauto\.com\.cn/xsp/s/auto/info/preload\.xsp  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://mrobot\.pconline\.com\.cn/s/onlineinfo/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://ms\.jr\.jd\.com/gw/generic/base/na/m/adInfo  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://msspjh\.emarbox\.com/getAdConfig  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://newsso\.map\.qq\.com/\?&attime=  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://nnapp\.cloudbae\.cn/mc/api/advert/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://nochange\.ggsafe\.com/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://notch\.qdaily\.com/api/v\d/boot_ad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://oimage([a-z])\d\.ydstatic\.com/.+adpublish  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://open\.qyer\.com/qyer/(config/get|startpage/)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://p\d\.meituan\.net/(adunion|display|linglong|mmc|wmbanner)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://pic1\.chelaile\.net\.cn/adv/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://portal-xunyou\.qingcdn\.com/api/v\d/ios/(ads/|configs/splash_ad|configs/ad_urls)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://premiumyva\.appspot\.com/vmclickstoadvertisersite  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://pss\.txffp\.com/piaogen/images/launchScreen/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://qt\.qq\.com/lua/mengyou/get_splash_screen_info  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://r\.inews\.qq\.com/(adsBlacklist|getBannerAds|getFullScreenPic|getQQNewsRemoteConfig|getNewsRemoteConfig|searchHotCatList|getSplash|upLoadLoc)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://res-release\.wuta-cam\.com/json/ads_component_cache\.json  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://res\.kfc\.com\.cn/advertisement/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://richmanapi\.jxedt\.com/api/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://s1\.api\.tv\.itc\.cn/v\d/mobile/control/switch\.json  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://s3plus\.meituan\.net/.+/linglong/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://sdkapp\.uve\.weibo\.com/interface/sdk/(sdkad|actionad)\.php  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://service\.4gtv\.tv/4gtv/Data/(GetAD|ADLog)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://service\.iciba\.com/popo/open/screens/v\d\?adjson  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://smkmp\.96225\.com/smkcenter/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://snailsleep\.net/snail/v\d/(adTask/|screen/qn/get)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://sp\.kaola\.com/api/openad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://static\.vuevideo\.net/styleAssets/.+/splash_ad  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://static\.vuevideo\.net/styleAssets/advertisement/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://static1\.keepcdn\.com/.+\d{3}x\d{4}  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://support\.you\.163\.com/xhr/boot/getBootMedia\.json  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://szextshort\.weixin\.qq\.com/cgi-bin/mmoc-bin/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://thor\.weidian\.com/ares/home\.splash/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://tqt\.weibo\.cn/.+advert\.index  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://tqt\.weibo\.cn/api/advert/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://tqt\.weibo\.cn/overall/redirect\.php\?r=(tqtad|tqt_sdkad)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://v\.cctv\.com/.+\?maxbr=850  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://vv\.video\.qq\.com/getvmind\?  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://wap\.ngchina\.cn/news/adverts/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://wbapp\.uve\.weibo\.com/wbapplua/wbpullad\.lua  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.cntv\.cn/nettv/adp/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.dandanzan\.com/res/gdsefse\.js  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.flyertea\.com/source/plugin/mobile/mobile\.php\?module=advis  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.myhug\.cn/ad/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.shihuo\.cn/app3/saveAppInfo  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://www\.zhihu\.com/terms/privacy/confirm  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^https?://y\.gtimg\.cn/music/common/upload/targeted_ads  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# non_ip/reject.json
+URL-REGEX,/\d+/resolve  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/\d+/sign_d  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,/igd\.xml  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+
+# non_ip/sogouinput.json
+PROCESS-NAME,SogouInput  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,SogouServices  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,SogouTaskManager  # Process routing is not emitted for V2Box iOS route imports.
+USER-AGENT,com.sogou.sogouinput.BaseKeyboard  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,SogouInput  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream_eu.json
+USER-AGENT,BBCiPlayer*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,ITV_Player*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream_hk.json
+PROCESS-NAME,com.bstar.intl  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.hktve.viutv  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.viu.pad  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.viu.phone  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.vuclip.viu  # Process routing is not emitted for V2Box iOS route imports.
+USER-AGENT,mytv*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Viu*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream_jp.json
+USER-AGENT,AbemaTV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Niconico*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream_kr.json
+USER-AGENT,Naver TV*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream_tw.json
+PROCESS-NAME,com.linecorp.linetv  # Process routing is not emitted for V2Box iOS route imports.
+USER-AGENT,Anime*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,com.kktv.ios.kktv*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,KKTV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,LINE TV*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream_us.json
+PROCESS-NAME,com.hulu.plus  # Process routing is not emitted for V2Box iOS route imports.
+USER-AGENT,discovery+*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,DPlus*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,encoreTVB*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,FOX NOW*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,FOXPlus*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Hulu*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,PeacockMobile*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,PPlus*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,TVer-Release*  # V2Box route-object import has no verified User-Agent selector.
+
+# non_ip/stream.json
+PROCESS-NAME,com.amazon.avod.thirdpartyclient  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.bstar.intl  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.hktve.viutv  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.hulu.plus  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.linecorp.linetv  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.netflix.mediaclient  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.tencent.ibg.joox  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.twgood.android  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.viu.pad  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.viu.phone  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,com.vuclip.viu  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,music  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,tv  # Process routing is not emitted for V2Box iOS route imports.
+PROCESS-NAME,tv.twitch.android.app  # Process routing is not emitted for V2Box iOS route imports.
+USER-AGENT,*Spotify*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,AbemaTV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,All4*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Anime*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,AppleTV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Argo*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,BBCiPlayer*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,com.apple.tv*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,com.google.ios.youtube*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,com.google.ios.youtubemusic*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,com.kktv.ios.kktv*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,DAZN*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Deezer*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,discovery+*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Disney+*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,DPlus*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,encoreTVB*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,FOX NOW*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,FOXPlus*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,HBO NOW*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,HBOMAX*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Himalaya*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Hulu*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,HWTVMobile*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,InstantVideo.US*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,ITV_Player*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,JOOX*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,KKTV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,LINE TV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,My5*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,mytv*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Naver TV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Niconico*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Overcast*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Pandora*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,PBS*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,PeacockMobile*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,PPlus*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Prime Video*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,SoundCloud*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,TaiwanGood*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,TIDAL*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,TikTok*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,TVer-Release*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,Viu*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,WeMusic*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,WeTV*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,YouTube*  # V2Box route-object import has no verified User-Agent selector.
+USER-AGENT,YouTubeMusic*  # V2Box route-object import has no verified User-Agent selector.

@@ -1,0 +1,30 @@
+{
+  "source": "Sukka FileOutput universal rule model",
+  "target": "V2Box route objects and v2box://routes?multi= deep links",
+  "policy_variants": [
+    "proxy",
+    "direct",
+    "block"
+  ],
+  "source_files": 61,
+  "route_json_files": 156,
+  "deeplink_files": 1461,
+  "emitted_route_objects": 3102,
+  "split_rulesets": 18,
+  "unsupported_rules": 407,
+  "unsupported_by_type": {
+    "AND": 42,
+    "DEST-PORT": 1,
+    "IP-ASN": 20,
+    "PROCESS-NAME": 74,
+    "URL-REGEX": 192,
+    "USER-AGENT": 78
+  },
+  "warnings": 327,
+  "notes": [
+    "DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, DOMAIN-WILDCARD/DOMAIN-REGEX, GEOSITE, IPv4/IPv6 CIDR and GEOIP are emitted.",
+    "Suffixes and wildcards are converted to V2Box regexp domain routes.",
+    "Deep links are split when needed to keep individual v2box:// URLs at a practical size; import all parts in order.",
+    "Process/User-Agent/URL/source/port/protocol/logical selectors remain audited until their V2Box route-object import semantics are verified."
+  ]
+}

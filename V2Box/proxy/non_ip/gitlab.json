@@ -1,0 +1,14 @@
+[
+  {
+    "name": "route.5C504878-22BA-F556-D00B-24E5C0893CCB",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/gitlab · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)gitlab\\.com$"
+    ]
+  }
+]

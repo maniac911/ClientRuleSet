@@ -1,0 +1,14 @@
+[
+  {
+    "name": "route.26A0E063-B171-2466-BAD7-2E6E5CF07737",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_direct · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)engage\\.cloudflareclient\\.com$"
+    ]
+  }
+]

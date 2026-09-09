@@ -1,0 +1,22 @@
+[
+  {
+    "name": "route.9606493F-0ACD-6DFA-DC88-A0DB4EB7AE75",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/download · DOMAIN-REGEX · direct",
+    "isEnable": true,
+    "list": [
+      "regexp:^download.*\\.mediafire\\.com$",
+      "regexp:^ftp\\...\\.debian\\.org$",
+      "regexp:^ftp\\...\\.freebsd\\.org$",
+      "regexp:^s3\\..*\\.backblazeb2\\.com$",
+      "regexp:^.*\\.s3\\..*\\.backblazeb2\\.com$",
+      "regexp:^cdn-.*\\.comaps\\.app$",
+      "regexp:^cdn-.*\\.comaps\\.tech$",
+      "regexp:^cdn-.*\\.organicmaps\\.app$",
+      "regexp:^dl-.*\\.mypikpak\\.com$"
+    ]
+  }
+]

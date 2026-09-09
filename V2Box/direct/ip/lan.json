@@ -1,0 +1,24 @@
+[
+  {
+    "name": "route.9F124D0F-76C1-288B-9DFE-5EB61E6A79AE",
+    "type": "IP",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [
+      "0.0.0.0/8",
+      "10.0.0.0/8",
+      "100.64.0.0/10",
+      "127.0.0.0/8",
+      "169.254.0.0/16",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "224.0.0.0/4",
+      "::1/128",
+      "fc00::/7",
+      "fe80::/10"
+    ],
+    "remark": "ClientRuleSet ip/lan · IP-CIDR · direct",
+    "isEnable": true,
+    "list": []
+  }
+]

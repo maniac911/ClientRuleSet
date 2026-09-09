@@ -1,0 +1,40 @@
+[
+  {
+    "name": "route.A7F9494E-09C3-C30C-D8DD-65DA397FAA3C",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_proxy · DOMAIN · block",
+    "isEnable": true,
+    "list": [
+      "ip.cn",
+      "fonts.gstatic.cn",
+      "sglong.wechat.com",
+      "sgshort.wechat.com",
+      "fonts.googleapis.cn",
+      "sgminorshort.wechat.com"
+    ]
+  },
+  {
+    "name": "route.12E0A4E6-23B1-B342-927C-A5AFB3E78EDD",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_proxy · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)ip\\.sb$",
+      "regexp:(^|\\.)ipwho\\.is$",
+      "regexp:(^|\\.)db-ip\\.com$",
+      "regexp:(^|\\.)ipdata\\.co$",
+      "regexp:(^|\\.)ip-api\\.com$",
+      "regexp:(^|\\.)nextdns\\.io$",
+      "regexp:(^|\\.)ipstack\\.com$",
+      "regexp:(^|\\.)ipregistry\\.co$",
+      "regexp:(^|\\.)ipgeolocation\\.io$",
+      "regexp:(^|\\.)services\\.googleapis\\.cn$"
+    ]
+  }
+]

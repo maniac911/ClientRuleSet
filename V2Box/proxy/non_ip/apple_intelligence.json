@@ -1,0 +1,18 @@
+[
+  {
+    "name": "route.3E291129-5EB3-C7C0-9FFF-01DAC3A6D8AC",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/apple_intelligence · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "cp4.cloudflare.com",
+      "apple-relay.apple.com",
+      "gspe1-ssl.ls.apple.com",
+      "apple-relay.cloudflare.com",
+      "apple-relay.fastly-edge.com"
+    ]
+  }
+]

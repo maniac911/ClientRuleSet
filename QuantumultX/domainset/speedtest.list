@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-09-09T16:53:46.925Z
-# Size: 3373
+# Last Updated: 2026-09-09T17:07:24.993Z
+# Size: 3376
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:lzM1MnQrK7HHgC5uf0DKEOdxRGAqRA8P8nGs-BetoU4$
+# $content-hash-v1$:WHf97K1MbrA6h-Odb4YLi2Qo3C9lEdpLDhTs4wCW4BM$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -152,6 +152,7 @@ HOST,sp1.ecolink.coop,reject
 HOST,sp1.vlink.net.br,reject
 HOST,sp3.atcc-gns.net,reject
 HOST,sp7.atcc-gns.net,reject
+HOST,speed.fiber23.it,reject
 HOST-SUFFIX,speed.misaka.one,reject
 HOST,speed.sparcs.net,reject
 HOST,speed2.suitit.nl,reject
@@ -167,6 +168,7 @@ HOST,speedtest.hep.gg,reject
 HOST-SUFFIX,speedtest.idv.tw,reject
 HOST,speedtest.kko.me,reject
 HOST,speedtest.nt.net,reject
+HOST,speedtest.oa.net,reject
 HOST,speedtest.oc.edu,reject
 HOST,speedtest.ohz.es,reject
 HOST-SUFFIX,speedtest.pni.tw,reject
@@ -722,6 +724,7 @@ HOST,speedtest.nethiz.net,reject
 HOST,speedtest.netrack.ru,reject
 HOST,speedtest.oopaya.com,reject
 HOST,speedtest.quadro.net,reject
+HOST,speedtest.quickqc.nl,reject
 HOST-SUFFIX,speedtest.railtel.in,reject
 HOST,speedtest.sentco.net,reject
 HOST,speedtest.spd.net.tr,reject

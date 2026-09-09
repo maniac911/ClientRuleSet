@@ -1,0 +1,27 @@
+[
+  {
+    "name": "route.05ED7A6D-B252-C452-F60E-9ED750282372",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/telegram · DOMAIN-SUFFIX · direct",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)t\\.me$",
+      "regexp:(^|\\.)tx\\.me$",
+      "regexp:(^|\\.)tg\\.dev$",
+      "regexp:(^|\\.)legra\\.ph$",
+      "regexp:(^|\\.)graph\\.org$",
+      "regexp:(^|\\.)telega\\.one$",
+      "regexp:(^|\\.)telegra\\.ph$",
+      "regexp:(^|\\.)telesco\\.pe$",
+      "regexp:(^|\\.)telegram\\.me$",
+      "regexp:(^|\\.)tdesktop\\.com$",
+      "regexp:(^|\\.)telegram\\.dog$",
+      "regexp:(^|\\.)telegram\\.org$",
+      "regexp:(^|\\.)telegram\\.space$",
+      "regexp:(^|\\.)cdn-telegram\\.org$"
+    ]
+  }
+]

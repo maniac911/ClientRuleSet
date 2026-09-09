@@ -1,0 +1,14 @@
+[
+  {
+    "name": "route.EF5849D8-A26C-9EF8-292D-420DA82A0937",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_direct · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)engage\\.cloudflareclient\\.com$"
+    ]
+  }
+]

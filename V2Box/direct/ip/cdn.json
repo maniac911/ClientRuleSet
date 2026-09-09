@@ -1,0 +1,16 @@
+[
+  {
+    "name": "route.6304D36F-5CEE-5B9B-55B1-E4192AA8F7BA",
+    "type": "IP",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [
+      "162.159.200.1/32",
+      "162.159.200.123/32",
+      "185.199.108.0/22"
+    ],
+    "remark": "ClientRuleSet ip/cdn · IP-CIDR · direct",
+    "isEnable": true,
+    "list": []
+  }
+]

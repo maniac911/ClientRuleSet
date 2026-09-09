@@ -1,0 +1,14 @@
+[
+  {
+    "name": "route.7D14596A-FED1-62A3-D3D9-8BFB16B697C7",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_direct · DOMAIN-SUFFIX · direct",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)engage\\.cloudflareclient\\.com$"
+    ]
+  }
+]

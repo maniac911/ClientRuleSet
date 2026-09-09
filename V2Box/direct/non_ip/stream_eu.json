@@ -1,0 +1,43 @@
+[
+  {
+    "name": "route.94294400-1969-53D1-D72C-794C645A082E",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_eu · DOMAIN · direct",
+    "isEnable": true,
+    "list": [
+      "bbc.mp-pxcdn.com",
+      "itvpnpmobile-a.akamaihd.net"
+    ]
+  },
+  {
+    "name": "route.12800889-7492-B205-3E07-75D6EC4AFB5F",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_eu · DOMAIN-SUFFIX · direct",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)itv\\.com$",
+      "regexp:(^|\\.)bbc\\.co\\.uk$",
+      "regexp:(^|\\.)bbci\\.co\\.uk$",
+      "regexp:(^|\\.)tvlicensing\\.co\\.uk$"
+    ]
+  },
+  {
+    "name": "route.8DF47EF1-1DA7-3686-C9C7-9557D2C3A645",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "keyword",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_eu · DOMAIN-KEYWORD · direct",
+    "isEnable": true,
+    "list": [
+      "bbcfmt",
+      "uk-live"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "route.F86631E0-C400-D821-8D30-EDC7DDF85575",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_plus · DOMAIN · direct",
+    "isEnable": true,
+    "list": [
+      "simpcraft.com",
+      "api.wakatime.com",
+      "hv-monster-submit.skk.moe",
+      "a1ewuiz2p7wdvw-ats.iot.us-west-2.amazonaws.com"
+    ]
+  },
+  {
+    "name": "route.EE78D2F6-4E37-894D-6EFB-015F3F3E3942",
+    "type": "Domain",
+    "tag": "direct",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_plus · DOMAIN-SUFFIX · direct",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)kxcdn\\.com$",
+      "regexp:(^|\\.)sososo\\.io$",
+      "regexp:(^|\\.)18comic\\.org$",
+      "regexp:(^|\\.)18comic\\.vip$",
+      "regexp:(^|\\.)azurefd\\.net$",
+      "regexp:(^|\\.)akamaihd\\.net$",
+      "regexp:(^|\\.)akamaized\\.net$",
+      "regexp:(^|\\.)vo\\.msecnd\\.net$",
+      "regexp:(^|\\.)hentaiverse\\.org$",
+      "regexp:(^|\\.)akamai-content-networks\\.com$"
+    ]
+  }
+]

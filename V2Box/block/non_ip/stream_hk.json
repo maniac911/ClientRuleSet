@@ -1,0 +1,64 @@
+[
+  {
+    "name": "route.3F566F00-B472-BB0E-D736-9E2DA1D10263",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_hk · DOMAIN · block",
+    "isEnable": true,
+    "list": [
+      "hbolb.onwardsmg.com",
+      "apm-misaka.biliapi.net",
+      "players.brightcove.net",
+      "manifest.prod.boltdns.net",
+      "hbounify-prod.evergent.com",
+      "dfp6rglgjqszk.cloudfront.net",
+      "d1k2us671qcoau.cloudfront.net",
+      "d2anahhhmp1ffz.cloudfront.net",
+      "upos-bstar-mirrorakam.akamaized.net",
+      "upos-bstar1-mirrorakam.akamaized.net",
+      "44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
+    ]
+  },
+  {
+    "name": "route.BA608FDA-A42B-16CD-02AB-CD4D9078A4CE",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_hk · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)viu\\.tv$",
+      "regexp:(^|\\.)tvb\\.com$",
+      "regexp:(^|\\.)viu\\.com$",
+      "regexp:(^|\\.)nowe\\.com$",
+      "regexp:(^|\\.)bilibili\\.tv$",
+      "regexp:(^|\\.)hboasia\\.com$",
+      "regexp:(^|\\.)viu\\.now\\.com$",
+      "regexp:(^|\\.)biliintl\\.com$",
+      "regexp:(^|\\.)hbogoasia\\.hk$",
+      "regexp:(^|\\.)hbogoasia\\.id$",
+      "regexp:(^|\\.)hbogoasia\\.ph$",
+      "regexp:(^|\\.)hbogoasia\\.sg$",
+      "regexp:(^|\\.)hbogoasia\\.tw$",
+      "regexp:(^|\\.)hbogoasia\\.com$",
+      "regexp:(^|\\.)mytvsuper\\.com$",
+      "regexp:(^|\\.)psg\\.cdn\\.hgc\\.com\\.hk$"
+    ]
+  },
+  {
+    "name": "route.0E9C86F4-59E0-433D-38CE-CF709767D396",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "keyword",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_hk · DOMAIN-KEYWORD · block",
+    "isEnable": true,
+    "list": [
+      "nowtv100",
+      "rthklive"
+    ]
+  }
+]

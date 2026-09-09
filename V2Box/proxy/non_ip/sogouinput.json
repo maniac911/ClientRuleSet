@@ -1,0 +1,33 @@
+[
+  {
+    "name": "route.FD348238-B5F8-E13A-6375-16D0384A44D0",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/sogouinput · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "oth.str.mdt.qq.com"
+    ]
+  },
+  {
+    "name": "route.503FF5C5-ACB6-E3B5-6493-2A26BC3A48E7",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/sogouinput · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)beacon\\.qq\\.com$",
+      "regexp:(^|\\.)get\\.sogou\\.com$",
+      "regexp:(^|\\.)ime\\.sogou\\.com$",
+      "regexp:(^|\\.)sginput\\.qq\\.com$",
+      "regexp:(^|\\.)macime\\.sogou\\.com$",
+      "regexp:(^|\\.)pinyin\\.sogou\\.com$",
+      "regexp:(^|\\.)shouji\\.sogou\\.com$",
+      "regexp:(^|\\.)account\\.sogou\\.com$"
+    ]
+  }
+]

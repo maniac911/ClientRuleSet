@@ -1,0 +1,57 @@
+[
+  {
+    "name": "route.A8979C44-C306-CC2A-3EF5-84B9FF2BFD63",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_tw · DOMAIN · block",
+    "isEnable": true,
+    "list": [
+      "www.litv.tv",
+      "cdi.ofiii.com",
+      "video.friday.tw",
+      "ana.video.friday.tw",
+      "hbolb.onwardsmg.com",
+      "players.brightcove.net",
+      "gamer-cds.cdn.hinet.net",
+      "gamer2-cds.cdn.hinet.net",
+      "manifest.prod.boltdns.net",
+      "hbounify-prod.evergent.com",
+      "ntdfreepc-tgc.cdn.hinet.net",
+      "d3c7rimkq79yfu.cloudfront.net",
+      "4gtvfreepcvod-cds.cdn.hinet.net",
+      "litvfreemobile-hichannel.cdn.hinet.net",
+      "44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
+    ]
+  },
+  {
+    "name": "route.68982263-17AF-09E4-FE8A-D016969E9C2A",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_tw · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)4gtv\\.tv$",
+      "regexp:(^|\\.)kktv\\.me$",
+      "regexp:(^|\\.)kk\\.stream$",
+      "regexp:(^|\\.)linetv\\.tw$",
+      "regexp:(^|\\.)fanfox\\.net$",
+      "regexp:(^|\\.)hboasia\\.com$",
+      "regexp:(^|\\.)kktv\\.com\\.tw$",
+      "regexp:(^|\\.)mangafox\\.me$",
+      "regexp:(^|\\.)viblast\\.com$",
+      "regexp:(^|\\.)hbogoasia\\.hk$",
+      "regexp:(^|\\.)hbogoasia\\.id$",
+      "regexp:(^|\\.)hbogoasia\\.ph$",
+      "regexp:(^|\\.)hbogoasia\\.sg$",
+      "regexp:(^|\\.)hbogoasia\\.tw$",
+      "regexp:(^|\\.)hbogoasia\\.com$",
+      "regexp:(^|\\.)bahamut\\.com\\.tw$",
+      "regexp:(^|\\.)ani\\.gamer\\.com\\.tw$",
+      "regexp:(^|\\.)api\\.gamer\\.com\\.tw$"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "name": "route.A6FC4C5C-B14A-E609-A28F-CE6E3AF23A28",
+    "type": "IP",
+    "tag": "direct",
+    "matchMode": "full",
+    "listIP": [
+      "140.205.1.0/24",
+      "162.14.0.0/18"
+    ],
+    "remark": "ClientRuleSet ip/domestic · IP-CIDR · direct",
+    "isEnable": true,
+    "list": []
+  }
+]

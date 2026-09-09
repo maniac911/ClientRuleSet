@@ -1,0 +1,22 @@
+[
+  {
+    "name": "route.3653294B-0EDD-1D6E-424C-FB862D63293C",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/download · DOMAIN-REGEX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:^download.*\\.mediafire\\.com$",
+      "regexp:^ftp\\...\\.debian\\.org$",
+      "regexp:^ftp\\...\\.freebsd\\.org$",
+      "regexp:^s3\\..*\\.backblazeb2\\.com$",
+      "regexp:^.*\\.s3\\..*\\.backblazeb2\\.com$",
+      "regexp:^cdn-.*\\.comaps\\.app$",
+      "regexp:^cdn-.*\\.comaps\\.tech$",
+      "regexp:^cdn-.*\\.organicmaps\\.app$",
+      "regexp:^dl-.*\\.mypikpak\\.com$"
+    ]
+  }
+]

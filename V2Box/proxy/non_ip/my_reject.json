@@ -1,0 +1,82 @@
+[
+  {
+    "name": "route.D3096E48-BC6F-5022-61E0-3198782F94B8",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_reject · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "ad.12306.cn",
+      "push.12306.cn",
+      "epay.10010.com",
+      "daisydiskapp.com",
+      "fyb-2.cdn.bcebos.com",
+      "mpush-api.aliyun.com",
+      "app-download.fliggy.com",
+      "userlocation.googleapis.com",
+      "loan-supermarket.faas.ele.me",
+      "locationhistory-pa.googleapis.com",
+      "locationhistoryaggregates-pa.googleapis.com",
+      "locationhistoryplacedetails-pa.googleapis.com"
+    ]
+  },
+  {
+    "name": "route.5919694C-C58E-5578-2950-792AC04E510E",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_reject · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)pipi\\.cn$",
+      "regexp:(^|\\.)ule\\.com$",
+      "regexp:(^|\\.)adobe\\.io$",
+      "regexp:(^|\\.)jr\\.mi\\.com$",
+      "regexp:(^|\\.)cool3c\\.com$",
+      "regexp:(^|\\.)ulecdn\\.com$",
+      "regexp:(^|\\.)tongdun\\.net$",
+      "regexp:(^|\\.)look\\.163\\.com$",
+      "regexp:(^|\\.)adobestats\\.io$",
+      "regexp:(^|\\.)lmk\\.mipay\\.com$",
+      "regexp:(^|\\.)mall\\.10010\\.cn$",
+      "regexp:(^|\\.)api\\.miwifi\\.com$",
+      "regexp:(^|\\.)httpizza\\.ele\\.me$",
+      "regexp:(^|\\.)mibi\\.xiaomi\\.com$",
+      "regexp:(^|\\.)microfin\\.ele\\.me$",
+      "regexp:(^|\\.)game\\.meituan\\.com$",
+      "regexp:(^|\\.)xiaomimobile\\.com$",
+      "regexp:(^|\\.)easytomessage\\.com$",
+      "regexp:(^|\\.)hybrid\\.xiaomi\\.com$",
+      "regexp:(^|\\.)logan\\.sankuai\\.com$",
+      "regexp:(^|\\.)mtvod\\.meituan\\.net$",
+      "regexp:(^|\\.)unicompayment\\.com$",
+      "regexp:(^|\\.)video\\.goofish\\.com$",
+      "regexp:(^|\\.)0\\.0\\.198\\.in-addr\\.arpa$",
+      "regexp:(^|\\.)contents\\.meituan\\.com$",
+      "regexp:(^|\\.)genuine\\.autodesk\\.com$",
+      "regexp:(^|\\.)jr\\.airstarfinance\\.net$",
+      "regexp:(^|\\.)mtvod-ali\\.meituan\\.net$",
+      "regexp:(^|\\.)newbuy\\.chinaunicom\\.cn$",
+      "regexp:(^|\\.)expenses-fe\\.meituan\\.com$",
+      "regexp:(^|\\.)video-zb\\.cloudvideocdn\\.taobao\\.com$"
+    ]
+  },
+  {
+    "name": "route.2FA08927-13FC-F6AB-0F63-9055C398AE49",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "keyword",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/my_reject · DOMAIN-KEYWORD · proxy",
+    "isEnable": true,
+    "list": [
+      "bahoom",
+      "-flv.meituan.net",
+      "-live.meituan.net",
+      "-fin.meituan.com"
+    ]
+  }
+]

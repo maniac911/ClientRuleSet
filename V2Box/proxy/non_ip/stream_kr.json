@@ -1,0 +1,15 @@
+[
+  {
+    "name": "route.5B90DF40-7CB8-2283-19AB-1684D106DF37",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/stream_kr · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)tv\\.naver\\.com$",
+      "regexp:(^|\\.)smartmediarep\\.com$"
+    ]
+  }
+]

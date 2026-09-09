@@ -1,0 +1,41 @@
+[
+  {
+    "name": "route.5F0AA88F-3D68-DB5C-EF1F-0C3A0C961BE5",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/apple_services · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)me\\.com$",
+      "regexp:(^|\\.)apple\\.co$",
+      "regexp:(^|\\.)apple\\.com$",
+      "regexp:(^|\\.)appsto\\.re$",
+      "regexp:(^|\\.)apple\\.news$",
+      "regexp:(^|\\.)icloud\\.com$",
+      "regexp:(^|\\.)itunes\\.com$",
+      "regexp:(^|\\.)aaplimg\\.com$",
+      "regexp:(^|\\.)appstore\\.com$",
+      "regexp:(^|\\.)apple-dns\\.net$",
+      "regexp:(^|\\.)cdn-apple\\.com$",
+      "regexp:(^|\\.)apple-mapkit\\.com$",
+      "regexp:(^|\\.)apple-cloudkit\\.com$",
+      "regexp:(^|\\.)icloud-content\\.com$",
+      "regexp:(^|\\.)organicfruitapps\\.com$",
+      "regexp:(^|\\.)push-apple\\.com\\.akadns\\.net$"
+    ]
+  },
+  {
+    "name": "route.8C18754A-711C-8540-3606-A861FCFE42EF",
+    "type": "IP",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [
+      "17.0.0.0/8"
+    ],
+    "remark": "ClientRuleSet non_ip/apple_services · IP-CIDR · block",
+    "isEnable": true,
+    "list": []
+  }
+]

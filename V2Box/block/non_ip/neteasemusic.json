@@ -1,0 +1,15 @@
+[
+  {
+    "name": "route.378B8A10-D81C-63AE-D3C2-5D55BAEE6133",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/neteasemusic · DOMAIN-SUFFIX · block",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)music\\.126\\.net$",
+      "regexp:(^|\\.)music\\.163\\.com$"
+    ]
+  }
+]
