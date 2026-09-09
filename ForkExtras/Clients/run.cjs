@@ -16,20 +16,57 @@ const outputDir = path.resolve(repoRoot, process.argv[3] || 'output');
 const config = YAML.parse(fs.readFileSync(path.join(repoRoot, 'ForkExtras', 'clients.yml'), 'utf8'));
 const clients = config?.clients || {};
 const loaded = [];
+
 for (const [name, client] of Object.entries(clients)) {
   if (!client || client.enabled !== true) continue;
+
   const adapterName = client.adapter || name;
   const adapterPath = path.join(__dirname, 'adapters', `${adapterName}.cjs`);
-  if (!fs.existsSync(adapterPath)) throw new Error(`Enabled client ${name} has no adapter: ${adapterPath}`);
+  if (!fs.existsSync(adapterPath)) {
+    throw new Error(`Enabled client ${name} has no adapter: ${adapterPath}`);
+  }
+
   const adapter = require(adapterPath);
   loaded.push({ name, client, adapter, priority: adapter.priority ?? 50 });
 }
+
 loaded.sort((a,b) => a.priority - b.priority || a.name.localeCompare(b.name));
 
 const context = { repoRoot, outputDir, config, lib, env: process.env };
+
 if (phase === 'prepare') {
-  for (const obsolete of ['MRS','SRS','Clash/MRS','sing-box/SRS','Clash/Release','sing-box/Release','Shadowrocket/Release','QuantumultX/Release']) lib.rm(path.join(outputDir, obsolete));
+  for (const obsolete of [
+    'MRS',
+    'SRS',
+    'Clash/MRS',
+    'sing-box/SRS',
+    'Clash/Release',
+    'sing-box/Release',
+    'Shadowrocket/Release',
+    'QuantumultX/Release'
+  ]) {
+    lib.rm(path.join(outputDir, obsolete));
+  }
+
+  for (const item of loaded) {
+    const nativeWriter = item.client.native_writer;
+    if (!nativeWriter) continue;
+
+    const nativeHookPath = path.join(__dirname, 'native', `${nativeWriter}.cjs`);
+    if (!fs.existsSync(nativeHookPath)) {
+      throw new Error(`Enabled client ${item.name} has no native writer hook: ${nativeHookPath}`);
+    }
+
+    const nativeHook = require(nativeHookPath);
+    if (typeof nativeHook.prepare !== 'function') {
+      throw new Error(`Native writer hook ${nativeWriter} does not export prepare()`);
+    }
+
+    console.log(`[clients] native prepare: ${item.name} (${nativeWriter})`);
+    nativeHook.prepare({ ...context, name: item.name, client: item.client });
+  }
 }
+
 if (phase === 'release') {
   for (const [name, client] of Object.entries(clients)) {
     if (client?.enabled === true || !client?.output) continue;
@@ -37,6 +74,7 @@ if (phase === 'release') {
     lib.rm(path.join(outputDir, client.output));
   }
 }
+
 for (const item of loaded) {
   const fn = item.adapter[phase];
   if (typeof fn !== 'function') continue;
