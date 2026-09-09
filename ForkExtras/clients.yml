@@ -1,0 +1,44 @@
+version: 1
+
+# Add or remove client outputs here. An enabled client loads
+# ForkExtras/Clients/adapters/<adapter>.cjs automatically.
+clients:
+  surge:
+    enabled: true
+    adapter: surge
+    output: Surge
+
+  clash:
+    enabled: true
+    adapter: clash
+    output: Clash
+    release: true
+
+  sing-box:
+    enabled: true
+    adapter: sing-box
+    output: sing-box
+    release: true
+
+  shadowrocket:
+    enabled: true
+    adapter: shadowrocket
+    output: Shadowrocket
+
+  quantumultx:
+    enabled: true
+    adapter: quantumultx
+    output: QuantumultX
+    # Quantumult X remote filters should normally be loaded with force-policy.
+    # This placeholder is required syntactically inside generated filter files.
+    policy_placeholder: direct
+
+  surfboard:
+    enabled: true
+    adapter: passthrough
+    output: Surfboard
+
+  legacy-clash-premium:
+    enabled: true
+    adapter: passthrough
+    output: LegacyClashPremium
