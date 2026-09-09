@@ -42,6 +42,12 @@ clients:
       # Port filters stay in _report until remote-filter compatibility is verified.
       port_rules: false
 
+  stash:
+    enabled: true
+    adapter: stash
+    native_writer: stash
+    output: Stash
+
   surfboard:
     enabled: true
     adapter: passthrough

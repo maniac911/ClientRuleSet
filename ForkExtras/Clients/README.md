@@ -44,4 +44,19 @@ Strict-mode mappings are HOST, HOST-SUFFIX, HOST-KEYWORD, HOST-WILDCARD, USER-AG
 
 Quantumult X remote filter lines require a policy field. Generated files use the configured placeholder (default `reject`) and are intended to be loaded with `force-policy=YOUR_POLICY` in `filter_remote`.
 
-Current adapters: Surge, Clash/Mihomo, sing-box, Shadowrocket, Quantumult X, plus passthrough for upstream-native outputs.
+## Stash
+
+Stash uses a native writer as well, because its classical rule syntax supports more of Sukka's universal rule model than Clash output preserves.
+
+```text
+Sukka FileOutput
+      -> StashDomainSet / StashRuleSet
+      -> Stash/*.txt
+      -> validation/reporting + rename to *.list
+```
+
+`domainset/*.list` is generated as Stash `behavior: domain`, `format: text` payloads for efficient matching. `non_ip/*.list` and `ip/*.list` are classical text providers and preserve documented Stash types such as DOMAIN-REGEX, USER-AGENT, URL-REGEX, IP-ASN, GEOIP, DST-PORT, PROTOCOL and AND/OR/NOT in addition to the normal domain/IP rules.
+
+Stash documents PROCESS-NAME and PROCESS-PATH, but also states that iOS/tvOS ignores process rules because of Network Extension limitations. These rules remain in the payload for cross-platform fidelity and are separately listed in `Stash/_report/platform-limited.txt`. Standalone source-IP/source-port rules remain conservative and go to `unsupported.txt` until explicitly documented or verified.
+
+Current adapters: Surge, Clash/Mihomo, sing-box, Shadowrocket, Quantumult X, Stash, plus passthrough for upstream-native outputs.
