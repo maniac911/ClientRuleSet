@@ -1,0 +1,247 @@
+# Loon unsupported source rules
+# These source rules were not published because Loon's public rule manual
+# does not document a lossless equivalent for the current adapter.
+
+# non_ip/apple_services.list
+PROCESS-NAME,apsd
+PROCESS-NAME,com.apple.geod
+PROCESS-NAME,com.apple.Maps
+PROCESS-NAME,CoreLocationAgent
+PROCESS-NAME,findmydevice-user-agent
+PROCESS-NAME,fmfd
+PROCESS-NAME,mapspushd
+PROCESS-NAME,WeatherWidget
+
+# non_ip/cdn.list
+DOMAIN-WILDCARD,*-intake-*-datadoghq.com
+DOMAIN-WILDCARD,*-intake.*.datadoghq.com
+DOMAIN-WILDCARD,*.fsvod?.com
+DOMAIN-WILDCARD,*.img.*.sendibm?.com
+DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+DOMAIN-WILDCARD,*.skyearth?.xyz
+DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
+DOMAIN-WILDCARD,assets.*.imaga.co
+DOMAIN-WILDCARD,assets*.freshdesk.com
+DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+DOMAIN-WILDCARD,blog-imgs-??.fc2.com
+DOMAIN-WILDCARD,cdn-*.microsoft.com
+DOMAIN-WILDCARD,cdn-msp?.18comic.org
+DOMAIN-WILDCARD,cdn-msp?.18comic.vip
+DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
+DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+DOMAIN-WILDCARD,cdn?-dl.pornhost.com
+DOMAIN-WILDCARD,cdn?.18girlssex.com
+DOMAIN-WILDCARD,cdn?.mikuclub.fun
+DOMAIN-WILDCARD,cdn.*.dmm.co.jp
+DOMAIN-WILDCARD,cdn.*.microsoft.com
+DOMAIN-WILDCARD,cdn.*.office.net
+DOMAIN-WILDCARD,cdn*.boysfood.com
+DOMAIN-WILDCARD,cdn*.pigav.com
+DOMAIN-WILDCARD,cdn*.porn87.com
+DOMAIN-WILDCARD,cdn*.pornhost.com
+DOMAIN-WILDCARD,cdns.*.gigya.com
+DOMAIN-WILDCARD,chunk-*.mux.com
+DOMAIN-WILDCARD,fastly-*.allmovie.com
+DOMAIN-WILDCARD,file?.mikuclub.fun
+DOMAIN-WILDCARD,i?.nhentai.net
+DOMAIN-WILDCARD,image*.cloudokyo.cloud
+DOMAIN-WILDCARD,img-*.now.com
+DOMAIN-WILDCARD,img??.porngo.com
+DOMAIN-WILDCARD,img?.porngo.com
+DOMAIN-WILDCARD,object-storage-*.vexxhost.net
+DOMAIN-WILDCARD,ocsp.*.amazontrust.com
+DOMAIN-WILDCARD,proxy-*.dailymotion.com
+DOMAIN-WILDCARD,rr?---??.ouo.si
+DOMAIN-WILDCARD,s???.pornone.com
+DOMAIN-WILDCARD,s??.maxstream.org
+DOMAIN-WILDCARD,s?.maxstream.org
+DOMAIN-WILDCARD,s3-*.figma.com
+DOMAIN-WILDCARD,s3.*.wasabisys.com
+DOMAIN-WILDCARD,sdk.*.braze.eu
+DOMAIN-WILDCARD,static??.tgstat.ru
+DOMAIN-WILDCARD,static?.tgstat.ru
+DOMAIN-WILDCARD,stream??.kissjav.com
+DOMAIN-WILDCARD,stream?.kissjav.com
+DOMAIN-WILDCARD,t?.nhentai.net
+DOMAIN-WILDCARD,th-*.pornone.com
+DOMAIN-WILDCARD,uploads-*.insided.com
+DOMAIN-WILDCARD,v.rn???.xyz
+DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,video-thumbnail2.fc2.com
+DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
+DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,video*.cloudokyo.cloud
+DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
+
+# non_ip/cloudmounter.list
+AND,((DOMAIN-SUFFIX,files.1drv.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,files.1drv.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,graph.microsoft.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,storage.live.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,storage.live.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,upload.box.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,upload.box.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-WILDCARD,*-medi*.svc.ms),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN,api.onedrive.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN,api.onedrive.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN,www.googleapis.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN,www.googleapis.com),(SRC-IP,192.168.0.0/16))
+
+# non_ip/direct.list
+PROCESS-NAME,amuled
+PROCESS-NAME,aria2c
+PROCESS-NAME,BaiduNetdisk_mac
+PROCESS-NAME,BitComet
+PROCESS-NAME,clash
+PROCESS-NAME,ClashX
+PROCESS-NAME,cloudflared
+PROCESS-NAME,DownloadService
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,LocalSend
+PROCESS-NAME,Logi Options
+PROCESS-NAME,Logi Options Daemon
+PROCESS-NAME,NetTransport
+PROCESS-NAME,parsecd
+PROCESS-NAME,privoxy
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,qbittorrent-nox
+PROCESS-NAME,qbittorrent*
+PROCESS-NAME,ss-local
+PROCESS-NAME,SunloginClient_Desktop
+PROCESS-NAME,SunloginClient_Helper
+PROCESS-NAME,tailscaled
+PROCESS-NAME,Thunder
+PROCESS-NAME,ThunderVIP
+PROCESS-NAME,Transmission
+PROCESS-NAME,transmission-daemon
+PROCESS-NAME,transmission-qt
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,uTorrent
+PROCESS-NAME,UUBooster
+PROCESS-NAME,v2ray
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
+PROCESS-NAME,xray
+
+# non_ip/domestic.list
+DOMAIN-WILDCARD,*.qhimgs?.com
+
+# non_ip/download.list
+DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
+DOMAIN-WILDCARD,cdn-*.comaps.app
+DOMAIN-WILDCARD,cdn-*.comaps.tech
+DOMAIN-WILDCARD,cdn-*.organicmaps.app
+DOMAIN-WILDCARD,dl-*.mypikpak.com
+DOMAIN-WILDCARD,download*.mediafire.com
+DOMAIN-WILDCARD,ftp.??.debian.org
+DOMAIN-WILDCARD,ftp.??.freebsd.org
+DOMAIN-WILDCARD,s3.*.backblazeb2.com
+
+# non_ip/my_direct.list
+PROCESS-NAME,nmap
+
+# non_ip/my_reject.list
+PROCESS-NAME,LemonAgent
+PROCESS-NAME,LemonDaemon
+PROCESS-NAME,LemonMonitor
+PROCESS-NAME,LemonService
+PROCESS-NAME,Tencent Lemon
+
+# non_ip/my_tw.list
+DOMAIN-WILDCARD,*.ffzy-online?.com
+DOMAIN-WILDCARD,*.ffzy-play?.com
+DOMAIN-WILDCARD,*.lz-cdn??.com
+DOMAIN-WILDCARD,*.lz-cdn?.com
+
+# non_ip/reject-drop.list
+DOMAIN-WILDCARD,f-log*.grammarly.io
+
+# non_ip/reject-no-drop.list
+DOMAIN-WILDCARD,dyp2p-*.douyucdn.cn
+DOMAIN-WILDCARD,p2p-*.douyucdn.cn
+DOMAIN-WILDCARD,p2p*.qq.com
+DOMAIN-WILDCARD,p2pchunk-*.douyucdn.cn
+DOMAIN-WILDCARD,p2plive-*.douyucdn.cn
+DOMAIN-WILDCARD,stun*.douyucdn.cn
+DOMAIN-WILDCARD,upos-sz-302*.bilivideo.com
+
+# non_ip/reject.list
+DOMAIN-WILDCARD,*-pcdn-*.biliapi.net
+DOMAIN-WILDCARD,*.ad.*.prod.hosts.ooklaserver.net
+DOMAIN-WILDCARD,*.tracking.*.miui.com
+DOMAIN-WILDCARD,ads-*.tiktok.com
+DOMAIN-WILDCARD,ads-*.xhscdn.com
+DOMAIN-WILDCARD,adv0*.msa.cdn.mediaset.net
+DOMAIN-WILDCARD,analytics-*.aasaam.com
+DOMAIN-WILDCARD,beacons*.gvt?.com
+DOMAIN-WILDCARD,f-log*.grammarly.io
+DOMAIN-WILDCARD,info.*.aleragroup.com
+DOMAIN-WILDCARD,log*-normal-*.tiktokv.com
+DOMAIN-WILDCARD,mon-*.byteoversea.com
+DOMAIN-WILDCARD,pixel*.adswizz.com
+DOMAIN-WILDCARD,tracking.*.miui.com
+DOMAIN-WILDCARD,v*.thenewstack.io
+
+# non_ip/sogouinput.list
+PROCESS-NAME,SogouInput
+PROCESS-NAME,SogouServices
+PROCESS-NAME,SogouTaskManager
+
+# non_ip/stream_hk.list
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+
+# non_ip/stream_tw.list
+PROCESS-NAME,com.linecorp.linetv
+
+# non_ip/stream_us.list
+PROCESS-NAME,com.hulu.plus
+
+# non_ip/stream.list
+PROCESS-NAME,com.amazon.avod.thirdpartyclient
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.hulu.plus
+PROCESS-NAME,com.linecorp.linetv
+PROCESS-NAME,com.netflix.mediaclient
+PROCESS-NAME,com.tencent.ibg.joox
+PROCESS-NAME,com.twgood.android
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+PROCESS-NAME,music
+PROCESS-NAME,tv
+PROCESS-NAME,tv.twitch.android.app
