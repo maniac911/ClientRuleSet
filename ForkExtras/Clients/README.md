@@ -59,4 +59,23 @@ Sukka FileOutput
 
 Stash documents PROCESS-NAME and PROCESS-PATH, but also states that iOS/tvOS ignores process rules because of Network Extension limitations. These rules remain in the payload for cross-platform fidelity and are separately listed in `Stash/_report/platform-limited.txt`. Standalone source-IP/source-port rules remain conservative and go to `unsupported.txt` until explicitly documented or verified.
 
-Current adapters: Surge, Clash/Mihomo, sing-box, Shadowrocket, Quantumult X, Stash, plus passthrough for upstream-native outputs.
+## Loon
+
+Loon also uses a native writer and produces policy-free subscription rule lists directly from Sukka `FileOutput`.
+
+```text
+Sukka FileOutput
+      -> LoonDomainSet / LoonRuleSet
+      -> Loon/*.txt
+      -> validation/reporting + rename to *.list
+```
+
+The strict mapping follows Loon's public rule manual: DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, USER-AGENT, URL-REGEX, IP-CIDR, IP-CIDR6, GEOIP, IP-ASN, SRC-PORT, DEST-PORT, PROTOCOL and AND/OR/NOT are emitted. Literal spaces in USER-AGENT patterns are percent-encoded for Loon rule-list compatibility. DOMAIN-WILDCARD, process rules, standalone source-IP rules and unknown source rules are reported instead of guessed.
+
+Loon applies the policy outside the downloaded subscription list, for example:
+
+```text
+https://raw.githubusercontent.com/maniac911/ClientRuleSet/rules-dist/Loon/non_ip/ai.list, PROXY
+```
+
+Current adapters: Surge, Clash/Mihomo, sing-box, Shadowrocket, Quantumult X, Stash, Loon, plus passthrough for upstream-native outputs.
