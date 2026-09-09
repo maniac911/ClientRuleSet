@@ -1,7 +1,6 @@
 name: Sync Upstream and Build Rules
 
 on:
-  # One daily sync/build cycle. 06:47 UTC = 14:47 UTC+8.
   schedule:
     - cron: "47 6 * * *"
   workflow_dispatch:
@@ -26,37 +25,25 @@ jobs:
   sync-upstream:
     name: Sync SukkaW/Surge into fork master
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout fork master
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: master
           fetch-depth: 0
-
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
       - name: Fetch upstream
         run: |
           set -euo pipefail
           git remote remove upstream 2>/dev/null || true
           git remote add upstream "${UPSTREAM_REPO}"
           git fetch --no-tags upstream master
-
       - name: Merge upstream safely
         run: |
           set -euo pipefail
-
-          if git merge-base --is-ancestor upstream/master HEAD; then
-            echo "Fork master already contains the latest upstream master."
-            exit 0
-          fi
-
-          # Preserve fork-only commits. If both sides changed the same lines,
-          # fail instead of automatically choosing one side.
+          if git merge-base --is-ancestor upstream/master HEAD; then exit 0; fi
           git merge --no-edit upstream/master
           git push origin HEAD:master
 
@@ -64,381 +51,78 @@ jobs:
     name: Build from fork master and publish rules-dist
     needs: sync-upstream
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout updated fork master
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: master
           fetch-depth: 1
-
       - name: Record source commit
-        shell: bash
         run: echo "SOURCE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
           run_install: false
-
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version-file: ".node-version"
           cache: pnpm
-
       - name: Install dependencies
         run: |
           pnpm config set --location=global minimumReleaseAge 0
           pnpm install --frozen-lockfile
-
       - name: Prepare previous build directory
-        shell: bash
         run: |
           set -euo pipefail
-
           if git ls-remote --exit-code --heads "https://github.com/${GITHUB_REPOSITORY}.git" "${DIST_BRANCH}" >/dev/null 2>&1; then
             git clone --depth 1 --branch "${DIST_BRANCH}" "https://github.com/${GITHUB_REPOSITORY}.git" output
             rm -rf output/.git
           else
-            # Sukka's build expects a non-empty PUBLIC_DIR in CI. Bootstrap it
-            # from the official generated output only if rules-dist does not yet exist.
             git clone --depth 1 --branch master https://github.com/SukkaLab/ruleset.skk.moe.git output
             rm -rf output/.git
           fi
-
-          # rules-dist publishes Surge rules under Surge/, with Surge Modules nested
-          # inside Surge/Modules/. Restore the upstream working layout before build:
-          # Surge/* -> List/* and Surge/Modules -> Modules.
-          if [ -d output/Surge ]; then
-            if [ -d output/Surge/Modules ]; then
-              rm -rf output/Modules
-              mv output/Surge/Modules output/Modules
-            fi
-            rm -rf output/List
-            mv output/Surge output/List
-          fi
-
-          # Release directories are fork-generated and must never be reused as
-          # build inputs. Also remove older MRS/SRS layouts from previous versions.
-          rm -rf \
-            output/MRS \
-            output/SRS \
-            output/Clash/MRS \
-            output/sing-box/SRS \
-            output/Clash/Release \
-            output/sing-box/Release
-
+          node ForkExtras/Clients/run.cjs prepare output
       - name: Overlay fork-only source rules
-        shell: bash
         run: |
           set -euo pipefail
-
-          # Put personal rules under ForkExtras/Source/ using the same layout as
-          # Source/ (domainset/, non_ip/, ip/). They are copied only inside the
-          # Actions runner, so upstream Source/ stays clean and easy to sync.
-          if [ -d ForkExtras/Source ]; then
-            rsync -a ForkExtras/Source/ Source/
-          fi
-
+          if [ -d ForkExtras/Source ]; then rsync -a ForkExtras/Source/ Source/; fi
       - name: Build standard rules from this fork
         run: pnpm run build
         env:
           PUBLIC_DIR: ${{ github.workspace }}/output
-
-      - name: Verify source build
-        shell: bash
+      - name: Verify upstream build
         run: |
           set -euo pipefail
           test -f .BUILD_FINISHED
           test -d output/List
           test -d output/Clash
           test -d output/sing-box
-
-      - name: Pull binary rule compilers
+      - name: Pull binary compilers
         run: |
-          set -euo pipefail
           docker pull "${SING_BOX_IMAGE}"
           docker pull "${MIHOMO_IMAGE}"
-
-      - name: Build Clash Release rules
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          release="output/Clash/Release"
-          rm -rf "$release"
-          mkdir -p "$release/domainset" "$release/non_ip" "$release/ip" .tmp-clash-release
-
-          domain_binary=0
-          domain_fallback=0
-          nonip_binary=0
-          nonip_text=0
-          ip_binary=0
-          ip_text=0
-
-          # 1) Native domainset files are already in Mihomo domain payload syntax.
-          # Try MRS first; if Mihomo rejects a file, keep the original text rule.
-          while IFS= read -r -d '' src; do
-            base="$(basename "$src" .txt)"
-            cleaned=".tmp-clash-release/domainset-${base}.txt"
-            out="$release/domainset/${base}.mrs"
-
-            sed -e '/^[[:space:]]*#/d' -e '/^[[:space:]]*$/d' "$src" > "$cleaned"
-
-            if [ -s "$cleaned" ] && docker run --rm \
-              -v "$PWD:/work" \
-              -w /work \
-              "${MIHOMO_IMAGE}" \
-              convert-ruleset domain text \
-              "/work/${cleaned}" \
-              "/work/${out}"; then
-              test -s "$out"
-              domain_binary=$((domain_binary + 1))
-            else
-              rm -f "$out"
-              cp "$src" "$release/domainset/${base}.txt"
-              domain_fallback=$((domain_fallback + 1))
-            fi
-          done < <(find output/Clash/domainset -maxdepth 1 -type f -name '*.txt' -print0 | sort -z)
-
-          # 2) non_ip files are classical rules. If a file contains only DOMAIN
-          # and DOMAIN-SUFFIX rules (apart from Sukka's sentinel domain), it can
-          # be losslessly converted to a domain MRS. Mixed classical files stay text.
-          while IFS= read -r -d '' src; do
-            base="$(basename "$src" .txt)"
-            cleaned=".tmp-clash-release/nonip-${base}.txt"
-            out="$release/non_ip/${base}.mrs"
-            : > "$cleaned"
-            convertible=1
-
-            while IFS= read -r line || [ -n "$line" ]; do
-              line="${line%$'\r'}"
-              [[ "$line" =~ ^[[:space:]]*$ ]] && continue
-              [[ "$line" =~ ^[[:space:]]*# ]] && continue
-
-              case "$line" in
-                DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe)
-                  ;;
-                DOMAIN,*)
-                  value="${line#DOMAIN,}"
-                  value="${value%%,*}"
-                  printf '%s\n' "$value" >> "$cleaned"
-                  ;;
-                DOMAIN-SUFFIX,*)
-                  value="${line#DOMAIN-SUFFIX,}"
-                  value="${value%%,*}"
-                  value="${value#.}"
-                  printf '+.%s\n' "$value" >> "$cleaned"
-                  ;;
-                *)
-                  convertible=0
-                  break
-                  ;;
-              esac
-            done < "$src"
-
-            if [ "$convertible" -eq 1 ] && [ -s "$cleaned" ] && docker run --rm \
-              -v "$PWD:/work" \
-              -w /work \
-              "${MIHOMO_IMAGE}" \
-              convert-ruleset domain text \
-              "/work/${cleaned}" \
-              "/work/${out}"; then
-              test -s "$out"
-              nonip_binary=$((nonip_binary + 1))
-            else
-              rm -f "$out"
-              cp "$src" "$release/non_ip/${base}.txt"
-              nonip_text=$((nonip_text + 1))
-            fi
-          done < <(find output/Clash/non_ip -maxdepth 1 -type f -name '*.txt' -print0 | sort -z)
-
-          # 3) IP rules are converted only when every effective rule is a raw
-          # CIDR or IP-CIDR/IP-CIDR6 rule. Mixed IP/ASN/domain/classical files
-          # are copied unchanged so their semantics are preserved.
-          while IFS= read -r -d '' src; do
-            base="$(basename "$src" .txt)"
-            cleaned=".tmp-clash-release/ip-${base}.txt"
-            out="$release/ip/${base}.mrs"
-            : > "$cleaned"
-            convertible=1
-
-            while IFS= read -r line || [ -n "$line" ]; do
-              line="${line%$'\r'}"
-              [[ "$line" =~ ^[[:space:]]*$ ]] && continue
-              [[ "$line" =~ ^[[:space:]]*# ]] && continue
-
-              case "$line" in
-                DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe)
-                  ;;
-                IP-CIDR,*|IP-CIDR6,*)
-                  value="${line#*,}"
-                  value="${value%%,*}"
-                  printf '%s\n' "$value" >> "$cleaned"
-                  ;;
-                */*)
-                  printf '%s\n' "$line" >> "$cleaned"
-                  ;;
-                *)
-                  convertible=0
-                  break
-                  ;;
-              esac
-            done < "$src"
-
-            if [ "$convertible" -eq 1 ] && [ -s "$cleaned" ] && docker run --rm \
-              -v "$PWD:/work" \
-              -w /work \
-              "${MIHOMO_IMAGE}" \
-              convert-ruleset ipcidr text \
-              "/work/${cleaned}" \
-              "/work/${out}"; then
-              test -s "$out"
-              ip_binary=$((ip_binary + 1))
-            else
-              rm -f "$out"
-              cp "$src" "$release/ip/${base}.txt"
-              ip_text=$((ip_text + 1))
-            fi
-          done < <(find output/Clash/ip -maxdepth 1 -type f -name '*.txt' -print0 | sort -z)
-
-          rm -rf .tmp-clash-release
-
-          cat > "$release/README.md" <<EOF
-          # Clash Release
-
-          Ready-to-use output selected from the generated Clash rules.
-
-          - \`domainset/*.mrs\`: Mihomo \`behavior: domain\`, \`format: mrs\`.
-          - \`domainset/*.txt\`: fallback text domain rules when MRS conversion is not possible.
-          - \`non_ip/*.mrs\`: classical source that contained only DOMAIN/DOMAIN-SUFFIX and was losslessly converted; use \`behavior: domain\`.
-          - \`non_ip/*.txt\`: mixed classical rules; use \`behavior: classical\`, \`format: text\`.
-          - \`ip/*.mrs\`: pure CIDR/IP-CIDR/IP-CIDR6 rules converted to MRS; use \`behavior: ipcidr\`.
-          - \`ip/*.txt\`: mixed/non-convertible IP rules copied unchanged; normally use \`behavior: classical\`, \`format: text\`.
-
-          Conversion summary: domainset MRS=${domain_binary}, domainset text=${domain_fallback}, non_ip MRS=${nonip_binary}, non_ip text=${nonip_text}, ip MRS=${ip_binary}, ip text=${ip_text}.
-          EOF
-
-          echo "Clash Release: domain MRS=${domain_binary}, domain fallback=${domain_fallback}, non_ip MRS=${nonip_binary}, non_ip text=${nonip_text}, IP MRS=${ip_binary}, IP text=${ip_text}"
-
-      - name: Build sing-box Release rules
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          release="output/sing-box/Release"
-          rm -rf "$release"
-          mkdir -p "$release"
-
-          binary=0
-          fallback=0
-
-          # sing-box JSON Headless Rules can normally all be compiled to SRS.
-          # If a future upstream JSON file cannot be compiled, preserve it as JSON
-          # in Release instead of dropping the rule set.
-          while IFS= read -r -d '' src; do
-            rel="${src#output/sing-box/}"
-            out="$release/${rel%.json}.srs"
-            fallback_out="$release/$rel"
-            mkdir -p "$(dirname "$out")"
-
-            if docker run --rm \
-              -v "$PWD:/work" \
-              -w /work \
-              "${SING_BOX_IMAGE}" \
-              rule-set compile \
-              --output "/work/${out}" \
-              "/work/${src}"; then
-              test -s "$out"
-              binary=$((binary + 1))
-            else
-              rm -f "$out"
-              mkdir -p "$(dirname "$fallback_out")"
-              cp "$src" "$fallback_out"
-              fallback=$((fallback + 1))
-            fi
-          done < <(find output/sing-box -type f -name '*.json' ! -path '*/Release/*' -print0 | sort -z)
-
-          cat > "$release/README.md" <<EOF
-          # sing-box Release
-
-          Ready-to-use sing-box rule sets.
-
-          - \`*.srs\`: successfully compiled binary rule sets.
-          - \`*.json\`: source JSON copied only when SRS compilation was not possible.
-
-          Directory layout mirrors the source categories (\`domainset/\`, \`non_ip/\`, \`ip/\`).
-          Conversion summary: SRS=${binary}, JSON fallback=${fallback}.
-          EOF
-
-          echo "sing-box Release: SRS=${binary}, JSON fallback=${fallback}"
-          test "$binary" -gt 0
-
-      - name: Normalize published directory names
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          # Publish Surge rules under the explicit client name instead of the
-          # upstream internal output name "List".
-          rm -rf output/Surge
-          mv output/List output/Surge
-
-          # Surge Modules belong to the Surge client output, so publish them under
-          # Surge/Modules/ instead of leaving a separate top-level Modules/ folder.
-          if [ -d output/Modules ]; then
-            rm -rf output/Surge/Modules
-            mv output/Modules output/Surge/Modules
-          fi
-
+      - name: Run client adapters
+        run: node ForkExtras/Clients/run.cjs release output
       - name: Write fork build metadata
-        shell: bash
         run: |
           set -euo pipefail
           sudo chown -R "$(id -u):$(id -g)" output
-
           cat > output/FORK-README.md <<EOF
           # maniac911/ClientRuleSet generated rules
 
-          This branch is built automatically from this fork's current \`master\`
-          after synchronizing \`SukkaW/Surge\` into the fork.
+          Built from fork source commit: ${SOURCE_SHA}
 
-          - Fork source commit: \`${SOURCE_SHA}\`
-          - Upstream source: \`SukkaW/Surge\`
-          - sing-box SRS compiler: \`${SING_BOX_IMAGE}\`
-          - Mihomo MRS compiler: \`${MIHOMO_IMAGE}\`
+          Build flow: SukkaW/Surge -> fork master -> pnpm build -> ForkExtras client adapters -> rules-dist
 
-          ## Build flow
-
-          \`SukkaW/Surge -> sync to fork master -> pnpm build -> client Release selection -> rules-dist\`
-
-          Fork-only source rules can live under \`ForkExtras/Source/\`. During the
-          workflow they are overlaid onto \`Source/\` only inside the runner, so
-          the upstream source tree remains easy to synchronize.
-
-          ## Published layout
-
-          - \`Surge/\` — Surge rules (upstream Build internally calls this \`List/\`).
-          - \`Surge/Modules/\` — Surge modules and their auxiliary rule files.
-          - \`Clash/domainset/\`, \`Clash/non_ip/\`, \`Clash/ip/\` — full generated Mihomo/Clash text outputs.
-          - \`Clash/Release/\` — ready-to-use Clash/Mihomo release rules: convertible rules are MRS, non-convertible rules are copied as text.
-          - \`sing-box/domainset/\`, \`sing-box/non_ip/\`, \`sing-box/ip/\` — full generated sing-box JSON outputs.
-          - \`sing-box/Release/\` — ready-to-use sing-box release rules: JSON is compiled to SRS when possible, otherwise copied as JSON.
-          - \`LegacyClashPremium/\`, \`Surfboard/\` and related generated files — other upstream outputs.
+          Client enable/disable settings live in ForkExtras/clients.yml on master.
           EOF
-
           find output -type f -not -name FILES.txt -printf '%P\n' | sort > output/FILES.txt
-
       - name: Publish generated output to rules-dist
-        shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-
           repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-
           if git ls-remote --exit-code --heads "$repo_url" "${DIST_BRANCH}" >/dev/null 2>&1; then
             git clone --depth 1 --branch "${DIST_BRANCH}" "$repo_url" publish-repo
           else
@@ -448,18 +132,11 @@ jobs:
             git rm -rf . >/dev/null 2>&1 || true
             cd ..
           fi
-
           rsync -a --delete --exclude='.git' output/ publish-repo/
-
           cd publish-repo
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-
-          if git diff --cached --quiet; then
-            echo "No generated rule changes."
-            exit 0
-          fi
-
-          git commit -m "chore: build rules from fork master ${SOURCE_SHA}"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: build client releases from fork master ${SOURCE_SHA}"
           git push origin "HEAD:${DIST_BRANCH}"
