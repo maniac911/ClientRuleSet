@@ -1,0 +1,20 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_tv",
+        "domain": [
+          "full:ocvideo.apple.com",
+          "full:linear.tv.apple.com",
+          "full:hls.itunes.apple.com",
+          "full:hls-amt.itunes.apple.com",
+          "full:np-edge.itunes.apple.com",
+          "full:uts-api.itunes.apple.com",
+          "full:play-edge.itunes.apple.com"
+        ]
+      }
+    ]
+  }
+}

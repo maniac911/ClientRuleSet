@@ -1,0 +1,20 @@
+[
+  {
+    "name": "route.6CBBAB5C-C59A-2EBC-2DE9-1BDE8CBABACC",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/apple_tv · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "ocvideo.apple.com",
+      "linear.tv.apple.com",
+      "hls.itunes.apple.com",
+      "hls-amt.itunes.apple.com",
+      "np-edge.itunes.apple.com",
+      "uts-api.itunes.apple.com",
+      "play-edge.itunes.apple.com"
+    ]
+  }
+]

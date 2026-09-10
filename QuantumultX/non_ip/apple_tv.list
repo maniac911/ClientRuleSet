@@ -1,0 +1,20 @@
+#########################################
+# Apple TV
+# Last Updated: 2026-09-10T02:38:50.190Z
+# Size: 7
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# Apple TV service endpoints for dedicated proxy routing.
+#
+# $content-hash-v1$:1U_b3TghlfxNnjsUn9g_I2tBFNLicTtsbsk5kWnR2uc$
+#########################################
+HOST,ocvideo.apple.com,reject
+HOST,linear.tv.apple.com,reject
+HOST,hls.itunes.apple.com,reject
+HOST,hls-amt.itunes.apple.com,reject
+HOST,np-edge.itunes.apple.com,reject
+HOST,uts-api.itunes.apple.com,reject
+HOST,play-edge.itunes.apple.com,reject
+################## EOF ##################
