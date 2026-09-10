@@ -1,14 +1,14 @@
 #########################################
 # Bilibili IP
-# Last Updated: 2026-09-10T15:58:05.189Z
-# Size: 16
+# Last Updated: 2026-09-10T16:26:49.302Z
+# Size: 17
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # Known Bilibili HTTPDNS endpoints observed/used by the client for direct IP access.
 #
-# $content-hash-v1$:CWRTRTKIVPnobp6YjRT_ebFc8oz1iZw1w7CWy9SsKIA$
+# $content-hash-v1$:1GulM-fwpqWd8Z-ifMRmmhV5YHgA9ZQvIfzu36SWjEE$
 #########################################
 IP-CIDR,47.100.123.169/32,reject
 IP-CIDR,47.101.175.206/32,reject
@@ -26,4 +26,5 @@ IP-CIDR,121.36.72.124/32,reject
 IP-CIDR,122.9.7.134/32,reject
 IP-CIDR,122.9.13.79/32,reject
 IP-CIDR,122.9.15.129/32,reject
+IP-CIDR,203.119.238.194/32,reject
 ################## EOF ##################

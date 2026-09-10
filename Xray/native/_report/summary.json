@@ -12,7 +12,7 @@
     "PROCESS-NAME": 1,
     "URL-REGEX": 192
   },
-  "warnings": 295,
+  "warnings": 292,
   "notes": [
     "Each file is a routing fragment shaped as { routing: { rules: [...] } }; merge it into a complete Xray config before running it.",
     "sourceIP/sourcePort are preserved natively.",

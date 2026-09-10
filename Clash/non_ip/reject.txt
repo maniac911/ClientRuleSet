@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Non-IP
-# Last Updated: 2026-09-10T15:58:04.767Z
-# Size: 355
+# Last Updated: 2026-09-10T16:26:48.976Z
+# Size: 354
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -34,7 +34,7 @@
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-newsletters.txt
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt
 #
-# $content-hash-v1$:K4EMZGsv0krgX8u1Q2APvL5h-AbCL_b_YCtVjflPlUc$
+# $content-hash-v1$:5Iu8knYaylCXl6oWfnnqlPZ77K5ATooUcArtitoV-ko$
 #########################################
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN-SUFFIX,data
@@ -386,7 +386,6 @@ IP-CIDR,202.90.108.13/32,no-resolve
 IP-CIDR,202.90.110.46/32,no-resolve
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,203.119.204.66/32,no-resolve
-IP-CIDR,203.119.238.194/32,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
 IP-CIDR6,240e:928:1400:10::25/128,no-resolve
