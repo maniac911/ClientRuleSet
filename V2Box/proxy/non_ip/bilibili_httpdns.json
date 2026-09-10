@@ -1,0 +1,14 @@
+[
+  {
+    "name": "route.B0A02594-54C3-36C2-3178-589E03D668E2",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/bilibili_httpdns · DOMAIN · proxy",
+    "isEnable": true,
+    "list": [
+      "httpdns.bilivideo.com"
+    ]
+  }
+]

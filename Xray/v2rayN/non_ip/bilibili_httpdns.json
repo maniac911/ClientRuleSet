@@ -1,0 +1,11 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/bilibili_httpdns",
+    "domain": [
+      "full:httpdns.bilivideo.com"
+    ]
+  }
+]

@@ -15,6 +15,7 @@ Clash/Release/domainset/reject_sukka.txt
 Clash/Release/domainset/speedtest.mrs
 Clash/Release/ip/ai.mrs
 Clash/Release/ip/apple_services.mrs
+Clash/Release/ip/bilibili_httpdns.mrs
 Clash/Release/ip/cdn.mrs
 Clash/Release/ip/china_ip.mrs
 Clash/Release/ip/china_ip_ipv6.mrs
@@ -38,6 +39,7 @@ Clash/Release/non_ip/apple_cdn.txt
 Clash/Release/non_ip/apple_cn.mrs
 Clash/Release/non_ip/apple_intelligence.mrs
 Clash/Release/non_ip/apple_services.txt
+Clash/Release/non_ip/bilibili_httpdns.mrs
 Clash/Release/non_ip/cdn.txt
 Clash/Release/non_ip/cloudmounter.txt
 Clash/Release/non_ip/direct.txt
@@ -84,6 +86,7 @@ Clash/domainset/reject_sukka.txt
 Clash/domainset/speedtest.txt
 Clash/ip/ai.txt
 Clash/ip/apple_services.txt
+Clash/ip/bilibili_httpdns.txt
 Clash/ip/cdn.txt
 Clash/ip/china_ip.txt
 Clash/ip/china_ip_ipv6.txt
@@ -107,6 +110,7 @@ Clash/non_ip/apple_cdn.txt
 Clash/non_ip/apple_cn.txt
 Clash/non_ip/apple_intelligence.txt
 Clash/non_ip/apple_services.txt
+Clash/non_ip/bilibili_httpdns.txt
 Clash/non_ip/cdn.txt
 Clash/non_ip/cloudmounter.txt
 Clash/non_ip/direct.txt
@@ -155,6 +159,7 @@ Egern/domainset/reject_phishing.yaml
 Egern/domainset/speedtest.yaml
 Egern/ip/ai.yaml
 Egern/ip/apple_services.yaml
+Egern/ip/bilibili_httpdns.yaml
 Egern/ip/cdn.yaml
 Egern/ip/domestic.yaml
 Egern/ip/download.yaml
@@ -169,6 +174,7 @@ Egern/non_ip/ai.yaml
 Egern/non_ip/apple_cn.yaml
 Egern/non_ip/apple_intelligence.yaml
 Egern/non_ip/apple_services.yaml
+Egern/non_ip/bilibili_httpdns.yaml
 Egern/non_ip/cdn.yaml
 Egern/non_ip/direct.yaml
 Egern/non_ip/domestic.yaml
@@ -214,6 +220,7 @@ Hiddify/domainset/reject_phishing.srs
 Hiddify/domainset/speedtest.srs
 Hiddify/ip/ai.srs
 Hiddify/ip/apple_services.srs
+Hiddify/ip/bilibili_httpdns.srs
 Hiddify/ip/cdn.srs
 Hiddify/ip/china_ip.srs
 Hiddify/ip/china_ip_ipv6.srs
@@ -237,6 +244,7 @@ Hiddify/non_ip/apple_cdn.srs
 Hiddify/non_ip/apple_cn.srs
 Hiddify/non_ip/apple_intelligence.srs
 Hiddify/non_ip/apple_services.srs
+Hiddify/non_ip/bilibili_httpdns.srs
 Hiddify/non_ip/cdn.srs
 Hiddify/non_ip/cloudmounter.srs
 Hiddify/non_ip/direct.srs
@@ -295,6 +303,7 @@ Internal/sukka_ubo_url_redirect_filters.txt
 LICENSE
 LegacyClashPremium/ip/ai.txt
 LegacyClashPremium/ip/apple_services.txt
+LegacyClashPremium/ip/bilibili_httpdns.txt
 LegacyClashPremium/ip/cdn.txt
 LegacyClashPremium/ip/domestic.txt
 LegacyClashPremium/ip/download.txt
@@ -314,6 +323,7 @@ LegacyClashPremium/non_ip/ai.txt
 LegacyClashPremium/non_ip/apple_cn.txt
 LegacyClashPremium/non_ip/apple_intelligence.txt
 LegacyClashPremium/non_ip/apple_services.txt
+LegacyClashPremium/non_ip/bilibili_httpdns.txt
 LegacyClashPremium/non_ip/cdn.txt
 LegacyClashPremium/non_ip/cloudmounter.txt
 LegacyClashPremium/non_ip/direct.txt
@@ -359,6 +369,7 @@ Loon/domainset/reject_phishing.list
 Loon/domainset/speedtest.list
 Loon/ip/ai.list
 Loon/ip/apple_services.list
+Loon/ip/bilibili_httpdns.list
 Loon/ip/cdn.list
 Loon/ip/domestic.list
 Loon/ip/download.list
@@ -378,6 +389,7 @@ Loon/non_ip/ai.list
 Loon/non_ip/apple_cn.list
 Loon/non_ip/apple_intelligence.list
 Loon/non_ip/apple_services.list
+Loon/non_ip/bilibili_httpdns.list
 Loon/non_ip/cdn.list
 Loon/non_ip/cloudmounter.list
 Loon/non_ip/direct.list
@@ -440,6 +452,7 @@ QuantumultX/domainset/reject_phishing.list
 QuantumultX/domainset/speedtest.list
 QuantumultX/ip/ai.list
 QuantumultX/ip/apple_services.list
+QuantumultX/ip/bilibili_httpdns.list
 QuantumultX/ip/cdn.list
 QuantumultX/ip/domestic.list
 QuantumultX/ip/download.list
@@ -459,6 +472,7 @@ QuantumultX/non_ip/ai.list
 QuantumultX/non_ip/apple_cn.list
 QuantumultX/non_ip/apple_intelligence.list
 QuantumultX/non_ip/apple_services.list
+QuantumultX/non_ip/bilibili_httpdns.list
 QuantumultX/non_ip/cdn.list
 QuantumultX/non_ip/cloudmounter.list
 QuantumultX/non_ip/direct.list
@@ -505,6 +519,7 @@ Shadowrocket/domainset/reject_phishing.list
 Shadowrocket/domainset/speedtest.list
 Shadowrocket/ip/ai.list
 Shadowrocket/ip/apple_services.list
+Shadowrocket/ip/bilibili_httpdns.list
 Shadowrocket/ip/cdn.list
 Shadowrocket/ip/domestic.list
 Shadowrocket/ip/download.list
@@ -524,6 +539,7 @@ Shadowrocket/non_ip/ai.list
 Shadowrocket/non_ip/apple_cn.list
 Shadowrocket/non_ip/apple_intelligence.list
 Shadowrocket/non_ip/apple_services.list
+Shadowrocket/non_ip/bilibili_httpdns.list
 Shadowrocket/non_ip/cdn.list
 Shadowrocket/non_ip/cloudmounter.list
 Shadowrocket/non_ip/direct.list
@@ -570,6 +586,7 @@ Stash/domainset/reject_phishing.list
 Stash/domainset/speedtest.list
 Stash/ip/ai.list
 Stash/ip/apple_services.list
+Stash/ip/bilibili_httpdns.list
 Stash/ip/cdn.list
 Stash/ip/domestic.list
 Stash/ip/download.list
@@ -589,6 +606,7 @@ Stash/non_ip/ai.list
 Stash/non_ip/apple_cn.list
 Stash/non_ip/apple_intelligence.list
 Stash/non_ip/apple_services.list
+Stash/non_ip/bilibili_httpdns.list
 Stash/non_ip/cdn.list
 Stash/non_ip/cloudmounter.list
 Stash/non_ip/direct.list
@@ -622,6 +640,7 @@ Stash/non_ip/stream_us.list
 Stash/non_ip/telegram.list
 Surfboard/ip/ai.conf
 Surfboard/ip/apple_services.conf
+Surfboard/ip/bilibili_httpdns.conf
 Surfboard/ip/cdn.conf
 Surfboard/ip/domestic.conf
 Surfboard/ip/download.conf
@@ -641,6 +660,7 @@ Surfboard/non_ip/ai.conf
 Surfboard/non_ip/apple_cn.conf
 Surfboard/non_ip/apple_intelligence.conf
 Surfboard/non_ip/apple_services.conf
+Surfboard/non_ip/bilibili_httpdns.conf
 Surfboard/non_ip/cdn.conf
 Surfboard/non_ip/cloudmounter.conf
 Surfboard/non_ip/direct.conf
@@ -708,6 +728,7 @@ Surge/domainset/reject_sukka.conf
 Surge/domainset/speedtest.conf
 Surge/ip/ai.conf
 Surge/ip/apple_services.conf
+Surge/ip/bilibili_httpdns.conf
 Surge/ip/cdn.conf
 Surge/ip/china_ip.conf
 Surge/ip/china_ip_ipv6.conf
@@ -731,6 +752,7 @@ Surge/non_ip/apple_cdn.conf
 Surge/non_ip/apple_cn.conf
 Surge/non_ip/apple_intelligence.conf
 Surge/non_ip/apple_services.conf
+Surge/non_ip/bilibili_httpdns.conf
 Surge/non_ip/cdn.conf
 Surge/non_ip/cloudmounter.conf
 Surge/non_ip/direct.conf
@@ -1039,6 +1061,7 @@ V2Box/block/domainset/reject_extra.part83.txt
 V2Box/block/domainset/reject_extra.part84.txt
 V2Box/block/domainset/reject_extra.part85.txt
 V2Box/block/domainset/reject_extra.part86.txt
+V2Box/block/domainset/reject_extra.part87.txt
 V2Box/block/domainset/reject_phishing.json
 V2Box/block/domainset/reject_phishing.part01.txt
 V2Box/block/domainset/reject_phishing.part02.txt
@@ -1225,6 +1248,8 @@ V2Box/block/ip/ai.json
 V2Box/block/ip/ai.txt
 V2Box/block/ip/apple_services.json
 V2Box/block/ip/apple_services.txt
+V2Box/block/ip/bilibili_httpdns.json
+V2Box/block/ip/bilibili_httpdns.txt
 V2Box/block/ip/cdn.json
 V2Box/block/ip/cdn.txt
 V2Box/block/ip/domestic.json
@@ -1249,6 +1274,8 @@ V2Box/block/non_ip/apple_intelligence.json
 V2Box/block/non_ip/apple_intelligence.txt
 V2Box/block/non_ip/apple_services.json
 V2Box/block/non_ip/apple_services.txt
+V2Box/block/non_ip/bilibili_httpdns.json
+V2Box/block/non_ip/bilibili_httpdns.txt
 V2Box/block/non_ip/cdn.json
 V2Box/block/non_ip/cdn.txt
 V2Box/block/non_ip/direct.json
@@ -1578,6 +1605,7 @@ V2Box/direct/domainset/reject_extra.part83.txt
 V2Box/direct/domainset/reject_extra.part84.txt
 V2Box/direct/domainset/reject_extra.part85.txt
 V2Box/direct/domainset/reject_extra.part86.txt
+V2Box/direct/domainset/reject_extra.part87.txt
 V2Box/direct/domainset/reject_phishing.json
 V2Box/direct/domainset/reject_phishing.part01.txt
 V2Box/direct/domainset/reject_phishing.part02.txt
@@ -1764,6 +1792,8 @@ V2Box/direct/ip/ai.json
 V2Box/direct/ip/ai.txt
 V2Box/direct/ip/apple_services.json
 V2Box/direct/ip/apple_services.txt
+V2Box/direct/ip/bilibili_httpdns.json
+V2Box/direct/ip/bilibili_httpdns.txt
 V2Box/direct/ip/cdn.json
 V2Box/direct/ip/cdn.txt
 V2Box/direct/ip/domestic.json
@@ -1788,6 +1818,8 @@ V2Box/direct/non_ip/apple_intelligence.json
 V2Box/direct/non_ip/apple_intelligence.txt
 V2Box/direct/non_ip/apple_services.json
 V2Box/direct/non_ip/apple_services.txt
+V2Box/direct/non_ip/bilibili_httpdns.json
+V2Box/direct/non_ip/bilibili_httpdns.txt
 V2Box/direct/non_ip/cdn.json
 V2Box/direct/non_ip/cdn.txt
 V2Box/direct/non_ip/direct.json
@@ -2117,6 +2149,7 @@ V2Box/proxy/domainset/reject_extra.part83.txt
 V2Box/proxy/domainset/reject_extra.part84.txt
 V2Box/proxy/domainset/reject_extra.part85.txt
 V2Box/proxy/domainset/reject_extra.part86.txt
+V2Box/proxy/domainset/reject_extra.part87.txt
 V2Box/proxy/domainset/reject_phishing.json
 V2Box/proxy/domainset/reject_phishing.part01.txt
 V2Box/proxy/domainset/reject_phishing.part02.txt
@@ -2303,6 +2336,8 @@ V2Box/proxy/ip/ai.json
 V2Box/proxy/ip/ai.txt
 V2Box/proxy/ip/apple_services.json
 V2Box/proxy/ip/apple_services.txt
+V2Box/proxy/ip/bilibili_httpdns.json
+V2Box/proxy/ip/bilibili_httpdns.txt
 V2Box/proxy/ip/cdn.json
 V2Box/proxy/ip/cdn.txt
 V2Box/proxy/ip/domestic.json
@@ -2327,6 +2362,8 @@ V2Box/proxy/non_ip/apple_intelligence.json
 V2Box/proxy/non_ip/apple_intelligence.txt
 V2Box/proxy/non_ip/apple_services.json
 V2Box/proxy/non_ip/apple_services.txt
+V2Box/proxy/non_ip/bilibili_httpdns.json
+V2Box/proxy/non_ip/bilibili_httpdns.txt
 V2Box/proxy/non_ip/cdn.json
 V2Box/proxy/non_ip/cdn.txt
 V2Box/proxy/non_ip/direct.json
@@ -2400,6 +2437,7 @@ Xray/native/domainset/reject_phishing.json
 Xray/native/domainset/speedtest.json
 Xray/native/ip/ai.json
 Xray/native/ip/apple_services.json
+Xray/native/ip/bilibili_httpdns.json
 Xray/native/ip/cdn.json
 Xray/native/ip/domestic.json
 Xray/native/ip/download.json
@@ -2412,6 +2450,7 @@ Xray/native/non_ip/ai.json
 Xray/native/non_ip/apple_cn.json
 Xray/native/non_ip/apple_intelligence.json
 Xray/native/non_ip/apple_services.json
+Xray/native/non_ip/bilibili_httpdns.json
 Xray/native/non_ip/cdn.json
 Xray/native/non_ip/direct.json
 Xray/native/non_ip/domestic.json
@@ -2455,6 +2494,7 @@ Xray/v2rayN/domainset/reject_phishing.json
 Xray/v2rayN/domainset/speedtest.json
 Xray/v2rayN/ip/ai.json
 Xray/v2rayN/ip/apple_services.json
+Xray/v2rayN/ip/bilibili_httpdns.json
 Xray/v2rayN/ip/cdn.json
 Xray/v2rayN/ip/domestic.json
 Xray/v2rayN/ip/download.json
@@ -2467,6 +2507,7 @@ Xray/v2rayN/non_ip/ai.json
 Xray/v2rayN/non_ip/apple_cn.json
 Xray/v2rayN/non_ip/apple_intelligence.json
 Xray/v2rayN/non_ip/apple_services.json
+Xray/v2rayN/non_ip/bilibili_httpdns.json
 Xray/v2rayN/non_ip/cdn.json
 Xray/v2rayN/non_ip/direct.json
 Xray/v2rayN/non_ip/domestic.json
@@ -2511,6 +2552,7 @@ sing-box/Release/domainset/reject_phishing.srs
 sing-box/Release/domainset/speedtest.srs
 sing-box/Release/ip/ai.srs
 sing-box/Release/ip/apple_services.srs
+sing-box/Release/ip/bilibili_httpdns.srs
 sing-box/Release/ip/cdn.srs
 sing-box/Release/ip/china_ip.srs
 sing-box/Release/ip/china_ip_ipv6.srs
@@ -2534,6 +2576,7 @@ sing-box/Release/non_ip/apple_cdn.srs
 sing-box/Release/non_ip/apple_cn.srs
 sing-box/Release/non_ip/apple_intelligence.srs
 sing-box/Release/non_ip/apple_services.srs
+sing-box/Release/non_ip/bilibili_httpdns.srs
 sing-box/Release/non_ip/cdn.srs
 sing-box/Release/non_ip/cloudmounter.srs
 sing-box/Release/non_ip/direct.srs
@@ -2577,6 +2620,7 @@ sing-box/domainset/reject_phishing.json
 sing-box/domainset/speedtest.json
 sing-box/ip/ai.json
 sing-box/ip/apple_services.json
+sing-box/ip/bilibili_httpdns.json
 sing-box/ip/cdn.json
 sing-box/ip/china_ip.json
 sing-box/ip/china_ip_ipv6.json
@@ -2600,6 +2644,7 @@ sing-box/non_ip/apple_cdn.json
 sing-box/non_ip/apple_cn.json
 sing-box/non_ip/apple_intelligence.json
 sing-box/non_ip/apple_services.json
+sing-box/non_ip/bilibili_httpdns.json
 sing-box/non_ip/cdn.json
 sing-box/non_ip/cloudmounter.json
 sing-box/non_ip/direct.json
