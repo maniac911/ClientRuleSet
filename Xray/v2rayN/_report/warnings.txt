@@ -184,7 +184,7 @@ IP-CIDR,205.180.175.0/24,no-resolve  # Xray has no per-rule no-resolve flag; DNS
 IP-CIDR,63.92.224.0/19,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 IP-CIDR,65.199.22.0/23,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 
-# ip/bilibili_httpdns.json
+# ip/bilibili.json
 IP-CIDR,101.91.140.124/32,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 IP-CIDR,101.91.140.224/32,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 IP-CIDR,112.64.218.119/32,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.

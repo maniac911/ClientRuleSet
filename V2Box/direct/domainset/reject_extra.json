@@ -310,7 +310,6 @@
       "regexp:(^|\\.)b5o\\.com$",
       "regexp:(^|\\.)badu\\.es$",
       "regexp:(^|\\.)bata\\.io$",
-      "regexp:(^|\\.)beak\\.in$",
       "regexp:(^|\\.)beop\\.io$",
       "regexp:(^|\\.)bgs\\.net$",
       "regexp:(^|\\.)bhxh\\.co$",
@@ -433,7 +432,8 @@
       "regexp:(^|\\.)idio\\.co$",
       "regexp:(^|\\.)idot\\.cz$",
       "regexp:(^|\\.)idvd\\.su$",
-      "regexp:(^|\\.)igrs\\.ca$"
+      "regexp:(^|\\.)igrs\\.ca$",
+      "regexp:(^|\\.)ihct\\.mx$"
     ]
   },
   {
@@ -445,7 +445,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 2 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)ihct\\.mx$",
       "regexp:(^|\\.)ili\\.net$",
       "regexp:(^|\\.)imhd\\.io$",
       "regexp:(^|\\.)imho\\.ru$",
@@ -844,7 +843,8 @@
       "regexp:(^|\\.)c2d\\.tech$",
       "regexp:(^|\\.)c4tw\\.net$",
       "regexp:(^|\\.)ca-nm\\.fr$",
-      "regexp:(^|\\.)ca-vb\\.fr$"
+      "regexp:(^|\\.)ca-vb\\.fr$",
+      "regexp:(^|\\.)cash2\\.de$"
     ]
   },
   {
@@ -856,7 +856,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 3 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)cash2\\.de$",
       "regexp:(^|\\.)cayot\\.ir$",
       "regexp:(^|\\.)cbej\\.com$",
       "regexp:(^|\\.)ccm19\\.de$",
@@ -1255,7 +1254,8 @@
       "regexp:(^|\\.)r7ls\\.net$",
       "regexp:(^|\\.)r8bz\\.com$",
       "regexp:(^|\\.)rale\\.xyz$",
-      "regexp:(^|\\.)rapt\\.com$"
+      "regexp:(^|\\.)rapt\\.com$",
+      "regexp:(^|\\.)raptp\\.fr$"
     ]
   },
   {
@@ -1267,7 +1267,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 4 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)raptp\\.fr$",
       "regexp:(^|\\.)rbnt\\.org$",
       "regexp:(^|\\.)rbq\\.info$",
       "regexp:(^|\\.)rc\\.rc\\.hu$",
@@ -1666,7 +1665,8 @@
       "regexp:(^|\\.)admane\\.jp$",
       "regexp:(^|\\.)admex\\.com$",
       "regexp:(^|\\.)admez\\.com$",
-      "regexp:(^|\\.)admile\\.ru$"
+      "regexp:(^|\\.)admile\\.ru$",
+      "regexp:(^|\\.)admilk\\.ru$"
     ]
   },
   {
@@ -1678,7 +1678,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 5 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)admilk\\.ru$",
       "regexp:(^|\\.)admize\\.io$",
       "regexp:(^|\\.)admon\\.pro$",
       "regexp:(^|\\.)adne\\.info$",
@@ -2077,7 +2076,8 @@
       "regexp:(^|\\.)ekmas\\.com$",
       "regexp:(^|\\.)eldos\\.xyz$",
       "regexp:(^|\\.)elion\\.com$",
-      "regexp:(^|\\.)ellis\\.pro$"
+      "regexp:(^|\\.)ellis\\.pro$",
+      "regexp:(^|\\.)elog\\.info$"
     ]
   },
   {
@@ -2089,7 +2089,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 6 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)elog\\.info$",
       "regexp:(^|\\.)elyses\\.fr$",
       "regexp:(^|\\.)emet\\.info$",
       "regexp:(^|\\.)enlor\\.xyz$",
@@ -2306,7 +2305,6 @@
       "regexp:(^|\\.)hpjr\\.shop$",
       "regexp:(^|\\.)hpool\\.com$",
       "regexp:(^|\\.)hrtya\\.com$",
-      "regexp:(^|\\.)hseda\\.com$",
       "regexp:(^|\\.)hsrvu\\.com$",
       "regexp:(^|\\.)hsusd\\.com$",
       "regexp:(^|\\.)hubpd\\.com$",
@@ -2488,7 +2486,9 @@
       "regexp:(^|\\.)lngtd\\.com$",
       "regexp:(^|\\.)localo\\.fr$",
       "regexp:(^|\\.)logdy\\.com$",
-      "regexp:(^|\\.)logua\\.com$"
+      "regexp:(^|\\.)logua\\.com$",
+      "regexp:(^|\\.)lonaci\\.fr$",
+      "regexp:(^|\\.)lookit\\.cz$"
     ]
   },
   {
@@ -2500,8 +2500,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 7 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)lonaci\\.fr$",
-      "regexp:(^|\\.)lookit\\.cz$",
       "regexp:(^|\\.)loveru\\.jp$",
       "regexp:(^|\\.)lowse\\.fun$",
       "regexp:(^|\\.)loytec\\.fr$",
@@ -2899,7 +2897,9 @@
       "regexp:(^|\\.)readme\\.ru$",
       "regexp:(^|\\.)readto\\.ru$",
       "regexp:(^|\\.)rebill\\.me$",
-      "regexp:(^|\\.)recoco\\.it$"
+      "regexp:(^|\\.)recoco\\.it$",
+      "regexp:(^|\\.)redflu\\.ru$",
+      "regexp:(^|\\.)redif\\.com$"
     ]
   },
   {
@@ -2911,8 +2911,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 8 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)redflu\\.ru$",
-      "regexp:(^|\\.)redif\\.com$",
       "regexp:(^|\\.)redlk\\.com$",
       "regexp:(^|\\.)regi\\.tech$",
       "regexp:(^|\\.)rejet\\.com$",
@@ -3310,7 +3308,9 @@
       "regexp:(^|\\.)vpath\\.net$",
       "regexp:(^|\\.)vseat\\.com$",
       "regexp:(^|\\.)vstwm\\.com$",
-      "regexp:(^|\\.)vtracy\\.de$"
+      "regexp:(^|\\.)vtracy\\.de$",
+      "regexp:(^|\\.)vtv24\\.pro$",
+      "regexp:(^|\\.)vtvay\\.com$"
     ]
   },
   {
@@ -3322,8 +3322,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 9 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)vtv24\\.pro$",
-      "regexp:(^|\\.)vtvay\\.com$",
       "regexp:(^|\\.)vudux\\.net$",
       "regexp:(^|\\.)vuryua\\.ru$",
       "regexp:(^|\\.)vvapi\\.org$",
@@ -3721,7 +3719,9 @@
       "regexp:(^|\\.)ads\\.fpt\\.vn$",
       "regexp:(^|\\.)ads\\.gld\\.dk$",
       "regexp:(^|\\.)ads\\.hbv\\.de$",
-      "regexp:(^|\\.)ads\\.ma7\\.tv$"
+      "regexp:(^|\\.)ads\\.ma7\\.tv$",
+      "regexp:(^|\\.)ads\\.nj\\.com$",
+      "regexp:(^|\\.)ads\\.nyx\\.cz$"
     ]
   },
   {
@@ -3733,8 +3733,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 10 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)ads\\.nj\\.com$",
-      "regexp:(^|\\.)ads\\.nyx\\.cz$",
       "regexp:(^|\\.)ads\\.tnt\\.tv$",
       "regexp:(^|\\.)ads\\.uxs\\.at$",
       "regexp:(^|\\.)ads\\.v3\\.com$",
@@ -4051,6 +4049,7 @@
       "regexp:(^|\\.)bjhdrx\\.com$",
       "regexp:(^|\\.)bjiuck\\.com$",
       "regexp:(^|\\.)blinger\\.io$",
+      "regexp:(^|\\.)blit\\.co\\.za$",
       "regexp:(^|\\.)bloc\\.money$",
       "regexp:(^|\\.)blocx\\.tech$",
       "regexp:(^|\\.)blogads\\.de$",
@@ -4132,7 +4131,8 @@
       "regexp:(^|\\.)ccrtvi\\.com$",
       "regexp:(^|\\.)cd-elec\\.fr$",
       "regexp:(^|\\.)cdertf\\.cfd$",
-      "regexp:(^|\\.)cdn\\.jst\\.ai$"
+      "regexp:(^|\\.)cdn\\.jst\\.ai$",
+      "regexp:(^|\\.)cdn\\.umh\\.ua$"
     ]
   },
   {
@@ -4144,7 +4144,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 11 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)cdn\\.umh\\.ua$",
       "regexp:(^|\\.)cdn2cdn\\.me$",
       "regexp:(^|\\.)cdnapi\\.net$",
       "regexp:(^|\\.)cdnfgo\\.xyz$",
@@ -4543,7 +4542,8 @@
       "regexp:(^|\\.)dstjar\\.com$",
       "regexp:(^|\\.)dstnwp\\.com$",
       "regexp:(^|\\.)dstqck\\.com$",
-      "regexp:(^|\\.)dstsjj\\.com$"
+      "regexp:(^|\\.)dstsjj\\.com$",
+      "regexp:(^|\\.)dsttcr\\.com$"
     ]
   },
   {
@@ -4555,7 +4555,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 12 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)dsttcr\\.com$",
       "regexp:(^|\\.)dstvpc\\.com$",
       "regexp:(^|\\.)dsucet\\.com$",
       "regexp:(^|\\.)dsufzy\\.com$",
@@ -4954,7 +4953,8 @@
       "regexp:(^|\\.)hensly\\.com$",
       "regexp:(^|\\.)heptix\\.net$",
       "regexp:(^|\\.)hexcan\\.com$",
-      "regexp:(^|\\.)heya\\.today$"
+      "regexp:(^|\\.)heya\\.today$",
+      "regexp:(^|\\.)hgame\\.link$"
     ]
   },
   {
@@ -4966,7 +4966,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 13 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)hgame\\.link$",
       "regexp:(^|\\.)hgff11\\.com$",
       "regexp:(^|\\.)hhcj\\.co\\.uk$",
       "regexp:(^|\\.)hhvdds\\.com$",
@@ -5365,7 +5364,8 @@
       "regexp:(^|\\.)lmoox5\\.net$",
       "regexp:(^|\\.)lnc\\.mo\\.gov$",
       "regexp:(^|\\.)lndata\\.com$",
-      "regexp:(^|\\.)lnkrdr\\.com$"
+      "regexp:(^|\\.)lnkrdr\\.com$",
+      "regexp:(^|\\.)lobby-x\\.eu$"
     ]
   },
   {
@@ -5377,7 +5377,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 14 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)lobby-x\\.eu$",
       "regexp:(^|\\.)loen21\\.net$",
       "regexp:(^|\\.)log\\.plo\\.vn$",
       "regexp:(^|\\.)log\\.vov\\.vn$",
@@ -5776,7 +5775,8 @@
       "regexp:(^|\\.)pecash\\.com$",
       "regexp:(^|\\.)peer39\\.com$",
       "regexp:(^|\\.)pegah\\.tech$",
-      "regexp:(^|\\.)peitai\\.net$"
+      "regexp:(^|\\.)peitai\\.net$",
+      "regexp:(^|\\.)peluck\\.com$"
     ]
   },
   {
@@ -5788,7 +5788,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 15 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)peluck\\.com$",
       "regexp:(^|\\.)penglue\\.jp$",
       "regexp:(^|\\.)penuma\\.com$",
       "regexp:(^|\\.)peopls\\.com$",
@@ -6187,7 +6186,8 @@
       "regexp:(^|\\.)stelop\\.com$",
       "regexp:(^|\\.)stetic\\.com$",
       "regexp:(^|\\.)stihil\\.com$",
-      "regexp:(^|\\.)stpmgo\\.com$"
+      "regexp:(^|\\.)stpmgo\\.com$",
+      "regexp:(^|\\.)subaxe\\.xyz$"
     ]
   },
   {
@@ -6199,7 +6199,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 16 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)subaxe\\.xyz$",
       "regexp:(^|\\.)subeamy\\.pw$",
       "regexp:(^|\\.)suguao\\.net$",
       "regexp:(^|\\.)suguap\\.net$",
@@ -6598,7 +6597,8 @@
       "regexp:(^|\\.)weblist\\.de$",
       "regexp:(^|\\.)webmine\\.cz$",
       "regexp:(^|\\.)webpush\\.vn$",
-      "regexp:(^|\\.)webstat\\.no$"
+      "regexp:(^|\\.)webstat\\.no$",
+      "regexp:(^|\\.)webstat\\.se$"
     ]
   },
   {
@@ -6610,7 +6610,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 17 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)webstat\\.se$",
       "regexp:(^|\\.)webturn\\.ru$",
       "regexp:(^|\\.)webwap\\.org$",
       "regexp:(^|\\.)webxmr\\.com$",
@@ -6789,6 +6788,7 @@
       "regexp:(^|\\.)ztvzfq\\.com$",
       "regexp:(^|\\.)zuhrzf\\.com$",
       "regexp:(^|\\.)zukore\\.com$",
+      "regexp:(^|\\.)zunimar\\.cl$",
       "regexp:(^|\\.)zutube\\.pro$",
       "regexp:(^|\\.)zwqzxh\\.com$",
       "regexp:(^|\\.)zxwnlg\\.com$",
@@ -7069,6 +7069,7 @@
       "regexp:(^|\\.)adnitro\\.pro$",
       "regexp:(^|\\.)adnsafe\\.net$",
       "regexp:(^|\\.)adoneast\\.ru$",
+      "regexp:(^|\\.)adopdf\\.shop$",
       "regexp:(^|\\.)adoptim\\.com$",
       "regexp:(^|\\.)adorika\\.com$",
       "regexp:(^|\\.)adpepper\\.dk$",
@@ -7419,8 +7420,7 @@
       "regexp:(^|\\.)bitcoin\\.com$",
       "regexp:(^|\\.)bitcoin\\.org$",
       "regexp:(^|\\.)bitcoins\\.lc$",
-      "regexp:(^|\\.)bitcoins\\.sk$",
-      "regexp:(^|\\.)bitdeer\\.com$"
+      "regexp:(^|\\.)bitcoins\\.sk$"
     ]
   },
   {
@@ -7432,6 +7432,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 19 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)bitdeer\\.com$",
       "regexp:(^|\\.)bitegou\\.com$",
       "regexp:(^|\\.)bitfury\\.com$",
       "regexp:(^|\\.)bithumb\\.com$",
@@ -7830,8 +7831,7 @@
       "regexp:(^|\\.)dpdcz\\.my\\.id$",
       "regexp:(^|\\.)dpdias\\.bond$",
       "regexp:(^|\\.)dpdopd\\.cyou$",
-      "regexp:(^|\\.)dpdopd\\.shop$",
-      "regexp:(^|\\.)dpdsdd\\.cyou$"
+      "regexp:(^|\\.)dpdopd\\.shop$"
     ]
   },
   {
@@ -7843,6 +7843,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 20 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)dpdsdd\\.cyou$",
       "regexp:(^|\\.)dpdsdd\\.shop$",
       "regexp:(^|\\.)dpdspd\\.cyou$",
       "regexp:(^|\\.)dpdspd\\.shop$",
@@ -8241,8 +8242,7 @@
       "regexp:(^|\\.)hightid\\.xyz$",
       "regexp:(^|\\.)hirvilag\\.co$",
       "regexp:(^|\\.)hit-star\\.ru$",
-      "regexp:(^|\\.)hit\\.123c\\.vn$",
-      "regexp:(^|\\.)hit2map\\.com$"
+      "regexp:(^|\\.)hit\\.123c\\.vn$"
     ]
   },
   {
@@ -8254,6 +8254,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 21 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)hit2map\\.com$",
       "regexp:(^|\\.)hitcount\\.dk$",
       "regexp:(^|\\.)hitgraph\\.jp$",
       "regexp:(^|\\.)hitiens\\.com$",
@@ -8652,8 +8653,7 @@
       "regexp:(^|\\.)log\\.kaka\\.me$",
       "regexp:(^|\\.)log\\.vnay\\.vn$",
       "regexp:(^|\\.)logly\\.co\\.jp$",
-      "regexp:(^|\\.)lokalfed\\.cf$",
-      "regexp:(^|\\.)lokalfed\\.gq$"
+      "regexp:(^|\\.)lokalfed\\.cf$"
     ]
   },
   {
@@ -8665,6 +8665,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 22 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)lokalfed\\.gq$",
       "regexp:(^|\\.)lokalfed\\.tk$",
       "regexp:(^|\\.)lomadee\\.com$",
       "regexp:(^|\\.)loneday\\.com$",
@@ -9063,8 +9064,7 @@
       "regexp:(^|\\.)origer\\.info$",
       "regexp:(^|\\.)orquidea\\.ai$",
       "regexp:(^|\\.)osdsoft\\.com$",
-      "regexp:(^|\\.)osinpay\\.com$",
-      "regexp:(^|\\.)osjdd4d\\.sbs$"
+      "regexp:(^|\\.)osinpay\\.com$"
     ]
   },
   {
@@ -9076,6 +9076,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 23 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)osjdd4d\\.sbs$",
       "regexp:(^|\\.)ostalgie\\.fr$",
       "regexp:(^|\\.)otomachi\\.jp$",
       "regexp:(^|\\.)oughtme\\.cfd$",
@@ -9474,8 +9475,7 @@
       "regexp:(^|\\.)shopli\\.city$",
       "regexp:(^|\\.)shopma\\.info$",
       "regexp:(^|\\.)shopnuff\\.vn$",
-      "regexp:(^|\\.)shoppe8\\.vip$",
-      "regexp:(^|\\.)shoppeg\\.com$"
+      "regexp:(^|\\.)shoppe8\\.vip$"
     ]
   },
   {
@@ -9487,6 +9487,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 24 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)shoppeg\\.com$",
       "regexp:(^|\\.)shopphh\\.com$",
       "regexp:(^|\\.)shoppjj\\.com$",
       "regexp:(^|\\.)shoppkk\\.com$",
@@ -9885,8 +9886,7 @@
       "regexp:(^|\\.)txchart\\.com$",
       "regexp:(^|\\.)u--to-u\\.com$",
       "regexp:(^|\\.)u-to--u\\.com$",
-      "regexp:(^|\\.)u1trkqf\\.com$",
-      "regexp:(^|\\.)ubembed\\.com$"
+      "regexp:(^|\\.)u1trkqf\\.com$"
     ]
   },
   {
@@ -9898,6 +9898,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 25 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)ubembed\\.com$",
       "regexp:(^|\\.)ubercpm\\.com$",
       "regexp:(^|\\.)ubiqpool\\.io$",
       "regexp:(^|\\.)ucrypto\\.net$",
@@ -10296,8 +10297,7 @@
       "regexp:(^|\\.)1bc1au5l\\.xyz$",
       "regexp:(^|\\.)1bm3n8sld\\.de$",
       "regexp:(^|\\.)1ckbfk08k\\.de$",
-      "regexp:(^|\\.)1cv9wms6\\.xyz$",
-      "regexp:(^|\\.)1dtdsln1j\\.de$"
+      "regexp:(^|\\.)1cv9wms6\\.xyz$"
     ]
   },
   {
@@ -10309,6 +10309,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 26 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)1dtdsln1j\\.de$",
       "regexp:(^|\\.)1ep2l1253\\.de$",
       "regexp:(^|\\.)1fd92n6t8\\.de$",
       "regexp:(^|\\.)1gbjadpsq\\.de$",
@@ -10707,8 +10708,7 @@
       "regexp:(^|\\.)advbroker\\.ru$",
       "regexp:(^|\\.)advertise\\.ru$",
       "regexp:(^|\\.)advertone\\.ru$",
-      "regexp:(^|\\.)advertyz\\.com$",
-      "regexp:(^|\\.)advmaker\\.net$"
+      "regexp:(^|\\.)advertyz\\.com$"
     ]
   },
   {
@@ -10720,6 +10720,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 27 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)advmaker\\.net$",
       "regexp:(^|\\.)advmusic\\.com$",
       "regexp:(^|\\.)advplace\\.com$",
       "regexp:(^|\\.)advzilla\\.com$",
@@ -11118,8 +11119,7 @@
       "regexp:(^|\\.)c\\.dk\\.msn\\.com$",
       "regexp:(^|\\.)c\\.es\\.msn\\.com$",
       "regexp:(^|\\.)c\\.fi\\.msn\\.com$",
-      "regexp:(^|\\.)c\\.fr\\.msn\\.com$",
-      "regexp:(^|\\.)c\\.gr\\.msn\\.com$"
+      "regexp:(^|\\.)c\\.fr\\.msn\\.com$"
     ]
   },
   {
@@ -11131,6 +11131,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 28 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)c\\.gr\\.msn\\.com$",
       "regexp:(^|\\.)c\\.grimuar\\.ru$",
       "regexp:(^|\\.)c\\.hk\\.msn\\.com$",
       "regexp:(^|\\.)c\\.id\\.msn\\.com$",
@@ -11529,8 +11530,7 @@
       "regexp:(^|\\.)easyflier\\.fr$",
       "regexp:(^|\\.)easyhash\\.pro$",
       "regexp:(^|\\.)easyliao\\.com$",
-      "regexp:(^|\\.)easypills\\.co$",
-      "regexp:(^|\\.)easyxpool\\.tk$"
+      "regexp:(^|\\.)easypills\\.co$"
     ]
   },
   {
@@ -11542,6 +11542,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 29 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)easyxpool\\.tk$",
       "regexp:(^|\\.)eatsnore\\.com$",
       "regexp:(^|\\.)ebesucher\\.de$",
       "regexp:(^|\\.)ebtcpool\\.com$",
@@ -11940,8 +11941,7 @@
       "regexp:(^|\\.)gsmonitor\\.ru$",
       "regexp:(^|\\.)gta5mobi\\.fun$",
       "regexp:(^|\\.)gtamoding\\.fr$",
-      "regexp:(^|\\.)gtiruto\\.shop$",
-      "regexp:(^|\\.)guandads\\.com$"
+      "regexp:(^|\\.)gtiruto\\.shop$"
     ]
   },
   {
@@ -11953,6 +11953,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 30 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)guandads\\.com$",
       "regexp:(^|\\.)gudu-shu\\.vip$",
       "regexp:(^|\\.)guhtoken\\.org$",
       "regexp:(^|\\.)gurusmac\\.org$",
@@ -12351,8 +12352,7 @@
       "regexp:(^|\\.)latribuen\\.fr$",
       "regexp:(^|\\.)latrubune\\.fr$",
       "regexp:(^|\\.)lavamedia\\.vn$",
-      "regexp:(^|\\.)lavaveli\\.com$",
-      "regexp:(^|\\.)lax1dude\\.com$"
+      "regexp:(^|\\.)lavaveli\\.com$"
     ]
   },
   {
@@ -12364,6 +12364,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 31 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)lax1dude\\.com$",
       "regexp:(^|\\.)laxpalsy\\.com$",
       "regexp:(^|\\.)layer-ads\\.de$",
       "regexp:(^|\\.)layer-pj\\.com$",
@@ -12509,7 +12510,6 @@
       "regexp:(^|\\.)luckypool\\.io$",
       "regexp:(^|\\.)lucymods\\.com$",
       "regexp:(^|\\.)luisardo\\.com$",
-      "regexp:(^|\\.)lumacrea\\.com$",
       "regexp:(^|\\.)lumennix\\.xyz$",
       "regexp:(^|\\.)luminate\\.com$",
       "regexp:(^|\\.)lumpyage\\.pro$",
@@ -13891,6 +13891,7 @@
       "regexp:(^|\\.)temksrtd\\.net$",
       "regexp:(^|\\.)ten-zaru\\.com$",
       "regexp:(^|\\.)tenelgram\\.cc$",
+      "regexp:(^|\\.)tengfeidn\\.cn$",
       "regexp:(^|\\.)tenkeifa\\.com$",
       "regexp:(^|\\.)tenkeiya\\.com$",
       "regexp:(^|\\.)tenkeiza\\.com$",
@@ -13995,8 +13996,7 @@
       "regexp:(^|\\.)toppopup\\.com$",
       "regexp:(^|\\.)topstats\\.com$",
       "regexp:(^|\\.)tpbank84\\.com$",
-      "regexp:(^|\\.)tpbankvn\\.com$",
-      "regexp:(^|\\.)tpkstut\\.cyou$"
+      "regexp:(^|\\.)tpbankvn\\.com$"
     ]
   },
   {
@@ -14008,6 +14008,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 35 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)tpkstut\\.cyou$",
       "regexp:(^|\\.)tpviet38\\.com$",
       "regexp:(^|\\.)tpviet68\\.com$",
       "regexp:(^|\\.)tqabqqej\\.com$",
@@ -14406,8 +14407,7 @@
       "regexp:(^|\\.)wp\\.24smi\\.org$",
       "regexp:(^|\\.)wpgroups\\.com$",
       "regexp:(^|\\.)wps-cnzh\\.com$",
-      "regexp:(^|\\.)wrmcfyzl\\.com$",
-      "regexp:(^|\\.)ws\\.namava\\.ir$"
+      "regexp:(^|\\.)wrmcfyzl\\.com$"
     ]
   },
   {
@@ -14419,6 +14419,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 36 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)ws\\.namava\\.ir$",
       "regexp:(^|\\.)wstats\\.click$",
       "regexp:(^|\\.)wswsnews\\.net$",
       "regexp:(^|\\.)wt2x6p7j\\.xyz$",
@@ -14599,7 +14600,6 @@
       "regexp:(^|\\.)600rexola\\.net$",
       "regexp:(^|\\.)640vision\\.net$",
       "regexp:(^|\\.)670brivis\\.net$",
-      "regexp:(^|\\.)6ak-tehnik\\.si$",
       "regexp:(^|\\.)6leaofqkh9\\.ru$",
       "regexp:(^|\\.)6rn05mmbct\\.ru$",
       "regexp:(^|\\.)6settings\\.net$",
@@ -21665,7 +21665,6 @@
       "regexp:(^|\\.)hruk\\.afguk\\.top$",
       "regexp:(^|\\.)hs-scripts\\.com$",
       "regexp:(^|\\.)hsb-canada\\.com$",
-      "regexp:(^|\\.)htdentshop\\.com$",
       "regexp:(^|\\.)httpaccess\\.com$",
       "regexp:(^|\\.)huaxinapp1\\.com$",
       "regexp:(^|\\.)huaxinapp2\\.com$",
@@ -21805,7 +21804,8 @@
       "regexp:(^|\\.)ioskyathos\\.cfd$",
       "regexp:(^|\\.)iovation\\.co\\.uk$",
       "regexp:(^|\\.)iovenesweb\\.com$",
-      "regexp:(^|\\.)ipinyou\\.com\\.cn$"
+      "regexp:(^|\\.)ipinyou\\.com\\.cn$",
+      "regexp:(^|\\.)isacambank\\.com$"
     ]
   },
   {
@@ -21817,7 +21817,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 54 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)isacambank\\.com$",
       "regexp:(^|\\.)isacembank\\.com$",
       "regexp:(^|\\.)isacombank\\.net$",
       "regexp:(^|\\.)isfilebest\\.com$",
@@ -22099,6 +22098,7 @@
       "regexp:(^|\\.)lookctv-vn\\.com$",
       "regexp:(^|\\.)looklazada\\.com$",
       "regexp:(^|\\.)lookymurva\\.cfd$",
+      "regexp:(^|\\.)loop-lumen\\.com$",
       "regexp:(^|\\.)loowhujoom\\.net$",
       "regexp:(^|\\.)lorryurban\\.com$",
       "regexp:(^|\\.)los\\.2hisnd\\.com$",
@@ -28002,6 +28002,7 @@
       "regexp:(^|\\.)softwarefpt\\.com$",
       "regexp:(^|\\.)sogetcoupes\\.com$",
       "regexp:(^|\\.)sol\\.kjhbskd\\.com$",
+      "regexp:(^|\\.)solar-sanat\\.net$",
       "regexp:(^|\\.)soleinblayk\\.cfd$",
       "regexp:(^|\\.)soloedscape\\.com$",
       "regexp:(^|\\.)solution911\\.com$",
@@ -28380,8 +28381,7 @@
       "regexp:(^|\\.)tnkexchange\\.com$",
       "regexp:(^|\\.)to-telegrcn\\.org$",
       "regexp:(^|\\.)to-telegren\\.org$",
-      "regexp:(^|\\.)todaysordid\\.cfd$",
-      "regexp:(^|\\.)todesk-zh\\.hl\\.cn$"
+      "regexp:(^|\\.)todaysordid\\.cfd$"
     ]
   },
   {
@@ -28393,6 +28393,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 70 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)todesk-zh\\.hl\\.cn$",
       "regexp:(^|\\.)tofupancake\\.com$",
       "regexp:(^|\\.)toggletools\\.com$",
       "regexp:(^|\\.)togunberth\\.cyou$",
@@ -28791,8 +28792,7 @@
       "regexp:(^|\\.)waykingroup\\.com$",
       "regexp:(^|\\.)we-telegrcn\\.org$",
       "regexp:(^|\\.)we-telegren\\.org$",
-      "regexp:(^|\\.)weanyerknaw\\.cfd$",
-      "regexp:(^|\\.)wearetopple\\.com$"
+      "regexp:(^|\\.)weanyerknaw\\.cfd$"
     ]
   },
   {
@@ -28804,6 +28804,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 71 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)wearetopple\\.com$",
       "regexp:(^|\\.)weaverlupe\\.cyou$",
       "regexp:(^|\\.)web-counter\\.net$",
       "regexp:(^|\\.)web-loading\\.net$",
@@ -29202,8 +29203,7 @@
       "regexp:(^|\\.)admonishmare\\.com$",
       "regexp:(^|\\.)adms\\.physorg\\.com$",
       "regexp:(^|\\.)adnetpartner\\.com$",
-      "regexp:(^|\\.)adnxs-simple\\.com$",
-      "regexp:(^|\\.)adpmbexoxvid\\.com$"
+      "regexp:(^|\\.)adnxs-simple\\.com$"
     ]
   },
   {
@@ -29215,6 +29215,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 72 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)adpmbexoxvid\\.com$",
       "regexp:(^|\\.)adpopblocker\\.com$",
       "regexp:(^|\\.)adpredictive\\.com$",
       "regexp:(^|\\.)adprtm53\\.free\\.at$",
@@ -29613,8 +29614,7 @@
       "regexp:(^|\\.)bbbbikeparts\\.com$",
       "regexp:(^|\\.)bbuildersget\\.com$",
       "regexp:(^|\\.)bcbsillinois\\.com$",
-      "regexp:(^|\\.)be-securefin\\.com$",
-      "regexp:(^|\\.)beachesdixit\\.cfd$"
+      "regexp:(^|\\.)be-securefin\\.com$"
     ]
   },
   {
@@ -29626,6 +29626,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 73 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)beachesdixit\\.cfd$",
       "regexp:(^|\\.)beaksuccisa\\.qpon$",
       "regexp:(^|\\.)beamincrease\\.com$",
       "regexp:(^|\\.)becapurochs\\.shop$",
@@ -30024,8 +30025,7 @@
       "regexp:(^|\\.)coeliabumpee\\.com$",
       "regexp:(^|\\.)coendouspare\\.com$",
       "regexp:(^|\\.)coffanthrax\\.cyou$",
-      "regexp:(^|\\.)coffeavirify\\.com$",
-      "regexp:(^|\\.)coin-miners\\.info$"
+      "regexp:(^|\\.)coffeavirify\\.com$"
     ]
   },
   {
@@ -30037,6 +30037,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 74 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)coin-miners\\.info$",
       "regexp:(^|\\.)coinblockers\\.com$",
       "regexp:(^|\\.)coinmaster\\.store$",
       "regexp:(^|\\.)coinomiwallet\\.cc$",
@@ -30435,8 +30436,7 @@
       "regexp:(^|\\.)eatondesigns\\.com$",
       "regexp:(^|\\.)ebank\\.hlug1k\\.com$",
       "regexp:(^|\\.)ec-optimizer\\.com$",
-      "regexp:(^|\\.)eccolabgroup\\.com$",
-      "regexp:(^|\\.)eco\\.blendxxx\\.com$"
+      "regexp:(^|\\.)eccolabgroup\\.com$"
     ]
   },
   {
@@ -30448,6 +30448,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 75 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)eco\\.blendxxx\\.com$",
       "regexp:(^|\\.)ecoediciones\\.com$",
       "regexp:(^|\\.)economypsalm\\.com$",
       "regexp:(^|\\.)edge\\.metropcs\\.co$",
@@ -30846,8 +30847,7 @@
       "regexp:(^|\\.)gogosearlier\\.cfd$",
       "regexp:(^|\\.)goingtabific\\.com$",
       "regexp:(^|\\.)gold-line\\.online$",
-      "regexp:(^|\\.)goldclubslot\\.com$",
-      "regexp:(^|\\.)goldenpalace\\.com$"
+      "regexp:(^|\\.)goldclubslot\\.com$"
     ]
   },
   {
@@ -30859,6 +30859,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 76 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)goldenpalace\\.com$",
       "regexp:(^|\\.)goldensummer\\.xyz$",
       "regexp:(^|\\.)goldentopics\\.com$",
       "regexp:(^|\\.)goldoffer\\.online$",
@@ -31257,8 +31258,7 @@
       "regexp:(^|\\.)khvib-canhan\\.com$",
       "regexp:(^|\\.)kickcrawford\\.com$",
       "regexp:(^|\\.)kickprincess\\.com$",
-      "regexp:(^|\\.)kidroleland\\.info$",
-      "regexp:(^|\\.)kiemduyetvien\\.cc$"
+      "regexp:(^|\\.)kidroleland\\.info$"
     ]
   },
   {
@@ -31270,6 +31270,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 77 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)kiemduyetvien\\.cc$",
       "regexp:(^|\\.)kiemtien2002\\.com$",
       "regexp:(^|\\.)kiemtien2017\\.com$",
       "regexp:(^|\\.)kiemtien656\\.work$",
@@ -31668,8 +31669,7 @@
       "regexp:(^|\\.)metrigo\\.zalan\\.do$",
       "regexp:(^|\\.)mettelindberg\\.dk$",
       "regexp:(^|\\.)mexitlardri\\.cyou$",
-      "regexp:(^|\\.)mi82ltk3veb7\\.com$",
-      "regexp:(^|\\.)mialifestyle\\.com$"
+      "regexp:(^|\\.)mi82ltk3veb7\\.com$"
     ]
   },
   {
@@ -31681,6 +31681,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 78 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)mialifestyle\\.com$",
       "regexp:(^|\\.)middensunrra\\.com$",
       "regexp:(^|\\.)middlejargon\\.com$",
       "regexp:(^|\\.)midgetreckon\\.com$",
@@ -32079,8 +32080,7 @@
       "regexp:(^|\\.)p-analytics\\.life$",
       "regexp:(^|\\.)p\\.delivercdn\\.com$",
       "regexp:(^|\\.)p\\.profistats\\.net$",
-      "regexp:(^|\\.)p2p-multipool\\.eu$",
-      "regexp:(^|\\.)p2pool\\.hopto\\.org$"
+      "regexp:(^|\\.)p2p-multipool\\.eu$"
     ]
   },
   {
@@ -32092,6 +32092,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 79 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)p2pool\\.hopto\\.org$",
       "regexp:(^|\\.)pacenobleman\\.com$",
       "regexp:(^|\\.)paeoniccolin\\.cfd$",
       "regexp:(^|\\.)pagerankfree\\.com$",
@@ -32313,6 +32314,7 @@
       "regexp:(^|\\.)processdwarf\\.com$",
       "regexp:(^|\\.)procrackfree\\.com$",
       "regexp:(^|\\.)prodentim101\\.com$",
+      "regexp:(^|\\.)productoslili\\.cl$",
       "regexp:(^|\\.)profileclub\\.info$",
       "regexp:(^|\\.)profitbotpro\\.com$",
       "regexp:(^|\\.)proflashdata\\.com$",
@@ -32489,9 +32491,7 @@
       "regexp:(^|\\.)refer\\.chicos\\.com$",
       "regexp:(^|\\.)refer\\.cspire\\.com$",
       "regexp:(^|\\.)refer\\.cunard\\.com$",
-      "regexp:(^|\\.)refer\\.etrade\\.net$",
-      "regexp:(^|\\.)refer\\.ez2290\\.com$",
-      "regexp:(^|\\.)refer\\.gfafcu\\.com$"
+      "regexp:(^|\\.)refer\\.etrade\\.net$"
     ]
   },
   {
@@ -32503,6 +32503,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 80 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)refer\\.ez2290\\.com$",
+      "regexp:(^|\\.)refer\\.gfafcu\\.com$",
       "regexp:(^|\\.)refer\\.indeed\\.com$",
       "regexp:(^|\\.)refer\\.intuit\\.com$",
       "regexp:(^|\\.)refer\\.johnson\\.ca$",
@@ -32900,9 +32902,7 @@
       "regexp:(^|\\.)sketchdecime\\.cfd$",
       "regexp:(^|\\.)skibidihotel\\.com$",
       "regexp:(^|\\.)skiddylands\\.cyou$",
-      "regexp:(^|\\.)skillprogeny\\.com$",
-      "regexp:(^|\\.)skillsforest\\.net$",
-      "regexp:(^|\\.)skunkedgryde\\.com$"
+      "regexp:(^|\\.)skillprogeny\\.com$"
     ]
   },
   {
@@ -32914,6 +32914,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 81 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)skillsforest\\.net$",
+      "regexp:(^|\\.)skunkedgryde\\.com$",
       "regexp:(^|\\.)slabkenyans\\.cyou$",
       "regexp:(^|\\.)slayinglance\\.com$",
       "regexp:(^|\\.)sleddedtare\\.shop$",
@@ -33311,9 +33313,7 @@
       "regexp:(^|\\.)tombshaying\\.cyou$",
       "regexp:(^|\\.)tomefuldunch\\.cfd$",
       "regexp:(^|\\.)tommytanklaf\\.com$",
-      "regexp:(^|\\.)tomtom\\.pages\\.dev$",
-      "regexp:(^|\\.)tongqing2015\\.com$",
-      "regexp:(^|\\.)tookcheckout\\.com$"
+      "regexp:(^|\\.)tomtom\\.pages\\.dev$"
     ]
   },
   {
@@ -33325,6 +33325,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 82 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)tongqing2015\\.com$",
+      "regexp:(^|\\.)tookcheckout\\.com$",
       "regexp:(^|\\.)toolbar\\.soso\\.com$",
       "regexp:(^|\\.)tooling\\.ynap\\.biz$",
       "regexp:(^|\\.)tools-affil2\\.com$",
@@ -33722,9 +33724,7 @@
       "regexp:(^|\\.)waffingwoak\\.qpon$",
       "regexp:(^|\\.)waihaistuglo\\.net$",
       "regexp:(^|\\.)wairsresold\\.cyou$",
-      "regexp:(^|\\.)wakermaugis\\.cyou$",
-      "regexp:(^|\\.)wakingsollya\\.cfd$",
-      "regexp:(^|\\.)wallstreetv2\\.com$"
+      "regexp:(^|\\.)wakermaugis\\.cyou$"
     ]
   },
   {
@@ -33736,6 +33736,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 83 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)wakingsollya\\.cfd$",
+      "regexp:(^|\\.)wallstreetv2\\.com$",
       "regexp:(^|\\.)wanderlust\\.rocks$",
       "regexp:(^|\\.)wandgleaming\\.com$",
       "regexp:(^|\\.)wanrestskims\\.cfd$",
@@ -34133,9 +34135,7 @@
       "regexp:(^|\\.)ad\\.reklamport\\.com$",
       "regexp:(^|\\.)ad\\.sacitaslan\\.com$",
       "regexp:(^|\\.)ad\\.themedianw\\.com$",
-      "regexp:(^|\\.)ad\\.thewheelof\\.com$",
-      "regexp:(^|\\.)ad\\.tubelegion\\.com$",
-      "regexp:(^|\\.)ad\\.weatherbug\\.com$"
+      "regexp:(^|\\.)ad\\.thewheelof\\.com$"
     ]
   },
   {
@@ -34147,6 +34147,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 84 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)ad\\.tubelegion\\.com$",
+      "regexp:(^|\\.)ad\\.weatherbug\\.com$",
       "regexp:(^|\\.)ad2\\.bannerhost\\.ru$",
       "regexp:(^|\\.)adapi\\.about\\.co\\.kr$",
       "regexp:(^|\\.)adbetclickin\\.pink$",
@@ -34336,7 +34338,6 @@
       "regexp:(^|\\.)aloyoga-chile\\.com$",
       "regexp:(^|\\.)aloyoga-italia\\.it$",
       "regexp:(^|\\.)alt-mk-sports\\.com$",
-      "regexp:(^|\\.)altamoorgoods\\.com$",
       "regexp:(^|\\.)alviavalerie\\.cyou$",
       "regexp:(^|\\.)alypinsaeume\\.cyou$",
       "regexp:(^|\\.)amazementpink\\.com$",
@@ -34545,8 +34546,7 @@
       "regexp:(^|\\.)banners\\.ipotd\\.com$",
       "regexp:(^|\\.)banners\\.prikol\\.ru$",
       "regexp:(^|\\.)banque-online\\.com$",
-      "regexp:(^|\\.)baosaoviet24h\\.net$",
-      "regexp:(^|\\.)barberssmitch\\.cfd$"
+      "regexp:(^|\\.)baosaoviet24h\\.net$"
     ]
   },
   {
@@ -34558,6 +34558,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 85 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)barberssmitch\\.cfd$",
       "regexp:(^|\\.)barconnecting\\.com$",
       "regexp:(^|\\.)bargingjabber\\.com$",
       "regexp:(^|\\.)barrasdockage\\.com$",
@@ -34956,8 +34957,7 @@
       "regexp:(^|\\.)ciliumspinate\\.com$",
       "regexp:(^|\\.)circularcarry\\.com$",
       "regexp:(^|\\.)circulardraft\\.com$",
-      "regexp:(^|\\.)citrictituli\\.qpon$",
-      "regexp:(^|\\.)cityads\\.telus\\.net$"
+      "regexp:(^|\\.)citrictituli\\.qpon$"
     ]
   },
   {
@@ -34969,6 +34969,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 86 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)cityads\\.telus\\.net$",
       "regexp:(^|\\.)cjbmanagement\\.com$",
       "regexp:(^|\\.)claimexercise\\.com$",
       "regexp:(^|\\.)clankedpobby\\.shop$",
@@ -35027,7 +35028,6 @@
       "regexp:(^|\\.)cmvietcombank\\.com$",
       "regexp:(^|\\.)cmvrclicks000\\.com$",
       "regexp:(^|\\.)cn\\.hotclips\\.click$",
-      "regexp:(^|\\.)cn\\.unionlever\\.com$",
       "regexp:(^|\\.)cncpt-central\\.com$",
       "regexp:(^|\\.)cnf\\.adshuffle\\.com$",
       "regexp:(^|\\.)cnt1\\.xhamster\\.com$",
@@ -37624,7 +37624,6 @@
       "regexp:(^|\\.)sdk\\.chirpyweb\\.com$",
       "regexp:(^|\\.)sdk\\.postscript\\.io$",
       "regexp:(^|\\.)sdr-solutions\\.com$",
-      "regexp:(^|\\.)sdufkghdfshds\\.cfd$",
       "regexp:(^|\\.)seal\\.digicert\\.com$",
       "regexp:(^|\\.)search4sports\\.com$",
       "regexp:(^|\\.)searchassured\\.com$",
@@ -37834,7 +37833,8 @@
       "regexp:(^|\\.)smartliving\\.group$",
       "regexp:(^|\\.)smartnews-ads\\.com$",
       "regexp:(^|\\.)smartsecuredt\\.com$",
-      "regexp:(^|\\.)smartsecuresm\\.com$"
+      "regexp:(^|\\.)smartsecuresm\\.com$",
+      "regexp:(^|\\.)smartzonessva\\.com$"
     ]
   },
   {
@@ -37846,7 +37846,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 93 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)smartzonessva\\.com$",
       "regexp:(^|\\.)smazesacronyx\\.com$",
       "regexp:(^|\\.)smokedmeekdub\\.com$",
       "regexp:(^|\\.)smokyshadecj\\.name$",
@@ -38245,7 +38244,8 @@
       "regexp:(^|\\.)topmostshrink\\.com$",
       "regexp:(^|\\.)topnailsandspa\\.co$",
       "regexp:(^|\\.)topopulentwin\\.com$",
-      "regexp:(^|\\.)topsyfaeries\\.shop$"
+      "regexp:(^|\\.)topsyfaeries\\.shop$",
+      "regexp:(^|\\.)topwebportals\\.com$"
     ]
   },
   {
@@ -38257,7 +38257,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 94 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)topwebportals\\.com$",
       "regexp:(^|\\.)toquetbircher\\.com$",
       "regexp:(^|\\.)toshessaucier\\.cfd$",
       "regexp:(^|\\.)totymandanes\\.cyou$",
@@ -38656,7 +38655,8 @@
       "regexp:(^|\\.)widget\\.admiral\\.hr$",
       "regexp:(^|\\.)widget\\.flowxo\\.com$",
       "regexp:(^|\\.)widget\\.pico\\.tools$",
-      "regexp:(^|\\.)widget\\.replain\\.cc$"
+      "regexp:(^|\\.)widget\\.replain\\.cc$",
+      "regexp:(^|\\.)widget\\.smsinfo\\.io$"
     ]
   },
   {
@@ -38668,7 +38668,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 95 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)widget\\.smsinfo\\.io$",
       "regexp:(^|\\.)widget\\.webica\\.pro$",
       "regexp:(^|\\.)widget\\.zenback\\.jp$",
       "regexp:(^|\\.)widgets\\.solutions$",
@@ -39067,7 +39066,8 @@
       "regexp:(^|\\.)advertisingbay\\.com$",
       "regexp:(^|\\.)advertisingbox\\.com$",
       "regexp:(^|\\.)advertsource\\.co\\.uk$",
-      "regexp:(^|\\.)adwin\\.geenstijl\\.nl$"
+      "regexp:(^|\\.)adwin\\.geenstijl\\.nl$",
+      "regexp:(^|\\.)adworldnetwork\\.com$"
     ]
   },
   {
@@ -39079,7 +39079,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 96 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)adworldnetwork\\.com$",
       "regexp:(^|\\.)adx\\.groupstate\\.com$",
       "regexp:(^|\\.)adxawkejwjdfh\\.site$",
       "regexp:(^|\\.)adzcivwjgktmz\\.site$",
@@ -39478,7 +39477,8 @@
       "regexp:(^|\\.)bcyxudpzyrxxj\\.site$",
       "regexp:(^|\\.)bdbtqmzbhwtpy\\.site$",
       "regexp:(^|\\.)bduwesnxbmmjq\\.site$",
-      "regexp:(^|\\.)bdxjnlpkkdfok\\.site$"
+      "regexp:(^|\\.)bdxjnlpkkdfok\\.site$",
+      "regexp:(^|\\.)beacons\\.helium\\.com$"
     ]
   },
   {
@@ -39490,7 +39490,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 97 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)beacons\\.helium\\.com$",
       "regexp:(^|\\.)beaglesdenize\\.shop$",
       "regexp:(^|\\.)beanedrollman\\.shop$",
       "regexp:(^|\\.)bearerincoming\\.com$",
@@ -39889,7 +39888,8 @@
       "regexp:(^|\\.)celeb-hot-news\\.com$",
       "regexp:(^|\\.)celeb-trending\\.com$",
       "regexp:(^|\\.)celerantatters\\.com$",
-      "regexp:(^|\\.)cemeterybonnet\\.com$"
+      "regexp:(^|\\.)cemeterybonnet\\.com$",
+      "regexp:(^|\\.)cemeteryfrogs\\.info$"
     ]
   },
   {
@@ -39901,7 +39901,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 98 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)cemeteryfrogs\\.info$",
       "regexp:(^|\\.)cenaclesuccoth\\.com$",
       "regexp:(^|\\.)censusabattoir\\.com$",
       "regexp:(^|\\.)central\\.xhcam\\.live$",
@@ -40300,7 +40299,8 @@
       "regexp:(^|\\.)daoxwweomcsvt\\.site$",
       "regexp:(^|\\.)dap\\.digitalgov\\.gov$",
       "regexp:(^|\\.)dark-utilities\\.xyz$",
-      "regexp:(^|\\.)darkfibermines\\.com$"
+      "regexp:(^|\\.)darkfibermines\\.com$",
+      "regexp:(^|\\.)darliingdating\\.com$"
     ]
   },
   {
@@ -40312,7 +40312,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 99 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)darliingdating\\.com$",
       "regexp:(^|\\.)darlingdatiing\\.com$",
       "regexp:(^|\\.)darmowe-zakupy\\.com$",
       "regexp:(^|\\.)dashedpavilion\\.com$",
@@ -40711,7 +40710,8 @@
       "regexp:(^|\\.)ei\\.laxlyarish\\.shop$",
       "regexp:(^|\\.)eigbxvnpedwcv\\.site$",
       "regexp:(^|\\.)eightcontented\\.com$",
-      "regexp:(^|\\.)eighteendespot\\.com$"
+      "regexp:(^|\\.)eighteendespot\\.com$",
+      "regexp:(^|\\.)eiiknsfpyarmi\\.site$"
     ]
   },
   {
@@ -40723,7 +40723,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 100 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)eiiknsfpyarmi\\.site$",
       "regexp:(^|\\.)eijc3zi5vvclcl\\.cfd$",
       "regexp:(^|\\.)eilloupnjlzoj\\.site$",
       "regexp:(^|\\.)eitmtqclpokfh\\.site$",
@@ -41122,7 +41121,8 @@
       "regexp:(^|\\.)fqnyhgtgfenpf\\.site$",
       "regexp:(^|\\.)fqpyypqsklxar\\.site$",
       "regexp:(^|\\.)fqqljzlrnlp1ry\\.cfd$",
-      "regexp:(^|\\.)fqvwalkffipfi\\.site$"
+      "regexp:(^|\\.)fqvwalkffipfi\\.site$",
+      "regexp:(^|\\.)fraelawaggery\\.cyou$"
     ]
   },
   {
@@ -41134,7 +41134,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 101 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)fraelawaggery\\.cyou$",
       "regexp:(^|\\.)fraiymmrjeiwf\\.site$",
       "regexp:(^|\\.)franciscajoias\\.com$",
       "regexp:(^|\\.)fraudbreakdown\\.com$",
@@ -41533,7 +41532,8 @@
       "regexp:(^|\\.)happiness-cats\\.com$",
       "regexp:(^|\\.)happiness-cats\\.net$",
       "regexp:(^|\\.)happiness-gate\\.com$",
-      "regexp:(^|\\.)happytemporary\\.pro$"
+      "regexp:(^|\\.)happytemporary\\.pro$",
+      "regexp:(^|\\.)haqwfanzmxcrm\\.site$"
     ]
   },
   {
@@ -41545,7 +41545,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 102 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)haqwfanzmxcrm\\.site$",
       "regexp:(^|\\.)harajukustyle\\.live$",
       "regexp:(^|\\.)harassingknack\\.com$",
       "regexp:(^|\\.)harborjavgg124\\.fun$",
@@ -41944,7 +41943,8 @@
       "regexp:(^|\\.)irksomereplica\\.com$",
       "regexp:(^|\\.)irmegmmxxbvll\\.site$",
       "regexp:(^|\\.)irolzwiwjrlkm\\.site$",
-      "regexp:(^|\\.)irritablecrowd\\.com$"
+      "regexp:(^|\\.)irritablecrowd\\.com$",
+      "regexp:(^|\\.)irritatededuce\\.com$"
     ]
   },
   {
@@ -41956,7 +41956,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 103 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)irritatededuce\\.com$",
       "regexp:(^|\\.)iruekwacesjql\\.site$",
       "regexp:(^|\\.)iryiikxealejx\\.site$",
       "regexp:(^|\\.)irz4zfhtxwzw56\\.cfd$",
@@ -42355,7 +42354,8 @@
       "regexp:(^|\\.)l\\.femmeactuelle\\.fr$",
       "regexp:(^|\\.)l\\.franceculture\\.fr$",
       "regexp:(^|\\.)l\\.francemusique\\.fr$",
-      "regexp:(^|\\.)l\\.harpersbazaar\\.fr$"
+      "regexp:(^|\\.)l\\.harpersbazaar\\.fr$",
+      "regexp:(^|\\.)l\\.jeuneafrique\\.com$"
     ]
   },
   {
@@ -42367,7 +42367,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 104 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)l\\.jeuneafrique\\.com$",
       "regexp:(^|\\.)l\\.lamanchelibre\\.fr$",
       "regexp:(^|\\.)l\\.maxisciences\\.com$",
       "regexp:(^|\\.)l\\.minhavida\\.com\\.br$",
@@ -42766,7 +42765,8 @@
       "regexp:(^|\\.)mfjhkyeptwiop\\.site$",
       "regexp:(^|\\.)mfngfbmubdawu\\.site$",
       "regexp:(^|\\.)mfnywvolurpen\\.site$",
-      "regexp:(^|\\.)mformanentsysh\\.com$"
+      "regexp:(^|\\.)mformanentsysh\\.com$",
+      "regexp:(^|\\.)mfynwrbjbbybm\\.site$"
     ]
   },
   {
@@ -42778,7 +42778,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 105 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)mfynwrbjbbybm\\.site$",
       "regexp:(^|\\.)mgcbncbblbrlh\\.site$",
       "regexp:(^|\\.)mgladthereisso\\.com$",
       "regexp:(^|\\.)mhabpggbogdps\\.site$",
@@ -43177,7 +43176,8 @@
       "regexp:(^|\\.)nuayrztxdbfem\\.site$",
       "regexp:(^|\\.)nufajfnntuyot\\.site$",
       "regexp:(^|\\.)nuldbyrastega\\.site$",
-      "regexp:(^|\\.)nullsadrifttoy\\.com$"
+      "regexp:(^|\\.)nullsadrifttoy\\.com$",
+      "regexp:(^|\\.)nuntcnartgyaj\\.site$"
     ]
   },
   {
@@ -43189,7 +43189,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 106 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)nuntcnartgyaj\\.site$",
       "regexp:(^|\\.)nusmkkrrxsjgj\\.site$",
       "regexp:(^|\\.)nusxvpootryrz\\.site$",
       "regexp:(^|\\.)nutateshazanim\\.com$",
@@ -43588,7 +43587,8 @@
       "regexp:(^|\\.)planetapozitiva\\.ru$",
       "regexp:(^|\\.)planetariumobil\\.ro$",
       "regexp:(^|\\.)plangorvesper\\.shop$",
-      "regexp:(^|\\.)plasmonbogier\\.cyou$"
+      "regexp:(^|\\.)plasmonbogier\\.cyou$",
+      "regexp:(^|\\.)platformsin303\\.net$"
     ]
   },
   {
@@ -43600,7 +43600,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 107 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)platformsin303\\.net$",
       "regexp:(^|\\.)playockdarned\\.qpon$",
       "regexp:(^|\\.)playstogether\\.live$",
       "regexp:(^|\\.)pleadedpassive\\.com$",
@@ -43999,7 +43998,8 @@
       "regexp:(^|\\.)ratebilaterdea\\.com$",
       "regexp:(^|\\.)ratiotyuknsye\\.pics$",
       "regexp:(^|\\.)ratitaemorphin\\.cfd$",
-      "regexp:(^|\\.)raukfsubdwcvy\\.site$"
+      "regexp:(^|\\.)raukfsubdwcvy\\.site$",
+      "regexp:(^|\\.)ravenerfeower\\.qpon$"
     ]
   },
   {
@@ -44011,7 +44011,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 108 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)ravenerfeower\\.qpon$",
       "regexp:(^|\\.)raxpeikufhiyp\\.site$",
       "regexp:(^|\\.)raymondtoaster\\.com$",
       "regexp:(^|\\.)rba\\.optumgovid\\.com$",
@@ -44334,6 +44333,7 @@
       "regexp:(^|\\.)savinerocklet\\.cyou$",
       "regexp:(^|\\.)savttuegxztst\\.site$",
       "regexp:(^|\\.)sawivnxxaegne\\.site$",
+      "regexp:(^|\\.)sbbbuwaxthmsy\\.site$",
       "regexp:(^|\\.)sbnhctenrfzib\\.site$",
       "regexp:(^|\\.)sbsbetlinfevn\\.site$",
       "regexp:(^|\\.)sbx\\.pagesjaunes\\.fr$",
@@ -46269,6 +46269,7 @@
       "regexp:(^|\\.)yqmczwseuyjck\\.site$",
       "regexp:(^|\\.)yqnvdpdkshsoc\\.site$",
       "regexp:(^|\\.)yqwmvnvbhotkw\\.site$",
+      "regexp:(^|\\.)yqyuudrknhwsd\\.site$",
       "regexp:(^|\\.)yraexzjnxasnz\\.site$",
       "regexp:(^|\\.)yrdsdifwwlicc\\.site$",
       "regexp:(^|\\.)yrixtfepqyfqx\\.site$",
@@ -46464,8 +46465,7 @@
       "regexp:(^|\\.)1w1yhg23m2kzp4v\\.cfd$",
       "regexp:(^|\\.)1wlg1691l49wnu\\.rest$",
       "regexp:(^|\\.)20002permission\\.net$",
-      "regexp:(^|\\.)246itv6t75xnbf\\.rest$",
-      "regexp:(^|\\.)266o97nhwfw3nt\\.rest$"
+      "regexp:(^|\\.)246itv6t75xnbf\\.rest$"
     ]
   },
   {
@@ -46477,6 +46477,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 114 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)266o97nhwfw3nt\\.rest$",
       "regexp:(^|\\.)2girls1cup-free\\.com$",
       "regexp:(^|\\.)2roueselectrique\\.fr$",
       "regexp:(^|\\.)2u1b3gyc11t9z7y\\.cfd$",
@@ -46875,8 +46876,7 @@
       "regexp:(^|\\.)aqoifpujbbptd\\.space$",
       "regexp:(^|\\.)aqsimcvsjaknx\\.store$",
       "regexp:(^|\\.)ar\\.stripchat\\.vision$",
-      "regexp:(^|\\.)arabs\\.alarabsex\\.com$",
-      "regexp:(^|\\.)archivecerevis\\.cyou$"
+      "regexp:(^|\\.)arabs\\.alarabsex\\.com$"
     ]
   },
   {
@@ -46888,6 +46888,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 115 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)archivecerevis\\.cyou$",
       "regexp:(^|\\.)archivoscrosoft\\.com$",
       "regexp:(^|\\.)arcidaemestees\\.cyou$",
       "regexp:(^|\\.)arcmocbztwfsu\\.space$",
@@ -47143,6 +47144,7 @@
       "regexp:(^|\\.)billbugcrannog\\.cyou$",
       "regexp:(^|\\.)billcarthy\\.f9\\.co\\.uk$",
       "regexp:(^|\\.)bimouecctgacs\\.store$",
+      "regexp:(^|\\.)bioltcfptabuhos\\.com$",
       "regexp:(^|\\.)bioncrocketleos\\.cfd$",
       "regexp:(^|\\.)biopsybookshelf\\.com$",
       "regexp:(^|\\.)biqqavjzrmmkr\\.store$",
@@ -47285,9 +47287,7 @@
       "regexp:(^|\\.)bsxxamixxtbbp\\.store$",
       "regexp:(^|\\.)bthythvdrdbud\\.space$",
       "regexp:(^|\\.)btoazujuhpoca\\.space$",
-      "regexp:(^|\\.)btoetwervetat\\.space$",
-      "regexp:(^|\\.)bttphsqvrunfw\\.store$",
-      "regexp:(^|\\.)bubblesweetcake\\.com$"
+      "regexp:(^|\\.)btoetwervetat\\.space$"
     ]
   },
   {
@@ -47299,6 +47299,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 116 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)bttphsqvrunfw\\.store$",
+      "regexp:(^|\\.)bubblesweetcake\\.com$",
       "regexp:(^|\\.)bucayoninederk\\.cyou$",
       "regexp:(^|\\.)buhhrcekgaspp\\.space$",
       "regexp:(^|\\.)buildingdrawing\\.com$",
@@ -47696,9 +47698,7 @@
       "regexp:(^|\\.)cpsumpgbxqhid\\.space$",
       "regexp:(^|\\.)cpumining\\.zapto\\.org$",
       "regexp:(^|\\.)cpuzspopetlsg\\.space$",
-      "regexp:(^|\\.)cpvfeed\\.50onred\\.com$",
-      "regexp:(^|\\.)cpvlyqkpyfsns\\.store$",
-      "regexp:(^|\\.)cqcaoltqtarmz\\.space$"
+      "regexp:(^|\\.)cpvfeed\\.50onred\\.com$"
     ]
   },
   {
@@ -47710,6 +47710,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 117 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)cpvlyqkpyfsns\\.store$",
+      "regexp:(^|\\.)cqcaoltqtarmz\\.space$",
       "regexp:(^|\\.)cqeorasldxsbw\\.store$",
       "regexp:(^|\\.)cqjgztejpzvkd\\.space$",
       "regexp:(^|\\.)cqkpoxtlakibf\\.space$",
@@ -48107,9 +48109,7 @@
       "regexp:(^|\\.)ebayadvertising\\.com$",
       "regexp:(^|\\.)ebdljicttjddk\\.store$",
       "regexp:(^|\\.)ebemgieytjkxb\\.space$",
-      "regexp:(^|\\.)ebfclhdkkmeav\\.store$",
-      "regexp:(^|\\.)ebrvjdndvkvek\\.space$",
-      "regexp:(^|\\.)ebtwanvamfwwi\\.space$"
+      "regexp:(^|\\.)ebfclhdkkmeav\\.store$"
     ]
   },
   {
@@ -48121,6 +48121,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 118 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)ebrvjdndvkvek\\.space$",
+      "regexp:(^|\\.)ebtwanvamfwwi\\.space$",
       "regexp:(^|\\.)ecedimktjtwkc\\.space$",
       "regexp:(^|\\.)echardsvirosis\\.shop$",
       "regexp:(^|\\.)ecjrzisfqedcu\\.space$",
@@ -48518,9 +48520,7 @@
       "regexp:(^|\\.)fr0z3nc0zysm1le\\.xyz$",
       "regexp:(^|\\.)frameworknephew\\.com$",
       "regexp:(^|\\.)framinggreeting\\.com$",
-      "regexp:(^|\\.)frautkgibbbwj\\.space$",
-      "regexp:(^|\\.)frblernpdqkdq\\.space$",
-      "regexp:(^|\\.)frbzojrsotdov\\.space$"
+      "regexp:(^|\\.)frautkgibbbwj\\.space$"
     ]
   },
   {
@@ -48532,6 +48532,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 119 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)frblernpdqkdq\\.space$",
+      "regexp:(^|\\.)frbzojrsotdov\\.space$",
       "regexp:(^|\\.)frederickwatson\\.com$",
       "regexp:(^|\\.)free-community\\.club$",
       "regexp:(^|\\.)free-counters\\.co\\.uk$",
@@ -48929,9 +48931,7 @@
       "regexp:(^|\\.)hfeoeekkncvic\\.store$",
       "regexp:(^|\\.)hfnfoupaytndf\\.space$",
       "regexp:(^|\\.)hfqxrivbvubyz\\.store$",
-      "regexp:(^|\\.)hgeepechncyte\\.space$",
-      "regexp:(^|\\.)hgolecgocxwio\\.space$",
-      "regexp:(^|\\.)hgtpidptdpxmo\\.space$"
+      "regexp:(^|\\.)hgeepechncyte\\.space$"
     ]
   },
   {
@@ -48943,6 +48943,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 120 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)hgolecgocxwio\\.space$",
+      "regexp:(^|\\.)hgtpidptdpxmo\\.space$",
       "regexp:(^|\\.)hgvigqjolbnnt\\.store$",
       "regexp:(^|\\.)hgzqyoxssozyp\\.space$",
       "regexp:(^|\\.)hh7lj32z7igoj57\\.cfd$",
@@ -49340,9 +49342,7 @@
       "regexp:(^|\\.)jawjeerlawfully\\.com$",
       "regexp:(^|\\.)jawyabhdlbtub\\.space$",
       "regexp:(^|\\.)jayceesapandry\\.cyou$",
-      "regexp:(^|\\.)jaydpfcoftijl\\.space$",
-      "regexp:(^|\\.)jbalnemwgxsbp\\.space$",
-      "regexp:(^|\\.)jbrieonvryioo\\.space$"
+      "regexp:(^|\\.)jaydpfcoftijl\\.space$"
     ]
   },
   {
@@ -49354,6 +49354,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 121 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)jbalnemwgxsbp\\.space$",
+      "regexp:(^|\\.)jbrieonvryioo\\.space$",
       "regexp:(^|\\.)jbxgbdetzfgpn\\.space$",
       "regexp:(^|\\.)jcajuesjvxlqy\\.store$",
       "regexp:(^|\\.)jcgklkxkrltcy\\.store$",
@@ -49751,9 +49753,7 @@
       "regexp:(^|\\.)lever-analytics\\.com$",
       "regexp:(^|\\.)levfyrqglxvkl\\.space$",
       "regexp:(^|\\.)lfavcwgydohba\\.store$",
-      "regexp:(^|\\.)lfcnxhdzwwyka\\.space$",
-      "regexp:(^|\\.)lfgknhbirotrt\\.space$",
-      "regexp:(^|\\.)lfxgbzxkfqhiy\\.space$"
+      "regexp:(^|\\.)lfcnxhdzwwyka\\.space$"
     ]
   },
   {
@@ -49765,6 +49765,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 122 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)lfgknhbirotrt\\.space$",
+      "regexp:(^|\\.)lfxgbzxkfqhiy\\.space$",
       "regexp:(^|\\.)lg\\.farranthants\\.cfd$",
       "regexp:(^|\\.)lghjjjwnxrpjq\\.space$",
       "regexp:(^|\\.)lgjdmglqloopu\\.space$",
@@ -50162,9 +50164,7 @@
       "regexp:(^|\\.)moneralsramana\\.shop$",
       "regexp:(^|\\.)monesupermarket\\.com$",
       "regexp:(^|\\.)money-matters\\.today$",
-      "regexp:(^|\\.)mongoosemetrics\\.com$",
-      "regexp:(^|\\.)monitorenquired\\.com$",
-      "regexp:(^|\\.)monkessplovery\\.shop$"
+      "regexp:(^|\\.)mongoosemetrics\\.com$"
     ]
   },
   {
@@ -50176,6 +50176,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 123 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)monitorenquired\\.com$",
+      "regexp:(^|\\.)monkessplovery\\.shop$",
       "regexp:(^|\\.)moondoghistrio\\.shop$",
       "regexp:(^|\\.)mootwombsteeple\\.com$",
       "regexp:(^|\\.)mopnnetjyvlul\\.space$",
@@ -50461,7 +50463,6 @@
       "regexp:(^|\\.)nqoqrotklafsb\\.space$",
       "regexp:(^|\\.)nqrmfxfrclxyx\\.space$",
       "regexp:(^|\\.)nrgdsbuviocit\\.store$",
-      "regexp:(^|\\.)nrprdseycmmid\\.space$",
       "regexp:(^|\\.)nrrofvqgzprnb\\.space$",
       "regexp:(^|\\.)ns1\\.trafficclub\\.com$",
       "regexp:(^|\\.)nshqbvdvvaxwx\\.store$",
@@ -50574,8 +50575,7 @@
       "regexp:(^|\\.)ohbognmxxssou\\.space$",
       "regexp:(^|\\.)ohdhevxnilnvd\\.space$",
       "regexp:(^|\\.)oheyffpqepntj\\.store$",
-      "regexp:(^|\\.)ohgbefqegvejj\\.store$",
-      "regexp:(^|\\.)ohhkcjqjwjgid\\.space$"
+      "regexp:(^|\\.)ohgbefqegvejj\\.store$"
     ]
   },
   {
@@ -50587,6 +50587,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 124 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)ohhkcjqjwjgid\\.space$",
       "regexp:(^|\\.)ohkvvvttjyqsz\\.space$",
       "regexp:(^|\\.)ohmagesguttery\\.shop$",
       "regexp:(^|\\.)ohomihlorwmjh\\.space$",
@@ -50985,8 +50986,7 @@
       "regexp:(^|\\.)practiceparlour\\.com$",
       "regexp:(^|\\.)praktijkewalts\\.info$",
       "regexp:(^|\\.)prbxckwtajncq\\.space$",
-      "regexp:(^|\\.)preacheropening\\.com$",
-      "regexp:(^|\\.)pregnantskipper\\.com$"
+      "regexp:(^|\\.)preacheropening\\.com$"
     ]
   },
   {
@@ -50998,6 +50998,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 125 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)pregnantskipper\\.com$",
       "regexp:(^|\\.)premium-utility\\.com$",
       "regexp:(^|\\.)preparecommands\\.com$",
       "regexp:(^|\\.)presidecaribed\\.cyou$",
@@ -51071,6 +51072,7 @@
       "regexp:(^|\\.)ptlxskwprwfri\\.space$",
       "regexp:(^|\\.)ptmbqrzsbevkh\\.store$",
       "regexp:(^|\\.)ptnjphvurekdw\\.space$",
+      "regexp:(^|\\.)ptpilatesstudio\\.com$",
       "regexp:(^|\\.)ptplfmnyrapsy\\.space$",
       "regexp:(^|\\.)ptppteiawpvae\\.space$",
       "regexp:(^|\\.)ptqdlabxislis\\.store$",
@@ -51395,9 +51397,7 @@
       "regexp:(^|\\.)remorseful-foot\\.com$",
       "regexp:(^|\\.)renacious\\.nwwadq\\.cn$",
       "regexp:(^|\\.)rencontreavenue\\.com$",
-      "regexp:(^|\\.)rensipmsqnpdd\\.space$",
-      "regexp:(^|\\.)report2\\.mediahub\\.vn$",
-      "regexp:(^|\\.)reptilecategory\\.com$"
+      "regexp:(^|\\.)rensipmsqnpdd\\.space$"
     ]
   },
   {
@@ -51409,6 +51409,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 126 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)report2\\.mediahub\\.vn$",
+      "regexp:(^|\\.)reptilecategory\\.com$",
       "regexp:(^|\\.)resentfulsecure\\.com$",
       "regexp:(^|\\.)resentreaccotia\\.com$",
       "regexp:(^|\\.)resignationsilk\\.com$",
@@ -51806,9 +51808,7 @@
       "regexp:(^|\\.)sjgvokmmsgudn\\.space$",
       "regexp:(^|\\.)sjkigukddtknz\\.store$",
       "regexp:(^|\\.)sjnsiuqhjmugz\\.store$",
-      "regexp:(^|\\.)sjpagifahohnk\\.space$",
-      "regexp:(^|\\.)sjucxifhymhdr\\.space$",
-      "regexp:(^|\\.)sk\\.trashreality\\.com$"
+      "regexp:(^|\\.)sjpagifahohnk\\.space$"
     ]
   },
   {
@@ -51820,6 +51820,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 127 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)sjucxifhymhdr\\.space$",
+      "regexp:(^|\\.)sk\\.trashreality\\.com$",
       "regexp:(^|\\.)skdkjhpqkqave\\.space$",
       "regexp:(^|\\.)skdtveilhzynd\\.store$",
       "regexp:(^|\\.)skgiibpdmsaqn\\.space$",
@@ -52217,9 +52219,7 @@
       "regexp:(^|\\.)thotsbay-leaked\\.com$",
       "regexp:(^|\\.)threatenletters\\.com$",
       "regexp:(^|\\.)throwcommercial\\.com$",
-      "regexp:(^|\\.)thrtamykpggls\\.space$",
-      "regexp:(^|\\.)thuekhachsan\\.com\\.vn$",
-      "regexp:(^|\\.)thunderous-army\\.com$"
+      "regexp:(^|\\.)thrtamykpggls\\.space$"
     ]
   },
   {
@@ -52231,6 +52231,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 128 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)thuekhachsan\\.com\\.vn$",
+      "regexp:(^|\\.)thunderous-army\\.com$",
       "regexp:(^|\\.)thunderousshirt\\.pro$",
       "regexp:(^|\\.)thwduaktyeuvh\\.space$",
       "regexp:(^|\\.)thwerbakxfysg\\.space$",
@@ -52628,9 +52630,7 @@
       "regexp:(^|\\.)urgegenetically\\.com$",
       "regexp:(^|\\.)urineimprobable\\.com$",
       "regexp:(^|\\.)urocystfoozler\\.cyou$",
-      "regexp:(^|\\.)urogrambaskets\\.cyou$",
-      "regexp:(^|\\.)urulwxikmmaer\\.space$",
-      "regexp:(^|\\.)urwqfecgnncli\\.space$"
+      "regexp:(^|\\.)urogrambaskets\\.cyou$"
     ]
   },
   {
@@ -52642,6 +52642,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 129 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)urulwxikmmaer\\.space$",
+      "regexp:(^|\\.)urwqfecgnncli\\.space$",
       "regexp:(^|\\.)usagecoincident\\.com$",
       "regexp:(^|\\.)uscahcjmcjyuj\\.space$",
       "regexp:(^|\\.)usdeeds\\.acemlna\\.com$",
@@ -53039,9 +53041,7 @@
       "regexp:(^|\\.)whoogheersowiks\\.net$",
       "regexp:(^|\\.)whosclickingwho\\.com$",
       "regexp:(^|\\.)whsyfigscmbif\\.space$",
-      "regexp:(^|\\.)whumpedbesogne\\.qpon$",
-      "regexp:(^|\\.)whwpeioudyjuu\\.space$",
-      "regexp:(^|\\.)wickingunsolar\\.qpon$"
+      "regexp:(^|\\.)whumpedbesogne\\.qpon$"
     ]
   },
   {
@@ -53053,6 +53053,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 130 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)whwpeioudyjuu\\.space$",
+      "regexp:(^|\\.)wickingunsolar\\.qpon$",
       "regexp:(^|\\.)widdecedbpoks\\.space$",
       "regexp:(^|\\.)widget-view\\.dmm\\.com$",
       "regexp:(^|\\.)widget\\.chat\\.zalo\\.me$",
@@ -53450,9 +53452,7 @@
       "regexp:(^|\\.)ytwshjvqlhlyf\\.space$",
       "regexp:(^|\\.)yucvgdirvufyw\\.space$",
       "regexp:(^|\\.)yueifltdoegld\\.space$",
-      "regexp:(^|\\.)yugdsedjhquho\\.space$",
-      "regexp:(^|\\.)yukexxkccjcum\\.space$",
-      "regexp:(^|\\.)yummymembership\\.com$"
+      "regexp:(^|\\.)yugdsedjhquho\\.space$"
     ]
   },
   {
@@ -53464,6 +53464,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 131 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)yukexxkccjcum\\.space$",
+      "regexp:(^|\\.)yummymembership\\.com$",
       "regexp:(^|\\.)yuwbmzjqimdmn\\.space$",
       "regexp:(^|\\.)yuwseujcjavak\\.space$",
       "regexp:(^|\\.)yuyykdjtkdpat\\.store$",
@@ -53861,9 +53863,7 @@
       "regexp:(^|\\.)afm\\.startraderfr\\.com$",
       "regexp:(^|\\.)afm\\.startraderjp\\.com$",
       "regexp:(^|\\.)afm\\.startradermy\\.com$",
-      "regexp:(^|\\.)afm\\.startradervn\\.net$",
-      "regexp:(^|\\.)afm\\.ultimarketshk\\.hk$",
-      "regexp:(^|\\.)afm\\.vtg-mkt-apac\\.com$"
+      "regexp:(^|\\.)afm\\.startradervn\\.net$"
     ]
   },
   {
@@ -53875,6 +53875,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 132 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)afm\\.ultimarketshk\\.hk$",
+      "regexp:(^|\\.)afm\\.vtg-mkt-apac\\.com$",
       "regexp:(^|\\.)afm\\.vtmarketsnet\\.com$",
       "regexp:(^|\\.)afm\\.vtmarketsweb\\.com$",
       "regexp:(^|\\.)afr\\.jogajunto\\.bet\\.br$",
@@ -54042,7 +54044,6 @@
       "regexp:(^|\\.)atheslkgczrrp\\.online$",
       "regexp:(^|\\.)atkoxjrndvsct\\.online$",
       "regexp:(^|\\.)atkpwwdvmwmbx\\.online$",
-      "regexp:(^|\\.)atom\\.freehosting\\.dev$",
       "regexp:(^|\\.)atout-energie-69\\.com$",
       "regexp:(^|\\.)atoztechnotricks\\.com$",
       "regexp:(^|\\.)attach\\.mail\\.daum\\.net$",
@@ -54273,8 +54274,7 @@
       "regexp:(^|\\.)bradleyincorrect\\.com$",
       "regexp:(^|\\.)brandsclothingco\\.com$",
       "regexp:(^|\\.)brandsurveypanel\\.com$",
-      "regexp:(^|\\.)brasanoxiasegos\\.qpon$",
-      "regexp:(^|\\.)brdjoupapcilx\\.online$"
+      "regexp:(^|\\.)brasanoxiasegos\\.qpon$"
     ]
   },
   {
@@ -54286,6 +54286,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 133 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)brdjoupapcilx\\.online$",
       "regexp:(^|\\.)breakingnewsasia\\.com$",
       "regexp:(^|\\.)brewbeingslockup\\.com$",
       "regexp:(^|\\.)bridlesuspicious\\.com$",
@@ -54548,6 +54549,7 @@
       "regexp:(^|\\.)commerce\\.www\\.ibm\\.com$",
       "regexp:(^|\\.)commissionerlead\\.com$",
       "regexp:(^|\\.)commonjamknights\\.com$",
+      "regexp:(^|\\.)communication-hub\\.vg$",
       "regexp:(^|\\.)comparedwooscore\\.com$",
       "regexp:(^|\\.)competentspanish\\.com$",
       "regexp:(^|\\.)composurepossess\\.com$",
@@ -54683,9 +54685,7 @@
       "regexp:(^|\\.)cryptown\\.netlify\\.com$",
       "regexp:(^|\\.)crystalbranchtw\\.blog$",
       "regexp:(^|\\.)cs\\.livecamlovetr\\.com$",
-      "regexp:(^|\\.)cs\\.perfectgirls\\.live$",
-      "regexp:(^|\\.)csjokezuqdbdy\\.online$",
-      "regexp:(^|\\.)cskvctbhfzfxn\\.online$"
+      "regexp:(^|\\.)cs\\.perfectgirls\\.live$"
     ]
   },
   {
@@ -54697,6 +54697,8 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 134 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)csjokezuqdbdy\\.online$",
+      "regexp:(^|\\.)cskvctbhfzfxn\\.online$",
       "regexp:(^|\\.)csqojhzrapobd\\.online$",
       "regexp:(^|\\.)csuhgqcwubodd\\.online$",
       "regexp:(^|\\.)cswjpyurbaiap\\.online$",
@@ -54713,7 +54715,6 @@
       "regexp:(^|\\.)ctxclwykznvzt\\.online$",
       "regexp:(^|\\.)ctysfzudaoqlf\\.online$",
       "regexp:(^|\\.)ctyywrvwlffgc\\.online$",
-      "regexp:(^|\\.)cu\\.srijanajha\\.com\\.np$",
       "regexp:(^|\\.)cu\\.vivaxsublist\\.shop$",
       "regexp:(^|\\.)cudroitcdhysf\\.online$",
       "regexp:(^|\\.)cuegfjlcarbdq\\.online$",
@@ -54934,7 +54935,6 @@
       "regexp:(^|\\.)doormanslaughter\\.com$",
       "regexp:(^|\\.)dosagepettytrust\\.com$",
       "regexp:(^|\\.)dosreceivethrill\\.com$",
-      "regexp:(^|\\.)down\\.qqfarmer\\.com\\.cn$",
       "regexp:(^|\\.)downgradeproduct\\.com$",
       "regexp:(^|\\.)download\\.caihong\\.com$",
       "regexp:(^|\\.)downrightforever\\.pro$",
@@ -57425,6 +57425,7 @@
       "regexp:(^|\\.)protectdatacloud\\.com$",
       "regexp:(^|\\.)protectsurfcloud\\.com$",
       "regexp:(^|\\.)proteincalculate\\.com$",
+      "regexp:(^|\\.)protherapycenter\\.com$",
       "regexp:(^|\\.)protocolroutetag\\.com$",
       "regexp:(^|\\.)provokecloudless\\.com$",
       "regexp:(^|\\.)prpbcmdlcnack\\.online$",
@@ -57561,8 +57562,7 @@
       "regexp:(^|\\.)qsomqlmliiuwu\\.online$",
       "regexp:(^|\\.)qtmcctlezxmvt\\.online$",
       "regexp:(^|\\.)qtnzjwddynjdh\\.online$",
-      "regexp:(^|\\.)qtrkqylpsmkat\\.online$",
-      "regexp:(^|\\.)qtyjvrosgqwsq\\.online$"
+      "regexp:(^|\\.)qtrkqylpsmkat\\.online$"
     ]
   },
   {
@@ -57574,6 +57574,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 141 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)qtyjvrosgqwsq\\.online$",
       "regexp:(^|\\.)quakingapathetic\\.com$",
       "regexp:(^|\\.)qualifiedbillion\\.com$",
       "regexp:(^|\\.)quatangshopee\\.online$",
@@ -57972,8 +57973,7 @@
       "regexp:(^|\\.)share\\.ttchanging\\.com$",
       "regexp:(^|\\.)share\\.usalliance\\.org$",
       "regexp:(^|\\.)share\\.wagwalking\\.com$",
-      "regexp:(^|\\.)share\\.whiparound\\.com$",
-      "regexp:(^|\\.)shemalesofhentai\\.com$"
+      "regexp:(^|\\.)share\\.whiparound\\.com$"
     ]
   },
   {
@@ -57985,6 +57985,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 142 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)shemalesofhentai\\.com$",
       "regexp:(^|\\.)shengsizhanchang\\.com$",
       "regexp:(^|\\.)shield\\.legalzoom\\.com$",
       "regexp:(^|\\.)shinhanbank-khcn\\.com$",
@@ -58383,8 +58384,7 @@
       "regexp:(^|\\.)tognrhqgiyaja\\.online$",
       "regexp:(^|\\.)togotosleepbutju\\.com$",
       "regexp:(^|\\.)tokbkljsqzntz\\.online$",
-      "regexp:(^|\\.)tokimekimaildesu\\.net$",
-      "regexp:(^|\\.)toleratelikeable\\.com$"
+      "regexp:(^|\\.)tokimekimaildesu\\.net$"
     ]
   },
   {
@@ -58396,6 +58396,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 143 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)toleratelikeable\\.com$",
       "regexp:(^|\\.)tomodachiproject\\.com$",
       "regexp:(^|\\.)tomorrowlemonade\\.com$",
       "regexp:(^|\\.)top-official-app\\.com$",
@@ -58794,8 +58795,7 @@
       "regexp:(^|\\.)voyage-avantages\\.org$",
       "regexp:(^|\\.)vp-nanghanmuc\\.online$",
       "regexp:(^|\\.)vpbjuracackcm\\.online$",
-      "regexp:(^|\\.)vpuonpcwtjgwe\\.online$",
-      "regexp:(^|\\.)vpvtuudixdilp\\.online$"
+      "regexp:(^|\\.)vpuonpcwtjgwe\\.online$"
     ]
   },
   {
@@ -58807,6 +58807,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 144 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)vpvtuudixdilp\\.online$",
       "regexp:(^|\\.)vpzdnfciapiux\\.online$",
       "regexp:(^|\\.)vqdqbloehwafw\\.online$",
       "regexp:(^|\\.)vqiopvwlcnmsj\\.online$",
@@ -59205,8 +59206,7 @@
       "regexp:(^|\\.)yjotqzesimahl\\.online$",
       "regexp:(^|\\.)yjrhhbqxj65yy1r\\.rest$",
       "regexp:(^|\\.)yjsnhansijjpy\\.online$",
-      "regexp:(^|\\.)yjwajohilqxia\\.online$",
-      "regexp:(^|\\.)yjzgncwwpcjve\\.online$"
+      "regexp:(^|\\.)yjwajohilqxia\\.online$"
     ]
   },
   {
@@ -59218,6 +59218,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 145 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)yjzgncwwpcjve\\.online$",
       "regexp:(^|\\.)yjzuchutwulus\\.online$",
       "regexp:(^|\\.)ykiyhzbgnqkys\\.online$",
       "regexp:(^|\\.)ykksslnwspjqt\\.online$",
@@ -59616,8 +59617,7 @@
       "regexp:(^|\\.)aliloveyousaidthe\\.com$",
       "regexp:(^|\\.)alineeleuterio\\.com\\.br$",
       "regexp:(^|\\.)allergybellowneck\\.com$",
-      "regexp:(^|\\.)alliedbiopsybroke\\.com$",
-      "regexp:(^|\\.)alnurswyejuzu\\.website$"
+      "regexp:(^|\\.)alliedbiopsybroke\\.com$"
     ]
   },
   {
@@ -59629,6 +59629,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 146 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)alnurswyejuzu\\.website$",
       "regexp:(^|\\.)alooseprotepulvil\\.cfd$",
       "regexp:(^|\\.)alqzmnvaxvzcu\\.website$",
       "regexp:(^|\\.)altdorfer-niklaus\\.com$",
@@ -60027,8 +60028,7 @@
       "regexp:(^|\\.)cdn\\.headlinesmart\\.com$",
       "regexp:(^|\\.)cdn\\.myadmessenger\\.com$",
       "regexp:(^|\\.)cdn\\.owebanalytics\\.com$",
-      "regexp:(^|\\.)cdn\\.userdatatrust\\.com$",
-      "regexp:(^|\\.)cdn1\\.profitmetrics\\.io$"
+      "regexp:(^|\\.)cdn\\.userdatatrust\\.com$"
     ]
   },
   {
@@ -60040,6 +60040,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 147 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)cdn1\\.profitmetrics\\.io$",
       "regexp:(^|\\.)cdna\\.cofidisforyou\\.fr$",
       "regexp:(^|\\.)cdna\\.moncofidispro\\.fr$",
       "regexp:(^|\\.)cdns\\.mydirtyhobby\\.com$",
@@ -60438,8 +60439,7 @@
       "regexp:(^|\\.)dkfuetdfvsdmb\\.website$",
       "regexp:(^|\\.)dldvfyshpgftw\\.website$",
       "regexp:(^|\\.)dlfzswefybaff\\.website$",
-      "regexp:(^|\\.)dlhjgdhonjcsq\\.website$",
-      "regexp:(^|\\.)dlljdeyjgojxf\\.website$"
+      "regexp:(^|\\.)dlhjgdhonjcsq\\.website$"
     ]
   },
   {
@@ -60451,6 +60451,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 148 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)dlljdeyjgojxf\\.website$",
       "regexp:(^|\\.)dlvakopvbuiwi\\.website$",
       "regexp:(^|\\.)dlwmkldaebzds\\.website$",
       "regexp:(^|\\.)dmads\\.dailymotion\\.com$",
@@ -60849,8 +60850,7 @@
       "regexp:(^|\\.)foundation-github\\.com$",
       "regexp:(^|\\.)foursquarejamaica\\.com$",
       "regexp:(^|\\.)fp\\.fashionworld\\.co\\.uk$",
-      "regexp:(^|\\.)fpcbltqovzjwg\\.website$",
-      "regexp:(^|\\.)fpcjdmgsvsqud\\.website$"
+      "regexp:(^|\\.)fpcbltqovzjwg\\.website$"
     ]
   },
   {
@@ -60862,6 +60862,7 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 149 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)fpcjdmgsvsqud\\.website$",
       "regexp:(^|\\.)fpcrnsgskjtfm\\.website$",
       "regexp:(^|\\.)fphzedckwhuab\\.website$",
       "regexp:(^|\\.)fpmlkyxazjqzo\\.website$",
@@ -60945,7 +60946,6 @@
       "regexp:(^|\\.)gabfbnaqodnvfafnj\\.com$",
       "regexp:(^|\\.)gabriellalovecats\\.com$",
       "regexp:(^|\\.)gadgeteer\\.pdamart\\.com$",
-      "regexp:(^|\\.)galerisenimutiara\\.com$",
       "regexp:(^|\\.)galitaillevessels\\.cfd$",
       "regexp:(^|\\.)gallagherstudents\\.com$",
       "regexp:(^|\\.)gamefiledo6\\.pages\\.dev$",
@@ -66275,7 +66275,6 @@
       "regexp:(^|\\.)sockdistinctlyjinx\\.com$",
       "regexp:(^|\\.)softballpeckrobust\\.com$",
       "regexp:(^|\\.)softonic-analytics\\.net$",
-      "regexp:(^|\\.)software-gateway\\.click$",
       "regexp:(^|\\.)soleescapeprojects\\.com$",
       "regexp:(^|\\.)solessaynetemallei\\.cfd$",
       "regexp:(^|\\.)solicitorvalvemade\\.com$",
@@ -66604,7 +66603,8 @@
       "regexp:(^|\\.)videoadblocker-pro\\.com$",
       "regexp:(^|\\.)videolove\\.clanteam\\.com$",
       "regexp:(^|\\.)vidientuvietnam247\\.com$",
-      "regexp:(^|\\.)vietcombank-reward\\.com$"
+      "regexp:(^|\\.)vietcombank-reward\\.com$",
+      "regexp:(^|\\.)vietthanhcredit\\.online$"
     ]
   },
   {
@@ -66616,7 +66616,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 163 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)vietthanhcredit\\.online$",
       "regexp:(^|\\.)viewercarterfactor\\.com$",
       "regexp:(^|\\.)viewsafestsensible\\.com$",
       "regexp:(^|\\.)vingroupinvestment\\.com$",
@@ -67015,7 +67014,8 @@
       "regexp:(^|\\.)boaststockingsaucer\\.com$",
       "regexp:(^|\\.)bonzermixupclaxons\\.cyou$",
       "regexp:(^|\\.)botanysummarytables\\.com$",
-      "regexp:(^|\\.)botherassignprodigy\\.com$"
+      "regexp:(^|\\.)botherassignprodigy\\.com$",
+      "regexp:(^|\\.)bottierrangleneavil\\.cfd$"
     ]
   },
   {
@@ -67027,7 +67027,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 164 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)bottierrangleneavil\\.cfd$",
       "regexp:(^|\\.)bouncecheeryquarter\\.com$",
       "regexp:(^|\\.)bouncetumblemarried\\.com$",
       "regexp:(^|\\.)bouncingbelieverrag\\.com$",
@@ -67426,7 +67425,8 @@
       "regexp:(^|\\.)feeds\\.weselltraffic\\.com$",
       "regexp:(^|\\.)feminineconsequence\\.com$",
       "regexp:(^|\\.)ferntravelleddeduct\\.com$",
-      "regexp:(^|\\.)ferocitysuperintend\\.com$"
+      "regexp:(^|\\.)ferocitysuperintend\\.com$",
+      "regexp:(^|\\.)ferreirateixeira\\.adv\\.br$"
     ]
   },
   {
@@ -67438,7 +67438,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 165 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)ferreirateixeira\\.adv\\.br$",
       "regexp:(^|\\.)ff-menbershipgarena\\.com$",
       "regexp:(^|\\.)ffmembershipggarena\\.com$",
       "regexp:(^|\\.)filter\\.rankcldirect\\.com$",
@@ -67837,7 +67836,8 @@
       "regexp:(^|\\.)nang-cap-vip-vpbank\\.com$",
       "regexp:(^|\\.)nangacouldntsowback\\.cfd$",
       "regexp:(^|\\.)nanocluster\\.reklamz\\.com$",
-      "regexp:(^|\\.)nanoxnutriceuticals\\.com$"
+      "regexp:(^|\\.)nanoxnutriceuticals\\.com$",
+      "regexp:(^|\\.)napkimcuongfreefire\\.net$"
     ]
   },
   {
@@ -67849,7 +67849,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 166 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)napkimcuongfreefire\\.net$",
       "regexp:(^|\\.)napkimcuongtogether\\.com$",
       "regexp:(^|\\.)naplienminhtocchien\\.com$",
       "regexp:(^|\\.)nationalsurveypanel\\.com$",
@@ -68248,7 +68247,8 @@
       "regexp:(^|\\.)scaredtraversevowel\\.com$",
       "regexp:(^|\\.)scentwerthermetring\\.cfd$",
       "regexp:(^|\\.)scontent\\.aquacard\\.co\\.uk$",
-      "regexp:(^|\\.)scontent\\.opuscard\\.co\\.uk$"
+      "regexp:(^|\\.)scontent\\.opuscard\\.co\\.uk$",
+      "regexp:(^|\\.)scrambledmodifiedhe\\.com$"
     ]
   },
   {
@@ -68260,7 +68260,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 167 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)scrambledmodifiedhe\\.com$",
       "regexp:(^|\\.)screwdriverblizzard\\.com$",
       "regexp:(^|\\.)scriptscalumnychirp\\.com$",
       "regexp:(^|\\.)scrooge\\.nbcsandiego\\.com$",
@@ -68595,7 +68594,6 @@
       "regexp:(^|\\.)unlumpybinfuljipper\\.cfd$",
       "regexp:(^|\\.)unpackstaleintended\\.com$",
       "regexp:(^|\\.)unresolvedbuckwheat\\.com$",
-      "regexp:(^|\\.)unsmugkodogupassir\\.qpon$",
       "regexp:(^|\\.)unwipedchedarunslit\\.cfd$",
       "regexp:(^|\\.)upatticjangarbosque\\.cfd$",
       "regexp:(^|\\.)updatewindows\\.zapto\\.org$",
@@ -68659,7 +68657,9 @@
       "regexp:(^|\\.)vosbeinmageebigband\\.com$",
       "regexp:(^|\\.)vps-11d38732\\.vps\\.ovh\\.ca$",
       "regexp:(^|\\.)vstergioul\\.sites\\.sch\\.gr$",
-      "regexp:(^|\\.)wahabipygoferonymy\\.cyou$"
+      "regexp:(^|\\.)wahabipygoferonymy\\.cyou$",
+      "regexp:(^|\\.)wailinglaptoptwenty\\.com$",
+      "regexp:(^|\\.)waivingcolugochort\\.cyou$"
     ]
   },
   {
@@ -68671,8 +68671,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 168 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)wailinglaptoptwenty\\.com$",
-      "regexp:(^|\\.)waivingcolugochort\\.cyou$",
       "regexp:(^|\\.)walnutsongkokgawsie\\.cfd$",
       "regexp:(^|\\.)waltercapableeighty\\.com$",
       "regexp:(^|\\.)warehouseswithgrand\\.net$",
@@ -69070,7 +69068,9 @@
       "regexp:(^|\\.)click-eu-v4\\.plarclck\\.com$",
       "regexp:(^|\\.)click-to-continue\\.online$",
       "regexp:(^|\\.)click\\.comm\\.rcibank\\.co\\.uk$",
-      "regexp:(^|\\.)click\\.emails\\.argos\\.co\\.uk$"
+      "regexp:(^|\\.)click\\.emails\\.argos\\.co\\.uk$",
+      "regexp:(^|\\.)click\\.exmainclckback\\.com$",
+      "regexp:(^|\\.)click\\.junmediadirect\\.com$"
     ]
   },
   {
@@ -69082,8 +69082,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 169 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)click\\.exmainclckback\\.com$",
-      "regexp:(^|\\.)click\\.junmediadirect\\.com$",
       "regexp:(^|\\.)clicks\\.h\\.hepsiburada\\.com$",
       "regexp:(^|\\.)clicksinfo\\.thefork\\.co\\.uk$",
       "regexp:(^|\\.)clicktoupdservice\\.online$",
@@ -69436,7 +69434,6 @@
       "regexp:(^|\\.)go\\.23aoalmfwinbsstec\\.com$",
       "regexp:(^|\\.)go\\.darmowesexkamerki\\.com$",
       "regexp:(^|\\.)go\\.eu\\.sparkpostmail1\\.com$",
-      "regexp:(^|\\.)gobiotechpestcontrol\\.com$",
       "regexp:(^|\\.)godlessobviousfossil\\.com$",
       "regexp:(^|\\.)godsakesucraselarked\\.cfd$",
       "regexp:(^|\\.)golfingforbaretuant\\.cyou$",
@@ -69481,7 +69478,10 @@
       "regexp:(^|\\.)highercaptcha-settle\\.com$",
       "regexp:(^|\\.)hilarioussewingartsy\\.com$",
       "regexp:(^|\\.)hillcountrysanmarcos\\.com$",
-      "regexp:(^|\\.)hit-counter-download\\.com$"
+      "regexp:(^|\\.)hit-counter-download\\.com$",
+      "regexp:(^|\\.)hitcounters\\.miarroba\\.com$",
+      "regexp:(^|\\.)homevi1\\.tintuc-vi-vn\\.xyz$",
+      "regexp:(^|\\.)homevi2\\.tintuc-vi-vn\\.xyz$"
     ]
   },
   {
@@ -69493,9 +69493,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 170 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)hitcounters\\.miarroba\\.com$",
-      "regexp:(^|\\.)homevi1\\.tintuc-vi-vn\\.xyz$",
-      "regexp:(^|\\.)homevi2\\.tintuc-vi-vn\\.xyz$",
       "regexp:(^|\\.)homevi3\\.tintuc-vi-vn\\.xyz$",
       "regexp:(^|\\.)homevi4\\.tintuc-vi-vn\\.xyz$",
       "regexp:(^|\\.)homevi5\\.tintuc-vi-vn\\.xyz$",
@@ -69651,7 +69648,6 @@
       "regexp:(^|\\.)lienquan\\.garena-vn\\.store$",
       "regexp:(^|\\.)limonecomunicacao\\.com\\.br$",
       "regexp:(^|\\.)limsytarascobatussi\\.qpon$",
-      "regexp:(^|\\.)lindnerelektroanlagen\\.de$",
       "regexp:(^|\\.)linenvirginityclient\\.com$",
       "regexp:(^|\\.)link\\.team\\.hyperoptic\\.com$",
       "regexp:(^|\\.)lionesssupercatering\\.com$",
@@ -69892,7 +69888,11 @@
       "regexp:(^|\\.)peeksexplodedamnesty\\.com$",
       "regexp:(^|\\.)peeringannecultivate\\.com$",
       "regexp:(^|\\.)pekansvaughnrhyming\\.qpon$",
-      "regexp:(^|\\.)pennetdhotispulpous\\.qpon$"
+      "regexp:(^|\\.)pennetdhotispulpous\\.qpon$",
+      "regexp:(^|\\.)pepperdispleasenoble\\.com$",
+      "regexp:(^|\\.)percussivetakelaunch\\.com$",
+      "regexp:(^|\\.)perfectstickyrenewal\\.com$",
+      "regexp:(^|\\.)periodsnotifypasture\\.com$"
     ]
   },
   {
@@ -69904,10 +69904,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 171 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)pepperdispleasenoble\\.com$",
-      "regexp:(^|\\.)percussivetakelaunch\\.com$",
-      "regexp:(^|\\.)perfectstickyrenewal\\.com$",
-      "regexp:(^|\\.)periodsnotifypasture\\.com$",
       "regexp:(^|\\.)perkyawaitingmammoth\\.com$",
       "regexp:(^|\\.)pernineatwindazotea\\.qpon$",
       "regexp:(^|\\.)perryadministerclean\\.com$",
@@ -70303,7 +70299,11 @@
       "regexp:(^|\\.)therapyyearshapeless\\.com$",
       "regexp:(^|\\.)thisinhthanhlich2022\\.com$",
       "regexp:(^|\\.)thisinhthanhlich2024\\.com$",
-      "regexp:(^|\\.)thongke\\.tcdulichtphcm\\.vn$"
+      "regexp:(^|\\.)thongke\\.tcdulichtphcm\\.vn$",
+      "regexp:(^|\\.)thongke\\.thethaovanhoa\\.vn$",
+      "regexp:(^|\\.)thoriasreagreesassy\\.cyou$",
+      "regexp:(^|\\.)thorperandomaccounts\\.com$",
+      "regexp:(^|\\.)thresholdaccommodate\\.com$"
     ]
   },
   {
@@ -70315,10 +70315,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 172 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)thongke\\.thethaovanhoa\\.vn$",
-      "regexp:(^|\\.)thoriasreagreesassy\\.cyou$",
-      "regexp:(^|\\.)thorperandomaccounts\\.com$",
-      "regexp:(^|\\.)thresholdaccommodate\\.com$",
       "regexp:(^|\\.)throbbingdisplaystub\\.com$",
       "regexp:(^|\\.)throngbuildingunborn\\.com$",
       "regexp:(^|\\.)thuytrieukiemtien\\.online$",
@@ -70714,7 +70710,11 @@
       "regexp:(^|\\.)481886zoytj55y94nqgmo\\.cfd$",
       "regexp:(^|\\.)483cab1ae9\\.638e922b9c\\.com$",
       "regexp:(^|\\.)486ebce767\\.1521f6cf6a\\.com$",
-      "regexp:(^|\\.)487a26891a\\.1ed8ae4970\\.com$"
+      "regexp:(^|\\.)487a26891a\\.1ed8ae4970\\.com$",
+      "regexp:(^|\\.)48c09691bd\\.9579ae0d4a\\.com$",
+      "regexp:(^|\\.)49c90e13b2\\.c813dd7e93\\.com$",
+      "regexp:(^|\\.)49fdfc7592\\.43a0e1ae69\\.com$",
+      "regexp:(^|\\.)4a7fe038cf\\.e48e29ca2b\\.com$"
     ]
   },
   {
@@ -70726,10 +70726,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 173 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)48c09691bd\\.9579ae0d4a\\.com$",
-      "regexp:(^|\\.)49c90e13b2\\.c813dd7e93\\.com$",
-      "regexp:(^|\\.)49fdfc7592\\.43a0e1ae69\\.com$",
-      "regexp:(^|\\.)4a7fe038cf\\.e48e29ca2b\\.com$",
       "regexp:(^|\\.)4b31ffa3e6\\.561c21717c\\.com$",
       "regexp:(^|\\.)4b68487012\\.4498a6bb1e\\.com$",
       "regexp:(^|\\.)4c3bc37e6e\\.cf6fae15c3\\.com$",
@@ -71125,7 +71121,11 @@
       "regexp:(^|\\.)bb07cba429\\.99a3cb9eab\\.com$",
       "regexp:(^|\\.)bb34c9b9d1\\.2ac6504548\\.com$",
       "regexp:(^|\\.)bb78c9691d\\.233af38553\\.com$",
-      "regexp:(^|\\.)bbe3e16f85\\.15537cf1f5\\.com$"
+      "regexp:(^|\\.)bbe3e16f85\\.15537cf1f5\\.com$",
+      "regexp:(^|\\.)bd1b10270f\\.96a3783f2f\\.com$",
+      "regexp:(^|\\.)bd5a04cfd5\\.2e4d034bab\\.com$",
+      "regexp:(^|\\.)be27ef06b5\\.c3f69ea510\\.com$",
+      "regexp:(^|\\.)beamedfragmentrunners\\.com$"
     ]
   },
   {
@@ -71137,10 +71137,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 174 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)bd1b10270f\\.96a3783f2f\\.com$",
-      "regexp:(^|\\.)bd5a04cfd5\\.2e4d034bab\\.com$",
-      "regexp:(^|\\.)be27ef06b5\\.c3f69ea510\\.com$",
-      "regexp:(^|\\.)beamedfragmentrunners\\.com$",
       "regexp:(^|\\.)beansagriculturalmeow\\.com$",
       "regexp:(^|\\.)beap1\\.cb\\.g01\\.yahoodns\\.net$",
       "regexp:(^|\\.)beb0ad5bff\\.c9df1be7cc\\.com$",
@@ -71151,6 +71147,7 @@
       "regexp:(^|\\.)bendletcornerbridges\\.cyou$",
       "regexp:(^|\\.)bendtherapistgrandson\\.com$",
       "regexp:(^|\\.)berchvegetariangrains\\.com$",
+      "regexp:(^|\\.)bereaveburblershansa\\.qpon$",
       "regexp:(^|\\.)bereaveundresscrowded\\.com$",
       "regexp:(^|\\.)besiegecaughtgauntlet\\.com$",
       "regexp:(^|\\.)besthealthylivingtips\\.com$",
@@ -71536,7 +71533,10 @@
       "regexp:(^|\\.)elementsacorncolossal\\.com$",
       "regexp:(^|\\.)elink\\.nhanlucnganhluat\\.vn$",
       "regexp:(^|\\.)elopedchapmanrebozos\\.qpon$",
-      "regexp:(^|\\.)elsespeakingbetraying\\.com$"
+      "regexp:(^|\\.)elsespeakingbetraying\\.com$",
+      "regexp:(^|\\.)em924\\.refer\\.starbucks\\.com$",
+      "regexp:(^|\\.)embarrassmentprevious\\.com$",
+      "regexp:(^|\\.)embassygroceryobvious\\.com$"
     ]
   },
   {
@@ -71548,9 +71548,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 175 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)em924\\.refer\\.starbucks\\.com$",
-      "regexp:(^|\\.)embarrassmentprevious\\.com$",
-      "regexp:(^|\\.)embassygroceryobvious\\.com$",
       "regexp:(^|\\.)embed\\.contentverticals\\.de$",
       "regexp:(^|\\.)embed\\.secondstreetapp\\.com$",
       "regexp:(^|\\.)emblemexceptionscorer\\.com$",
@@ -71947,7 +71944,10 @@
       "regexp:(^|\\.)napgame-playtoghether\\.net$",
       "regexp:(^|\\.)naptheplaytogether-vn\\.com$",
       "regexp:(^|\\.)nationsidentification\\.com$",
-      "regexp:(^|\\.)nativelongitudepacify\\.com$"
+      "regexp:(^|\\.)nativelongitudepacify\\.com$",
+      "regexp:(^|\\.)nearlynightingalebust\\.com$",
+      "regexp:(^|\\.)neighbouringcoinarson\\.com$",
+      "regexp:(^|\\.)nellbeakerconsistency\\.com$"
     ]
   },
   {
@@ -71959,9 +71959,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 176 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)nearlynightingalebust\\.com$",
-      "regexp:(^|\\.)neighbouringcoinarson\\.com$",
-      "regexp:(^|\\.)nellbeakerconsistency\\.com$",
       "regexp:(^|\\.)net-tracker\\.notolytix\\.com$",
       "regexp:(^|\\.)nexpay-ruttientindung\\.com$",
       "regexp:(^|\\.)ng-vn-notice\\.gameitop\\.com$",
@@ -72358,7 +72355,10 @@
       "regexp:(^|\\.)tidilylattensnetters\\.qpon$",
       "regexp:(^|\\.)tinchap-techcombank\\.store$",
       "regexp:(^|\\.)tinchapvietcombank24h\\.com$",
-      "regexp:(^|\\.)tindungtechcombank\\.online$"
+      "regexp:(^|\\.)tindungtechcombank\\.online$",
+      "regexp:(^|\\.)tiptoeskilldetectives\\.com$",
+      "regexp:(^|\\.)titkoshirek\\.wordpress\\.com$",
+      "regexp:(^|\\.)tm-analytics\\.bluevine\\.com$"
     ]
   },
   {
@@ -72370,9 +72370,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 177 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)tiptoeskilldetectives\\.com$",
-      "regexp:(^|\\.)titkoshirek\\.wordpress\\.com$",
-      "regexp:(^|\\.)tm-analytics\\.bluevine\\.com$",
       "regexp:(^|\\.)tm\\.barstoolsportsbook\\.com$",
       "regexp:(^|\\.)tm\\.goldennuggetcasino\\.com$",
       "regexp:(^|\\.)tomodachixoxo\\.wixsite\\.com$",
@@ -72769,7 +72766,10 @@
       "regexp:(^|\\.)console\\.instantfapcams\\.com$",
       "regexp:(^|\\.)console\\.postandparcel\\.info$",
       "regexp:(^|\\.)console\\.showtime-cams\\.live$",
-      "regexp:(^|\\.)constantcopiedgauntlet\\.com$"
+      "regexp:(^|\\.)constantcopiedgauntlet\\.com$",
+      "regexp:(^|\\.)contadorgratis\\.web-kit\\.org$",
+      "regexp:(^|\\.)content-dt\\.crepassplus\\.com$",
+      "regexp:(^|\\.)content\\.benefitsaccess\\.org$"
     ]
   },
   {
@@ -72781,9 +72781,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 178 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)contadorgratis\\.web-kit\\.org$",
-      "regexp:(^|\\.)content-dt\\.crepassplus\\.com$",
-      "regexp:(^|\\.)content\\.benefitsaccess\\.org$",
       "regexp:(^|\\.)content\\.citbankapp\\.cit\\.com$",
       "regexp:(^|\\.)content\\.digital-credit\\.app$",
       "regexp:(^|\\.)content\\.floridarentals\\.com$",
@@ -73180,7 +73177,10 @@
       "regexp:(^|\\.)nang-hang-the-vip2-vib\\.com$",
       "regexp:(^|\\.)narrowveneeringsavoury\\.com$",
       "regexp:(^|\\.)nationalityremainvalet\\.com$",
-      "regexp:(^|\\.)nedgenuinesuccessfully\\.com$"
+      "regexp:(^|\\.)nedgenuinesuccessfully\\.com$",
+      "regexp:(^|\\.)negotiategrimaceoblige\\.com$",
+      "regexp:(^|\\.)netflix-yeniden-baglan\\.com$",
+      "regexp:(^|\\.)news-view-api\\.varzesh3\\.com$"
     ]
   },
   {
@@ -73192,9 +73192,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 179 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)negotiategrimaceoblige\\.com$",
-      "regexp:(^|\\.)netflix-yeniden-baglan\\.com$",
-      "regexp:(^|\\.)news-view-api\\.varzesh3\\.com$",
       "regexp:(^|\\.)nhanthuongfreefire2021\\.com$",
       "regexp:(^|\\.)nm-mb-snowplow\\.nearmap\\.com$",
       "regexp:(^|\\.)noblemancradleintrepid\\.com$",
@@ -73591,7 +73588,10 @@
       "regexp:(^|\\.)turbaninfectedexterior\\.com$",
       "regexp:(^|\\.)twilightinspiredglands\\.com$",
       "regexp:(^|\\.)twinabonnementoutburst\\.com$",
-      "regexp:(^|\\.)tx\\.suncoastcreditunion\\.com$"
+      "regexp:(^|\\.)tx\\.suncoastcreditunion\\.com$",
+      "regexp:(^|\\.)typicallycompoundgaunt\\.com$",
+      "regexp:(^|\\.)ufc\\.vanguardinvestor\\.co\\.uk$",
+      "regexp:(^|\\.)umami\\.nordiskehandel\\.cloud$"
     ]
   },
   {
@@ -73603,9 +73603,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 180 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)typicallycompoundgaunt\\.com$",
-      "regexp:(^|\\.)ufc\\.vanguardinvestor\\.co\\.uk$",
-      "regexp:(^|\\.)umami\\.nordiskehandel\\.cloud$",
       "regexp:(^|\\.)unbelievablyabsolutely\\.com$",
       "regexp:(^|\\.)underpantsjokeimmunity\\.com$",
       "regexp:(^|\\.)underwearcrackerprison\\.com$",
@@ -74002,7 +73999,10 @@
       "regexp:(^|\\.)evenincompleteremarried\\.com$",
       "regexp:(^|\\.)eventtracker\\.elitedaily\\.com$",
       "regexp:(^|\\.)eventtracker\\.videostrip\\.com$",
-      "regexp:(^|\\.)everyoneprocessingworse\\.com$"
+      "regexp:(^|\\.)everyoneprocessingworse\\.com$",
+      "regexp:(^|\\.)excavatedefeatedshudder\\.com$",
+      "regexp:(^|\\.)exemplarpocketbookstore\\.com$",
+      "regexp:(^|\\.)exhibitiondeviateretain\\.com$"
     ]
   },
   {
@@ -74014,9 +74014,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 181 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)excavatedefeatedshudder\\.com$",
-      "regexp:(^|\\.)exemplarpocketbookstore\\.com$",
-      "regexp:(^|\\.)exhibitiondeviateretain\\.com$",
       "regexp:(^|\\.)expressingplacingnobody\\.com$",
       "regexp:(^|\\.)expressionneighbourhood\\.com$",
       "regexp:(^|\\.)extensiontowersapplause\\.com$",
@@ -74413,7 +74410,10 @@
       "regexp:(^|\\.)rtb-uswest-v4\\.voisetech\\.com$",
       "regexp:(^|\\.)rum-reporter-prod\\.exp\\.bn\\.nr$",
       "regexp:(^|\\.)runawayinjectioncremate\\.com$",
-      "regexp:(^|\\.)ruthlesssomeoneabattoir\\.com$"
+      "regexp:(^|\\.)ruthlesssomeoneabattoir\\.com$",
+      "regexp:(^|\\.)sacrificedancerstarring\\.com$",
+      "regexp:(^|\\.)salmonluggageconstraint\\.com$",
+      "regexp:(^|\\.)schemecontinuingwinning\\.com$"
     ]
   },
   {
@@ -74425,9 +74425,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 182 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)sacrificedancerstarring\\.com$",
-      "regexp:(^|\\.)salmonluggageconstraint\\.com$",
-      "regexp:(^|\\.)schemecontinuingwinning\\.com$",
       "regexp:(^|\\.)scholarships-bourses-ca\\.org$",
       "regexp:(^|\\.)scrapestabilitywithdrew\\.com$",
       "regexp:(^|\\.)scrupulousencodebrother\\.com$",
@@ -74824,7 +74821,10 @@
       "regexp:(^|\\.)d3yl7tmbqe1mq\\.cloudfront\\.net$",
       "regexp:(^|\\.)d3zd5ejbi4l9w\\.cloudfront\\.net$",
       "regexp:(^|\\.)d415l8qlhk6u6\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d4bt5tknhzghh\\.cloudfront\\.net$"
+      "regexp:(^|\\.)d4bt5tknhzghh\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d4eqyxjqusvjj\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d4ngwggzm3w7j\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d5d3sg85gu7o6\\.cloudfront\\.net$"
     ]
   },
   {
@@ -74836,9 +74836,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 183 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)d4eqyxjqusvjj\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d4ngwggzm3w7j\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d5d3sg85gu7o6\\.cloudfront\\.net$",
       "regexp:(^|\\.)d5onopbfw009h\\.cloudfront\\.net$",
       "regexp:(^|\\.)d5wxfe8ietrpg\\.cloudfront\\.net$",
       "regexp:(^|\\.)d5xsfddfzb99g\\.cloudfront\\.net$",
@@ -75235,7 +75232,10 @@
       "regexp:(^|\\.)namelessdaybreakforepaws\\.com$",
       "regexp:(^|\\.)nanghanmucthe-thetindung\\.com$",
       "regexp:(^|\\.)napkimcuonglaufreefire-vn\\.tk$",
-      "regexp:(^|\\.)narrativederidebrainless\\.com$"
+      "regexp:(^|\\.)narrativederidebrainless\\.com$",
+      "regexp:(^|\\.)nauticalpenitenceshudder\\.com$",
+      "regexp:(^|\\.)netcoislogin-zone\\.webflow\\.io$",
+      "regexp:(^|\\.)newspapervaluessignature\\.com$"
     ]
   },
   {
@@ -75247,9 +75247,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 184 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)nauticalpenitenceshudder\\.com$",
-      "regexp:(^|\\.)netcoislogin-zone\\.webflow\\.io$",
-      "regexp:(^|\\.)newspapervaluessignature\\.com$",
       "regexp:(^|\\.)nhantiendichvu247\\.weebly\\.com$",
       "regexp:(^|\\.)nhantienquocte249\\.weebly\\.com$",
       "regexp:(^|\\.)nhantienquocte275\\.weebly\\.com$",
@@ -75646,7 +75643,10 @@
       "regexp:(^|\\.)d114isgihvajcp\\.cloudfront\\.net$",
       "regexp:(^|\\.)d1180od816jent\\.cloudfront\\.net$",
       "regexp:(^|\\.)d1198dzygjftam\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d11qytb9x1vnrm\\.cloudfront\\.net$"
+      "regexp:(^|\\.)d11qytb9x1vnrm\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d11tybz5ul8vel\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d11zevc9a5598r\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d12dky1jzngacn\\.cloudfront\\.net$"
     ]
   },
   {
@@ -75658,9 +75658,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 185 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)d11tybz5ul8vel\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d11zevc9a5598r\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d12dky1jzngacn\\.cloudfront\\.net$",
       "regexp:(^|\\.)d12t7h1bsbq1cs\\.cloudfront\\.net$",
       "regexp:(^|\\.)d12tu1kocp8e8u\\.cloudfront\\.net$",
       "regexp:(^|\\.)d12ylqdkzgcup5\\.cloudfront\\.net$",
@@ -76057,7 +76054,10 @@
       "regexp:(^|\\.)d32bug9eb0g0bh\\.cloudfront\\.net$",
       "regexp:(^|\\.)d32h65j3m1jqfb\\.cloudfront\\.net$",
       "regexp:(^|\\.)d32kwu6pkckni5\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d32r49xyei4vz6\\.cloudfront\\.net$"
+      "regexp:(^|\\.)d32r49xyei4vz6\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d32t6p7tldxil2\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d333p98mzatwjz\\.cloudfront\\.net$",
+      "regexp:(^|\\.)d33gmheck9s2xl\\.cloudfront\\.net$"
     ]
   },
   {
@@ -76069,9 +76069,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 186 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)d32t6p7tldxil2\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d333p98mzatwjz\\.cloudfront\\.net$",
-      "regexp:(^|\\.)d33gmheck9s2xl\\.cloudfront\\.net$",
       "regexp:(^|\\.)d33otidwg56k90\\.cloudfront\\.net$",
       "regexp:(^|\\.)d33s3ffr7fotas\\.cloudfront\\.net$",
       "regexp:(^|\\.)d33u55zn5p3wfg\\.cloudfront\\.net$",
@@ -76468,7 +76465,10 @@
       "regexp:(^|\\.)provocationinventorshaggy\\.com$",
       "regexp:(^|\\.)purchaserconnectionleaden\\.com$",
       "regexp:(^|\\.)q866i226chv3oxmeoy321fuo\\.rest$",
-      "regexp:(^|\\.)qe\\.k5pl3cz4qub6ymv663vl3\\.cyou$"
+      "regexp:(^|\\.)qe\\.k5pl3cz4qub6ymv663vl3\\.cyou$",
+      "regexp:(^|\\.)qi6w147ym9yhgmbf4eup186hh\\.cfd$",
+      "regexp:(^|\\.)qqn321tkkukveng7zggbgihzv\\.cfd$",
+      "regexp:(^|\\.)r\\.marketing\\.dubaisothebys\\.com$"
     ]
   },
   {
@@ -76480,9 +76480,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 187 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)qi6w147ym9yhgmbf4eup186hh\\.cfd$",
-      "regexp:(^|\\.)qqn321tkkukveng7zggbgihzv\\.cfd$",
-      "regexp:(^|\\.)r\\.marketing\\.dubaisothebys\\.com$",
       "regexp:(^|\\.)railroadnavigateafterward\\.com$",
       "regexp:(^|\\.)rba-screen\\.optumfinancial\\.com$",
       "regexp:(^|\\.)rba-screen\\.yourdentalplan\\.com$",
@@ -76879,7 +76876,10 @@
       "regexp:(^|\\.)hitchedbridalandformalwear\\.com$",
       "regexp:(^|\\.)hotro-taikhoan-garena-lqmb\\.com$",
       "regexp:(^|\\.)hystericalholidayyesterday\\.com$",
-      "regexp:(^|\\.)iikanjiyanakanjide\\.wixsite\\.com$"
+      "regexp:(^|\\.)iikanjiyanakanjide\\.wixsite\\.com$",
+      "regexp:(^|\\.)ijj161xjtohopxh33h7y1ryiub\\.cfd$",
+      "regexp:(^|\\.)illustrationpitcherbooklet\\.com$",
+      "regexp:(^|\\.)images\\.persgroepadvertising\\.be$"
     ]
   },
   {
@@ -76891,9 +76891,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 188 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)ijj161xjtohopxh33h7y1ryiub\\.cfd$",
-      "regexp:(^|\\.)illustrationpitcherbooklet\\.com$",
-      "regexp:(^|\\.)images\\.persgroepadvertising\\.be$",
       "regexp:(^|\\.)images\\.suntrakfleetaccount\\.com$",
       "regexp:(^|\\.)immoderatefinishedopponent\\.com$",
       "regexp:(^|\\.)impartialsubjecttruthfully\\.com$",
@@ -77127,6 +77124,7 @@
       "regexp:(^|\\.)asterisksubstancecognizance\\.com$",
       "regexp:(^|\\.)attendedunderstandablesnuff\\.com$",
       "regexp:(^|\\.)auditioningsmotherbarrister\\.com$",
+      "regexp:(^|\\.)authowareinc1\\.screenconnect\\.com$",
       "regexp:(^|\\.)awaitingcoordinatelassitude\\.com$",
       "regexp:(^|\\.)awakenedpositiveincriminate\\.com$",
       "regexp:(^|\\.)awesomeabberantcommissioner\\.com$",
@@ -77290,7 +77288,9 @@
       "regexp:(^|\\.)nottinghamsuburbanrailway\\.co\\.uk$",
       "regexp:(^|\\.)nvh1mgp8k77cu2935zwczqfezrr\\.cfd$",
       "regexp:(^|\\.)oascentral\\.blackenterprises\\.com$",
-      "regexp:(^|\\.)oascentral\\.phoenixvillenews\\.com$"
+      "regexp:(^|\\.)oascentral\\.phoenixvillenews\\.com$",
+      "regexp:(^|\\.)oascentral\\.tourismvancouver\\.com$",
+      "regexp:(^|\\.)oatmealmontleymontleyremove\\.com$"
     ]
   },
   {
@@ -77302,8 +77302,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 189 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)oascentral\\.tourismvancouver\\.com$",
-      "regexp:(^|\\.)oatmealmontleymontleyremove\\.com$",
       "regexp:(^|\\.)observedinoffensivesupplied\\.com$",
       "regexp:(^|\\.)offspringresolveddiminution\\.com$",
       "regexp:(^|\\.)offspringwilliamimportantly\\.com$",
@@ -77701,7 +77699,9 @@
       "regexp:(^|\\.)centimetremiscellaneouspropel\\.com$",
       "regexp:(^|\\.)challengingdevaluationperiods\\.com$",
       "regexp:(^|\\.)chamsocthekhachang-truc-tuyen\\.com$",
-      "regexp:(^|\\.)chamsocthekhachhang-thang4\\.com\\.vn$"
+      "regexp:(^|\\.)chamsocthekhachhang-thang4\\.com\\.vn$",
+      "regexp:(^|\\.)chamsocthekhachhang-thang4\\.online$",
+      "regexp:(^|\\.)clumsinesseventuallysearching\\.com$"
     ]
   },
   {
@@ -77713,8 +77713,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 190 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)chamsocthekhachhang-thang4\\.online$",
-      "regexp:(^|\\.)clumsinesseventuallysearching\\.com$",
       "regexp:(^|\\.)cmp\\.histoire-et-civilisations\\.com$",
       "regexp:(^|\\.)collector-pxrf8vapwa\\.px-cloud\\.net$",
       "regexp:(^|\\.)coloradosoccerbuddies\\.acemlna\\.com$",
@@ -78108,11 +78106,13 @@
       "regexp:(^|\\.)56n78kho\\.te5vvi8fylu8gzj2m48to8\\.cyou$",
       "regexp:(^|\\.)adimages\\.associationheadquarters\\.com$",
       "regexp:(^|\\.)binhchonanhduthicuabe2022\\.weebly\\.com$",
+      "regexp:(^|\\.)booking\\.captcha-message-extranet\\.com$",
       "regexp:(^|\\.)broilergrowerantitrustsettlement\\.com$",
       "regexp:(^|\\.)calameo-beacon\\.global\\.ssl\\.fastly\\.net$",
       "regexp:(^|\\.)catherinepensiveincomprehensible\\.com$",
       "regexp:(^|\\.)cdn-bongdadem-net\\.cdn\\.ampproject\\.org$",
-      "regexp:(^|\\.)chamsockhachhang-uudaithe-thang6\\.com$"
+      "regexp:(^|\\.)chamsockhachhang-uudaithe-thang6\\.com$",
+      "regexp:(^|\\.)chattts-49f1\\.beszyrecala\\.workers\\.dev$"
     ]
   },
   {
@@ -78124,7 +78124,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 191 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)chattts-49f1\\.beszyrecala\\.workers\\.dev$",
       "regexp:(^|\\.)cim-idc-cdn\\.account\\.wellontarget\\.com$",
       "regexp:(^|\\.)climateexhaustingconfidentiality\\.com$",
       "regexp:(^|\\.)confrontationmathsinfractructure\\.com$",
@@ -78523,7 +78522,8 @@
       "regexp:(^|\\.)giongcatrienvong-gionghatvietnhi-mua3\\.weebly\\.com$",
       "regexp:(^|\\.)hncbeyghfsbvcuabgsbncvzgaioiuyegdbhabbbw\\.ydns\\.eu$",
       "regexp:(^|\\.)ourtime-assist\\.members-authenticated\\.workers\\.dev$",
-      "regexp:(^|\\.)tdfhdser-1433552157\\.cos\\.ap-hongkong\\.myqcloud\\.com$"
+      "regexp:(^|\\.)tdfhdser-1433552157\\.cos\\.ap-hongkong\\.myqcloud\\.com$",
+      "regexp:(^|\\.)web-chat\\.global\\.assistant\\.watson\\.appdomain\\.cloud$"
     ]
   },
   {
@@ -78535,7 +78535,6 @@
     "remark": "ClientRuleSet domainset/reject_extra · DOMAIN-SUFFIX 192 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)web-chat\\.global\\.assistant\\.watson\\.appdomain\\.cloud$",
       "regexp:(^|\\.)acceptlnterac-email-transfer-online-2fasecure\\.com$",
       "regexp:(^|\\.)binhchon-gionghatvietnhi-vong1-nam2022\\.weebly\\.com$",
       "regexp:(^|\\.)chamsockhachhang-uudaithetructuyen-thang10\\.com\\.vn$",

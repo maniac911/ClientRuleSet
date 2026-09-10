@@ -1,0 +1,16 @@
+[
+  {
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet non_ip/bilibili",
+    "domain": [
+      "domain:hdslb.com",
+      "domain:biliapi.com",
+      "domain:biliapi.net",
+      "domain:bilibili.com",
+      "domain:bilivideo.cn",
+      "domain:bilivideo.com"
+    ]
+  }
+]

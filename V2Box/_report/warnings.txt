@@ -184,7 +184,7 @@ IP-CIDR,205.180.175.0/24,no-resolve  # V2Box route imports have no per-rule no-r
 IP-CIDR,63.92.224.0/19,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 IP-CIDR,65.199.22.0/23,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 
-# ip/bilibili_httpdns.json
+# ip/bilibili.json
 IP-CIDR,101.91.140.124/32,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 IP-CIDR,101.91.140.224/32,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 IP-CIDR,112.64.218.119/32,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.

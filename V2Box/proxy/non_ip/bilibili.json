@@ -1,0 +1,19 @@
+[
+  {
+    "name": "route.150D8F30-77D5-AF43-EABE-A0FE3CF14832",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/bilibili · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)hdslb\\.com$",
+      "regexp:(^|\\.)biliapi\\.com$",
+      "regexp:(^|\\.)biliapi\\.net$",
+      "regexp:(^|\\.)bilibili\\.com$",
+      "regexp:(^|\\.)bilivideo\\.cn$",
+      "regexp:(^|\\.)bilivideo\\.com$"
+    ]
+  }
+]
