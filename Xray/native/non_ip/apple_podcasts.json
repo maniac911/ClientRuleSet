@@ -1,0 +1,15 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/apple_podcasts",
+        "domain": [
+          "domain:applepodcasts.com",
+          "domain:podcasts.apple.com"
+        ]
+      }
+    ]
+  }
+}
