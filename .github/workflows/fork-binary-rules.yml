@@ -86,6 +86,39 @@ jobs:
         run: |
           set -euo pipefail
           if [ -d ForkExtras/Source ]; then rsync -a ForkExtras/Source/ Source/; fi
+      - name: Exclude Bilibili HTTPDNS IPs from upstream non-IP reject rules
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          bilibili_ip = Path('ForkExtras/Source/ip/bilibili.conf')
+          reject_non_ip = Path('Source/non_ip/reject.conf')
+
+          cidrs = set()
+          for raw in bilibili_ip.read_text(encoding='utf-8').splitlines():
+              line = raw.strip()
+              if not line or line.startswith('#'):
+                  continue
+              parts = [p.strip() for p in line.split(',')]
+              if len(parts) >= 2 and parts[0] in {'IP-CIDR', 'IP-CIDR6'}:
+                  cidrs.add(parts[1])
+
+          original = reject_non_ip.read_text(encoding='utf-8').splitlines()
+          kept = []
+          removed = []
+          for raw in original:
+              parts = [p.strip() for p in raw.split(',')]
+              if len(parts) >= 2 and parts[0] in {'IP-CIDR', 'IP-CIDR6'} and parts[1] in cidrs:
+                  removed.append(raw)
+              else:
+                  kept.append(raw)
+
+          reject_non_ip.write_text('\n'.join(kept) + '\n', encoding='utf-8')
+          print(f'Removed {len(removed)} overlapping Bilibili HTTPDNS CIDR rules from Source/non_ip/reject.conf')
+          for line in removed:
+              print(f'  - {line}')
+          PY
       - name: Build standard rules from this fork
         run: pnpm run build
         env:
