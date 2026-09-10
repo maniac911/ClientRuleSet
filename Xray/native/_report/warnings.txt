@@ -303,7 +303,7 @@ IP-CIDR6,2620:10c:7000::/44,no-resolve  # Xray has no per-rule no-resolve flag; 
 IP-CIDR6,2a00:86c0::/32,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 IP-CIDR6,2a03:5640::/32,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 
-# ip/telegram.json
+# ip/teleproto.json
 IP-CIDR,149.154.160.0/20,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 IP-CIDR,185.76.151.0/24,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.
 IP-CIDR,194.221.250.50/32,no-resolve  # Xray has no per-rule no-resolve flag; DNS behavior depends on routing.domainStrategy.

@@ -1,10 +1,10 @@
 [
   {
-    "name": "route.A9FB7281-8497-7F37-8825-470529E227B4",
-    "type": "IP",
-    "tag": "block",
-    "matchMode": "full",
-    "listIP": [
+    "type": "field",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "ClientRuleSet ip/teleproto",
+    "ip": [
       "91.105.192.0/23",
       "91.108.4.0/22",
       "91.108.8.0/21",
@@ -19,9 +19,6 @@
       "2001:67c:4e8::/48",
       "2001:b28:f23c::/48",
       "2a0a:f280::/32"
-    ],
-    "remark": "ClientRuleSet ip/telegram · IP-CIDR · block",
-    "isEnable": true,
-    "list": []
+    ]
   }
 ]

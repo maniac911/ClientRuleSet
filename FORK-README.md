@@ -1,6 +1,6 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: 65b67207abaeb84b58b4754481a46ab82ddfa482
+Built from fork source commit: 6a7d7a73f0ba040b7ad9f01c1c963b8073ca8ac3
 
 Build flow: SukkaW/Surge -> fork master -> pnpm build -> ForkExtras client adapters -> rules-dist
 

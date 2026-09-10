@@ -34,6 +34,7 @@ Clash/Release/ip/stream_tw.txt
 Clash/Release/ip/stream_us.txt
 Clash/Release/ip/telegram.mrs
 Clash/Release/ip/telegram_asn.txt
+Clash/Release/ip/teleproto.mrs
 Clash/Release/non_ip/ai.txt
 Clash/Release/non_ip/apple_cdn.txt
 Clash/Release/non_ip/apple_cn.mrs
@@ -107,6 +108,7 @@ Clash/ip/stream_tw.txt
 Clash/ip/stream_us.txt
 Clash/ip/telegram.txt
 Clash/ip/telegram_asn.txt
+Clash/ip/teleproto.txt
 Clash/non_ip/ai.txt
 Clash/non_ip/apple_cdn.txt
 Clash/non_ip/apple_cn.txt
@@ -172,8 +174,8 @@ Egern/ip/neteasemusic.yaml
 Egern/ip/reject-resolve.yaml
 Egern/ip/reject.yaml
 Egern/ip/stream.yaml
-Egern/ip/telegram.yaml
 Egern/ip/telegram_asn.yaml
+Egern/ip/teleproto.yaml
 Egern/non_ip/ai.yaml
 Egern/non_ip/apple_cn.yaml
 Egern/non_ip/apple_intelligence.yaml
@@ -245,6 +247,7 @@ Hiddify/ip/stream_tw.srs
 Hiddify/ip/stream_us.srs
 Hiddify/ip/telegram.srs
 Hiddify/ip/telegram_asn.srs
+Hiddify/ip/teleproto.srs
 Hiddify/non_ip/ai.srs
 Hiddify/non_ip/apple_cdn.srs
 Hiddify/non_ip/apple_cn.srs
@@ -327,6 +330,7 @@ LegacyClashPremium/ip/stream_tw.txt
 LegacyClashPremium/ip/stream_us.txt
 LegacyClashPremium/ip/telegram.txt
 LegacyClashPremium/ip/telegram_asn.txt
+LegacyClashPremium/ip/teleproto.txt
 LegacyClashPremium/non_ip/ai.txt
 LegacyClashPremium/non_ip/apple_cn.txt
 LegacyClashPremium/non_ip/apple_intelligence.txt
@@ -393,8 +397,8 @@ Loon/ip/stream_jp.list
 Loon/ip/stream_kr.list
 Loon/ip/stream_tw.list
 Loon/ip/stream_us.list
-Loon/ip/telegram.list
 Loon/ip/telegram_asn.list
+Loon/ip/teleproto.list
 Loon/non_ip/ai.list
 Loon/non_ip/apple_cn.list
 Loon/non_ip/apple_intelligence.list
@@ -478,8 +482,8 @@ QuantumultX/ip/stream_jp.list
 QuantumultX/ip/stream_kr.list
 QuantumultX/ip/stream_tw.list
 QuantumultX/ip/stream_us.list
-QuantumultX/ip/telegram.list
 QuantumultX/ip/telegram_asn.list
+QuantumultX/ip/teleproto.list
 QuantumultX/non_ip/ai.list
 QuantumultX/non_ip/apple_cn.list
 QuantumultX/non_ip/apple_intelligence.list
@@ -547,8 +551,8 @@ Shadowrocket/ip/stream_jp.list
 Shadowrocket/ip/stream_kr.list
 Shadowrocket/ip/stream_tw.list
 Shadowrocket/ip/stream_us.list
-Shadowrocket/ip/telegram.list
 Shadowrocket/ip/telegram_asn.list
+Shadowrocket/ip/teleproto.list
 Shadowrocket/non_ip/ai.list
 Shadowrocket/non_ip/apple_cn.list
 Shadowrocket/non_ip/apple_intelligence.list
@@ -616,8 +620,8 @@ Stash/ip/stream_jp.list
 Stash/ip/stream_kr.list
 Stash/ip/stream_tw.list
 Stash/ip/stream_us.list
-Stash/ip/telegram.list
 Stash/ip/telegram_asn.list
+Stash/ip/teleproto.list
 Stash/non_ip/ai.list
 Stash/non_ip/apple_cn.list
 Stash/non_ip/apple_intelligence.list
@@ -674,6 +678,7 @@ Surfboard/ip/stream_tw.conf
 Surfboard/ip/stream_us.conf
 Surfboard/ip/telegram.conf
 Surfboard/ip/telegram_asn.conf
+Surfboard/ip/teleproto.conf
 Surfboard/non_ip/ai.conf
 Surfboard/non_ip/apple_cn.conf
 Surfboard/non_ip/apple_intelligence.conf
@@ -767,6 +772,7 @@ Surge/ip/stream_tw.conf
 Surge/ip/stream_us.conf
 Surge/ip/telegram.conf
 Surge/ip/telegram_asn.conf
+Surge/ip/teleproto.conf
 Surge/non_ip/ai.conf
 Surge/non_ip/apple_cdn.conf
 Surge/non_ip/apple_cn.conf
@@ -1285,8 +1291,8 @@ V2Box/block/ip/reject.json
 V2Box/block/ip/reject.txt
 V2Box/block/ip/stream.json
 V2Box/block/ip/stream.txt
-V2Box/block/ip/telegram.json
-V2Box/block/ip/telegram.txt
+V2Box/block/ip/teleproto.json
+V2Box/block/ip/teleproto.txt
 V2Box/block/non_ip/ai.json
 V2Box/block/non_ip/ai.txt
 V2Box/block/non_ip/apple_cn.json
@@ -1832,8 +1838,8 @@ V2Box/direct/ip/reject.json
 V2Box/direct/ip/reject.txt
 V2Box/direct/ip/stream.json
 V2Box/direct/ip/stream.txt
-V2Box/direct/ip/telegram.json
-V2Box/direct/ip/telegram.txt
+V2Box/direct/ip/teleproto.json
+V2Box/direct/ip/teleproto.txt
 V2Box/direct/non_ip/ai.json
 V2Box/direct/non_ip/ai.txt
 V2Box/direct/non_ip/apple_cn.json
@@ -2379,8 +2385,8 @@ V2Box/proxy/ip/reject.json
 V2Box/proxy/ip/reject.txt
 V2Box/proxy/ip/stream.json
 V2Box/proxy/ip/stream.txt
-V2Box/proxy/ip/telegram.json
-V2Box/proxy/ip/telegram.txt
+V2Box/proxy/ip/teleproto.json
+V2Box/proxy/ip/teleproto.txt
 V2Box/proxy/non_ip/ai.json
 V2Box/proxy/non_ip/ai.txt
 V2Box/proxy/non_ip/apple_cn.json
@@ -2476,7 +2482,7 @@ Xray/native/ip/lan.json
 Xray/native/ip/neteasemusic.json
 Xray/native/ip/reject.json
 Xray/native/ip/stream.json
-Xray/native/ip/telegram.json
+Xray/native/ip/teleproto.json
 Xray/native/non_ip/ai.json
 Xray/native/non_ip/apple_cn.json
 Xray/native/non_ip/apple_intelligence.json
@@ -2535,7 +2541,7 @@ Xray/v2rayN/ip/lan.json
 Xray/v2rayN/ip/neteasemusic.json
 Xray/v2rayN/ip/reject.json
 Xray/v2rayN/ip/stream.json
-Xray/v2rayN/ip/telegram.json
+Xray/v2rayN/ip/teleproto.json
 Xray/v2rayN/non_ip/ai.json
 Xray/v2rayN/non_ip/apple_cn.json
 Xray/v2rayN/non_ip/apple_intelligence.json
@@ -2606,6 +2612,7 @@ sing-box/Release/ip/stream_tw.srs
 sing-box/Release/ip/stream_us.srs
 sing-box/Release/ip/telegram.srs
 sing-box/Release/ip/telegram_asn.srs
+sing-box/Release/ip/teleproto.srs
 sing-box/Release/non_ip/ai.srs
 sing-box/Release/non_ip/apple_cdn.srs
 sing-box/Release/non_ip/apple_cn.srs
@@ -2676,6 +2683,7 @@ sing-box/ip/stream_tw.json
 sing-box/ip/stream_us.json
 sing-box/ip/telegram.json
 sing-box/ip/telegram_asn.json
+sing-box/ip/teleproto.json
 sing-box/non_ip/ai.json
 sing-box/non_ip/apple_cdn.json
 sing-box/non_ip/apple_cn.json

@@ -303,7 +303,7 @@ IP-CIDR6,2620:10c:7000::/44,no-resolve  # V2Box route imports have no per-rule n
 IP-CIDR6,2a00:86c0::/32,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 IP-CIDR6,2a03:5640::/32,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 
-# ip/telegram.json
+# ip/teleproto.json
 IP-CIDR,149.154.160.0/20,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 IP-CIDR,185.76.151.0/24,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
 IP-CIDR,194.221.250.50/32,no-resolve  # V2Box route imports have no per-rule no-resolve flag; DNS behavior is controlled by the active core/config.
