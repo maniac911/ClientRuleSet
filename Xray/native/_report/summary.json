@@ -4,7 +4,7 @@
   "outbound_tag": "proxy",
   "source_files": 65,
   "generated_files": 56,
-  "emitted_rules": 149,
+  "emitted_rules": 150,
   "unsupported_rules": 255,
   "unsupported_by_type": {
     "AND": 42,
@@ -12,7 +12,7 @@
     "PROCESS-NAME": 1,
     "URL-REGEX": 192
   },
-  "warnings": 343,
+  "warnings": 359,
   "notes": [
     "Each file is a routing fragment shaped as { routing: { rules: [...] } }; merge it into a complete Xray config before running it.",
     "sourceIP/sourcePort are preserved natively.",

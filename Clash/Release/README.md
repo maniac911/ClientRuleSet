@@ -8,4 +8,4 @@ Preferred client-facing output.
 - ip/*.mrs: pure CIDR/IP-CIDR/IP-CIDR6, behavior ipcidr.
 - ip/*.txt: mixed rules preserved.
 
-Build summary: {"domainMRS":10,"domainText":1,"nonIpMRS":17,"nonIpText":25,"ipMRS":14,"ipText":9}
+Build summary: {"domainMRS":10,"domainText":1,"nonIpMRS":15,"nonIpText":26,"ipMRS":13,"ipText":9}
