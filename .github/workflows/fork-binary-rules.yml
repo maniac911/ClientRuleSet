@@ -103,6 +103,10 @@ jobs:
           docker pull "${MIHOMO_IMAGE}"
       - name: Run client adapters
         run: node ForkExtras/Clients/run.cjs release output
+      - name: Remove stale renamed Bilibili artifacts
+        run: |
+          set -euo pipefail
+          find output -type f -name 'bilibili_httpdns.*' -delete
       - name: Write fork build metadata
         run: |
           set -euo pipefail
