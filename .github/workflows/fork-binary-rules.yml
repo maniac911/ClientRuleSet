@@ -45,7 +45,7 @@ jobs:
         run: |
           set -euo pipefail
           if git merge-base --is-ancestor upstream/master HEAD; then exit 0; fi
-          git merge --no-edit upstream/master
+          git merge --no-ff -m "chore(sync): merge upstream master [skip actions]" upstream/master
           git push origin HEAD:master
 
   build-and-publish:
