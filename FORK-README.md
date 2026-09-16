@@ -1,9 +1,10 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: b8be9997b43fc514eaeaa9aee5b7b09af54aef75
+Built from fork source commit: 713efc99bf839a8f2e6a278d2be0b5d0ea4d7b2e
 Upstream base commit: 4c5439b2d9d98c39a52691b8662c7e82bd1a2c40
-Build timestamp (UTC): 2026-09-16T11:07:02Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/35088423850
+Build-input fingerprint: f1f77614aacaaef981b78d5d0b643128867ceb6568dd172dead92404f4e527ab
+Build timestamp (UTC): 2026-09-16T16:59:05Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/35125122096
 
 sing-box compiler release: v1.14.1
 sing-box compiler image: ghcr.io/sagernet/sing-box:v1.14.1
@@ -16,6 +17,9 @@ Mihomo image digest: metacubex/mihomo@sha256:739edd73a352d6beb82fad6790ef9d417a4
 Strict binary compilation: enabled
 sing-box summary: {"srs":71,"jsonFallback":0}
 Mihomo summary: {"domainMRS":10,"domainText":1,"nonIpMRS":16,"nonIpText":25,"ipMRS":13,"ipText":9,"compileFailures":0}
+Binary output counts: {"srs":142,"mrs":39}
+
+Integrity files: MANIFEST.json and SHA256SUMS
 
 Build flow: SukkaW/Surge -> fork master -> pnpm build -> ForkExtras client adapters -> rules-dist
 
