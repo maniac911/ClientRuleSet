@@ -16,10 +16,15 @@ FORCE_REBUILD = os.environ.get("FORCE_REBUILD", "false").lower() == "true"
 OUTPUT_FILE = Path(os.environ["GITHUB_OUTPUT"])
 SUMMARY_FILE = Path(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"))
 
+# Only files that can materially change generated rules belong in the fingerprint.
+# Documentation-only edits (for example ForkExtras/README.md) intentionally do not.
 FINGERPRINT_PATHS = [
     "Build",
     "Source",
-    "ForkExtras",
+    "ForkExtras/Clients",
+    "ForkExtras/Source",
+    "ForkExtras/Scripts",
+    "ForkExtras/clients.yml",
     ".node-version",
     "package.json",
     "pnpm-lock.yaml",
