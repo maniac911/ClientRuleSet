@@ -275,6 +275,7 @@ jobs:
           name: generated-rules-${{ github.run_id }}
           path: output
           if-no-files-found: error
+          include-hidden-files: true
           retention-days: 1
 
   publish:
