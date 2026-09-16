@@ -209,7 +209,10 @@ jobs:
   build:
     name: Build and verify generated rules
     needs: plan-build
-    if: needs.plan-build.outputs.should_build == 'true'
+    if: >-
+      always() &&
+      needs.plan-build.result == 'success' &&
+      needs.plan-build.outputs.should_build == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -479,7 +482,9 @@ jobs:
     needs:
       - plan-build
       - build
-    if: needs.build.result == 'success'
+    if: >-
+      always() &&
+      needs.build.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
