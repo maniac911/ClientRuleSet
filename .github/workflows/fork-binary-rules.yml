@@ -61,7 +61,7 @@ jobs:
           git remote add upstream "${UPSTREAM_REPO}"
           git fetch --no-tags upstream master
 
-      - name: Merge upstream while preserving fork workflows
+      - name: Merge upstream while preserving fork automation
         run: |
           set -euo pipefail
 
@@ -76,20 +76,22 @@ jobs:
           merge_status=$?
           set -e
 
+          # Keep fork-owned GitHub automation exactly as it was before the merge.
           git rm -rf --cached --ignore-unmatch .github/workflows >/dev/null 2>&1 || true
           rm -rf .github/workflows
           git checkout "${before_merge}" -- .github/workflows
-          git add .github/workflows
+          git checkout "${before_merge}" -- .github/dependabot.yml
+          git add .github/workflows .github/dependabot.yml
 
           unresolved="$(git diff --name-only --diff-filter=U)"
           if [[ -n "${unresolved}" ]]; then
-            echo "::error::Upstream merge has unresolved conflicts outside .github/workflows:"
+            echo "::error::Upstream merge has unresolved conflicts outside fork automation:"
             printf '%s\n' "${unresolved}"
             exit 1
           fi
 
           if [[ "${merge_status}" -ne 0 ]]; then
-            echo "Merge conflicts were limited to preserved workflow files and were resolved with fork versions."
+            echo "Merge conflicts were limited to preserved automation files and were resolved with fork versions."
           fi
 
           git commit -m "chore(sync): merge upstream master [skip actions]"
