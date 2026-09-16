@@ -4,74 +4,246 @@ on:
   schedule:
     - cron: "47 */6 * * *"
   workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: Rebuild even when source and compiler versions already match rules-dist
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - master
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: fork-sync-and-build
-  cancel-in-progress: true
+  group: clientruleset-sync-build
+  cancel-in-progress: false
 
 env:
   DIST_BRANCH: rules-dist
   UPSTREAM_REPO: https://github.com/SukkaW/Surge.git
-  SING_BOX_IMAGE: ghcr.io/sagernet/sing-box:v1.14.0-rc.4
-  MIHOMO_IMAGE: docker.io/metacubex/mihomo:v1.19.30
 
 jobs:
   sync-upstream:
     name: Sync SukkaW/Surge into fork master
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
         with:
           ref: master
           fetch-depth: 0
           token: ${{ secrets.SYNC_TOKEN }}
+
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Fetch upstream
         run: |
           set -euo pipefail
           git remote remove upstream 2>/dev/null || true
           git remote add upstream "${UPSTREAM_REPO}"
           git fetch --no-tags upstream master
-      - name: Merge upstream safely
+
+      - name: Merge upstream while preserving fork workflows
         run: |
           set -euo pipefail
-          if git merge-base --is-ancestor upstream/master HEAD; then exit 0; fi
-          git merge --no-ff -m "chore(sync): merge upstream master [skip actions]" upstream/master
+
+          if git merge-base --is-ancestor upstream/master HEAD; then
+            echo "Fork master already contains upstream/master."
+            exit 0
+          fi
+
+          before_merge="$(git rev-parse HEAD)"
+
+          set +e
+          git merge --no-ff --no-commit upstream/master
+          merge_status=$?
+          set -e
+
+          # Upstream workflows belong to SukkaW's release infrastructure.
+          # Keep this fork's workflow tree exactly as it was before the merge.
+          git rm -rf --cached --ignore-unmatch .github/workflows >/dev/null 2>&1 || true
+          rm -rf .github/workflows
+          git checkout "${before_merge}" -- .github/workflows
+          git add .github/workflows
+
+          unresolved="$(git diff --name-only --diff-filter=U)"
+          if [[ -n "${unresolved}" ]]; then
+            echo "::error::Upstream merge has unresolved conflicts outside .github/workflows:"
+            printf '%s\n' "${unresolved}"
+            exit 1
+          fi
+
+          if [[ "${merge_status}" -ne 0 ]]; then
+            echo "Merge conflicts were limited to preserved workflow files and have been resolved with the fork versions."
+          fi
+
+          git commit -m "chore(sync): merge upstream master [skip actions]"
           git push origin HEAD:master
 
-  build-and-publish:
-    name: Build from fork master and publish rules-dist
+  plan-build:
+    name: Check source and latest stable compilers
     needs: sync-upstream
+    if: >-
+      always() &&
+      (needs.sync-upstream.result == 'success' || needs.sync-upstream.result == 'skipped') &&
+      !(github.event_name == 'push' && contains(github.event.head_commit.message, '[skip actions]'))
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      should_build: ${{ steps.plan.outputs.should_build }}
+      source_sha: ${{ steps.plan.outputs.source_sha }}
+      upstream_sha: ${{ steps.plan.outputs.upstream_sha }}
+      sing_box_tag: ${{ steps.plan.outputs.sing_box_tag }}
+      sing_box_image: ${{ steps.plan.outputs.sing_box_image }}
+      mihomo_tag: ${{ steps.plan.outputs.mihomo_tag }}
+      mihomo_image: ${{ steps.plan.outputs.mihomo_image }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: master
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Resolve build plan
+        id: plan
+        env:
+          FORCE_REBUILD: ${{ inputs.force_rebuild || 'false' }}
+        run: |
+          set -euo pipefail
+
+          latest_stable_release() {
+            local repo="$1"
+            curl --fail --silent --show-error --location \
+              --retry 3 --retry-delay 2 \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${repo}/releases/latest" |
+              jq -er 'select(.draft == false and .prerelease == false) | .tag_name'
+          }
+
+          source_sha="$(git rev-parse HEAD)"
+
+          git remote remove upstream 2>/dev/null || true
+          git remote add upstream "${UPSTREAM_REPO}"
+          git fetch --no-tags upstream master
+          upstream_sha="$(git merge-base HEAD upstream/master)"
+
+          sing_box_tag="$(latest_stable_release SagerNet/sing-box)"
+          mihomo_tag="$(latest_stable_release MetaCubeX/mihomo)"
+
+          [[ "${sing_box_tag}" =~ ^v[0-9] ]] || { echo "::error::Unexpected sing-box release tag: ${sing_box_tag}"; exit 1; }
+          [[ "${mihomo_tag}" =~ ^v[0-9] ]] || { echo "::error::Unexpected Mihomo release tag: ${mihomo_tag}"; exit 1; }
+
+          sing_box_image="ghcr.io/sagernet/sing-box:${sing_box_tag}"
+          mihomo_image="docker.io/metacubex/mihomo:${mihomo_tag}"
+
+          {
+            echo "source_sha=${source_sha}"
+            echo "upstream_sha=${upstream_sha}"
+            echo "sing_box_tag=${sing_box_tag}"
+            echo "sing_box_image=${sing_box_image}"
+            echo "mihomo_tag=${mihomo_tag}"
+            echo "mihomo_image=${mihomo_image}"
+          } >> "${GITHUB_OUTPUT}"
+
+          current_source=""
+          current_sing_box=""
+          current_mihomo=""
+
+          if git fetch --no-tags origin "${DIST_BRANCH}:refs/remotes/origin/${DIST_BRANCH}" 2>/dev/null; then
+            metadata="$(git show "refs/remotes/origin/${DIST_BRANCH}:FORK-README.md" 2>/dev/null || true)"
+            current_source="$(printf '%s\n' "${metadata}" | sed -n 's/^Built from fork source commit: //p' | head -n1)"
+            current_sing_box="$(printf '%s\n' "${metadata}" | sed -n 's/^sing-box compiler release: //p' | head -n1)"
+            current_mihomo="$(printf '%s\n' "${metadata}" | sed -n 's/^Mihomo compiler release: //p' | head -n1)"
+          fi
+
+          should_build=false
+          reasons=()
+
+          if [[ "${FORCE_REBUILD}" == "true" ]]; then
+            should_build=true
+            reasons+=("manual force_rebuild")
+          fi
+          if [[ "${current_source}" != "${source_sha}" ]]; then
+            should_build=true
+            reasons+=("source changed")
+          fi
+          if [[ "${current_sing_box}" != "${sing_box_tag}" ]]; then
+            should_build=true
+            reasons+=("sing-box compiler changed: ${current_sing_box:-none} -> ${sing_box_tag}")
+          fi
+          if [[ "${current_mihomo}" != "${mihomo_tag}" ]]; then
+            should_build=true
+            reasons+=("Mihomo compiler changed: ${current_mihomo:-none} -> ${mihomo_tag}")
+          fi
+
+          echo "should_build=${should_build}" >> "${GITHUB_OUTPUT}"
+
+          {
+            echo "## Build plan"
+            echo
+            echo "- Source: \`${source_sha}\`"
+            echo "- Upstream base: \`${upstream_sha}\`"
+            echo "- Latest stable sing-box: \`${sing_box_tag}\`"
+            echo "- Latest stable Mihomo: \`${mihomo_tag}\`"
+            echo "- Build required: \`${should_build}\`"
+            if ((${#reasons[@]})); then
+              echo "- Reasons:"
+              for reason in "${reasons[@]}"; do
+                echo "  - ${reason}"
+              done
+            else
+              echo "- rules-dist already matches source and compiler versions."
+            fi
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+  build:
+    name: Build and verify generated rules
+    needs: plan-build
+    if: needs.plan-build.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      SOURCE_SHA: ${{ needs.plan-build.outputs.source_sha }}
+      UPSTREAM_SHA: ${{ needs.plan-build.outputs.upstream_sha }}
+      SING_BOX_TAG: ${{ needs.plan-build.outputs.sing_box_tag }}
+      SING_BOX_IMAGE: ${{ needs.plan-build.outputs.sing_box_image }}
+      MIHOMO_TAG: ${{ needs.plan-build.outputs.mihomo_tag }}
+      MIHOMO_IMAGE: ${{ needs.plan-build.outputs.mihomo_image }}
+      CLIENT_RELEASE_STRICT: "1"
+    steps:
+      - uses: actions/checkout@v7.0.1
         with:
           ref: master
           fetch-depth: 1
-      - name: Record source commit
-        run: echo "SOURCE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          persist-credentials: false
+
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6.1.0
         with:
           run_install: false
+
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7.0.0
         with:
           node-version-file: ".node-version"
           cache: pnpm
+
       - name: Install dependencies
         run: |
           pnpm config set --location=global minimumReleaseAge 0
           pnpm install --frozen-lockfile
+
       - name: Prepare previous build directory
         run: |
           set -euo pipefail
@@ -83,47 +255,121 @@ jobs:
             rm -rf output/.git
           fi
           node ForkExtras/Clients/run.cjs prepare output
+
       - name: Overlay fork-only source rules
         run: |
           set -euo pipefail
-          if [ -d ForkExtras/Source ]; then rsync -a ForkExtras/Source/ Source/; fi
-      - name: Exclude Bilibili HTTPDNS IPs from upstream non-IP reject rules
+          if [[ -d ForkExtras/Source ]]; then
+            rsync -a ForkExtras/Source/ Source/
+          fi
+
+      - name: Check duplicate source rules
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
+          import os
+          import sys
+
+          def duplicates(root: Path):
+              found = []
+              if not root.exists():
+                  return found
+              for file in sorted(p for p in root.rglob('*') if p.is_file()):
+                  seen = {}
+                  for number, raw in enumerate(file.read_text(encoding='utf-8').splitlines(), 1):
+                      line = raw.strip()
+                      if not line or line.startswith('#'):
+                          continue
+                      if line in seen:
+                          found.append((file, number, seen[line], line))
+                      else:
+                          seen[line] = number
+              return found
+
+          own = duplicates(Path('ForkExtras/Source'))
+          merged = duplicates(Path('Source'))
+
+          summary = os.environ.get('GITHUB_STEP_SUMMARY')
+          if summary:
+              with open(summary, 'a', encoding='utf-8') as handle:
+                  handle.write('## Duplicate source-rule check\n\n')
+                  handle.write(f'- ForkExtras duplicates: `{len(own)}`\n')
+                  handle.write(f'- Merged Source duplicates: `{len(merged)}`\n')
+
+          for file, line, first, value in merged:
+              print(f'::warning file={file},line={line}::Duplicate of line {first}: {value}')
+
+          if own:
+              for file, line, first, value in own:
+                  print(f'::error file={file},line={line}::Fork-only duplicate of line {first}: {value}')
+              sys.exit(1)
+          PY
+
+      - name: Exclude exact Bilibili HTTPDNS CIDRs and report broader overlaps
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from ipaddress import ip_network
+          from pathlib import Path
+          import os
 
           bilibili_ip = Path('ForkExtras/Source/ip/bilibili.conf')
           reject_non_ip = Path('Source/non_ip/reject.conf')
 
-          cidrs = set()
-          for raw in bilibili_ip.read_text(encoding='utf-8').splitlines():
-              line = raw.strip()
-              if not line or line.startswith('#'):
-                  continue
-              parts = [p.strip() for p in line.split(',')]
-              if len(parts) >= 2 and parts[0] in {'IP-CIDR', 'IP-CIDR6'}:
-                  cidrs.add(parts[1])
+          def parsed_cidrs(path):
+              result = []
+              for raw in path.read_text(encoding='utf-8').splitlines():
+                  line = raw.strip()
+                  if not line or line.startswith('#'):
+                      continue
+                  parts = [part.strip() for part in line.split(',')]
+                  if len(parts) >= 2 and parts[0] in {'IP-CIDR', 'IP-CIDR6'}:
+                      try:
+                          result.append((raw, parts[1], ip_network(parts[1], strict=False)))
+                      except ValueError:
+                          pass
+              return result
+
+          bilibili = parsed_cidrs(bilibili_ip)
+          bilibili_text = {cidr for _, cidr, _ in bilibili}
 
           original = reject_non_ip.read_text(encoding='utf-8').splitlines()
           kept = []
           removed = []
+
           for raw in original:
-              parts = [p.strip() for p in raw.split(',')]
-              if len(parts) >= 2 and parts[0] in {'IP-CIDR', 'IP-CIDR6'} and parts[1] in cidrs:
+              parts = [part.strip() for part in raw.split(',')]
+              if len(parts) >= 2 and parts[0] in {'IP-CIDR', 'IP-CIDR6'} and parts[1] in bilibili_text:
                   removed.append(raw)
               else:
                   kept.append(raw)
 
           reject_non_ip.write_text('\n'.join(kept) + '\n', encoding='utf-8')
-          print(f'Removed {len(removed)} overlapping Bilibili HTTPDNS CIDR rules from Source/non_ip/reject.conf')
-          for line in removed:
-              print(f'  - {line}')
+
+          remaining = parsed_cidrs(reject_non_ip)
+          overlaps = []
+          for _, reject_cidr, reject_net in remaining:
+              for _, bilibili_cidr, bilibili_net in bilibili:
+                  if reject_net.version == bilibili_net.version and reject_net.overlaps(bilibili_net):
+                      overlaps.append((reject_cidr, bilibili_cidr))
+                      print(f'::warning::CIDR overlap remains: reject {reject_cidr} overlaps Bilibili {bilibili_cidr}')
+
+          print(f'Removed {len(removed)} exact Bilibili HTTPDNS CIDR rules from Source/non_ip/reject.conf')
+
+          summary = os.environ.get('GITHUB_STEP_SUMMARY')
+          if summary:
+              with open(summary, 'a', encoding='utf-8') as handle:
+                  handle.write('\n## Bilibili HTTPDNS overlap check\n\n')
+                  handle.write(f'- Exact CIDRs removed from reject: `{len(removed)}`\n')
+                  handle.write(f'- Broader/narrower overlaps left for review: `{len(overlaps)}`\n')
           PY
+
       - name: Build standard rules from this fork
         run: pnpm run build
         env:
           PUBLIC_DIR: ${{ github.workspace }}/output
+
       - name: Verify upstream build
         run: |
           set -euo pipefail
@@ -131,50 +377,148 @@ jobs:
           test -d output/List
           test -d output/Clash
           test -d output/sing-box
-      - name: Pull binary compilers
+
+      - name: Pull latest stable binary compilers
         run: |
+          set -euo pipefail
+          echo "sing-box release: ${SING_BOX_TAG}"
+          echo "sing-box image:   ${SING_BOX_IMAGE}"
+          echo "Mihomo release:   ${MIHOMO_TAG}"
+          echo "Mihomo image:     ${MIHOMO_IMAGE}"
+
           docker pull "${SING_BOX_IMAGE}"
           docker pull "${MIHOMO_IMAGE}"
-      - name: Run client adapters
+
+          sing_box_digest="$(docker image inspect --format='{{index .RepoDigests 0}}' "${SING_BOX_IMAGE}")"
+          mihomo_digest="$(docker image inspect --format='{{index .RepoDigests 0}}' "${MIHOMO_IMAGE}")"
+
+          {
+            echo "SING_BOX_IMAGE_DIGEST=${sing_box_digest}"
+            echo "MIHOMO_IMAGE_DIGEST=${mihomo_digest}"
+          } >> "${GITHUB_ENV}"
+
+      - name: Run client adapters in strict binary mode
         run: node ForkExtras/Clients/run.cjs release output
+
       - name: Remove stale renamed Bilibili artifacts
         run: |
           set -euo pipefail
           find output -type f -name 'bilibili_httpdns.*' -delete
-      - name: Write fork build metadata
+
+      - name: Write build metadata
         run: |
           set -euo pipefail
           sudo chown -R "$(id -u):$(id -g)" output
+
+          sing_box_summary="$(cat output/.build-sing-box.json)"
+          mihomo_summary="$(cat output/.build-mihomo.json)"
+          rm -f output/.build-sing-box.json output/.build-mihomo.json
+
+          built_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          run_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
           cat > output/FORK-README.md <<EOF
           # maniac911/ClientRuleSet generated rules
 
           Built from fork source commit: ${SOURCE_SHA}
+          Upstream base commit: ${UPSTREAM_SHA}
+          Build timestamp (UTC): ${built_at}
+          GitHub Actions run: ${run_url}
+
+          sing-box compiler release: ${SING_BOX_TAG}
+          sing-box compiler image: ${SING_BOX_IMAGE}
+          sing-box image digest: ${SING_BOX_IMAGE_DIGEST}
+
+          Mihomo compiler release: ${MIHOMO_TAG}
+          Mihomo compiler image: ${MIHOMO_IMAGE}
+          Mihomo image digest: ${MIHOMO_IMAGE_DIGEST}
+
+          Strict binary compilation: enabled
+          sing-box summary: ${sing_box_summary}
+          Mihomo summary: ${mihomo_summary}
 
           Build flow: SukkaW/Surge -> fork master -> pnpm build -> ForkExtras client adapters -> rules-dist
 
           Client enable/disable settings live in ForkExtras/clients.yml on master.
           EOF
+
+          cat > output/BUILD-METADATA.json <<EOF
+          {
+            "source_sha": "${SOURCE_SHA}",
+            "upstream_sha": "${UPSTREAM_SHA}",
+            "built_at": "${built_at}",
+            "run_url": "${run_url}",
+            "sing_box": {
+              "release": "${SING_BOX_TAG}",
+              "image": "${SING_BOX_IMAGE}",
+              "digest": "${SING_BOX_IMAGE_DIGEST}",
+              "summary": ${sing_box_summary}
+            },
+            "mihomo": {
+              "release": "${MIHOMO_TAG}",
+              "image": "${MIHOMO_IMAGE}",
+              "digest": "${MIHOMO_IMAGE_DIGEST}",
+              "summary": ${mihomo_summary}
+            }
+          }
+          EOF
+
+          jq empty output/BUILD-METADATA.json
           find output -type f -not -name FILES.txt -printf '%P\n' | sort > output/FILES.txt
+
+      - name: Upload generated rules
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: generated-rules-${{ github.run_id }}
+          path: output
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    name: Publish rules-dist
+    needs:
+      - plan-build
+      - build
+    if: needs.build.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download generated rules
+        uses: actions/download-artifact@v8.0.1
+        with:
+          name: generated-rules-${{ github.run_id }}
+          path: output
+
       - name: Publish generated output to rules-dist
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ needs.plan-build.outputs.source_sha }}
         run: |
           set -euo pipefail
           repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          if git ls-remote --exit-code --heads "$repo_url" "${DIST_BRANCH}" >/dev/null 2>&1; then
-            git clone --depth 1 --branch "${DIST_BRANCH}" "$repo_url" publish-repo
+
+          if git ls-remote --exit-code --heads "${repo_url}" "${DIST_BRANCH}" >/dev/null 2>&1; then
+            git clone --depth 1 --branch "${DIST_BRANCH}" "${repo_url}" publish-repo
           else
-            git clone --depth 1 "$repo_url" publish-repo
+            git clone --depth 1 "${repo_url}" publish-repo
             cd publish-repo
             git checkout --orphan "${DIST_BRANCH}"
             git rm -rf . >/dev/null 2>&1 || true
             cd ..
           fi
+
           rsync -a --delete --exclude='.git' output/ publish-repo/
           cd publish-repo
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          if git diff --cached --quiet; then exit 0; fi
+
+          if git diff --cached --quiet; then
+            echo "rules-dist already matches generated output."
+            exit 0
+          fi
+
           git commit -m "chore: build client releases from fork master ${SOURCE_SHA}"
           git push origin "HEAD:${DIST_BRANCH}"
