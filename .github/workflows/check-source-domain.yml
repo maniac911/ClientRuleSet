@@ -1,8 +1,12 @@
+# FORK-INTEGRITY: check-source-domain
+# Fork-owned manual checker. Upstream sync must preserve this workflow.
 name: Check Domain Availability
+
 on:
-  # manual trigger only
+  # Manual trigger only; this is diagnostic work and should not run on every push.
   workflow_dispatch:
 
+# Read-only by design: this job validates sources and never writes repository content.
 permissions:
   contents: read
 
@@ -12,12 +16,15 @@ jobs:
     runs-on: ubuntu-slim
     timeout-minutes: 30
 
+    # Split the source validation into six independent shards so one slow shard
+    # does not block or hide the results from the others.
     strategy:
       fail-fast: false
       matrix:
         shard: [0, 1, 2, 3, 4, 5]
 
     steps:
+      # Action refs are pinned to immutable SHAs; Dependabot maintains upgrades.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
