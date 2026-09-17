@@ -187,10 +187,10 @@ jobs:
           node-version-file: ".node-version"
           cache: pnpm
 
-      - name: Install dependencies
+      - name: Install dependencies with guarded lockfile recovery
         run: |
           pnpm config set --location=global minimumReleaseAge 0
-          pnpm install --frozen-lockfile
+          python3 ForkExtras/Scripts/install_dependencies.py
 
       - name: Prepare previous build directory
         run: |
