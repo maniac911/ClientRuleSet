@@ -1,0 +1,45 @@
+name: One-time branch cleanup
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - .github/workflows/cleanup-branches.yml
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Delete obsolete branches
+        shell: bash
+        run: |
+          set -euo pipefail
+          branches=(
+            automation-v3-hardening
+            automation-v3-hardening-backup
+            automation-v3-hardening-test
+            agent/add-chatgpt-voice-ips
+            tmp-branch-cleanup
+            cleanup-runner
+            cleanup-runner-2
+            cleanup-runner-3
+            cleanup-runner-4
+          )
+
+          for branch in "${branches[@]}"; do
+            if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+              echo "Deleting $branch"
+              git push origin --delete "$branch"
+            else
+              echo "Already absent: $branch"
+            fi
+          done
