@@ -1,8 +1,14 @@
+# FORK-INTEGRITY: main-sync-build
+# Main fork-owned workflow.
+# IMPORTANT: do not replace this file with SukkaW/Surge's workflow when using GitHub "Sync fork".
+# The integrity guard below blocks builds if upstream-only workflows are imported or fork-owned automation is lost.
 name: Sync Upstream and Build Rules
 
 on:
+  # Check upstream every 6 hours. Minute 47 avoids the top-of-hour Actions rush.
   schedule:
     - cron: "47 */6 * * *"
+  # Manual runs can force a rebuild even when source/compiler fingerprints match rules-dist.
   workflow_dispatch:
     inputs:
       force_rebuild:
@@ -10,13 +16,19 @@ on:
         required: false
         default: false
         type: boolean
+  # Any direct master update is validated immediately. This is also what catches
+  # an accidental GitHub web "Sync fork" before a release can be published.
   push:
     branches:
       - master
 
+# Default to read-only. Only the publish job gets repository write permission;
+# upstream sync uses the separately scoped SYNC_TOKEN.
 permissions:
   contents: read
 
+# Never run two sync/build pipelines concurrently. A queued run waits instead of
+# cancelling the active release so partial output cannot win a race.
 concurrency:
   group: clientruleset-sync-build
   cancel-in-progress: false
@@ -28,6 +40,8 @@ env:
 jobs:
   sync-upstream:
     name: Sync SukkaW/Surge into fork master
+    # Push events already contain the desired master revision; only scheduled/manual
+    # runs need to fetch and merge upstream here.
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -39,6 +53,11 @@ jobs:
           ref: master
           fetch-depth: 0
           token: ${{ secrets.SYNC_TOKEN }}
+
+      # Guard 1: validate the fork before touching upstream. This catches a previous
+      # accidental web Sync fork or manual automation replacement.
+      - name: Verify fork automation integrity before sync
+        run: python3 ForkExtras/Scripts/fork_integrity.py
 
       - name: Verify sync token is configured
         env:
@@ -76,7 +95,8 @@ jobs:
           merge_status=$?
           set -e
 
-          # Keep fork-owned GitHub automation exactly as it was before the merge.
+          # Fork-owned automation is authoritative. Restore it exactly from the
+          # pre-merge commit so upstream workflow changes cannot be imported.
           git rm -rf --cached --ignore-unmatch .github/workflows >/dev/null 2>&1 || true
           rm -rf .github/workflows
           git checkout "${before_merge}" -- .github/workflows
@@ -93,6 +113,10 @@ jobs:
           if [[ "${merge_status}" -ne 0 ]]; then
             echo "Merge conflicts were limited to preserved automation files and were resolved with fork versions."
           fi
+
+          # Guard 2: validate the merged tree before it is committed/pushed.
+          # This catches future upstream path collisions or accidental workflow imports.
+          python3 ForkExtras/Scripts/fork_integrity.py
 
           git commit -m "chore(sync): merge upstream master [skip actions]"
           git push origin HEAD:master
@@ -124,6 +148,12 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      # Guard 3: every master push is checked before build planning. In particular,
+      # GitHub's web Sync fork creates a master update and therefore cannot silently
+      # publish imported upstream automation.
+      - name: Verify fork automation integrity before build planning
+        run: python3 ForkExtras/Scripts/fork_integrity.py
+
       - name: Fetch upstream for build metadata
         run: |
           set -euo pipefail
@@ -131,6 +161,8 @@ jobs:
           git remote add upstream "${UPSTREAM_REPO}"
           git fetch --no-tags upstream master
 
+      # build_plan.py uses a source fingerprint plus the latest stable sing-box and
+      # Mihomo releases. Documentation-only changes therefore do not force a rebuild.
       - name: Resolve build plan
         id: plan
         env:
@@ -150,6 +182,8 @@ jobs:
     permissions:
       contents: read
     env:
+      # Pin the build to the exact revision selected by plan-build to avoid a race
+      # where master moves between planning and checkout.
       SOURCE_SHA: ${{ needs.plan-build.outputs.source_sha }}
       UPSTREAM_SHA: ${{ needs.plan-build.outputs.upstream_sha }}
       BUILD_INPUT_FINGERPRINT: ${{ needs.plan-build.outputs.build_input_fingerprint }}
@@ -157,7 +191,9 @@ jobs:
       SING_BOX_IMAGE: ${{ needs.plan-build.outputs.sing_box_image }}
       MIHOMO_TAG: ${{ needs.plan-build.outputs.mihomo_tag }}
       MIHOMO_IMAGE: ${{ needs.plan-build.outputs.mihomo_image }}
+      # Binary conversion is release-strict: no silent JSON fallback or failed MRS conversion.
       CLIENT_RELEASE_STRICT: "1"
+      # Large output-count regressions are blocked; moderate drops are warnings.
       OUTPUT_COUNT_WARN_RATIO: "0.90"
       OUTPUT_COUNT_FAIL_RATIO: "0.70"
     steps:
@@ -176,6 +212,11 @@ jobs:
             exit 1
           }
 
+      # Re-check at the pinned build revision so integrity is part of the exact
+      # reproducible source state being released.
+      - name: Verify fork automation integrity at pinned source
+        run: python3 ForkExtras/Scripts/fork_integrity.py
+
       - name: Set up pnpm
         uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
         with:
@@ -187,6 +228,8 @@ jobs:
           node-version-file: ".node-version"
           cache: pnpm
 
+      # Keep frozen-lockfile strictness. Only ERR_PNPM_OUTDATED_LOCKFILE may trigger
+      # a temporary Runner-local lockfile repair; all other install errors still fail.
       - name: Install dependencies with guarded lockfile recovery
         run: |
           pnpm config set --location=global minimumReleaseAge 0
@@ -205,6 +248,7 @@ jobs:
           fi
           node ForkExtras/Clients/run.cjs prepare output
 
+      # Check same-path collisions and duplicates before overlaying fork-only rules.
       - name: Check fork source before overlay
         run: python3 ForkExtras/Scripts/source_checks.py pre-overlay
 
@@ -218,6 +262,8 @@ jobs:
       - name: Check merged source rules
         run: python3 ForkExtras/Scripts/source_checks.py post-overlay
 
+      # Exact reject/Bilibili CIDR duplicates are removed; broader/narrower overlaps
+      # are reported without deleting large parent networks automatically.
       - name: Exclude Bilibili HTTPDNS conflicts
         run: python3 ForkExtras/Scripts/bilibili_overlap.py
 
@@ -234,6 +280,8 @@ jobs:
           test -d output/Clash
           test -d output/sing-box
 
+      # Compiler tags are not fixed: each build plan resolves GitHub's latest stable
+      # releases, while metadata records both the tag and immutable image digest.
       - name: Pull latest stable binary compilers
         run: |
           set -euo pipefail
@@ -262,6 +310,8 @@ jobs:
       - name: Remove stale renamed Bilibili artifacts
         run: find output -type f -name 'bilibili_httpdns.*' -delete
 
+      # Writes BUILD-METADATA.json, MANIFEST.json and SHA256SUMS, and compares
+      # output counts with the previous successful rules-dist release.
       - name: Finalize metadata and integrity manifests
         env:
           PREVIOUS_METADATA_PATH: .previous-build-metadata.json
@@ -269,6 +319,8 @@ jobs:
           sudo chown -R "$(id -u):$(id -g)" output
           python3 ForkExtras/Scripts/finalize_output.py
 
+      # Hidden files such as .nojekyll are part of the integrity manifest and must
+      # therefore be included in the build artifact.
       - name: Upload generated rules
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
@@ -288,6 +340,7 @@ jobs:
       needs.build.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # The build itself is read-only. Only this isolated job may write rules-dist.
     permissions:
       contents: write
     steps:
@@ -297,6 +350,7 @@ jobs:
           name: generated-rules-${{ github.run_id }}
           path: output
 
+      # Verify the artifact again after upload/download before granting it publication.
       - name: Verify integrity before publish
         run: |
           set -euo pipefail
