@@ -1,10 +1,16 @@
 {
-  "source_sha": "713efc99bf839a8f2e6a278d2be0b5d0ea4d7b2e",
-  "upstream_sha": "4c5439b2d9d98c39a52691b8662c7e82bd1a2c40",
-  "build_input_fingerprint": "f1f77614aacaaef981b78d5d0b643128867ceb6568dd172dead92404f4e527ab",
-  "built_at": "2026-09-16T16:59:05Z",
-  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/35125122096",
+  "source_sha": "317643bf640fd03ecf209059b249672985f3d4a6",
+  "upstream_sha": "1fabd49dd726a0f06fda6dd165bf2a0bee5a6ebc",
+  "build_input_fingerprint": "09a6d77948d866614f4c34f88e4bf22bf83ff0f7ce36872686de975220c46005",
+  "built_at": "2026-09-17T16:16:16Z",
+  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/35245329921",
   "strict_binary_compilation": true,
+  "dependency_lock": {
+    "upstream_lockfile_was_valid": false,
+    "auto_repaired": true,
+    "source_sha256": "3c43937b166ccb87433de9a6977f207be6af1640ce0a4af2fc4a618a2048ff92",
+    "resolved_sha256": "bfe829298caf31b80226e12e4fbe2cbc9346518a953e53bb8b9dd3a4fbf8ab49"
+  },
   "output_counts": {
     "srs": 142,
     "mrs": 39
