@@ -48,10 +48,15 @@ def count_mrs(summary: dict) -> int:
 def main() -> None:
     previous_path = Path(os.environ.get("PREVIOUS_METADATA_PATH", ".previous-build-metadata.json"))
     previous = read_json(previous_path)
+    dependency_lock = read_json(Path(".dependency-lock-state.json"))
     sing_box_summary = read_json(OUTPUT / ".build-sing-box.json")
     mihomo_summary = read_json(OUTPUT / ".build-mihomo.json")
     (OUTPUT / ".build-sing-box.json").unlink(missing_ok=True)
     (OUTPUT / ".build-mihomo.json").unlink(missing_ok=True)
+
+    if not dependency_lock:
+        print("::error::Dependency lock state is missing; dependency installation was not auditable")
+        sys.exit(1)
 
     current_srs = int(sing_box_summary.get("srs", 0))
     current_mrs = count_mrs(mihomo_summary)
@@ -79,6 +84,7 @@ def main() -> None:
         "built_at": built_at,
         "run_url": run_url,
         "strict_binary_compilation": True,
+        "dependency_lock": dependency_lock,
         "output_counts": binary_counts,
         "sing_box": {
             "release": os.environ["SING_BOX_TAG"],
@@ -101,6 +107,11 @@ Upstream base commit: {metadata['upstream_sha']}
 Build-input fingerprint: {metadata['build_input_fingerprint']}
 Build timestamp (UTC): {built_at}
 GitHub Actions run: {run_url}
+
+Dependency lock upstream-valid: {str(bool(dependency_lock.get('upstream_lockfile_was_valid'))).lower()}
+Dependency lock auto-repaired: {str(bool(dependency_lock.get('auto_repaired'))).lower()}
+Dependency source lock SHA256: {dependency_lock.get('source_sha256', '')}
+Dependency resolved lock SHA256: {dependency_lock.get('resolved_sha256', '')}
 
 sing-box compiler release: {metadata['sing_box']['release']}
 sing-box compiler image: {metadata['sing_box']['image']}
@@ -154,6 +165,8 @@ Client enable/disable settings live in ForkExtras/clients.yml on master.
     if SUMMARY:
         with open(SUMMARY, "a", encoding="utf-8") as handle:
             handle.write("\n## Release integrity\n\n")
+            handle.write(f"- Dependency lock auto-repaired: `{str(bool(dependency_lock.get('auto_repaired'))).lower()}`\n")
+            handle.write(f"- Resolved lock SHA256: `{dependency_lock.get('resolved_sha256', '')}`\n")
             handle.write(f"- SRS files: `{binary_counts['srs']}`\n")
             handle.write(f"- MRS files: `{binary_counts['mrs']}`\n")
             handle.write(f"- Manifest payload files: `{len(manifest_entries)}`\n")
