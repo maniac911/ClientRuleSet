@@ -1,13 +1,19 @@
+# FORK-INTEGRITY: dependabot
+# Fork-owned configuration: keep this file when syncing SukkaW/Surge.
+# Dependabot only updates GitHub Actions references; runtime Actions stay pinned to immutable commit SHAs.
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
+      # Weekly maintenance is enough because application compilers
+      # (sing-box/Mihomo) are resolved dynamically by the main workflow.
       interval: weekly
       day: monday
       time: "07:00"
       timezone: "Etc/UTC"
     groups:
+      # Keep Action upgrades together to reduce maintenance PR noise.
       github-actions:
         patterns:
           - "*"
