@@ -1009,6 +1009,7 @@
       "cdn.dribbble.com",
       "cdn.ecomm.ui.com",
       "cdn.equalweb.com",
+      "cdn.eye-able.com",
       "cdn.firebase.com",
       "cdn.foxycart.com",
       "cdn.getkoala.com",
@@ -1228,8 +1229,7 @@
       "a.kickstarter.com",
       "amp.akamaized.net",
       "api.crashguard.me",
-      "api.fontshare.com",
-      "api.simplesvg.com"
+      "api.fontshare.com"
     ]
   },
   {
@@ -1241,6 +1241,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 4 · proxy",
     "isEnable": true,
     "list": [
+      "api.simplesvg.com",
       "app-api.vidjet.io",
       "app.1password.com",
       "app.cookieyes.com",
@@ -1639,8 +1640,7 @@
       "headway-widget.net",
       "hls.hentaicity.com",
       "home.integrate.com",
-      "icons.ferndocs.com",
-      "icons.veryicon.com"
+      "icons.ferndocs.com"
     ]
   },
   {
@@ -1652,6 +1652,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 5 · proxy",
     "isEnable": true,
     "list": [
+      "icons.veryicon.com",
       "iframe.nbcnews.com",
       "image.jnislniv.xyz",
       "image.yuntu.com.tw",
@@ -2050,8 +2051,7 @@
       "static.pornpics.com",
       "static.queue-it.net",
       "static.roboflow.com",
-      "static.salidzini.lv",
-      "static.snapchat.com"
+      "static.salidzini.lv"
     ]
   },
   {
@@ -2063,6 +2063,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 6 · proxy",
     "isEnable": true,
     "list": [
+      "static.snapchat.com",
       "static.sooplive.com",
       "static.spigotmc.org",
       "static.tokenview.io",
@@ -2461,8 +2462,7 @@
       "images.crunchbase.com",
       "images.emojiterra.com",
       "images.en.aptoide.com",
-      "images.everyplate.com",
-      "images.findagrave.com"
+      "images.everyplate.com"
     ]
   },
   {
@@ -2474,6 +2474,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 7 · proxy",
     "isEnable": true,
     "list": [
+      "images.findagrave.com",
       "images.icon-icons.com",
       "img.foresightnews.pro",
       "imgs.search.brave.com",
@@ -2872,8 +2873,7 @@
       "static-images.remax.com",
       "static.chrome-stats.com",
       "static.fastboostcdn.com",
-      "static.filestackapi.com",
-      "static.generated.photos"
+      "static.filestackapi.com"
     ]
   },
   {
@@ -2885,6 +2885,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · proxy",
     "isEnable": true,
     "list": [
+      "static.generated.photos",
       "static.ipgeolocation.io",
       "static.iris.informa.com",
       "static.launchdarkly.com",
@@ -3283,8 +3284,7 @@
       "cdn-public-apis.moonlock.com",
       "cdn-service.jp.sumologic.com",
       "cdn.activity.smart-bdash.com",
-      "cdn.european-alternatives.eu",
-      "cf-assets.www.cloudflare.com"
+      "cdn.european-alternatives.eu"
     ]
   },
   {
@@ -3296,6 +3296,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · proxy",
     "isEnable": true,
     "list": [
+      "cf-assets.www.cloudflare.com",
       "checkout-sdk.bigcommerce.com",
       "cms-assets.webediamovies.pro",
       "code.buywithprime.amazon.com",
@@ -3951,7 +3952,6 @@
     "isEnable": true,
     "list": [
       "regexp:(^|\\.)tile\\.osm\\.ch$",
-      "regexp:(^|\\.)tripcdn\\.com$",
       "regexp:(^|\\.)ttcache\\.com$",
       "regexp:(^|\\.)tutu1\\.space$",
       "regexp:(^|\\.)typedoc\\.org$",
@@ -4349,7 +4349,8 @@
       "regexp:(^|\\.)shoplineimg\\.com$",
       "regexp:(^|\\.)skypeassets\\.com$",
       "regexp:(^|\\.)splunkcloud\\.com$",
-      "regexp:(^|\\.)stack\\.imgur\\.com$"
+      "regexp:(^|\\.)stack\\.imgur\\.com$",
+      "regexp:(^|\\.)stackassets\\.com$"
     ]
   },
   {
@@ -4361,7 +4362,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 3 · proxy",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)stackassets\\.com$",
       "regexp:(^|\\.)staticblitz\\.com$",
       "regexp:(^|\\.)staticimgly\\.com$",
       "regexp:(^|\\.)staticstack\\.net$",
@@ -4760,7 +4760,8 @@
       "regexp:(^|\\.)myanalytics\\.cdn\\.office\\.net$",
       "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$",
       "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$",
-      "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$"
+      "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
+      "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$"
     ]
   },
   {
@@ -4772,7 +4773,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 4 · proxy",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$",
       "regexp:(^|\\.)design-system\\.economist\\.com$",
       "regexp:(^|\\.)ipfsgateway\\.makersplace\\.com$",
       "regexp:(^|\\.)siteintercept\\.qualtrics\\.com$",

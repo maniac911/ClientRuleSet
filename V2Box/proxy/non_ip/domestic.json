@@ -814,6 +814,7 @@
       "regexp:(^|\\.)openinstall\\.io$",
       "regexp:(^|\\.)oppomobile\\.com$",
       "regexp:(^|\\.)qyerstatic\\.com$",
+      "regexp:(^|\\.)rednotecdn\\.com$",
       "regexp:(^|\\.)steamchina\\.com$",
       "regexp:(^|\\.)tianyancha\\.com$",
       "regexp:(^|\\.)toutiaoimg\\.com$",
@@ -853,8 +854,7 @@
       "regexp:(^|\\.)byted-static\\.com$",
       "regexp:(^|\\.)cailianpress\\.com$",
       "regexp:(^|\\.)douyinliving\\.com$",
-      "regexp:(^|\\.)douyinstatic\\.com$",
-      "regexp:(^|\\.)hihonorcloud\\.com$"
+      "regexp:(^|\\.)douyinstatic\\.com$"
     ]
   },
   {
@@ -866,6 +866,7 @@
     "remark": "ClientRuleSet non_ip/domestic · DOMAIN-SUFFIX 3 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)hihonorcloud\\.com$",
       "regexp:(^|\\.)huaweistatic\\.com$",
       "regexp:(^|\\.)huoshanzhibo\\.com$",
       "regexp:(^|\\.)mobileservice\\.cn$",

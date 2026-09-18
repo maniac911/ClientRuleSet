@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-18T12:51:41.857Z
+# Last Updated: 2026-09-18T16:46:37.818Z
 # Size: 4664
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -8,7 +8,7 @@
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:sOnLKptKV3WoJhouHDiMYtstTJzgUiWqZcXV9DD7Za8$
+# $content-hash-v1$:Xb6ogkmCHCpObU1JerkPG8AtufYpsgYTn_cxQ1WdXwU$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -573,7 +573,6 @@ HOST,th.bing.com,reject
 HOST,tile.osm.be,reject
 HOST-SUFFIX,tile.osm.ch,reject
 HOST,tn.vjav.com,reject
-HOST-SUFFIX,tripcdn.com,reject
 HOST-SUFFIX,ttcache.com,reject
 HOST,turbo.build,reject
 HOST-SUFFIX,tutu1.space,reject
@@ -1821,6 +1820,7 @@ HOST,cdn.dribbble.com,reject
 HOST-SUFFIX,cdn.easyling.com,reject
 HOST,cdn.ecomm.ui.com,reject
 HOST,cdn.equalweb.com,reject
+HOST,cdn.eye-able.com,reject
 HOST,cdn.firebase.com,reject
 HOST,cdn.foxycart.com,reject
 HOST,cdn.getkoala.com,reject
