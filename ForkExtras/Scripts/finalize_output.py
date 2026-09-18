@@ -133,6 +133,19 @@ Build flow: SukkaW/Surge -> fork master -> pnpm build -> ForkExtras client adapt
 Client enable/disable settings live in ForkExtras/clients.yml on master.
 """
     (OUTPUT / "FORK-README.md").write_text(readme, encoding="utf-8")
+
+    # Keep the rules-dist branch README fork-owned as well. Upstream's generated
+    # README is replaced with our documented route.rules order on every release,
+    # so a future upstream build cannot silently erase this reference.
+    rules_dist_readme = Path("ForkExtras/rules-dist-README.md")
+    if not rules_dist_readme.is_file():
+        print("::error::Missing ForkExtras/rules-dist-README.md")
+        sys.exit(1)
+    (OUTPUT / "README.md").write_text(
+        rules_dist_readme.read_text(encoding="utf-8"),
+        encoding="utf-8",
+    )
+
     (OUTPUT / "BUILD-METADATA.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
 
     excluded = {"MANIFEST.json", "FILES.txt", "SHA256SUMS"}
