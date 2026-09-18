@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-17T17:19:26.447Z
-# Size: 4661
+# Last Updated: 2026-09-18T11:54:49.479Z
+# Size: 4664
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:l5Hqzj709sMIrv4C1Zo57f6Y7kOeCNwTF7RyumPoKls$
+# $content-hash-v1$:sOnLKptKV3WoJhouHDiMYtstTJzgUiWqZcXV9DD7Za8$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -355,6 +355,7 @@ HOST-SUFFIX,sascdn.com,reject
 HOST-SUFFIX,sc-cdn.com,reject
 HOST-SUFFIX,scene7.com,reject
 HOST-SUFFIX,seecdn.com,reject
+HOST-SUFFIX,seecdn.net,reject
 HOST-SUFFIX,sftcdn.net,reject
 HOST-SUFFIX,shgcdn.com,reject
 HOST-SUFFIX,shields.io,reject
@@ -1372,6 +1373,7 @@ HOST,static.fc2.com,reject
 HOST,static.itch.io,reject
 HOST,static.j51.net,reject
 HOST,static.lwn.net,reject
+HOST,static.okou.io,reject
 HOST,static.okx.cab,reject
 HOST,static.okx.com,reject
 HOST,static.reo.dev,reject
@@ -3718,6 +3720,7 @@ HOST,images-assets.nasa.gov,reject
 HOST,images.contentstack.io,reject
 HOST,images.hothardware.com,reject
 HOST,images.newrepublic.com,reject
+HOST,images.radio-canada.ca,reject
 HOST,images.socialblade.com,reject
 HOST,images.wsjcommerce.net,reject
 HOST,images.wurstclient.net,reject
