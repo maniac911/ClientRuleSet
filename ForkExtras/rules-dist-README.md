@@ -21,15 +21,15 @@
 
 | # | rule-set | 建议策略 / 用途 |
 |---:|---|---|
-| 1 | `reject_non_ip_drop` | 拦截 / Drop |
-| 2 | `reject_domainset` | 拦截 |
-| 3 | `reject_extra_domainset` | 扩展拦截（可选） |
-| 4 | `reject_phishing` | 钓鱼 / 欺诈拦截（可选） |
-| 5 | `reject_non_ip` | 拦截 |
-| 6 | `reject_non_ip_no_drop` | 拦截 / No-Drop |
-| 7 | `sogouinput` | 拦截 |
-| 8 | `speedtest` | Speedtest 专用策略 |
-| 9 | `bilibili_non_ip` | Bilibili 专用策略 |
+| 1 | `bilibili_non_ip` | Bilibili 专用策略 |
+| 2 | `reject_non_ip_drop` | 拦截 / Drop |
+| 3 | `reject_domainset` | 拦截 |
+| 4 | `reject_extra_domainset` | 扩展拦截（可选） |
+| 5 | `reject_phishing` | 钓鱼 / 欺诈拦截（可选） |
+| 6 | `reject_non_ip` | 拦截 |
+| 7 | `reject_non_ip_no_drop` | 拦截 / No-Drop |
+| 8 | `sogouinput` | 拦截 |
+| 9 | `speedtest` | Speedtest 专用策略 |
 | 10 | `apple_podcasts` | Apple Podcasts 专用策略 |
 | 11 | `apple_tv` | Apple TV 专用策略 |
 | 12 | `cdn_domainset` | CDN 策略 |
@@ -65,8 +65,8 @@
 
 | # | rule-set | 建议策略 / 用途 |
 |---:|---|---|
-| 38 | `reject_ip` | IP 拦截 |
-| 39 | `bilibili_ip` | Bilibili IP |
+| 38 | `bilibili_ip` | Bilibili IP |
+| 39 | `reject_ip` | IP 拦截 |
 | 40 | `cdn_ip` | CDN IP |
 | 41 | `stream_us_ip` | 北美流媒体 IP |
 | 42 | `stream_eu_ip` | 欧洲流媒体 IP |
@@ -96,11 +96,11 @@
 
 ## 顺序说明
 
-### 为什么 Reject 放在业务规则前面
+### Bilibili 与 Reject 的优先级
 
-广告、追踪、恶意域名和钓鱼规则属于全局安全/隐私层。默认情况下应优先匹配，避免普通业务规则先命中后绕过拦截。
+当前蓝莓桥配置明确让 `bilibili_non_ip` 和 `bilibili_ip` 位于对应 Reject 规则之前，因此本文档保持相同顺序。
 
-如果你**明确希望某个业务规则覆盖 Reject**，可以单独把该业务的精确例外放在 Reject 前面，但这属于自定义例外，不应作为通用默认顺序。
+这意味着 Bilibili 相关流量会优先匹配 Bilibili 专用策略，再进入后续广告 / 安全拦截规则。该位置属于本 fork 的明确优先级设计；其他业务规则仍遵循“安全 / 拦截优先、具体规则优先、通用规则靠后”的原则。
 
 ### 为什么地区流媒体在 `stream_non_ip` / `stream_ip` 前面
 
