@@ -24,8 +24,8 @@
 | 1 | `bilibili_non_ip` | Bilibili 专用策略 |
 | 2 | `reject_non_ip_drop` | 拦截 / Drop |
 | 3 | `reject_domainset` | 拦截 |
-| 4 | `reject_extra_domainset` | 扩展拦截（可选） |
-| 5 | `reject_phishing` | 钓鱼 / 欺诈拦截（可选） |
+| 4 | `reject_extra_domainset` | 扩展拦截（桌面推荐 / 移动可关闭） |
+| 5 | `reject_phishing` | 钓鱼 / 欺诈拦截（桌面可选 / 移动可关闭） |
 | 6 | `reject_non_ip` | 拦截 |
 | 7 | `reject_non_ip_no_drop` | 拦截 / No-Drop |
 | 8 | `sogouinput` | 拦截 |
