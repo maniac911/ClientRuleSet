@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-18T16:46:37.818Z
-# Size: 4664
+# Last Updated: 2026-09-19T11:38:39.418Z
+# Size: 4665
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:Xb6ogkmCHCpObU1JerkPG8AtufYpsgYTn_cxQ1WdXwU$
+# $content-hash-v1$:ZEvDf4A0wkJQU4Lalqf5l0moaxyzT5-qG7zceUwxdJE$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -994,6 +994,7 @@ HOST-SUFFIX,ipfs.slang.cx,reject
 HOST-SUFFIX,itvstatic.com,reject
 HOST-SUFFIX,jdbstatic.com,reject
 HOST-SUFFIX,jisuimage.com,reject
+HOST,js.arcgis.com,reject
 HOST,js.klarna.com,reject
 HOST,js.prosopo.io,reject
 HOST,js.pusher.com,reject
