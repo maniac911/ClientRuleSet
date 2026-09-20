@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-19T11:38:39.418Z
-# Size: 4665
+# Last Updated: 2026-09-20T11:52:28.014Z
+# Size: 4671
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:ZEvDf4A0wkJQU4Lalqf5l0moaxyzT5-qG7zceUwxdJE$
+# $content-hash-v1$:x2Hm_V78ywOdsM7Q5GiNqxYTSAkTa_wjxa6eqrxC6Hg$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -2197,6 +2197,7 @@ HOST-SUFFIX,cdn.greenhouse.io,reject
 HOST,cdn.growthbook.io,reject
 HOST,cdn.headwayapp.co,reject
 HOST,cdn.himetrica.com,reject
+HOST,cdn.infrawire.net,reject
 HOST,cdn.ipregistry.co,reject
 HOST,cdn.jetphotos.com,reject
 HOST,cdn.joinhoney.com,reject
@@ -2609,6 +2610,7 @@ HOST,home.integrate.com,reject
 HOST,icons.ferndocs.com,reject
 HOST,icons.veryicon.com,reject
 HOST,iframe.nbcnews.com,reject
+HOST,image-tc.galaxy.tf,reject
 HOST,image.jnislniv.xyz,reject
 HOST,image.yuntu.com.tw,reject
 HOST,image.yymanhua.com,reject
@@ -3089,6 +3091,7 @@ HOST,thumbs.onlyfans.com,reject
 HOST,thumbs2.sendvid.com,reject
 HOST,tile2.intervals.icu,reject
 HOST,tiles.mapillary.com,reject
+HOST,tileserver.b10s.net,reject
 HOST,time.cloudflare.com,reject
 HOST,tuf-repo.github.com,reject
 HOST,ui.contentstack.com,reject
@@ -3609,6 +3612,7 @@ HOST-SUFFIX,svbtleusercontent.com,reject
 HOST,themes.fourthwall.com,reject
 HOST-SUFFIX,tile.openstreetmap.de,reject
 HOST-SUFFIX,tile.openstreetmap.fr,reject
+HOST,tiles.flightaware.com,reject
 HOST,tiles.openfreemap.org,reject
 HOST,uploads.bikeindex.org,reject
 HOST,uploads.sitepoint.com,reject
@@ -3757,6 +3761,7 @@ HOST,nodeassets.nbcnews.com,reject
 HOST-SUFFIX,packd.liuxingbaoyu.xyz,reject
 HOST,parts.blog.livedoor.jp,reject
 HOST-SUFFIX,patreonusercontent.com,reject
+HOST,photos.flightaware.com,reject
 HOST,pic.onlinewebfonts.com,reject
 HOST,pkg-cdn.jetbrains.team,reject
 HOST,platform.instagram.com,reject
@@ -3894,6 +3899,7 @@ HOST,cdn.prod.www.spiegel.de,reject
 HOST,cdn.ready-market.com.tw,reject
 HOST-SUFFIX,cdn.survey.medallia.com,reject
 HOST,cdn.worldvectorlogo.com,reject
+HOST,cdn1.singteldigital.com,reject
 HOST,cdnstatic.porno-cum.com,reject
 HOST,cdnstatic.tencentcs.com,reject
 HOST,cms.worldpokerdeals.com,reject
