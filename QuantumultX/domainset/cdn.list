@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-20T11:52:28.014Z
-# Size: 4671
+# Last Updated: 2026-09-21T13:24:57.361Z
+# Size: 4673
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:x2Hm_V78ywOdsM7Q5GiNqxYTSAkTa_wjxa6eqrxC6Hg$
+# $content-hash-v1$:bSEr8t4D_WW0bYeqPkrkCe53OztGOpcseK3MWL-3VEQ$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -1928,6 +1928,7 @@ HOST-SUFFIX,images-iherb.com,reject
 HOST,images.axios.com,reject
 HOST,images.bfmtv.com,reject
 HOST,images.drata.com,reject
+HOST,images.hibob.com,reject
 HOST,images.nebula.tv,reject
 HOST,images.pling.com,reject
 HOST,images.plurk.com,reject
@@ -3949,6 +3950,7 @@ HOST,mangaz-static.j-comi.jp,reject
 HOST,media-cdn.atlassian.com,reject
 HOST,media-cdn.epicgames.com,reject
 HOST,media-cms.onesignal.com,reject
+HOST,media-process.hibob.com,reject
 HOST,media.contentapi.ea.com,reject
 HOST,media.geeksforgeeks.org,reject
 HOST,media.nbclosangeles.com,reject
