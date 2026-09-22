@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2026-09-22T05:29:29.650Z
+# Last Updated: 2026-09-22T21:43:00.860Z
 # Size: 870
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -8,7 +8,7 @@
 #
 # This file contains known addresses that are avaliable in the Mainland China.
 #
-# $content-hash-v1$:giXFu_2uU6g0sw6dk8eSfrfA3yuQCqbs_D2N4QRQPJU$
+# $content-hash-v1$:IyIMRqym2NoMeJ1Nsr3g03M16laPvkyLcmsKhZ9-Ia4$
 #########################################
 HOST-SUFFIX,3.cn,reject
 HOST-SUFFIX,6.cn,reject
@@ -876,7 +876,7 @@ HOST,media.cdn.queniuqe.com,reject
 HOST,cdnstatic.tencentcs.com,reject
 HOST-SUFFIX,kingsoft-office-service.com,reject
 HOST-SUFFIX,dl.delivery.mp.microsoft.com,reject
-HOST-WILDCARD,*.qhimgs?.com,reject
+HOST-WILDCARD,qhimgs?.com,reject
 USER-AGENT,%E4%BC%98%E9%85%B7*,reject
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*,reject
 USER-AGENT,TeslaMap,reject

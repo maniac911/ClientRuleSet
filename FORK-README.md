@@ -1,10 +1,10 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: 474559b3f1f6f425fd4a73dcc945f145660ffe71
-Upstream base commit: 1baae2ff746ad486d98f89bc82633651e966f7b2
-Build-input fingerprint: 45c039c3b4c8995fb3ae6f78aa9cfeb66f0b4f5527d6d6913f285af0c8e8ee1e
-Build timestamp (UTC): 2026-09-22T05:31:06Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/35690761078
+Built from fork source commit: 9bdee73a597afbc7b985124c04426ca79a7bd6dc
+Upstream base commit: bb5b96eca1355f496da8412c39ae3ad48e60cef2
+Build-input fingerprint: fd3df50521cea049ce604f33cae085b2066385768f8da658d658273c7765e827
+Build timestamp (UTC): 2026-09-22T21:44:03Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/35788090497
 
 Dependency lock upstream-valid: true
 Dependency lock auto-repaired: false
@@ -20,9 +20,9 @@ Mihomo compiler image: docker.io/metacubex/mihomo:v1.19.31
 Mihomo image digest: metacubex/mihomo@sha256:739edd73a352d6beb82fad6790ef9d417a4d6f061584cc3cab1bd4536d1c60e5
 
 Strict binary compilation: enabled
-sing-box summary: {"srs":71,"jsonFallback":0}
-Mihomo summary: {"domainMRS":10,"domainText":1,"nonIpMRS":16,"nonIpText":25,"ipMRS":13,"ipText":9,"compileFailures":0}
-Binary output counts: {"srs":142,"mrs":39}
+sing-box summary: {"srs":72,"jsonFallback":0}
+Mihomo summary: {"domainMRS":10,"domainText":1,"nonIpMRS":16,"nonIpText":26,"ipMRS":13,"ipText":9,"compileFailures":0}
+Binary output counts: {"srs":144,"mrs":39}
 
 Integrity files: MANIFEST.json and SHA256SUMS
 

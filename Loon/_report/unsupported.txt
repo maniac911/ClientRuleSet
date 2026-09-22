@@ -153,8 +153,11 @@ PROCESS-NAME,WebTorrent
 PROCESS-NAME,WebTorrent Helper
 PROCESS-NAME,xray
 
+# non_ip/domestic_cdn.list
+DOMAIN-WILDCARD,qhimgs?.com
+
 # non_ip/domestic.list
-DOMAIN-WILDCARD,*.qhimgs?.com
+DOMAIN-WILDCARD,qhimgs?.com
 
 # non_ip/download.list
 DOMAIN-WILDCARD,*.s3.*.backblazeb2.com

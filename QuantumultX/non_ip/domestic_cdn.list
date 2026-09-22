@@ -1,0 +1,21 @@
+#########################################
+# Sukka's Ruleset - Domestic CDN Domains
+# Last Updated: 2026-09-22T21:43:00.860Z
+# Size: 7
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains CDN domains of domestic services that have somewhat optimal performance both in China and abroad.
+# All entries are included in the domestic ruleset as well.
+#
+# $content-hash-v1$:APOJqX3uCTZT--wpPofzyVNXb_3ZID3Cu2RHLScUYQM$
+#########################################
+HOST-SUFFIX,hdslb.com,reject
+HOST-SUFFIX,qhimg.com,reject
+HOST-SUFFIX,qhres.com,reject
+HOST-SUFFIX,qhimgs.com,reject
+HOST-SUFFIX,qhres2.com,reject
+HOST-SUFFIX,music.126.net,reject
+HOST-WILDCARD,qhimgs?.com,reject
+################## EOF ##################

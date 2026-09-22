@@ -1,0 +1,20 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ruleTag": "ClientRuleSet non_ip/domestic_cdn",
+        "domain": [
+          "domain:hdslb.com",
+          "domain:qhimg.com",
+          "domain:qhres.com",
+          "domain:qhimgs.com",
+          "domain:qhres2.com",
+          "domain:music.126.net",
+          "regexp:^qhimgs.\\.com$"
+        ]
+      }
+    ]
+  }
+}

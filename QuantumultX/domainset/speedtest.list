@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-09-22T05:29:29.310Z
-# Size: 3394
+# Last Updated: 2026-09-22T21:43:00.441Z
+# Size: 3398
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:Hxg_9GNaRb2mfAKOa2P1ndZdMBJLfpm80d7rYIgseUY$
+# $content-hash-v1$:AGMI65yaS8yjUo-xzHLLA_vTVfT5hXASZTbPCBHM7JM$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -140,6 +140,7 @@ HOST,ookla.4g5g.co.uk,reject
 HOST,ookla.apuacom.it,reject
 HOST,ookla.dns-net.de,reject
 HOST,ookla.nieqtv.com,reject
+HOST,ookla.onivia.net,reject
 HOST,ookla.ukcell.net,reject
 HOST,ookla1.btd.co.id,reject
 HOST,ookla1.hub66.com,reject
@@ -548,6 +549,7 @@ HOST,speedtest.xcelx.net,reject
 HOST,speedtest.xsnews.nl,reject
 HOST,speedtest.xxlnet.nl,reject
 HOST,speedtest1.claro.cr,reject
+HOST,speedtest1.co-fi.es,reject
 HOST,speedtest2.telin.sg,reject
 HOST,speedtest3.dacor.de,reject
 HOST-SUFFIX,speedtestcustom.com,reject
@@ -1371,6 +1373,7 @@ HOST,ookla.b2.neptune.net.au,reject
 HOST,ookla.fibraleste.com.br,reject
 HOST,ookla.p2.neptune.net.au,reject
 HOST,ookla.pgservicos.com.br,reject
+HOST,ookla.pgservicos.net.br,reject
 HOST,ookla.speedtest.cnix.cn,reject
 HOST,perf-01.ixn.as42689.net,reject
 HOST,prescott1.cabospeed.com,reject
@@ -1642,6 +1645,7 @@ HOST,speedgwh1.jioconnect.com,reject
 HOST,speedshm1.jioconnect.com,reject
 HOST,speedtest-01.omnitel.biz,reject
 HOST,speedtest-1.litfibre.com,reject
+HOST,speedtest-2.hynetwifi.it,reject
 HOST,speedtest-cbr.cdn.on.net,reject
 HOST,speedtest-de.unihost.com,reject
 HOST,speedtest-de.webdade.com,reject

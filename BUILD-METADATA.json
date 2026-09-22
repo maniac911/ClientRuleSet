@@ -1,9 +1,9 @@
 {
-  "source_sha": "474559b3f1f6f425fd4a73dcc945f145660ffe71",
-  "upstream_sha": "1baae2ff746ad486d98f89bc82633651e966f7b2",
-  "build_input_fingerprint": "45c039c3b4c8995fb3ae6f78aa9cfeb66f0b4f5527d6d6913f285af0c8e8ee1e",
-  "built_at": "2026-09-22T05:31:06Z",
-  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/35690761078",
+  "source_sha": "9bdee73a597afbc7b985124c04426ca79a7bd6dc",
+  "upstream_sha": "bb5b96eca1355f496da8412c39ae3ad48e60cef2",
+  "build_input_fingerprint": "fd3df50521cea049ce604f33cae085b2066385768f8da658d658273c7765e827",
+  "built_at": "2026-09-22T21:44:03Z",
+  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/35788090497",
   "strict_binary_compilation": true,
   "dependency_lock": {
     "upstream_lockfile_was_valid": true,
@@ -12,7 +12,7 @@
     "resolved_sha256": "35d16233c2b88ecc618e5cbadd96fc20595b86f7487eda7c8746cb0ec60a9676"
   },
   "output_counts": {
-    "srs": 142,
+    "srs": 144,
     "mrs": 39
   },
   "sing_box": {
@@ -20,7 +20,7 @@
     "image": "ghcr.io/sagernet/sing-box:v1.14.1",
     "digest": "ghcr.io/sagernet/sing-box@sha256:38d9eff063f035236ddd0d0c752fd8491895dfd9ed4f6da808778716522c8835",
     "summary": {
-      "srs": 71,
+      "srs": 72,
       "jsonFallback": 0
     }
   },
@@ -32,7 +32,7 @@
       "domainMRS": 10,
       "domainText": 1,
       "nonIpMRS": 16,
-      "nonIpText": 25,
+      "nonIpText": 26,
       "ipMRS": 13,
       "ipText": 9,
       "compileFailures": 0

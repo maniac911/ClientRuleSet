@@ -48,6 +48,7 @@ Clash/Release/non_ip/cdn.txt
 Clash/Release/non_ip/cloudmounter.txt
 Clash/Release/non_ip/direct.txt
 Clash/Release/non_ip/domestic.txt
+Clash/Release/non_ip/domestic_cdn.txt
 Clash/Release/non_ip/download.txt
 Clash/Release/non_ip/gitlab.mrs
 Clash/Release/non_ip/global.txt
@@ -122,6 +123,7 @@ Clash/non_ip/cdn.txt
 Clash/non_ip/cloudmounter.txt
 Clash/non_ip/direct.txt
 Clash/non_ip/domestic.txt
+Clash/non_ip/domestic_cdn.txt
 Clash/non_ip/download.txt
 Clash/non_ip/gitlab.txt
 Clash/non_ip/global.txt
@@ -187,6 +189,7 @@ Egern/non_ip/bilibili.yaml
 Egern/non_ip/cdn.yaml
 Egern/non_ip/direct.yaml
 Egern/non_ip/domestic.yaml
+Egern/non_ip/domestic_cdn.yaml
 Egern/non_ip/download.yaml
 Egern/non_ip/gitlab.yaml
 Egern/non_ip/global.yaml
@@ -261,6 +264,7 @@ Hiddify/non_ip/cdn.srs
 Hiddify/non_ip/cloudmounter.srs
 Hiddify/non_ip/direct.srs
 Hiddify/non_ip/domestic.srs
+Hiddify/non_ip/domestic_cdn.srs
 Hiddify/non_ip/download.srs
 Hiddify/non_ip/gitlab.srs
 Hiddify/non_ip/global.srs
@@ -343,6 +347,7 @@ LegacyClashPremium/non_ip/cdn.txt
 LegacyClashPremium/non_ip/cloudmounter.txt
 LegacyClashPremium/non_ip/direct.txt
 LegacyClashPremium/non_ip/domestic.txt
+LegacyClashPremium/non_ip/domestic_cdn.txt
 LegacyClashPremium/non_ip/download.txt
 LegacyClashPremium/non_ip/gitlab.txt
 LegacyClashPremium/non_ip/global.txt
@@ -411,6 +416,7 @@ Loon/non_ip/cdn.list
 Loon/non_ip/cloudmounter.list
 Loon/non_ip/direct.list
 Loon/non_ip/domestic.list
+Loon/non_ip/domestic_cdn.list
 Loon/non_ip/download.list
 Loon/non_ip/gitlab.list
 Loon/non_ip/global.list
@@ -497,6 +503,7 @@ QuantumultX/non_ip/cdn.list
 QuantumultX/non_ip/cloudmounter.list
 QuantumultX/non_ip/direct.list
 QuantumultX/non_ip/domestic.list
+QuantumultX/non_ip/domestic_cdn.list
 QuantumultX/non_ip/download.list
 QuantumultX/non_ip/gitlab.list
 QuantumultX/non_ip/global.list
@@ -566,6 +573,7 @@ Shadowrocket/non_ip/cdn.list
 Shadowrocket/non_ip/cloudmounter.list
 Shadowrocket/non_ip/direct.list
 Shadowrocket/non_ip/domestic.list
+Shadowrocket/non_ip/domestic_cdn.list
 Shadowrocket/non_ip/download.list
 Shadowrocket/non_ip/gitlab.list
 Shadowrocket/non_ip/global.list
@@ -635,6 +643,7 @@ Stash/non_ip/cdn.list
 Stash/non_ip/cloudmounter.list
 Stash/non_ip/direct.list
 Stash/non_ip/domestic.list
+Stash/non_ip/domestic_cdn.list
 Stash/non_ip/download.list
 Stash/non_ip/gitlab.list
 Stash/non_ip/global.list
@@ -692,6 +701,7 @@ Surfboard/non_ip/cdn.conf
 Surfboard/non_ip/cloudmounter.conf
 Surfboard/non_ip/direct.conf
 Surfboard/non_ip/domestic.conf
+Surfboard/non_ip/domestic_cdn.conf
 Surfboard/non_ip/download.conf
 Surfboard/non_ip/gitlab.conf
 Surfboard/non_ip/global.conf
@@ -787,6 +797,7 @@ Surge/non_ip/cdn.conf
 Surge/non_ip/cloudmounter.conf
 Surge/non_ip/direct.conf
 Surge/non_ip/domestic.conf
+Surge/non_ip/domestic_cdn.conf
 Surge/non_ip/download.conf
 Surge/non_ip/gitlab.conf
 Surge/non_ip/global.conf
@@ -922,6 +933,7 @@ V2Box/block/domainset/reject.part167.txt
 V2Box/block/domainset/reject.part168.txt
 V2Box/block/domainset/reject.part169.txt
 V2Box/block/domainset/reject.part17.txt
+V2Box/block/domainset/reject.part170.txt
 V2Box/block/domainset/reject.part18.txt
 V2Box/block/domainset/reject.part19.txt
 V2Box/block/domainset/reject.part20.txt
@@ -1316,6 +1328,8 @@ V2Box/block/non_ip/direct.json
 V2Box/block/non_ip/direct.txt
 V2Box/block/non_ip/domestic.json
 V2Box/block/non_ip/domestic.txt
+V2Box/block/non_ip/domestic_cdn.json
+V2Box/block/non_ip/domestic_cdn.txt
 V2Box/block/non_ip/download.json
 V2Box/block/non_ip/download.txt
 V2Box/block/non_ip/gitlab.json
@@ -1470,6 +1484,7 @@ V2Box/direct/domainset/reject.part167.txt
 V2Box/direct/domainset/reject.part168.txt
 V2Box/direct/domainset/reject.part169.txt
 V2Box/direct/domainset/reject.part17.txt
+V2Box/direct/domainset/reject.part170.txt
 V2Box/direct/domainset/reject.part18.txt
 V2Box/direct/domainset/reject.part19.txt
 V2Box/direct/domainset/reject.part20.txt
@@ -1864,6 +1879,8 @@ V2Box/direct/non_ip/direct.json
 V2Box/direct/non_ip/direct.txt
 V2Box/direct/non_ip/domestic.json
 V2Box/direct/non_ip/domestic.txt
+V2Box/direct/non_ip/domestic_cdn.json
+V2Box/direct/non_ip/domestic_cdn.txt
 V2Box/direct/non_ip/download.json
 V2Box/direct/non_ip/download.txt
 V2Box/direct/non_ip/gitlab.json
@@ -2018,6 +2035,7 @@ V2Box/proxy/domainset/reject.part167.txt
 V2Box/proxy/domainset/reject.part168.txt
 V2Box/proxy/domainset/reject.part169.txt
 V2Box/proxy/domainset/reject.part17.txt
+V2Box/proxy/domainset/reject.part170.txt
 V2Box/proxy/domainset/reject.part18.txt
 V2Box/proxy/domainset/reject.part19.txt
 V2Box/proxy/domainset/reject.part20.txt
@@ -2412,6 +2430,8 @@ V2Box/proxy/non_ip/direct.json
 V2Box/proxy/non_ip/direct.txt
 V2Box/proxy/non_ip/domestic.json
 V2Box/proxy/non_ip/domestic.txt
+V2Box/proxy/non_ip/domestic_cdn.json
+V2Box/proxy/non_ip/domestic_cdn.txt
 V2Box/proxy/non_ip/download.json
 V2Box/proxy/non_ip/download.txt
 V2Box/proxy/non_ip/gitlab.json
@@ -2498,6 +2518,7 @@ Xray/native/non_ip/bilibili.json
 Xray/native/non_ip/cdn.json
 Xray/native/non_ip/direct.json
 Xray/native/non_ip/domestic.json
+Xray/native/non_ip/domestic_cdn.json
 Xray/native/non_ip/download.json
 Xray/native/non_ip/gitlab.json
 Xray/native/non_ip/global.json
@@ -2557,6 +2578,7 @@ Xray/v2rayN/non_ip/bilibili.json
 Xray/v2rayN/non_ip/cdn.json
 Xray/v2rayN/non_ip/direct.json
 Xray/v2rayN/non_ip/domestic.json
+Xray/v2rayN/non_ip/domestic_cdn.json
 Xray/v2rayN/non_ip/download.json
 Xray/v2rayN/non_ip/gitlab.json
 Xray/v2rayN/non_ip/global.json
@@ -2630,6 +2652,7 @@ sing-box/Release/non_ip/cdn.srs
 sing-box/Release/non_ip/cloudmounter.srs
 sing-box/Release/non_ip/direct.srs
 sing-box/Release/non_ip/domestic.srs
+sing-box/Release/non_ip/domestic_cdn.srs
 sing-box/Release/non_ip/download.srs
 sing-box/Release/non_ip/gitlab.srs
 sing-box/Release/non_ip/global.srs
@@ -2701,6 +2724,7 @@ sing-box/non_ip/cdn.json
 sing-box/non_ip/cloudmounter.json
 sing-box/non_ip/direct.json
 sing-box/non_ip/domestic.json
+sing-box/non_ip/domestic_cdn.json
 sing-box/non_ip/download.json
 sing-box/non_ip/gitlab.json
 sing-box/non_ip/global.json

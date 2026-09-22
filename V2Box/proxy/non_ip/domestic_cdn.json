@@ -1,0 +1,31 @@
+[
+  {
+    "name": "route.0F0B5334-E59B-5C92-C660-61C3933E215D",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/domestic_cdn · DOMAIN-SUFFIX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:(^|\\.)hdslb\\.com$",
+      "regexp:(^|\\.)qhimg\\.com$",
+      "regexp:(^|\\.)qhres\\.com$",
+      "regexp:(^|\\.)qhimgs\\.com$",
+      "regexp:(^|\\.)qhres2\\.com$",
+      "regexp:(^|\\.)music\\.126\\.net$"
+    ]
+  },
+  {
+    "name": "route.E9733754-3E53-FD66-729D-4FE4EB654D63",
+    "type": "Domain",
+    "tag": "proxy",
+    "matchMode": "regexp",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/domestic_cdn · DOMAIN-REGEX · proxy",
+    "isEnable": true,
+    "list": [
+      "regexp:^qhimgs.\\.com$"
+    ]
+  }
+]
