@@ -316,6 +316,7 @@
       "regexp:(^|\\.)qiniu\\.com$",
       "regexp:(^|\\.)qixin\\.com$",
       "regexp:(^|\\.)qzone\\.com$",
+      "regexp:(^|\\.)rnote\\.com$",
       "regexp:(^|\\.)roblox\\.cn$",
       "regexp:(^|\\.)sifou\\.com$",
       "regexp:(^|\\.)sinajs\\.cn$",
@@ -442,8 +443,7 @@
       "regexp:(^|\\.)oneplus\\.cn$",
       "regexp:(^|\\.)ourdvs\\.com$",
       "regexp:(^|\\.)outlook\\.cn$",
-      "regexp:(^|\\.)pchome\\.net$",
-      "regexp:(^|\\.)pchpic\\.net$"
+      "regexp:(^|\\.)pchome\\.net$"
     ]
   },
   {
@@ -455,6 +455,7 @@
     "remark": "ClientRuleSet non_ip/domestic · DOMAIN-SUFFIX 2 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)pchpic\\.net$",
       "regexp:(^|\\.)pddpic\\.com$",
       "regexp:(^|\\.)pddugc\\.com$",
       "regexp:(^|\\.)pingan\\.com$",
@@ -853,8 +854,7 @@
       "regexp:(^|\\.)baiducontent\\.com$",
       "regexp:(^|\\.)byted-static\\.com$",
       "regexp:(^|\\.)cailianpress\\.com$",
-      "regexp:(^|\\.)douyinliving\\.com$",
-      "regexp:(^|\\.)douyinstatic\\.com$"
+      "regexp:(^|\\.)douyinliving\\.com$"
     ]
   },
   {
@@ -866,6 +866,7 @@
     "remark": "ClientRuleSet non_ip/domestic · DOMAIN-SUFFIX 3 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)douyinstatic\\.com$",
       "regexp:(^|\\.)hihonorcloud\\.com$",
       "regexp:(^|\\.)huaweistatic\\.com$",
       "regexp:(^|\\.)huoshanzhibo\\.com$",
