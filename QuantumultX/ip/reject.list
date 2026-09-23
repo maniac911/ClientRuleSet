@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Anti Bogus Domain
-# Last Updated: 2026-09-22T21:43:00.439Z
-# Size: 779
+# Last Updated: 2026-09-23T17:31:14.464Z
+# Size: 778
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -34,7 +34,7 @@
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-newsletters.txt
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt
 #
-# $content-hash-v1$:n11Ayi2aiz68bWctd12U-0TvuEBnZbixAdOzcCL4lEc$
+# $content-hash-v1$:d8uf4qJhyXu2NXGHGa6KZlU6fJtFw9PXDtfn3D3HvGQ$
 #########################################
 IP-CIDR,10.72.25.0/24,reject
 IP-CIDR,39.107.15.115/32,reject
@@ -100,7 +100,6 @@ IP-CIDR,15.197.244.48/32,reject
 IP-CIDR,18.142.131.147/32,reject
 IP-CIDR,18.202.86.139/32,reject
 IP-CIDR,23.22.126.183/32,reject
-IP-CIDR,23.48.203.140/32,reject
 IP-CIDR,23.81.64.183/32,reject
 IP-CIDR,23.82.169.37/32,reject
 IP-CIDR,23.82.169.38/31,reject
