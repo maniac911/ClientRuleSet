@@ -3,17 +3,17 @@
 Built from fork source commit: 69b8650a695925aed2549a0ac6548b6375f8d018
 Upstream base commit: 39bb7409ad642ae6227d1145754e7a87537ea028
 Build-input fingerprint: 738e767e01c6edcb4f5f76739155b5e764d91218709f6a4f51051c6a8bc0428c
-Build timestamp (UTC): 2026-09-23T17:32:20Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/35895955079
+Build timestamp (UTC): 2026-09-24T12:21:01Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/35998203595
 
 Dependency lock upstream-valid: true
 Dependency lock auto-repaired: false
 Dependency source lock SHA256: 35d16233c2b88ecc618e5cbadd96fc20595b86f7487eda7c8746cb0ec60a9676
 Dependency resolved lock SHA256: 35d16233c2b88ecc618e5cbadd96fc20595b86f7487eda7c8746cb0ec60a9676
 
-sing-box compiler release: v1.14.1
-sing-box compiler image: ghcr.io/sagernet/sing-box:v1.14.1
-sing-box image digest: ghcr.io/sagernet/sing-box@sha256:38d9eff063f035236ddd0d0c752fd8491895dfd9ed4f6da808778716522c8835
+sing-box compiler release: v1.14.2
+sing-box compiler image: ghcr.io/sagernet/sing-box:v1.14.2
+sing-box image digest: ghcr.io/sagernet/sing-box@sha256:afbffd294c5eb3519cc7b4587299ef189bb0a2ca2f667cb6301fdb6b9bce9558
 
 Mihomo compiler release: v1.19.31
 Mihomo compiler image: docker.io/metacubex/mihomo:v1.19.31
