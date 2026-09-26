@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic CDN Domains
-# Last Updated: 2026-09-26T16:48:35.080Z
-# Size: 7
+# Last Updated: 2026-09-26T21:38:07.510Z
+# Size: 18
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9,13 +9,24 @@
 # This file contains CDN domains of domestic services that have somewhat optimal performance both in China and abroad.
 # All entries are included in the domestic ruleset as well.
 #
-# $content-hash-v1$:APOJqX3uCTZT--wpPofzyVNXb_3ZID3Cu2RHLScUYQM$
+# $content-hash-v1$:H6kDI-gJV2jPSGOG0HFx5yo9zOGHbYvr-NWKfcvwpr8$
 #########################################
+HOST-SUFFIX,tbcdn.cn,reject
 HOST-SUFFIX,hdslb.com,reject
 HOST-SUFFIX,qhimg.com,reject
 HOST-SUFFIX,qhres.com,reject
+HOST-SUFFIX,zhimg.com,reject
+HOST-SUFFIX,alicdn.com,reject
 HOST-SUFFIX,qhimgs.com,reject
 HOST-SUFFIX,qhres2.com,reject
+HOST-SUFFIX,sinaimg.cn,reject
+HOST-SUFFIX,biliimg.com,reject
+HOST-SUFFIX,sinaimg.com,reject
+HOST-SUFFIX,360buyimg.com,reject
 HOST-SUFFIX,music.126.net,reject
+HOST-SUFFIX,alipayobjects.com,reject
+HOST,registry.npmmirror.com,reject
+HOST-SUFFIX,tx-safety-video.acfun.cn,reject
+HOST-SUFFIX,ali-safety-video.acfun.cn,reject
 HOST-WILDCARD,qhimgs?.com,reject
 ################## EOF ##################

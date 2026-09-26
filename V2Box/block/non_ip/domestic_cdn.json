@@ -1,5 +1,17 @@
 [
   {
+    "name": "route.3ED540C3-B51B-84BB-22F5-330DEAF501BA",
+    "type": "Domain",
+    "tag": "block",
+    "matchMode": "full",
+    "listIP": [],
+    "remark": "ClientRuleSet non_ip/domestic_cdn · DOMAIN · block",
+    "isEnable": true,
+    "list": [
+      "registry.npmmirror.com"
+    ]
+  },
+  {
     "name": "route.DF3C4A1C-846B-8A94-DA98-B177C7CC27F4",
     "type": "Domain",
     "tag": "block",
@@ -8,12 +20,22 @@
     "remark": "ClientRuleSet non_ip/domestic_cdn · DOMAIN-SUFFIX · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)tbcdn\\.cn$",
       "regexp:(^|\\.)hdslb\\.com$",
       "regexp:(^|\\.)qhimg\\.com$",
       "regexp:(^|\\.)qhres\\.com$",
+      "regexp:(^|\\.)zhimg\\.com$",
+      "regexp:(^|\\.)alicdn\\.com$",
       "regexp:(^|\\.)qhimgs\\.com$",
       "regexp:(^|\\.)qhres2\\.com$",
-      "regexp:(^|\\.)music\\.126\\.net$"
+      "regexp:(^|\\.)sinaimg\\.cn$",
+      "regexp:(^|\\.)biliimg\\.com$",
+      "regexp:(^|\\.)sinaimg\\.com$",
+      "regexp:(^|\\.)360buyimg\\.com$",
+      "regexp:(^|\\.)music\\.126\\.net$",
+      "regexp:(^|\\.)alipayobjects\\.com$",
+      "regexp:(^|\\.)tx-safety-video\\.acfun\\.cn$",
+      "regexp:(^|\\.)ali-safety-video\\.acfun\\.cn$"
     ]
   },
   {

@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic CDN Domains
-# Last Updated: 2026-09-26T16:48:35.080Z
-# Size: 7
+# Last Updated: 2026-09-26T21:38:07.510Z
+# Size: 18
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9,13 +9,24 @@
 # This file contains CDN domains of domestic services that have somewhat optimal performance both in China and abroad.
 # All entries are included in the domestic ruleset as well.
 #
-# $content-hash-v1$:lif-6euISjFCr-PIou9oYob1sp-42W16lPPCHQ65MSw$
+# $content-hash-v1$:kT_J2gXGn50pzfVou3l531U8VSYZkmyb-Tgc8d5d7-g$
 #########################################
+DOMAIN-SUFFIX,tbcdn.cn
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,qhimg.com
 DOMAIN-SUFFIX,qhres.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,qhimgs.com
 DOMAIN-SUFFIX,qhres2.com
+DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,biliimg.com
+DOMAIN-SUFFIX,sinaimg.com
+DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,music.126.net
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN,registry.npmmirror.com
+DOMAIN-SUFFIX,tx-safety-video.acfun.cn
+DOMAIN-SUFFIX,ali-safety-video.acfun.cn
 DOMAIN-WILDCARD,qhimgs?.com
 ################## EOF ##################

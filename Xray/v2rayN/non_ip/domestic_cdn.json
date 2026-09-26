@@ -5,12 +5,23 @@
     "enabled": true,
     "remarks": "ClientRuleSet non_ip/domestic_cdn",
     "domain": [
+      "domain:tbcdn.cn",
       "domain:hdslb.com",
       "domain:qhimg.com",
       "domain:qhres.com",
+      "domain:zhimg.com",
+      "domain:alicdn.com",
       "domain:qhimgs.com",
       "domain:qhres2.com",
+      "domain:sinaimg.cn",
+      "domain:biliimg.com",
+      "domain:sinaimg.com",
+      "domain:360buyimg.com",
       "domain:music.126.net",
+      "domain:alipayobjects.com",
+      "full:registry.npmmirror.com",
+      "domain:tx-safety-video.acfun.cn",
+      "domain:ali-safety-video.acfun.cn",
       "regexp:^qhimgs.\\.com$"
     ]
   }

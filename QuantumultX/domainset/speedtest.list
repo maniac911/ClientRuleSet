@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-09-26T16:48:34.335Z
-# Size: 3403
+# Last Updated: 2026-09-26T21:38:06.173Z
+# Size: 3405
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:A7QOG8Roi6JCLnNP7-wdyQfHXzQnQtfy0sSdoHKhnUQ$
+# $content-hash-v1$:wKbJ9XrHP1cdF1zT2V-r6ZTUqhciXXDeS2d3gBqGzws$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -1377,6 +1377,7 @@ HOST,ookla.fibraleste.com.br,reject
 HOST,ookla.p2.neptune.net.au,reject
 HOST,ookla.pgservicos.com.br,reject
 HOST,ookla.pgservicos.net.br,reject
+HOST,ookla.soc.atharva.co.id,reject
 HOST,ookla.speedtest.cnix.cn,reject
 HOST,perf-01.ixn.as42689.net,reject
 HOST,prescott1.cabospeed.com,reject
@@ -2961,6 +2962,7 @@ HOST,speedtest-chi.dish-wireless.com,reject
 HOST,speedtest-cv-1.zoominternet.net,reject
 HOST,speedtest-dallas.swyftfiber.com,reject
 HOST,speedtest-dfw.dish-wireless.com,reject
+HOST,speedtest-dsm.cowboyhosting.com,reject
 HOST,speedtest-eqx-sg1.ixtelecom.net,reject
 HOST,speedtest-hv-1.zoominternet.net,reject
 HOST,speedtest-iad.dish-wireless.com,reject
