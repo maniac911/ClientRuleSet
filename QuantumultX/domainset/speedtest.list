@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-09-24T12:19:58.361Z
-# Size: 3398
+# Last Updated: 2026-09-26T16:48:34.335Z
+# Size: 3403
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:AGMI65yaS8yjUo-xzHLLA_vTVfT5hXASZTbPCBHM7JM$
+# $content-hash-v1$:A7QOG8Roi6JCLnNP7-wdyQfHXzQnQtfy0sSdoHKhnUQ$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -123,6 +123,7 @@ HOST,speed.xiber.net,reject
 HOST-SUFFIX,speednet.net.tr,reject
 HOST-SUFFIX,speedtest.rt.ru,reject
 HOST,speedtest.uv.es,reject
+HOST,sptst1.ntua.net,reject
 HOST,st02.mtnsat.net,reject
 HOST,st04.mtnsat.net,reject
 HOST,st1.tbaytel.net,reject
@@ -1106,6 +1107,7 @@ HOST,sp5ookla.flynetwork.it,reject
 HOST,spd-phnhazva.wyyerd.io,reject
 HOST,spd-phnxaz19.wyyerd.io,reject
 HOST,spd-sndacawa.wyyerd.io,reject
+HOST,spd-sndgcajw.wyyerd.io,reject
 HOST,spd.primenetisp.com.br,reject
 HOST,speed-test.ornethd.net,reject
 HOST,speed.amazonett.com.br,reject
@@ -1184,6 +1186,7 @@ HOST,speedtest.durgawifi.in,reject
 HOST,speedtest.e-net.net.in,reject
 HOST,speedtest.einet.etc.br,reject
 HOST,speedtest.execulink.ca,reject
+HOST,speedtest.eyeit.com.br,reject
 HOST-SUFFIX,speedtest.fastwyre.com,reject
 HOST,speedtest.fbc-tele.com,reject
 HOST,speedtest.fibim.com.tr,reject
@@ -2042,6 +2045,7 @@ HOST,ookla-speedtest.e-ports.eu,reject
 HOST,ookla.araujotelecom.com.br,reject
 HOST,ooklaspeedtest.d-pcomm.com,reject
 HOST,phc-speed.twmbroadband.com,reject
+HOST,riospeedtest.rconnects.com,reject
 HOST,sgpspeedtest.cmctelecom.vn,reject
 HOST,sp1.nokeconsultoria.com.br,reject
 HOST,spd.salesnettelecom.com.br,reject
@@ -2332,6 +2336,7 @@ HOST,speedtest.dal1.nitelusa.net,reject
 HOST,speedtest.defferrari.com.br,reject
 HOST,speedtest.eletrochip.net.br,reject
 HOST,speedtest.gabysantos.com.br,reject
+HOST,speedtest.genxbroadband.com,reject
 HOST,speedtest.gorkhainfotech.in,reject
 HOST,speedtest.hearstconnect.com,reject
 HOST,speedtest.heuer-und-sack.de,reject

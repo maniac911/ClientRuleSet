@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-24T12:20:00.113Z
-# Size: 4674
+# Last Updated: 2026-09-26T16:48:35.466Z
+# Size: 4675
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:ahddXxrJazBBN43CkzZ0erHDruE1dSwa_9EVvqN8S98$
+# $content-hash-v1$:TOXyKR-EA9MbPMv1VpdN_i4d7-Efi2rGnrASo94InWk$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -1208,6 +1208,7 @@ HOST-SUFFIX,cursor-cdn.com,reject
 HOST,d.newsweek.com,reject
 HOST,dc-cdn.cdw.com,reject
 HOST-SUFFIX,descopecdn.com,reject
+HOST,dma.canyon.com,reject
 HOST-SUFFIX,doppiocdn.live,reject
 HOST-SUFFIX,dummyimage.com,reject
 HOST-SUFFIX,ebaystatic.com,reject
@@ -2334,7 +2335,6 @@ HOST,img3.airdroid.com,reject
 HOST,img4.airdroid.com,reject
 HOST,img6.airdroid.com,reject
 HOST,imgcdn.cna.com.tw,reject
-HOST-SUFFIX,ipfs.ecolatam.com,reject
 HOST,js.chilipiper.com,reject
 HOST,js.convertflow.co,reject
 HOST,js1.chargebee.com,reject
@@ -2998,6 +2998,7 @@ HOST-SUFFIX,media.amplience.net,reject
 HOST,media.breitbart.com,reject
 HOST,media.crazyshit.com,reject
 HOST,media.glassdoor.com,reject
+HOST,media.karousell.com,reject
 HOST,media.newyorker.com,reject
 HOST,media.shopimind.com,reject
 HOST-SUFFIX,media.strapiapp.com,reject
