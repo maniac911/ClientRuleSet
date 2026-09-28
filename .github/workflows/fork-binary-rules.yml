@@ -5,9 +5,9 @@
 name: Sync Upstream and Build Rules
 
 on:
-  # Check upstream every 6 hours. Minute 47 avoids the top-of-hour Actions rush.
+  # Check upstream every 12 hours. Minute 47 avoids the top-of-hour Actions rush.
   schedule:
-    - cron: "47 */6 * * *"
+    - cron: "47 */12 * * *"
   # Manual runs can force a rebuild even when source/compiler fingerprints match rules-dist.
   workflow_dispatch:
     inputs:
