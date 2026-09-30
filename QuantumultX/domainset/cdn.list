@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-28T05:57:46.195Z
-# Size: 4676
+# Last Updated: 2026-09-30T18:10:13.824Z
+# Size: 4678
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:zBUe0ZfNsmVTfLlsC4VlBoOMTpGYm_tmyG2nZI0mr64$
+# $content-hash-v1$:VSrP-fBXRb3reoHZ98_gbMBTRmpQG1VwhdNx5dKZfg8$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -3929,6 +3929,7 @@ HOST,image-stgus.samsung.com,reject
 HOST,imagecdn.clips4sale.com,reject
 HOST,imagizer.imageshack.com,reject
 HOST,img.api.tryprofound.com,reject
+HOST,img.helpnetsecurity.com,reject
 HOST,img0.socialshopwave.com,reject
 HOST,img1.ak.crunchyroll.com,reject
 HOST,img1.socialshopwave.com,reject
@@ -4097,6 +4098,7 @@ HOST,images.flightradar24.com,reject
 HOST,images.indianexpress.com,reject
 HOST,images.purevpn-tools.com,reject
 HOST,images.spectrumnews1.com,reject
+HOST,img2.helpnetsecurity.com,reject
 HOST,integrations.gitbook.com,reject
 HOST-SUFFIX,ipfs0.sjc.cloudsigma.com,reject
 HOST,keyframe-cdn.abcnews.com,reject

@@ -1,9 +1,9 @@
 {
-  "source_sha": "3d70b2b47b9e64f962839dd74f58807f51ec0c99",
-  "upstream_sha": "79b7fa2db24a09694d85d116f940239b78101bf8",
-  "build_input_fingerprint": "20ea50c5de3ac1b660fc2f1770f7f5189aedd61dbd62e7cff0a1a181992cb4d8",
-  "built_at": "2026-09-28T05:58:51Z",
-  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/36384057310",
+  "source_sha": "8b7d7be51177d809626bb9781d214a8f5b2fce14",
+  "upstream_sha": "4ce04be3cc548c672e3350afd47ded7089ccb7ab",
+  "build_input_fingerprint": "e9eea00fe8919637b42a837a09c2a39af76841035a19f9790389b86e47efb27d",
+  "built_at": "2026-09-30T18:11:11Z",
+  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/36756417458",
   "strict_binary_compilation": true,
   "dependency_lock": {
     "upstream_lockfile_was_valid": true,
@@ -25,9 +25,9 @@
     }
   },
   "mihomo": {
-    "release": "v1.19.31",
-    "image": "docker.io/metacubex/mihomo:v1.19.31",
-    "digest": "metacubex/mihomo@sha256:739edd73a352d6beb82fad6790ef9d417a4d6f061584cc3cab1bd4536d1c60e5",
+    "release": "v1.19.32",
+    "image": "docker.io/metacubex/mihomo:v1.19.32",
+    "digest": "metacubex/mihomo@sha256:bac1a74de365ea59270ba134016762c6be05654d55246518de256113bd1c225e",
     "summary": {
       "domainMRS": 10,
       "domainText": 1,

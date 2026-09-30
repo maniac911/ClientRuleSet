@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-09-28T05:57:45.220Z
-# Size: 3405
+# Last Updated: 2026-09-30T18:10:11.774Z
+# Size: 3407
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:wKbJ9XrHP1cdF1zT2V-r6ZTUqhciXXDeS2d3gBqGzws$
+# $content-hash-v1$:4P2Xqfq9JOaoHxTLO6IISWvVCJYotyrYOzG_E5jH3hA$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -2247,6 +2247,7 @@ HOST,uptelecom.brsserver.com.br,reject
 HOST,urbanonet.brsserver.com.br,reject
 HOST,vanspeedtest.altimatel.com,reject
 HOST,velocidad.fiberlink.com.pa,reject
+HOST,velocimetro.smartmovel.net,reject
 HOST,wipl-speedtest.wipl.online,reject
 HOST,yjl-speed.twmbroadband.com,reject
 HOST,172673828273027382738738.de,reject
@@ -2980,6 +2981,7 @@ HOST,speedtest-ookla-par.as62000.net,reject
 HOST,speedtest-perth.optusnet.com.au,reject
 HOST,speedtest-phl.dish-wireless.com,reject
 HOST,speedtest-phx.dish-wireless.com,reject
+HOST,speedtest-pl1.expresshost.cloud,reject
 HOST,speedtest-rd-1.zoominternet.net,reject
 HOST,speedtest-rs-1.zoominternet.net,reject
 HOST,speedtest-sea.dish-wireless.com,reject

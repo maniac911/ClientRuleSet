@@ -424,8 +424,8 @@
       "regexp:(^|\\.)tenor\\.com$",
       "regexp:(^|\\.)tesco\\.com$",
       "regexp:(^|\\.)tfbnw\\.net$",
-      "regexp:(^|\\.)tube8\\.com$",
-      "regexp:(^|\\.)twimg\\.com$"
+      "regexp:(^|\\.)tokens\\.ci$",
+      "regexp:(^|\\.)tube8\\.com$"
     ]
   },
   {
@@ -437,6 +437,7 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 2 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)twimg\\.com$",
       "regexp:(^|\\.)twitch\\.tv$",
       "regexp:(^|\\.)typora\\.io$",
       "regexp:(^|\\.)umblr\\.com$",
@@ -835,8 +836,7 @@
       "regexp:(^|\\.)gmodules\\.com$",
       "regexp:(^|\\.)gofundme\\.com$",
       "regexp:(^|\\.)grammarly\\.io$",
-      "regexp:(^|\\.)hanimeone\\.me$",
-      "regexp:(^|\\.)hqporner\\.com$"
+      "regexp:(^|\\.)hanimeone\\.me$"
     ]
   },
   {
@@ -848,6 +848,7 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 3 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)hqporner\\.com$",
       "regexp:(^|\\.)huffpost\\.com$",
       "regexp:(^|\\.)iboysoft\\.com$",
       "regexp:(^|\\.)idcflare\\.com$",
@@ -1246,8 +1247,7 @@
       "regexp:(^|\\.)hubspotstarter\\.net$",
       "regexp:(^|\\.)line-apps-beta\\.com$",
       "regexp:(^|\\.)minecraftforum\\.net$",
-      "regexp:(^|\\.)opencollective\\.com$",
-      "regexp:(^|\\.)redtubepremium\\.com$"
+      "regexp:(^|\\.)opencollective\\.com$"
     ]
   },
   {
@@ -1259,6 +1259,7 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 4 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)redtubepremium\\.com$",
       "regexp:(^|\\.)rottentomatoes\\.com$",
       "regexp:(^|\\.)smartmailcloud\\.com$",
       "regexp:(^|\\.)steamcommunity\\.com$",

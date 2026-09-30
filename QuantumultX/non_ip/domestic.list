@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2026-09-28T05:57:45.783Z
-# Size: 870
+# Last Updated: 2026-09-30T18:10:12.589Z
+# Size: 871
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains known addresses that are avaliable in the Mainland China.
 #
-# $content-hash-v1$:IyIMRqym2NoMeJ1Nsr3g03M16laPvkyLcmsKhZ9-Ia4$
+# $content-hash-v1$:zN5JmTwUFdUHvOqLiY0zygRbfKhWMYdaRm3PkU2hmOM$
 #########################################
 HOST-SUFFIX,3.cn,reject
 HOST-SUFFIX,6.cn,reject
@@ -861,6 +861,7 @@ HOST-SUFFIX,chinanetcenter.com,reject
 HOST-SUFFIX,dl.pinyuncloud.com,reject
 HOST-SUFFIX,heytapdownload.com,reject
 HOST-SUFFIX,samsungcloudcn.com,reject
+HOST,time.xtracloud.net,reject
 HOST-SUFFIX,alibabachengdun.com,reject
 HOST-SUFFIX,anticheatexpert.com,reject
 HOST,assets1.xboxlive.cn,reject
