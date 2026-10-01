@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-09-30T18:10:13.824Z
-# Size: 4678
+# Last Updated: 2026-10-01T18:36:51.718Z
+# Size: 4680
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:VSrP-fBXRb3reoHZ98_gbMBTRmpQG1VwhdNx5dKZfg8$
+# $content-hash-v1$:oRATKY3UCpn8xHfFgivtloJSUVb_mLu-wLGFKY8ysrw$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -128,6 +128,7 @@ HOST-SUFFIX,epimg.net,reject
 HOST-SUFFIX,erocdn.co,reject
 HOST-SUFFIX,eth.sucks,reject
 HOST-SUFFIX,f-cdn.com,reject
+HOST-SUFFIX,fal.media,reject
 HOST-SUFFIX,fbcdn.com,reject
 HOST-SUFFIX,fbcdn.net,reject
 HOST-SUFFIX,fbsbx.com,reject
@@ -3874,6 +3875,7 @@ HOST-SUFFIX,assets.digitalocean.com,reject
 HOST,assets.lemonsqueezy.com,reject
 HOST,assets.mcp.corespeed.io,reject
 HOST,assets.science.nasa.gov,reject
+HOST,assets.singaporeair.com,reject
 HOST,assets.streamlinehq.com,reject
 HOST,assets.xboxservices.com,reject
 HOST,assets1.lottiefiles.com,reject

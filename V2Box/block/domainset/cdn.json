@@ -2788,6 +2788,7 @@
       "assets.lemonsqueezy.com",
       "assets.mcp.corespeed.io",
       "assets.science.nasa.gov",
+      "assets.singaporeair.com",
       "assets.streamlinehq.com",
       "assets.xboxservices.com",
       "assets1.lottiefiles.com",
@@ -2872,8 +2873,7 @@
       "p-cdnstatic.svc.litv.tv",
       "packages.jetbrains.team",
       "pplx-res.cloudinary.com",
-      "prod.addictinggames.com",
-      "profile-images.xing.com"
+      "prod.addictinggames.com"
     ]
   },
   {
@@ -2885,6 +2885,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · block",
     "isEnable": true,
     "list": [
+      "profile-images.xing.com",
       "rbds-static.redbull.com",
       "rebound.postmarkapp.com",
       "resources.chessbase.com",
@@ -3283,8 +3284,7 @@
       "sts.online.visualstudio.com",
       "tvdownloaddw-a.akamaihd.net",
       "typescript.visualstudio.com",
-      "web-static.pages.iheart.com",
-      "web-toolbar.playstation.com"
+      "web-static.pages.iheart.com"
     ]
   },
   {
@@ -3296,6 +3296,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · block",
     "isEnable": true,
     "list": [
+      "web-toolbar.playstation.com",
       "webappassets.smartsheet.com",
       "xpaywalletcdn.azureedge.net",
       "account-widget-mfe.gcore.com",
@@ -3648,6 +3649,7 @@
       "regexp:(^|\\.)erocdn\\.co$",
       "regexp:(^|\\.)eth\\.sucks$",
       "regexp:(^|\\.)f-cdn\\.com$",
+      "regexp:(^|\\.)fal\\.media$",
       "regexp:(^|\\.)fbcdn\\.com$",
       "regexp:(^|\\.)fbcdn\\.net$",
       "regexp:(^|\\.)fbsbx\\.com$",
@@ -3953,8 +3955,7 @@
       "regexp:(^|\\.)sstatic\\.net$",
       "regexp:(^|\\.)stripst\\.com$",
       "regexp:(^|\\.)supabase\\.co$",
-      "regexp:(^|\\.)tags\\.f5\\.com$",
-      "regexp:(^|\\.)teo-rum\\.com$"
+      "regexp:(^|\\.)tags\\.f5\\.com$"
     ]
   },
   {
@@ -3966,6 +3967,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 2 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)teo-rum\\.com$",
       "regexp:(^|\\.)tile\\.osm\\.ch$",
       "regexp:(^|\\.)ttcache\\.com$",
       "regexp:(^|\\.)tutu1\\.space$",
@@ -4364,8 +4366,7 @@
       "regexp:(^|\\.)shoplineimg\\.com$",
       "regexp:(^|\\.)skypeassets\\.com$",
       "regexp:(^|\\.)splunkcloud\\.com$",
-      "regexp:(^|\\.)stack\\.imgur\\.com$",
-      "regexp:(^|\\.)stackassets\\.com$"
+      "regexp:(^|\\.)stack\\.imgur\\.com$"
     ]
   },
   {
@@ -4377,6 +4378,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 3 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)stackassets\\.com$",
       "regexp:(^|\\.)staticblitz\\.com$",
       "regexp:(^|\\.)staticimgly\\.com$",
       "regexp:(^|\\.)staticstack\\.net$",
@@ -4775,8 +4777,7 @@
       "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$",
       "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$",
       "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
-      "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$",
-      "regexp:(^|\\.)design-system\\.economist\\.com$"
+      "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$"
     ]
   },
   {
@@ -4788,6 +4789,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 4 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)design-system\\.economist\\.com$",
       "regexp:(^|\\.)ipfsgateway\\.makersplace\\.com$",
       "regexp:(^|\\.)siteintercept\\.qualtrics\\.com$",
       "regexp:(^|\\.)widget\\.cluster\\.groovehq\\.com$",
