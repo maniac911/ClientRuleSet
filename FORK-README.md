@@ -1,15 +1,15 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: 9a847a180cca9272428baf8a7cf1916424d97698
-Upstream base commit: f04a875de2cdcf443e4f11366490d24544e9e0b3
-Build-input fingerprint: 8cf5250dea3fb8a861c4d63eda74a5b9d801fcff542fb513384d3f6a063c4477
-Build timestamp (UTC): 2026-10-02T18:05:37Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/37044769420
+Built from fork source commit: 77516c516699842c5b58afeebe49157148c072b3
+Upstream base commit: 6373d9aca136bf6b8f4ad091baebf50a8f088d4a
+Build-input fingerprint: 686bc8c00a02026f3691464d9e3b0973b6ab3d896e178c194cdd89c8ed820562
+Build timestamp (UTC): 2026-10-03T16:47:55Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/37137956996
 
 Dependency lock upstream-valid: true
 Dependency lock auto-repaired: false
-Dependency source lock SHA256: 30bffd1c704c1e988bc942a8c4a491fbe16927b0b5bbf9cc8c1ba65716051f4c
-Dependency resolved lock SHA256: 30bffd1c704c1e988bc942a8c4a491fbe16927b0b5bbf9cc8c1ba65716051f4c
+Dependency source lock SHA256: 37457dacb780e502796f993b3fe276b52809d05282286177e0c0f4ba38a99176
+Dependency resolved lock SHA256: 37457dacb780e502796f993b3fe276b52809d05282286177e0c0f4ba38a99176
 
 sing-box compiler release: v1.14.2
 sing-box compiler image: ghcr.io/sagernet/sing-box:v1.14.2
@@ -21,8 +21,8 @@ Mihomo image digest: metacubex/mihomo@sha256:bac1a74de365ea59270ba134016762c6be0
 
 Strict binary compilation: enabled
 sing-box summary: {"srs":72,"jsonFallback":0}
-Mihomo summary: {"domainMRS":10,"domainText":1,"nonIpMRS":16,"nonIpText":26,"ipMRS":13,"ipText":9,"compileFailures":0}
-Binary output counts: {"srs":144,"mrs":39}
+Mihomo summary: {"domainMRS":10,"domainText":1,"nonIpMRS":16,"nonIpText":26,"ipMRS":12,"ipText":10,"compileFailures":0}
+Binary output counts: {"srs":144,"mrs":38}
 
 Integrity files: MANIFEST.json and SHA256SUMS
 

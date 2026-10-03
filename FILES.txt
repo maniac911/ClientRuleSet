@@ -14,7 +14,7 @@ Clash/Release/domainset/reject_extra.mrs
 Clash/Release/domainset/reject_phishing.mrs
 Clash/Release/domainset/reject_sukka.txt
 Clash/Release/domainset/speedtest.mrs
-Clash/Release/ip/ai.mrs
+Clash/Release/ip/ai.txt
 Clash/Release/ip/apple_services.mrs
 Clash/Release/ip/bilibili.mrs
 Clash/Release/ip/cdn.mrs
@@ -166,6 +166,7 @@ Egern/domainset/reject.yaml
 Egern/domainset/reject_extra.yaml
 Egern/domainset/reject_phishing.yaml
 Egern/domainset/speedtest.yaml
+Egern/ip/ai-resolve.yaml
 Egern/ip/ai.yaml
 Egern/ip/apple_services.yaml
 Egern/ip/bilibili.yaml
@@ -933,7 +934,6 @@ V2Box/block/domainset/reject.part167.txt
 V2Box/block/domainset/reject.part168.txt
 V2Box/block/domainset/reject.part169.txt
 V2Box/block/domainset/reject.part17.txt
-V2Box/block/domainset/reject.part170.txt
 V2Box/block/domainset/reject.part18.txt
 V2Box/block/domainset/reject.part19.txt
 V2Box/block/domainset/reject.part20.txt
@@ -1188,8 +1188,6 @@ V2Box/block/domainset/reject_phishing.part164.txt
 V2Box/block/domainset/reject_phishing.part165.txt
 V2Box/block/domainset/reject_phishing.part166.txt
 V2Box/block/domainset/reject_phishing.part167.txt
-V2Box/block/domainset/reject_phishing.part168.txt
-V2Box/block/domainset/reject_phishing.part169.txt
 V2Box/block/domainset/reject_phishing.part17.txt
 V2Box/block/domainset/reject_phishing.part18.txt
 V2Box/block/domainset/reject_phishing.part19.txt
@@ -1475,7 +1473,6 @@ V2Box/direct/domainset/reject.part167.txt
 V2Box/direct/domainset/reject.part168.txt
 V2Box/direct/domainset/reject.part169.txt
 V2Box/direct/domainset/reject.part17.txt
-V2Box/direct/domainset/reject.part170.txt
 V2Box/direct/domainset/reject.part18.txt
 V2Box/direct/domainset/reject.part19.txt
 V2Box/direct/domainset/reject.part20.txt
@@ -1730,8 +1727,6 @@ V2Box/direct/domainset/reject_phishing.part164.txt
 V2Box/direct/domainset/reject_phishing.part165.txt
 V2Box/direct/domainset/reject_phishing.part166.txt
 V2Box/direct/domainset/reject_phishing.part167.txt
-V2Box/direct/domainset/reject_phishing.part168.txt
-V2Box/direct/domainset/reject_phishing.part169.txt
 V2Box/direct/domainset/reject_phishing.part17.txt
 V2Box/direct/domainset/reject_phishing.part18.txt
 V2Box/direct/domainset/reject_phishing.part19.txt
@@ -2017,7 +2012,6 @@ V2Box/proxy/domainset/reject.part167.txt
 V2Box/proxy/domainset/reject.part168.txt
 V2Box/proxy/domainset/reject.part169.txt
 V2Box/proxy/domainset/reject.part17.txt
-V2Box/proxy/domainset/reject.part170.txt
 V2Box/proxy/domainset/reject.part18.txt
 V2Box/proxy/domainset/reject.part19.txt
 V2Box/proxy/domainset/reject.part20.txt
@@ -2272,8 +2266,6 @@ V2Box/proxy/domainset/reject_phishing.part164.txt
 V2Box/proxy/domainset/reject_phishing.part165.txt
 V2Box/proxy/domainset/reject_phishing.part166.txt
 V2Box/proxy/domainset/reject_phishing.part167.txt
-V2Box/proxy/domainset/reject_phishing.part168.txt
-V2Box/proxy/domainset/reject_phishing.part169.txt
 V2Box/proxy/domainset/reject_phishing.part17.txt
 V2Box/proxy/domainset/reject_phishing.part18.txt
 V2Box/proxy/domainset/reject_phishing.part19.txt

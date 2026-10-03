@@ -15,6 +15,9 @@ URL-REGEX,/\d+/resolve  # V2Box domain-regex routing cannot represent an arbitra
 URL-REGEX,/\d+/sign_d  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
 URL-REGEX,/igd\.xml  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
 
+# ip/ai.json
+IP-ASN,399358  # V2Box route-object import has no verified IP-ASN selector.
+
 # ip/reject.json
 IP-ASN,1012  # V2Box route-object import has no verified IP-ASN selector.
 IP-ASN,14651  # V2Box route-object import has no verified IP-ASN selector.

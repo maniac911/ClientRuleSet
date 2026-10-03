@@ -15,6 +15,9 @@ URL-REGEX,/\d+/resolve  # Xray attrs can match HTTP headers/path, but not an arb
 URL-REGEX,/\d+/sign_d  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
 URL-REGEX,/igd\.xml  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
 
+# ip/ai.json
+IP-ASN,399358  # Xray routing has no native IP-ASN rule field.
+
 # ip/reject.json
 IP-ASN,1012  # Xray routing has no native IP-ASN rule field.
 IP-ASN,14651  # Xray routing has no native IP-ASN rule field.
