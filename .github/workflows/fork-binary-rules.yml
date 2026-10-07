@@ -44,7 +44,7 @@ jobs:
     # Push events already contain the desired master revision; only scheduled/manual
     # runs need to fetch and merge upstream here.
     if: github.event_name != 'push'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       contents: read
@@ -170,7 +170,7 @@ jobs:
       always() &&
       (needs.sync-upstream.result == 'success' || needs.sync-upstream.result == 'skipped') &&
       !(github.event_name == 'push' && contains(github.event.head_commit.message, '[skip actions]'))
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       contents: read
@@ -233,7 +233,7 @@ jobs:
       always() &&
       needs.plan-build.result == 'success' &&
       needs.plan-build.outputs.should_build == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 35
     permissions:
       contents: read
@@ -448,7 +448,7 @@ jobs:
     if: >-
       always() &&
       needs.build.result == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     # The build itself is read-only. Only this isolated job may write rules-dist.
     permissions:
