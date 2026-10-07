@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-03T16:46:54.127Z
-# Size: 3414
+# Last Updated: 2026-10-07T12:29:38.416Z
+# Size: 3419
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:I_fCDzi1oWtd8TDQcKaTr9cjElvORBDItZOgDAskwP4$
+# $content-hash-v1$:rv02_-MqiGsDsv7siTIUoDv70V8AIGn2j-y5IWLUbN0$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -328,6 +328,7 @@ HOST,spd53.claro.com.br,reject
 HOST,spd60.claro.com.br,reject
 HOST,spd76.claro.com.br,reject
 HOST,spd79.claro.com.br,reject
+HOST,spdt.lanxus.com.br,reject
 HOST,speed.as198997.net,reject
 HOST,speed.cablelink.at,reject
 HOST,speed.clair.global,reject
@@ -1596,6 +1597,7 @@ HOST,teste.mwhtelecom.com.br,reject
 HOST,teste.oriontelecom.link,reject
 HOST,teste.reatelecom.com.br,reject
 HOST,teste.speednetpa.net.br,reject
+HOST,topnet.brsserver.com.br,reject
 HOST,vaspeedtest.rackdog.com,reject
 HOST,velocidade.4wnet.com.br,reject
 HOST,velocidade.hrcfiber.com,reject
@@ -1859,6 +1861,7 @@ HOST,spd-100g-ookla.stelogy.io,reject
 HOST,speed-br2.gigacomm.net.au,reject
 HOST,speed-mel.gigacomm.net.au,reject
 HOST,speed-syd.gigacomm.net.au,reject
+HOST,speed.airmaxbroadband.com,reject
 HOST,speed.newmarket.telmax.ca,reject
 HOST,speed.telecablecartaya.es,reject
 HOST,speed.upnetcaucaia.com.br,reject
@@ -2668,6 +2671,7 @@ HOST,spd01-monr-ca.gigglefiber.com,reject
 HOST,speed-miss.systemlifeline.com,reject
 HOST,speed.alliedcorporation.co.in,reject
 HOST,speed.bitnettecnologia.com.br,reject
+HOST,speed01.mil01.cmp.hb-bkbn.net,reject
 HOST,speednet-atn.brsserver.com.br,reject
 HOST,speedtest-adl.optusnet.com.au,reject
 HOST,speedtest-alm-nl.as215248.net,reject
@@ -3007,6 +3011,7 @@ HOST,speedtest.bradfordbroadband.com,reject
 HOST,speedtest.deltatelecomam.com.br,reject
 HOST,speedtest.euronettelecom.com.br,reject
 HOST,speedtest.extremanetwork.com.br,reject
+HOST,speedtest.g5nortetelecom.com.br,reject
 HOST,speedtest.hkg01.node.as9516.com,reject
 HOST,speedtest.isplinkdigital.com.br,reject
 HOST,speedtest.japanettelecom.com.br,reject
