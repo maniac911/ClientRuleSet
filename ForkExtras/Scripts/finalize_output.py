@@ -51,15 +51,37 @@ def main() -> None:
     dependency_lock = read_json(Path(".dependency-lock-state.json"))
     sing_box_summary = read_json(OUTPUT / ".build-sing-box.json")
     mihomo_summary = read_json(OUTPUT / ".build-mihomo.json")
-    (OUTPUT / ".build-sing-box.json").unlink(missing_ok=True)
-    (OUTPUT / ".build-mihomo.json").unlink(missing_ok=True)
 
     if not dependency_lock:
         print("::error::Dependency lock state is missing; dependency installation was not auditable")
         sys.exit(1)
+    if not sing_box_summary:
+        print("::error::sing-box build summary is missing or invalid")
+        sys.exit(1)
+    if not mihomo_summary:
+        print("::error::Mihomo build summary is missing or invalid")
+        sys.exit(1)
 
     current_srs = int(sing_box_summary.get("srs", 0))
     current_mrs = count_mrs(mihomo_summary)
+    actual_sing_box_srs = len(list((OUTPUT / "sing-box").rglob("*.srs")))
+    actual_mihomo_mrs = len(list((OUTPUT / "Clash" / "Release").rglob("*.mrs")))
+
+    if current_srs <= 0 or current_srs != actual_sing_box_srs:
+        print(
+            f"::error::sing-box summary/output mismatch: summary={current_srs}, "
+            f"sing-box files={actual_sing_box_srs}"
+        )
+        sys.exit(1)
+    if current_mrs <= 0 or current_mrs != actual_mihomo_mrs:
+        print(
+            f"::error::Mihomo summary/output mismatch: summary={current_mrs}, "
+            f"Clash/Release files={actual_mihomo_mrs}"
+        )
+        sys.exit(1)
+
+    (OUTPUT / ".build-sing-box.json").unlink(missing_ok=True)
+    (OUTPUT / ".build-mihomo.json").unlink(missing_ok=True)
     previous_srs = previous.get("sing_box", {}).get("summary", {}).get("srs")
     previous_mrs = count_mrs(previous.get("mihomo", {}).get("summary", {})) if previous else None
 

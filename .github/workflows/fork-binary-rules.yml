@@ -5,9 +5,9 @@
 name: Sync Upstream and Build Rules
 
 on:
-  # Check upstream every 12 hours. Minute 47 avoids the top-of-hour Actions rush.
+  # Check upstream once every 24 hours. Minute 47 avoids the top-of-hour Actions rush.
   schedule:
-    - cron: "47 */12 * * *"
+    - cron: "47 0 * * *"
   # Manual runs can force a rebuild even when source/compiler fingerprints match rules-dist.
   workflow_dispatch:
     inputs:
@@ -31,6 +31,7 @@ permissions:
 # cancelling the active release so partial output cannot win a race.
 concurrency:
   group: clientruleset-sync-build
+  queue: max
   cancel-in-progress: false
 
 env:
@@ -52,7 +53,7 @@ jobs:
         with:
           ref: master
           fetch-depth: 0
-          token: ${{ secrets.SYNC_TOKEN }}
+          persist-credentials: false
 
       # Guard 1: validate the fork before touching upstream. This catches a previous
       # accidental web Sync fork or manual automation replacement.
@@ -76,16 +77,32 @@ jobs:
       - name: Fetch upstream
         run: |
           set -euo pipefail
+          retry() {
+            local attempt
+            for attempt in 1 2 3; do
+              if "$@"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Network command failed (attempt ${attempt}/3); retrying..."
+              sleep $((attempt * 5))
+            done
+          }
+
           git remote remove upstream 2>/dev/null || true
           git remote add upstream "${UPSTREAM_REPO}"
-          git fetch --no-tags upstream master
+          retry git fetch --no-tags upstream master
 
       - name: Merge upstream while preserving fork automation
+        id: merge
         run: |
           set -euo pipefail
 
           if git merge-base --is-ancestor upstream/master HEAD; then
             echo "Fork master already contains upstream/master."
+            echo "changed=false" >> "${GITHUB_OUTPUT}"
             exit 0
           fi
 
@@ -119,7 +136,32 @@ jobs:
           python3 ForkExtras/Scripts/fork_integrity.py
 
           git commit -m "chore(sync): merge upstream master [skip actions]"
-          git push origin HEAD:master
+          echo "changed=true" >> "${GITHUB_OUTPUT}"
+
+      # Keep the write-scoped PAT out of checkout and merge. It is exposed only
+      # to the one step that actually needs to write the synced commit to master.
+      - name: Push synced master
+        if: steps.merge.outputs.changed == 'true'
+        env:
+          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          retry() {
+            local attempt
+            for attempt in 1 2 3; do
+              if "$@"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Push failed (attempt ${attempt}/3); retrying in case of a transient network error..."
+              sleep $((attempt * 5))
+            done
+          }
+
+          repo_url="https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          retry git push "${repo_url}" HEAD:master
 
   plan-build:
     name: Check build inputs and latest stable compilers
@@ -157,9 +199,23 @@ jobs:
       - name: Fetch upstream for build metadata
         run: |
           set -euo pipefail
+          retry() {
+            local attempt
+            for attempt in 1 2 3; do
+              if "$@"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Network command failed (attempt ${attempt}/3); retrying..."
+              sleep $((attempt * 5))
+            done
+          }
+
           git remote remove upstream 2>/dev/null || true
           git remote add upstream "${UPSTREAM_REPO}"
-          git fetch --no-tags upstream master
+          retry git fetch --no-tags upstream master
 
       # build_plan.py uses a source fingerprint plus the latest stable sing-box and
       # Mihomo releases. Documentation-only changes therefore do not force a rebuild.
@@ -238,12 +294,52 @@ jobs:
       - name: Prepare previous build directory
         run: |
           set -euo pipefail
-          if git ls-remote --exit-code --heads "https://github.com/${GITHUB_REPOSITORY}.git" "${DIST_BRANCH}" >/dev/null 2>&1; then
-            git clone --depth 1 --branch "${DIST_BRANCH}" "https://github.com/${GITHUB_REPOSITORY}.git" output
+          retry_clone() {
+            local destination="$1"
+            shift
+            local attempt
+            for attempt in 1 2 3; do
+              rm -rf "${destination}"
+              if git clone "$@" "${destination}"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Clone failed (attempt ${attempt}/3); retrying..."
+              sleep $((attempt * 5))
+            done
+          }
+
+          remote_branch_state() {
+            local url="$1" branch="$2" attempt rc
+            for attempt in 1 2 3; do
+              if git ls-remote --exit-code --heads "${url}" "${branch}" >/dev/null 2>&1; then
+                return 0
+              else
+                rc=$?
+              fi
+              [[ "${rc}" -eq 2 ]] && return 2
+              if [[ "${attempt}" -lt 3 ]]; then
+                echo "::warning::Could not query ${branch} (attempt ${attempt}/3); retrying..."
+                sleep $((attempt * 5))
+              fi
+            done
+            return "${rc}"
+          }
+
+          repo_url="https://github.com/${GITHUB_REPOSITORY}.git"
+          if remote_branch_state "${repo_url}" "${DIST_BRANCH}"; then
+            retry_clone output --depth 1 --branch "${DIST_BRANCH}" "${repo_url}"
             cp output/BUILD-METADATA.json .previous-build-metadata.json 2>/dev/null || true
             rm -rf output/.git
           else
-            git clone --depth 1 --branch master https://github.com/SukkaLab/ruleset.skk.moe.git output
+            branch_status=$?
+            if [[ "${branch_status}" -ne 2 ]]; then
+              echo "::error::Unable to determine whether ${DIST_BRANCH} exists after 3 attempts"
+              exit "${branch_status}"
+            fi
+            retry_clone output --depth 1 --branch master https://github.com/SukkaLab/ruleset.skk.moe.git
             rm -rf output/.git
           fi
           node ForkExtras/Clients/run.cjs prepare output
@@ -290,8 +386,22 @@ jobs:
           echo "Mihomo release:   ${MIHOMO_TAG}"
           echo "Mihomo image:     ${MIHOMO_IMAGE}"
 
-          docker pull "${SING_BOX_IMAGE}"
-          docker pull "${MIHOMO_IMAGE}"
+          retry() {
+            local attempt
+            for attempt in 1 2 3; do
+              if "$@"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Registry pull failed (attempt ${attempt}/3); retrying..."
+              sleep $((attempt * 5))
+            done
+          }
+
+          retry docker pull "${SING_BOX_IMAGE}"
+          retry docker pull "${MIHOMO_IMAGE}"
 
           sing_box_digest="$(docker image inspect --format='{{index .RepoDigests 0}}' "${SING_BOX_IMAGE}")"
           mihomo_digest="$(docker image inspect --format='{{index .RepoDigests 0}}' "${MIHOMO_IMAGE}")"
@@ -367,10 +477,63 @@ jobs:
           set -euo pipefail
           repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
-          if git ls-remote --exit-code --heads "${repo_url}" "${DIST_BRANCH}" >/dev/null 2>&1; then
-            git clone --depth 1 --branch "${DIST_BRANCH}" "${repo_url}" publish-repo
+          retry() {
+            local attempt
+            for attempt in 1 2 3; do
+              if "$@"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Network command failed (attempt ${attempt}/3); retrying..."
+              sleep $((attempt * 5))
+            done
+          }
+
+          retry_clone() {
+            local destination="$1"
+            shift
+            local attempt
+            for attempt in 1 2 3; do
+              rm -rf "${destination}"
+              if git clone "$@" "${destination}"; then
+                return 0
+              fi
+              if [[ "${attempt}" -eq 3 ]]; then
+                return 1
+              fi
+              echo "::warning::Clone failed (attempt ${attempt}/3); retrying..."
+              sleep $((attempt * 5))
+            done
+          }
+
+          remote_branch_state() {
+            local url="$1" branch="$2" attempt rc
+            for attempt in 1 2 3; do
+              if git ls-remote --exit-code --heads "${url}" "${branch}" >/dev/null 2>&1; then
+                return 0
+              else
+                rc=$?
+              fi
+              [[ "${rc}" -eq 2 ]] && return 2
+              if [[ "${attempt}" -lt 3 ]]; then
+                echo "::warning::Could not query ${branch} (attempt ${attempt}/3); retrying..."
+                sleep $((attempt * 5))
+              fi
+            done
+            return "${rc}"
+          }
+
+          if remote_branch_state "${repo_url}" "${DIST_BRANCH}"; then
+            retry_clone publish-repo --depth 1 --branch "${DIST_BRANCH}" "${repo_url}"
           else
-            git clone --depth 1 "${repo_url}" publish-repo
+            branch_status=$?
+            if [[ "${branch_status}" -ne 2 ]]; then
+              echo "::error::Unable to determine whether ${DIST_BRANCH} exists after 3 attempts"
+              exit "${branch_status}"
+            fi
+            retry_clone publish-repo --depth 1 "${repo_url}"
             cd publish-repo
             git checkout --orphan "${DIST_BRANCH}"
             git rm -rf . >/dev/null 2>&1 || true
@@ -389,4 +552,4 @@ jobs:
           fi
 
           git commit -m "chore: build client releases from ${SOURCE_SHA}"
-          git push origin "HEAD:${DIST_BRANCH}"
+          retry git push origin "HEAD:${DIST_BRANCH}"

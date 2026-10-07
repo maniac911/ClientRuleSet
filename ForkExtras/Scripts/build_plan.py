@@ -7,6 +7,8 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.request
 
 ROOT = Path.cwd()
@@ -43,6 +45,10 @@ def run(*args: str, check: bool = True) -> str:
     return proc.stdout.strip()
 
 
+def retry_delay(attempt: int) -> int:
+    return attempt * 5
+
+
 def latest_stable_release(repo: str) -> str:
     url = f"https://api.github.com/repos/{repo}/releases/latest"
     headers = {
@@ -52,9 +58,36 @@ def latest_stable_release(repo: str) -> str:
     }
     if GITHUB_TOKEN:
         headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
-    request = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(request, timeout=20) as response:
-        data = json.load(response)
+
+    data: dict | None = None
+    transient_statuses = {429, 500, 502, 503, 504}
+    for attempt in range(1, 4):
+        request = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                data = json.load(response)
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code not in transient_statuses or attempt == 3:
+                raise
+            delay = retry_delay(attempt)
+            print(
+                f"::warning::GitHub release API returned HTTP {exc.code} for {repo} "
+                f"(attempt {attempt}/3); retrying in {delay}s"
+            )
+            time.sleep(delay)
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == 3:
+                raise
+            delay = retry_delay(attempt)
+            print(
+                f"::warning::GitHub release API request failed for {repo} "
+                f"(attempt {attempt}/3): {exc}; retrying in {delay}s"
+            )
+            time.sleep(delay)
+
+    if data is None:
+        raise RuntimeError(f"GitHub latest release request for {repo} returned no data")
     if data.get("draft") or data.get("prerelease"):
         raise RuntimeError(f"GitHub latest release for {repo} is not stable")
     tag = str(data.get("tag_name", ""))
@@ -86,12 +119,25 @@ def tracked_fingerprint() -> tuple[str, int]:
 
 
 def previous_metadata() -> dict:
-    fetch = subprocess.run(
-        ["git", "fetch", "--no-tags", "origin", f"{DIST_BRANCH}:refs/remotes/origin/{DIST_BRANCH}"],
-        cwd=ROOT,
-        text=True,
-        capture_output=True,
-    )
+    fetch: subprocess.CompletedProcess[str] | None = None
+    command = ["git", "fetch", "--no-tags", "origin", f"{DIST_BRANCH}:refs/remotes/origin/{DIST_BRANCH}"]
+    for attempt in range(1, 4):
+        fetch = subprocess.run(
+            command,
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+        )
+        if fetch.returncode == 0:
+            break
+        if attempt < 3:
+            delay = retry_delay(attempt)
+            print(
+                f"::warning::Fetching {DIST_BRANCH} metadata failed "
+                f"(attempt {attempt}/3); retrying in {delay}s"
+            )
+            time.sleep(delay)
+    assert fetch is not None
     if fetch.returncode != 0:
         return {}
     show = subprocess.run(
