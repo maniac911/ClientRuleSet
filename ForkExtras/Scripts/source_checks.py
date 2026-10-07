@@ -8,6 +8,11 @@ import sys
 
 SUMMARY = os.environ.get("GITHUB_STEP_SUMMARY")
 
+# Duplicate checking is line-oriented and therefore only valid for rule-data files.
+# Do not scan TypeScript/JavaScript/JSON source code: repeated syntax such as "];"
+# or "}," is normal there and would create noisy false-positive annotations.
+LINE_RULE_SUFFIXES = {".conf"}
+
 
 def annotate(level: str, message: str, file: Path | None = None, line: int | None = None) -> None:
     location = ""
@@ -27,6 +32,8 @@ def files_under(root: Path) -> list[Path]:
 def duplicates(root: Path) -> list[tuple[Path, int, int, str]]:
     found: list[tuple[Path, int, int, str]] = []
     for file in files_under(root):
+        if file.suffix.lower() not in LINE_RULE_SUFFIXES:
+            continue
         seen: dict[str, int] = {}
         try:
             lines = file.read_text(encoding="utf-8").splitlines()
