@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-07T12:43:36.758Z
-# Size: 4680
+# Last Updated: 2026-10-09T06:50:19.546Z
+# Size: 4684
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:oRATKY3UCpn8xHfFgivtloJSUVb_mLu-wLGFKY8ysrw$
+# $content-hash-v1$:Zqiuy1VQiealhO1tN7xb04MVYrV-LemSmGfWXpHVJ-8$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -1788,6 +1788,7 @@ HOST,assets.stash.com,reject
 HOST,assets.toot.cafe,reject
 HOST,assets.twitch.tv,reject
 HOST,assets.upload.io,reject
+HOST,assets.vanta.com,reject
 HOST,assets.vogue.com,reject
 HOST,assets.volvo.com,reject
 HOST,assets.xmind.net,reject
@@ -2359,6 +2360,7 @@ HOST,media.nownews.com,reject
 HOST-SUFFIX,media.zestyio.com,reject
 HOST-SUFFIX,mediadelivery.net,reject
 HOST-SUFFIX,monitor.azure.com,reject
+HOST,n.approveit.today,reject
 HOST,netlify.apollo.io,reject
 HOST-SUFFIX,notion-static.com,reject
 HOST,ocsp.comodoca.com,reject
@@ -4399,6 +4401,7 @@ HOST,player-frontend.cnevids.com,reject
 HOST,prego-cache.prod.sketch.com,reject
 HOST,public-pages.cbinsights.com,reject
 HOST,resources-live.sketch.cloud,reject
+HOST,rum-ingest.us1.signalfx.com,reject
 HOST,safebrowsing.googleapis.com,reject
 HOST,sessions-bugsnag.docker.com,reject
 HOST-SUFFIX,siteintercept.qualtrics.com,reject
@@ -4408,6 +4411,7 @@ HOST,static-homepage-en.pluto.tv,reject
 HOST,static-mh.content.disney.io,reject
 HOST,static-production.npmjs.com,reject
 HOST,static-webfonts.myfonts.com,reject
+HOST,static.acm.account.sony.com,reject
 HOST,static.captcha-delivery.com,reject
 HOST,sts.online.visualstudio.com,reject
 HOST,tvdownloaddw-a.akamaihd.net,reject

@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-07T12:43:35.749Z
-# Size: 3419
+# Last Updated: 2026-10-09T06:50:18.661Z
+# Size: 3425
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:rv02_-MqiGsDsv7siTIUoDv70V8AIGn2j-y5IWLUbN0$
+# $content-hash-v1$:cHQMDBeDij-Rf-vWTRaw62JjOuikkEk8dD1cugR0MX4$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -288,6 +288,7 @@ HOST,teste.i9va.net.br,reject
 HOST,tnookla.tn.edu.tw,reject
 HOST,two.speed.airc.it,reject
 HOST,vitesse.cogeco.ca,reject
+HOST,wrlcc.synology.me,reject
 HOST,www.librespeed.fi,reject
 HOST,ch1.chtm.hinet.net,reject
 HOST,ds19.vipconnect.mx,reject
@@ -522,6 +523,7 @@ HOST,speedtest.netcup.at,reject
 HOST,speedtest.netone.nl,reject
 HOST,speedtest.newsxs.nl,reject
 HOST,speedtest.nocix.net,reject
+HOST,speedtest.nwlab.org,reject
 HOST-SUFFIX,speedtest.orange.fr,reject
 HOST-SUFFIX,speedtest.orange.pl,reject
 HOST,speedtest.osage.net,reject
@@ -1545,6 +1547,7 @@ HOST,speedtest2.digimobil.es,reject
 HOST,speedtest2.il.mycci.net,reject
 HOST,speedtest2.openfiber.it,reject
 HOST,speedtest2.pa.mycci.net,reject
+HOST,speedtest3nl.quickqc.nl,reject
 HOST,speedtest4.digimobil.es,reject
 HOST,speedtest5.fybercom.net,reject
 HOST,speedtest6.digimobil.es,reject
@@ -1695,6 +1698,7 @@ HOST,speedtest.cadence.net.uk,reject
 HOST,speedtest.chisholmbb.com,reject
 HOST,speedtest.citytelecom.ru,reject
 HOST,speedtest.connectzone.in,reject
+HOST,speedtest.dacomfibra.com,reject
 HOST,speedtest.datafex.com.tr,reject
 HOST,speedtest.del.excitel.in,reject
 HOST,speedtest.deltacable.com,reject
@@ -2456,9 +2460,11 @@ HOST,gh-speedtest.homeplus.net.tw,reject
 HOST,hk-bgp-speedtest.nearoute.io,reject
 HOST,hmc-speedtest.northstate.net,reject
 HOST,iad-eqx10-ookla-1.99.network,reject
+HOST,imrteixeira.brsserver.com.br,reject
 HOST,kl-speedtest.homeplus.net.tw,reject
 HOST,koreaspeedtest.cmctelecom.vn,reject
 HOST,ks-speedtest.homeplus.net.tw,reject
+HOST,kzspeedtest01.aunalytics.com,reject
 HOST,ldc01-speedtest.whipcord.com,reject
 HOST,lg-speedtest.homeplus.net.tw,reject
 HOST,lifitelecom.brsserver.com.br,reject

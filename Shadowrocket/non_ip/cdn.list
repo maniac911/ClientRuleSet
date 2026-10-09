@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-07T12:43:36.207Z
-# Size: 83
+# Last Updated: 2026-10-09T06:50:19.102Z
+# Size: 84
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:KCMNVx6wjMomZC3b7TNug8kSx6dqwfabz7UkLHTLFHU$
+# $content-hash-v1$:YNj_qsWNjH6EK3UEPvSLrbRcqE41J-xERfvKJ8sX2nY$
 #########################################
 DOMAIN,cdn-msp.jmcomic.me
 DOMAIN,cdn-msp.18comic.org
@@ -93,4 +93,5 @@ DOMAIN-WILDCARD,fastly-*.allmovie.com
 DOMAIN-WILDCARD,cdn*.porn87.com
 DOMAIN-WILDCARD,cdn*.pornhost.com
 DOMAIN-WILDCARD,cdn*.boysfood.com
+DOMAIN-WILDCARD,rum-ingest.*.signalfx.com
 ################## EOF ##################

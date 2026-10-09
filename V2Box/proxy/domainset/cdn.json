@@ -983,6 +983,7 @@
       "assets.toot.cafe",
       "assets.twitch.tv",
       "assets.upload.io",
+      "assets.vanta.com",
       "assets.vogue.com",
       "assets.volvo.com",
       "assets.xmind.net",
@@ -1228,8 +1229,7 @@
       "video.cdnbye.com",
       "vip.dytt-img.com",
       "w.soundcloud.com",
-      "web-cdn.bsky.app",
-      "ws-cdn.nperf.com"
+      "web-cdn.bsky.app"
     ]
   },
   {
@@ -1241,6 +1241,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 4 · proxy",
     "isEnable": true,
     "list": [
+      "ws-cdn.nperf.com",
       "www.fumadocs.dev",
       "a.kickstarter.com",
       "amp.akamaized.net",
@@ -1437,6 +1438,7 @@
       "media.ettoday.net",
       "media.nngroup.com",
       "media.nownews.com",
+      "n.approveit.today",
       "netlify.apollo.io",
       "ocsp.comodoca.com",
       "ocsp.digicert.com",
@@ -1638,9 +1640,7 @@
       "favicon.yandex.net",
       "files.gempages.net",
       "flows.trysavvy.com",
-      "fonts.codeberg.org",
-      "genesis-cdn.ff.com",
-      "global.divhunt.com"
+      "fonts.codeberg.org"
     ]
   },
   {
@@ -1652,6 +1652,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 5 · proxy",
     "isEnable": true,
     "list": [
+      "genesis-cdn.ff.com",
+      "global.divhunt.com",
       "graph.facebook.com",
       "hawk.tomsguide.com",
       "headway-widget.net",
@@ -2049,9 +2051,7 @@
       "static.gigabyte.com",
       "static.goaffpro.com",
       "static.mendeley.com",
-      "static.monotype.com",
-      "static.mypikpak.com",
-      "static.narrativ.com"
+      "static.monotype.com"
     ]
   },
   {
@@ -2063,6 +2063,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 6 · proxy",
     "isEnable": true,
     "list": [
+      "static.mypikpak.com",
+      "static.narrativ.com",
       "static.nicehash.com",
       "static.onlyfans.com",
       "static.opensuse.org",
@@ -2460,9 +2462,7 @@
       "font-public.canva.com",
       "front-resource.fs.com",
       "gitpkg-fork.vercel.sh",
-      "i.creativecommons.org",
-      "icms-image.slatic.net",
-      "image-cdn.porndig.com"
+      "i.creativecommons.org"
     ]
   },
   {
@@ -2474,6 +2474,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 7 · proxy",
     "isEnable": true,
     "list": [
+      "icms-image.slatic.net",
+      "image-cdn.porndig.com",
       "image.ship.vercel.com",
       "image.theregister.com",
       "image.worthepenny.com",
@@ -2871,9 +2873,7 @@
       "media.pointandplace.com",
       "ni-assets.azureedge.net",
       "p-cdnstatic.svc.litv.tv",
-      "packages.jetbrains.team",
-      "pplx-res.cloudinary.com",
-      "prod.addictinggames.com"
+      "packages.jetbrains.team"
     ]
   },
   {
@@ -2885,6 +2885,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · proxy",
     "isEnable": true,
     "list": [
+      "pplx-res.cloudinary.com",
+      "prod.addictinggames.com",
       "profile-images.xing.com",
       "rbds-static.redbull.com",
       "rebound.postmarkapp.com",
@@ -3272,6 +3274,7 @@
       "prego-cache.prod.sketch.com",
       "public-pages.cbinsights.com",
       "resources-live.sketch.cloud",
+      "rum-ingest.us1.signalfx.com",
       "safebrowsing.googleapis.com",
       "sessions-bugsnag.docker.com",
       "solve-widget.forethought.ai",
@@ -3280,11 +3283,8 @@
       "static-mh.content.disney.io",
       "static-production.npmjs.com",
       "static-webfonts.myfonts.com",
-      "static.captcha-delivery.com",
-      "sts.online.visualstudio.com",
-      "tvdownloaddw-a.akamaihd.net",
-      "typescript.visualstudio.com",
-      "web-static.pages.iheart.com"
+      "static.acm.account.sony.com",
+      "static.captcha-delivery.com"
     ]
   },
   {
@@ -3296,6 +3296,10 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · proxy",
     "isEnable": true,
     "list": [
+      "sts.online.visualstudio.com",
+      "tvdownloaddw-a.akamaihd.net",
+      "typescript.visualstudio.com",
+      "web-static.pages.iheart.com",
       "web-toolbar.playstation.com",
       "webappassets.smartsheet.com",
       "xpaywalletcdn.azureedge.net",

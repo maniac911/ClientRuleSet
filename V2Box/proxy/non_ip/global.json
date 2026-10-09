@@ -444,6 +444,7 @@
       "regexp:(^|\\.)upjav\\.org$",
       "regexp:(^|\\.)v2fly\\.org$",
       "regexp:(^|\\.)v2ray\\.com$",
+      "regexp:(^|\\.)vanta\\.com$",
       "regexp:(^|\\.)viber\\.com$",
       "regexp:(^|\\.)vimeo\\.com$",
       "regexp:(^|\\.)waymo\\.com$",
@@ -835,8 +836,7 @@
       "regexp:(^|\\.)github\\.media$",
       "regexp:(^|\\.)gmodules\\.com$",
       "regexp:(^|\\.)gofundme\\.com$",
-      "regexp:(^|\\.)grammarly\\.io$",
-      "regexp:(^|\\.)hanimeone\\.me$"
+      "regexp:(^|\\.)grammarly\\.io$"
     ]
   },
   {
@@ -848,6 +848,7 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 3 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)hanimeone\\.me$",
       "regexp:(^|\\.)hqporner\\.com$",
       "regexp:(^|\\.)huffpost\\.com$",
       "regexp:(^|\\.)iboysoft\\.com$",
@@ -1114,6 +1115,7 @@
       "regexp:(^|\\.)wikisource\\.org$",
       "regexp:(^|\\.)wikivoyage\\.org$",
       "regexp:(^|\\.)wiktionary\\.org$",
+      "regexp:(^|\\.)approveit\\.today$",
       "regexp:(^|\\.)cosplay-jav\\.com$",
       "regexp:(^|\\.)crashlytics\\.com$",
       "regexp:(^|\\.)crunchyroll\\.com$",
@@ -1205,6 +1207,7 @@
       "regexp:(^|\\.)shutterstock\\.com$",
       "regexp:(^|\\.)spankingtube\\.com$",
       "regexp:(^|\\.)surfsharkdns\\.com$",
+      "regexp:(^|\\.)surveymonkey\\.com$",
       "regexp:(^|\\.)thepiratebay\\.org$",
       "regexp:(^|\\.)tokto-motion\\.net$",
       "regexp:(^|\\.)vesselfinder\\.com$",
@@ -1244,10 +1247,7 @@
       "regexp:(^|\\.)cloudflareapps\\.com$",
       "regexp:(^|\\.)cloudfunctions\\.net$",
       "regexp:(^|\\.)dnsleak\\.asn247\\.net$",
-      "regexp:(^|\\.)hubspotstarter\\.net$",
-      "regexp:(^|\\.)line-apps-beta\\.com$",
-      "regexp:(^|\\.)minecraftforum\\.net$",
-      "regexp:(^|\\.)opencollective\\.com$"
+      "regexp:(^|\\.)hubspotstarter\\.net$"
     ]
   },
   {
@@ -1259,6 +1259,9 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 4 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)line-apps-beta\\.com$",
+      "regexp:(^|\\.)minecraftforum\\.net$",
+      "regexp:(^|\\.)opencollective\\.com$",
       "regexp:(^|\\.)redtubepremium\\.com$",
       "regexp:(^|\\.)rottentomatoes\\.com$",
       "regexp:(^|\\.)smartmailcloud\\.com$",

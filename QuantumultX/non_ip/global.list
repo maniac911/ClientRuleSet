@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - General Global Services
-# Last Updated: 2026-10-07T12:43:35.972Z
-# Size: 1271
+# Last Updated: 2026-10-09T06:50:18.857Z
+# Size: 1274
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains rules for services that are NOT available inside the Mainland China.
 #
-# $content-hash-v1$:IVDj7fwwG-UOHGqzA-AvoGJYYjvcPEddC31rjpVOcB0$
+# $content-hash-v1$:A6MTWZXKmNm-FBfD2EK841p4AGfie6Xg8J-mSQ3N_Mw$
 #########################################
 HOST-SUFFIX,ac,reject
 HOST-SUFFIX,ai,reject
@@ -417,6 +417,7 @@ HOST-SUFFIX,umblr.com,reject
 HOST-SUFFIX,upjav.org,reject
 HOST-SUFFIX,v2fly.org,reject
 HOST-SUFFIX,v2ray.com,reject
+HOST-SUFFIX,vanta.com,reject
 HOST-SUFFIX,viber.com,reject
 HOST-SUFFIX,vimeo.com,reject
 HOST-SUFFIX,waymo.com,reject
@@ -1078,6 +1079,7 @@ HOST-SUFFIX,voachinese.com,reject
 HOST-SUFFIX,wikisource.org,reject
 HOST-SUFFIX,wikivoyage.org,reject
 HOST-SUFFIX,wiktionary.org,reject
+HOST-SUFFIX,approveit.today,reject
 HOST,ccmdl.adobe.com,reject
 HOST-SUFFIX,cosplay-jav.com,reject
 HOST-SUFFIX,crashlytics.com,reject
@@ -1172,6 +1174,7 @@ HOST-SUFFIX,reutersmedia.net,reject
 HOST-SUFFIX,shutterstock.com,reject
 HOST-SUFFIX,spankingtube.com,reject
 HOST-SUFFIX,surfsharkdns.com,reject
+HOST-SUFFIX,surveymonkey.com,reject
 HOST-SUFFIX,thepiratebay.org,reject
 HOST-SUFFIX,tokto-motion.net,reject
 HOST-SUFFIX,vesselfinder.com,reject
