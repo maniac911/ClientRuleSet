@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-11T06:33:01.768Z
-# Size: 4684
+# Last Updated: 2026-10-12T06:39:00.952Z
+# Size: 4685
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:Zqiuy1VQiealhO1tN7xb04MVYrV-LemSmGfWXpHVJ-8$
+# $content-hash-v1$:RDy2svDCm8nqzRX3z1YkvTu-Zub6_O0GxDyVatqVnpA$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -3098,6 +3098,7 @@ HOST,thumbs.onlyfans.com,reject
 HOST,thumbs2.sendvid.com,reject
 HOST,tile2.intervals.icu,reject
 HOST,tiles.mapillary.com,reject
+HOST,tiles.onemap.gov.sg,reject
 HOST,tileserver.b10s.net,reject
 HOST,time.cloudflare.com,reject
 HOST,tuf-repo.github.com,reject

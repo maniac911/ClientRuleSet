@@ -1,10 +1,10 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: 63aafca22f4c18c813d317489a86fad60251fc81
-Upstream base commit: 6172daf80ac3f9a1d2dbdb9ad6b559554aa8ac62
-Build-input fingerprint: d0bc196a242efe6a6f9b1326c01ec9a3bf2fae301163e4360f311bd3d3982a93
-Build timestamp (UTC): 2026-10-11T06:33:58Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/38118307757
+Built from fork source commit: 8166bb04b28c8e01f6ddc5773c35270055e0a43c
+Upstream base commit: 41655ad242be83a4f670a7ca931340f4b5356d1c
+Build-input fingerprint: 74e20e793730e6540660deaedea5b11af75580b5929bf530e9910869f4234260
+Build timestamp (UTC): 2026-10-12T06:39:58Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/38213383509
 
 Dependency lock upstream-valid: true
 Dependency lock auto-repaired: false
