@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - AIGC Domains
-# Last Updated: 2026-10-12T06:39:00.355Z
-# Size: 52
+# Last Updated: 2026-10-13T07:10:19.483Z
+# Size: 55
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains domains of OpenAI, Claude.
 #
-# $content-hash-v1$:cSEsvjvHM-7Cs6zr4RZyNUdzAVi5-FQLB1r0zLuCRGc$
+# $content-hash-v1$:TGOuidLz8lh3ce9ZzwmkZ3maQxLfJD7IPT5Xkj_PDsY$
 #########################################
 HOST-SUFFIX,g.ai,reject
 HOST-SUFFIX,x.ai,reject
@@ -44,9 +44,11 @@ HOST,jules.google.com,reject
 HOST-SUFFIX,gemini.google.com,reject
 HOST-SUFFIX,notebooklm.google,reject
 HOST,antigravity.google,reject
+HOST,server.codeium.com,reject
 HOST,aida.googleapis.com,reject
 HOST-SUFFIX,aistudio.google.com,reject
 HOST-SUFFIX,generativeai.google,reject
+HOST,inference.codeium.com,reject
 HOST-SUFFIX,makersuite.google.com,reject
 HOST-SUFFIX,notebooklm.google.com,reject
 HOST,antigravity-unleash.goog,reject
@@ -54,6 +56,7 @@ HOST-SUFFIX,geller-pa.googleapis.com,reject
 HOST,gateway.ai.cloudflare.com,reject
 HOST,aisandbox-pa.googleapis.com,reject
 HOST-SUFFIX,cloudcode-pa.googleapis.com,reject
+HOST,server.self-serve.windsurf.com,reject
 HOST,robinfrontend-pa.googleapis.com,reject
 HOST,alkalicore-pa.clients6.google.com,reject
 HOST,daily-cloudcode-pa.googleapis.com,reject
