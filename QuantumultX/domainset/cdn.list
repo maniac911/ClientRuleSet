@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-13T07:10:20.373Z
-# Size: 4685
+# Last Updated: 2026-10-15T05:20:38.374Z
+# Size: 4688
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:RDy2svDCm8nqzRX3z1YkvTu-Zub6_O0GxDyVatqVnpA$
+# $content-hash-v1$:lO4ri4ex11HmKabLRthOqhjHEZZgiSLsGHJ87PeKomg$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -1503,6 +1503,7 @@ HOST,cdn.parsely.com,reject
 HOST,cdn.perfops.net,reject
 HOST,cdn.pixabay.com,reject
 HOST,cdn.plus500.com,reject
+HOST,cdn.priv.center,reject
 HOST,cdn.privacy.com,reject
 HOST,cdn.quadpay.com,reject
 HOST,cdn.readmoo.com,reject
@@ -3526,6 +3527,7 @@ HOST,images.everyplate.com,reject
 HOST,images.findagrave.com,reject
 HOST-SUFFIX,images.hentaicity.com,reject
 HOST,images.icon-icons.com,reject
+HOST,images.macworld.co.uk,reject
 HOST,img.foresightnews.pro,reject
 HOST,imgs.search.brave.com,reject
 HOST,imgs.socialinsider.io,reject
@@ -4534,6 +4536,7 @@ HOST,cdn.designerapp.osi.office.net,reject
 HOST,cdn.quickemailverification.com,reject
 HOST,cdn.rex.contents.rakuten.co.jp,reject
 HOST,config.extension.grammarly.com,reject
+HOST,customer-first-focus.b-cdn.net,reject
 HOST,dev.visualwebsiteoptimizer.com,reject
 HOST,edgeassetservice.azureedge.net,reject
 HOST,explorer-api.walletconnect.com,reject
