@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Microsoft CDN
-# Last Updated: 2026-10-15T05:20:32.251Z
-# Size: 53
+# Last Updated: 2026-10-16T05:10:23.980Z
+# Size: 52
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -11,13 +11,12 @@
 # This file contains data from:
 #   - https://github.com/felixonmars/dnsmasq-china-list
 #
-# $content-hash-v1$:UEX-58v6yiLewCKJ9v3CalUDecEDNiGCgE8BOp_1kos$
+# $content-hash-v1$:ARt6VssKktShSkkJ98VdTeSRV6IyLRVaMoF0Zay59I8$
 #########################################
 HOST-SUFFIX,sdx.microsoft.com,reject
 HOST,res.cdn.office.net,reject
 HOST,res-1.cdn.office.net,reject
 HOST,res-2.cdn.office.net,reject
-HOST-SUFFIX,download.microsoft.com,reject
 HOST-SUFFIX,b.c2r.ts.cdn.office.net,reject
 HOST-SUFFIX,ctldl.windowsupdate.com,reject
 HOST-SUFFIX,f.c2r.ts.cdn.office.net,reject
