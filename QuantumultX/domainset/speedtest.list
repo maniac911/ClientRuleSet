@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-16T05:10:21.554Z
-# Size: 3432
+# Last Updated: 2026-10-17T05:04:46.897Z
+# Size: 3435
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:9J6VeWhIG-IK61RsjbQfhf6aGQ8pinyCugrT258nX0E$
+# $content-hash-v1$:XoZkbKz-VAZu_v8lXq253ruVsENGEU0x0lHlNPKVuhw$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -557,6 +557,7 @@ HOST,speedtest.xsnews.nl,reject
 HOST,speedtest.xxlnet.nl,reject
 HOST,speedtest1.claro.cr,reject
 HOST,speedtest1.co-fi.es,reject
+HOST,speedtest2.co-fi.es,reject
 HOST,speedtest2.telin.sg,reject
 HOST,speedtest3.dacor.de,reject
 HOST-SUFFIX,speedtestcustom.com,reject
@@ -3106,6 +3107,7 @@ HOST,ookla-london.briantbroadband.com,reject
 HOST,ookla-london01.tropicalgames.net,reject
 HOST,ookla.jgainterlinktelecom.com.br,reject
 HOST,ooklaspeedtest.wilcowireless.com,reject
+HOST,pri-r450-speedtest.metrocomm.com,reject
 HOST,puteaux3.d2m.c2d.liveservices.fr,reject
 HOST,qoeookla-mimi-01.sys.comcast.net,reject
 HOST,qoeookla-ncst-01.sys.comcast.net,reject
@@ -3379,6 +3381,7 @@ HOST,sfosj0096speedtestserver02.wiline.com,reject
 HOST,speedtest-eastburwood.optusnet.com.au,reject
 HOST,speedtest-germany.veribarindir.com.tr,reject
 HOST,speedtest-sydney.macquarietelecom.com,reject
+HOST,speedtest.fiberlinksolutionsltd.co.ke,reject
 HOST,speedtest.mumbai.charotarbroadband.in,reject
 HOST,speedtest01-cty-gfld-ma-prod.gcet.net,reject
 HOST,speedtest1.ric1.va.hostedbackbone.net,reject

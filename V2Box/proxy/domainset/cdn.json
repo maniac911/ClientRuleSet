@@ -2536,6 +2536,7 @@
       "services.linkfire.com",
       "sig.grumpybumpers.com",
       "siloh-ns1.plutotv.net",
+      "sl3-cdn.karousell.com",
       "speedmedia2.jfrog.com",
       "st3.depositphotos.com",
       "start-page.buffer.com",
@@ -2702,6 +2703,7 @@
       "media.steampowered.com",
       "megapx-assets.dcard.tw",
       "moderate.cleantalk.org",
+      "mweb-cdn.karousell.com",
       "newassets.hcaptcha.com",
       "nodeassets.nbcnews.com",
       "parts.blog.livedoor.jp",
@@ -2871,9 +2873,7 @@
       "media-cdn.epicgames.com",
       "media-cms.onesignal.com",
       "media-process.hibob.com",
-      "media.contentapi.ea.com",
-      "media.geeksforgeeks.org",
-      "media.nbclosangeles.com"
+      "media.contentapi.ea.com"
     ]
   },
   {
@@ -2885,6 +2885,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · proxy",
     "isEnable": true,
     "list": [
+      "media.geeksforgeeks.org",
+      "media.nbclosangeles.com",
       "media.pointandplace.com",
       "ni-assets.azureedge.net",
       "p-cdnstatic.svc.litv.tv",
@@ -3282,9 +3284,7 @@
       "safebrowsing.googleapis.com",
       "sessions-bugsnag.docker.com",
       "solve-widget.forethought.ai",
-      "sourcepoint.theguardian.com",
-      "static-homepage-en.pluto.tv",
-      "static-mh.content.disney.io"
+      "sourcepoint.theguardian.com"
     ]
   },
   {
@@ -3296,6 +3296,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · proxy",
     "isEnable": true,
     "list": [
+      "static-homepage-en.pluto.tv",
+      "static-mh.content.disney.io",
       "static-production.npmjs.com",
       "static-webfonts.myfonts.com",
       "static.acm.account.sony.com",
