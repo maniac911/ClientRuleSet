@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-17T05:04:48.257Z
-# Size: 4691
+# Last Updated: 2026-10-20T05:25:53.737Z
+# Size: 4694
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:TMoo_bLpjM4I58Q-_eNAA9fCRY9AB6E01yvrvUVHQnI$
+# $content-hash-v1$:WnO3xtRGTnrvWwup3mneYz15YpyNorOPJdwx4Dj82M0$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -2781,6 +2781,7 @@ HOST,upload.teftera.com,reject
 HOST,uploads.guim.co.uk,reject
 HOST,uploads.linear.app,reject
 HOST,v2uploads.zopim.io,reject
+HOST,vcc-assets.8x8.com,reject
 HOST,vector.hereapi.com,reject
 HOST,video3.mingpao.com,reject
 HOST,videos.elephas.app,reject
@@ -3008,6 +3009,7 @@ HOST,media.karousell.com,reject
 HOST,media.newyorker.com,reject
 HOST,media.shopimind.com,reject
 HOST-SUFFIX,media.strapiapp.com,reject
+HOST,media.trekbikes.com,reject
 HOST,medium-media.vgm.io,reject
 HOST-SUFFIX,motherlessmedia.com,reject
 HOST-SUFFIX,msftconnecttest.com,reject
@@ -3509,6 +3511,7 @@ HOST-SUFFIX,fimfiction-static.net,reject
 HOST,font-public.canva.com,reject
 HOST-SUFFIX,framerusercontent.com,reject
 HOST,front-resource.fs.com,reject
+HOST,frontend2.locally.com,reject
 HOST-SUFFIX,gateway.serph.network,reject
 HOST-SUFFIX,githubusercontent.com,reject
 HOST,gitpkg-fork.vercel.sh,reject

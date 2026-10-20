@@ -566,6 +566,7 @@
       "regexp:(^|\\.)nextjs\\.org$",
       "regexp:(^|\\.)nikkei\\.com$",
       "regexp:(^|\\.)nitter\\.net$",
+      "regexp:(^|\\.)notion\\.com$",
       "regexp:(^|\\.)nypost\\.com$",
       "regexp:(^|\\.)oculus\\.com$",
       "regexp:(^|\\.)odysee\\.com$",
@@ -835,8 +836,7 @@
       "regexp:(^|\\.)ghostery\\.com$",
       "regexp:(^|\\.)github\\.media$",
       "regexp:(^|\\.)gmodules\\.com$",
-      "regexp:(^|\\.)gofundme\\.com$",
-      "regexp:(^|\\.)grammarly\\.io$"
+      "regexp:(^|\\.)gofundme\\.com$"
     ]
   },
   {
@@ -848,6 +848,7 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 3 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)grammarly\\.io$",
       "regexp:(^|\\.)hanimeone\\.me$",
       "regexp:(^|\\.)hqporner\\.com$",
       "regexp:(^|\\.)huffpost\\.com$",
@@ -1246,8 +1247,7 @@
       "regexp:(^|\\.)cloudflare-dns\\.com$",
       "regexp:(^|\\.)cloudflareapps\\.com$",
       "regexp:(^|\\.)cloudfunctions\\.net$",
-      "regexp:(^|\\.)dnsleak\\.asn247\\.net$",
-      "regexp:(^|\\.)hubspotstarter\\.net$"
+      "regexp:(^|\\.)dnsleak\\.asn247\\.net$"
     ]
   },
   {
@@ -1259,6 +1259,7 @@
     "remark": "ClientRuleSet non_ip/global · DOMAIN-SUFFIX 4 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)hubspotstarter\\.net$",
       "regexp:(^|\\.)line-apps-beta\\.com$",
       "regexp:(^|\\.)minecraftforum\\.net$",
       "regexp:(^|\\.)opencollective\\.com$",

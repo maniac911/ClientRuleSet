@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-17T05:04:46.897Z
-# Size: 3435
+# Last Updated: 2026-10-20T05:25:51.319Z
+# Size: 3443
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:XoZkbKz-VAZu_v8lXq253ruVsENGEU0x0lHlNPKVuhw$
+# $content-hash-v1$:kZkbVX9xHc3HPZ8M3kvnPKavwox_vuyWR19Q-vjrtms$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -93,6 +93,7 @@ HOST,st.ruinet.work,reject
 HOST,st1.ligtel.com,reject
 HOST,str.seyfert.in,reject
 HOST,test.intred.it,reject
+HOST,de.riospeed.com,reject
 HOST,istanbul.sth.tr,reject
 HOST,ld1.vayutel.net,reject
 HOST,lg-ffm.aeza.net,reject
@@ -1597,6 +1598,7 @@ HOST,stmarkham.netcrawler.ca,reject
 HOST,storillia.netcrawler.ca,reject
 HOST,stvaughan.netcrawler.ca,reject
 HOST,stwibermad.mismenet.net,reject
+HOST,syd.speedtest.pttnz.net,reject
 HOST,test.beamtelecom.com.br,reject
 HOST-SUFFIX,test.gslnetworks.com.au,reject
 HOST,testdebit.regivision.fr,reject
@@ -2674,6 +2676,10 @@ HOST,miaspeedtest.blackburn-pr.com,reject
 HOST,mum-speedtest.sanghviinfo.com,reject
 HOST,netservice01.ber01.lwlcom.net,reject
 HOST,ntp-speedtest.homeplus.net.tw,reject
+HOST,ookla-dc3.services.proxad.net,reject
+HOST,ookla-dc5.services.proxad.net,reject
+HOST,ookla-lyo.services.proxad.net,reject
+HOST,ookla-mrs.services.proxad.net,reject
 HOST,ookla-toronto.aerioncloud.com,reject
 HOST,sea-speedtest.net.sangoma.net,reject
 HOST,sgp-speedtest.limtechlabs.top,reject
@@ -3111,6 +3117,7 @@ HOST,pri-r450-speedtest.metrocomm.com,reject
 HOST,puteaux3.d2m.c2d.liveservices.fr,reject
 HOST,qoeookla-mimi-01.sys.comcast.net,reject
 HOST,qoeookla-ncst-01.sys.comcast.net,reject
+HOST,qoeookla-rmnd-01.sys.comcast.net,reject
 HOST,ran-r450-speedtest.metrocomm.com,reject
 HOST,reunion3.d2m.c2d.liveservices.fr,reject
 HOST,sam1speedtest.turktelekom.com.tr,reject
@@ -3356,6 +3363,7 @@ HOST,speedtest.sandiego.intrepidfiber.com,reject
 HOST,speedtest.sea.accretive-networks.net,reject
 HOST,speedtest.singapore.globalxtreme.net,reject
 HOST,speedtest.sonepat.softechinfosol.com,reject
+HOST,speedtest.syd.managednetworks.com.au,reject
 HOST,speedtest01.srv.asbnva.alticeusa.net,reject
 HOST,speedtest01.srv.chcgil.alticeusa.net,reject
 HOST,speedtest01.srv.dllstx.alticeusa.net,reject

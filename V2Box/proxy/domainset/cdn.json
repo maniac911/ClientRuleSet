@@ -1802,6 +1802,7 @@
       "uploads.guim.co.uk",
       "uploads.linear.app",
       "v2uploads.zopim.io",
+      "vcc-assets.8x8.com",
       "vector.hereapi.com",
       "video3.mingpao.com",
       "videos.elephas.app",
@@ -2004,6 +2005,7 @@
       "media.karousell.com",
       "media.newyorker.com",
       "media.shopimind.com",
+      "media.trekbikes.com",
       "medium-media.vgm.io",
       "mstdn-s3.o3o.studio",
       "openseauserdata.com",
@@ -2049,9 +2051,7 @@
       "static.euronews.com",
       "static.formula1.com",
       "static.getbutton.io",
-      "static.giffgaff.com",
-      "static.gigabyte.com",
-      "static.goaffpro.com"
+      "static.giffgaff.com"
     ]
   },
   {
@@ -2063,6 +2063,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 6 · proxy",
     "isEnable": true,
     "list": [
+      "static.gigabyte.com",
+      "static.goaffpro.com",
       "static.mendeley.com",
       "static.monotype.com",
       "static.mypikpak.com",
@@ -2460,9 +2462,7 @@
       "events-live.apple.com",
       "files.mastodon.online",
       "files.mastodon.social",
-      "files.scamadviser.com",
-      "files.writefreely.org",
-      "font-public.canva.com"
+      "files.scamadviser.com"
     ]
   },
   {
@@ -2474,7 +2474,10 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 7 · proxy",
     "isEnable": true,
     "list": [
+      "files.writefreely.org",
+      "font-public.canva.com",
       "front-resource.fs.com",
+      "frontend2.locally.com",
       "gitpkg-fork.vercel.sh",
       "i.creativecommons.org",
       "icms-image.slatic.net",
@@ -2870,10 +2873,7 @@
       "livemap-tiles1.waze.com",
       "mangaz-static.j-comi.jp",
       "media-cdn.atlassian.com",
-      "media-cdn.epicgames.com",
-      "media-cms.onesignal.com",
-      "media-process.hibob.com",
-      "media.contentapi.ea.com"
+      "media-cdn.epicgames.com"
     ]
   },
   {
@@ -2885,6 +2885,9 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · proxy",
     "isEnable": true,
     "list": [
+      "media-cms.onesignal.com",
+      "media-process.hibob.com",
+      "media.contentapi.ea.com",
       "media.geeksforgeeks.org",
       "media.nbclosangeles.com",
       "media.pointandplace.com",
@@ -3281,10 +3284,7 @@
       "public-pages.cbinsights.com",
       "resources-live.sketch.cloud",
       "rum-ingest.us1.signalfx.com",
-      "safebrowsing.googleapis.com",
-      "sessions-bugsnag.docker.com",
-      "solve-widget.forethought.ai",
-      "sourcepoint.theguardian.com"
+      "safebrowsing.googleapis.com"
     ]
   },
   {
@@ -3296,6 +3296,9 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · proxy",
     "isEnable": true,
     "list": [
+      "sessions-bugsnag.docker.com",
+      "solve-widget.forethought.ai",
+      "sourcepoint.theguardian.com",
       "static-homepage-en.pluto.tv",
       "static-mh.content.disney.io",
       "static-production.npmjs.com",
