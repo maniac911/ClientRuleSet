@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Large Files Hosting Domains
-# Last Updated: 2026-10-20T05:25:53.738Z
-# Size: 1972
+# Last Updated: 2026-10-21T05:24:11.858Z
+# Size: 1971
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains domains for software updating & large file hosting.
 #
-# $content-hash-v1$:PpH_UgupmiKUxhwPdtz7cOsdKIpXM0svcAViBsPD7sU$
+# $content-hash-v1$:Gk42XjuTtQufBeACVtvzs5mbI0JrZIdlSgVT-HVHzuc$
 #########################################
 HOST-SUFFIX,gcr.io,reject
 HOST,ghp.ci,reject
@@ -1026,7 +1026,6 @@ HOST,packages.termux.dev,reject
 HOST,pubmirror.plutex.de,reject
 HOST,release.runcloud.io,reject
 HOST,releases.claude.com,reject
-HOST,releases.openai.com,reject
 HOST,replicate.npmjs.com,reject
 HOST,repo.extreme-ix.org,reject
 HOST-SUFFIX,s3-website.cloud.ru,reject

@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-20T05:25:53.737Z
-# Size: 4694
+# Last Updated: 2026-10-21T05:24:11.857Z
+# Size: 4696
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:WnO3xtRGTnrvWwup3mneYz15YpyNorOPJdwx4Dj82M0$
+# $content-hash-v1$:r3cqh-K1rSEm6PvDDAfG3_o_tbnrCkNE69sUml1RlU8$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -2012,6 +2012,7 @@ HOST,media3.giphy.com,reject
 HOST,media4.giphy.com,reject
 HOST-SUFFIX,meetupstatic.com,reject
 HOST,meteorclient.com,reject
+HOST,metrics.manus.im,reject
 HOST-SUFFIX,mirror-media.xyz,reject
 HOST-SUFFIX,neweggimages.com,reject
 HOST,ocsp.godaddy.com,reject
@@ -3991,6 +3992,7 @@ HOST,scripts.dailymail.co.uk,reject
 HOST,server.arcgisonline.com,reject
 HOST,static-assets.juksy.com,reject
 HOST,static-images.remax.com,reject
+HOST,static-page.tp-link.com,reject
 HOST,static.chrome-stats.com,reject
 HOST,static.fastboostcdn.com,reject
 HOST,static.filestackapi.com,reject

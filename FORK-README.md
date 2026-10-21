@@ -1,15 +1,15 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: 41d90650e1d12cc6b42de083b03d03afdc7bcd35
-Upstream base commit: 395fb20a404b49523a526371049702c6098da649
-Build-input fingerprint: ed375f07fd1d1c840b31762090fbafb8080e119d4b241099b29c15b6c90ae179
-Build timestamp (UTC): 2026-10-20T05:26:54Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/39374650463
+Built from fork source commit: db48d0aefb25aab3949bbe17b8800eeb89ebbc67
+Upstream base commit: 261376b5e4e4b49ee7b0fdb510648f9146e6a6d7
+Build-input fingerprint: ff7f4f5ba00fdfc4d221bcbd965ab1b1f7ce12689e294ffc60724d30e389103d
+Build timestamp (UTC): 2026-10-21T05:25:11Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/39549138792
 
 Dependency lock upstream-valid: true
 Dependency lock auto-repaired: false
-Dependency source lock SHA256: b2d7aece6a5b10bfcd55181b919423745de95eb3876eea9d941d4a901e208a93
-Dependency resolved lock SHA256: b2d7aece6a5b10bfcd55181b919423745de95eb3876eea9d941d4a901e208a93
+Dependency source lock SHA256: 3fececbb58143fb82f7c810f20f41c7ca6dce3f549b5d59a7358bebeb4bcc65a
+Dependency resolved lock SHA256: 3fececbb58143fb82f7c810f20f41c7ca6dce3f549b5d59a7358bebeb4bcc65a
 
 sing-box compiler release: v1.14.3
 sing-box compiler image: ghcr.io/sagernet/sing-box:v1.14.3

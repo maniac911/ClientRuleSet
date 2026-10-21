@@ -1153,6 +1153,7 @@
       "media3.giphy.com",
       "media4.giphy.com",
       "meteorclient.com",
+      "metrics.manus.im",
       "ocsp.godaddy.com",
       "ocsp.sectigo.com",
       "origin.picgo.net",
@@ -1228,8 +1229,7 @@
       "twenty-icons.com",
       "typeface.nyt.com",
       "ui.trailhead.com",
-      "video.cdnbye.com",
-      "vip.dytt-img.com"
+      "video.cdnbye.com"
     ]
   },
   {
@@ -1241,6 +1241,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 4 · block",
     "isEnable": true,
     "list": [
+      "vip.dytt-img.com",
       "w.soundcloud.com",
       "web-cdn.bsky.app",
       "ws-cdn.nperf.com",
@@ -1639,8 +1640,7 @@
       "embed.savvycal.com",
       "embed.typeform.com",
       "emoji-css.afeld.me",
-      "favicon.yandex.net",
-      "files.gempages.net"
+      "favicon.yandex.net"
     ]
   },
   {
@@ -1652,6 +1652,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 5 · block",
     "isEnable": true,
     "list": [
+      "files.gempages.net",
       "flows.trysavvy.com",
       "fonts.codeberg.org",
       "genesis-cdn.ff.com",
@@ -2050,8 +2051,7 @@
       "static.esimplus.net",
       "static.euronews.com",
       "static.formula1.com",
-      "static.getbutton.io",
-      "static.giffgaff.com"
+      "static.getbutton.io"
     ]
   },
   {
@@ -2063,6 +2063,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 6 · block",
     "isEnable": true,
     "list": [
+      "static.giffgaff.com",
       "static.gigabyte.com",
       "static.goaffpro.com",
       "static.mendeley.com",
@@ -2461,8 +2462,7 @@
       "event-assets.gsma.com",
       "events-live.apple.com",
       "files.mastodon.online",
-      "files.mastodon.social",
-      "files.scamadviser.com"
+      "files.mastodon.social"
     ]
   },
   {
@@ -2474,6 +2474,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 7 · block",
     "isEnable": true,
     "list": [
+      "files.scamadviser.com",
       "files.writefreely.org",
       "font-public.canva.com",
       "front-resource.fs.com",
@@ -2872,8 +2873,7 @@
       "lecontent.sololearn.com",
       "livemap-tiles1.waze.com",
       "mangaz-static.j-comi.jp",
-      "media-cdn.atlassian.com",
-      "media-cdn.epicgames.com"
+      "media-cdn.atlassian.com"
     ]
   },
   {
@@ -2885,6 +2885,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · block",
     "isEnable": true,
     "list": [
+      "media-cdn.epicgames.com",
       "media-cms.onesignal.com",
       "media-process.hibob.com",
       "media.contentapi.ea.com",
@@ -2908,6 +2909,7 @@
       "server.arcgisonline.com",
       "static-assets.juksy.com",
       "static-images.remax.com",
+      "static-page.tp-link.com",
       "static.chrome-stats.com",
       "static.fastboostcdn.com",
       "static.filestackapi.com",
@@ -3282,9 +3284,7 @@
       "player-frontend.cnevids.com",
       "prego-cache.prod.sketch.com",
       "public-pages.cbinsights.com",
-      "resources-live.sketch.cloud",
-      "rum-ingest.us1.signalfx.com",
-      "safebrowsing.googleapis.com"
+      "resources-live.sketch.cloud"
     ]
   },
   {
@@ -3296,6 +3296,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · block",
     "isEnable": true,
     "list": [
+      "rum-ingest.us1.signalfx.com",
+      "safebrowsing.googleapis.com",
       "sessions-bugsnag.docker.com",
       "solve-widget.forethought.ai",
       "sourcepoint.theguardian.com",
