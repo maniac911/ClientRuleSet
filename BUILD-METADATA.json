@@ -1,15 +1,15 @@
 {
-  "source_sha": "db48d0aefb25aab3949bbe17b8800eeb89ebbc67",
-  "upstream_sha": "261376b5e4e4b49ee7b0fdb510648f9146e6a6d7",
-  "build_input_fingerprint": "ff7f4f5ba00fdfc4d221bcbd965ab1b1f7ce12689e294ffc60724d30e389103d",
-  "built_at": "2026-10-21T05:25:11Z",
-  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/39549138792",
+  "source_sha": "7f797ef17fb844196a6dd041bc7dd2b946e6c324",
+  "upstream_sha": "ce425491ed5ac4b3904fee36403a84c026722120",
+  "build_input_fingerprint": "caeaf860dff58b4178f7757b86ed34e093aa6edb44e746ce83e2a902f76fe3fd",
+  "built_at": "2026-10-22T05:30:41Z",
+  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/39728027210",
   "strict_binary_compilation": true,
   "dependency_lock": {
     "upstream_lockfile_was_valid": true,
     "auto_repaired": false,
-    "source_sha256": "3fececbb58143fb82f7c810f20f41c7ca6dce3f549b5d59a7358bebeb4bcc65a",
-    "resolved_sha256": "3fececbb58143fb82f7c810f20f41c7ca6dce3f549b5d59a7358bebeb4bcc65a"
+    "source_sha256": "669ba46a4b080c141912c6c0056150e0e9f5fc367ee514732941b2a300a2983d",
+    "resolved_sha256": "669ba46a4b080c141912c6c0056150e0e9f5fc367ee514732941b2a300a2983d"
   },
   "output_counts": {
     "srs": 144,
@@ -25,9 +25,9 @@
     }
   },
   "mihomo": {
-    "release": "v1.19.32",
-    "image": "docker.io/metacubex/mihomo:v1.19.32",
-    "digest": "metacubex/mihomo@sha256:bac1a74de365ea59270ba134016762c6be05654d55246518de256113bd1c225e",
+    "release": "v1.19.33",
+    "image": "docker.io/metacubex/mihomo:v1.19.33",
+    "digest": "metacubex/mihomo@sha256:9211361a3ed85305383288d38c05e85862d6d5a590c10007c37fc059cca82e9c",
     "summary": {
       "domainMRS": 10,
       "domainText": 1,

@@ -4317,6 +4317,7 @@
       "regexp:(^|\\.)targetimg1\\.com$",
       "regexp:(^|\\.)teraboxcdn\\.com$",
       "regexp:(^|\\.)torproject\\.org$",
+      "regexp:(^|\\.)trvl-media\\.com$",
       "regexp:(^|\\.)typography\\.com$",
       "regexp:(^|\\.)ungrounded\\.net$",
       "regexp:(^|\\.)vanillicon\\.com$",
@@ -4381,8 +4382,7 @@
       "regexp:(^|\\.)schemastore\\.org$",
       "regexp:(^|\\.)shoplineimg\\.com$",
       "regexp:(^|\\.)skypeassets\\.com$",
-      "regexp:(^|\\.)splunkcloud\\.com$",
-      "regexp:(^|\\.)stack\\.imgur\\.com$"
+      "regexp:(^|\\.)splunkcloud\\.com$"
     ]
   },
   {
@@ -4394,6 +4394,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 3 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)stack\\.imgur\\.com$",
       "regexp:(^|\\.)stackassets\\.com$",
       "regexp:(^|\\.)staticblitz\\.com$",
       "regexp:(^|\\.)staticimgly\\.com$",
@@ -4564,6 +4565,7 @@
       "regexp:(^|\\.)static\\.mega\\.co\\.nz$",
       "regexp:(^|\\.)steemitimages\\.com$",
       "regexp:(^|\\.)transcend-cdn\\.com$",
+      "regexp:(^|\\.)travel-assets\\.com$",
       "regexp:(^|\\.)videodelivery\\.net$",
       "regexp:(^|\\.)walmartimages\\.com$",
       "regexp:(^|\\.)website-files\\.com$",
@@ -4791,9 +4793,7 @@
       "regexp:(^|\\.)hubspotusercontent-na1\\.net$",
       "regexp:(^|\\.)myanalytics\\.cdn\\.office\\.net$",
       "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$",
-      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$",
-      "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
-      "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$"
+      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$"
     ]
   },
   {
@@ -4805,6 +4805,8 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 4 · direct",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
+      "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$",
       "regexp:(^|\\.)design-system\\.economist\\.com$",
       "regexp:(^|\\.)ipfsgateway\\.makersplace\\.com$",
       "regexp:(^|\\.)siteintercept\\.qualtrics\\.com$",
