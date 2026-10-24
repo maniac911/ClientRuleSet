@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-22T05:29:04.570Z
-# Size: 3444
+# Last Updated: 2026-10-24T05:07:44.364Z
+# Size: 3449
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:KCZYXTI3iwOGArKNoan7utXx8W3OPj5mhPHxDln9MzI$
+# $content-hash-v1$:gzmBI9qOe6I6rFQ9qoOdXbkmKRaYmNRv__dS-g5_Jmc$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -70,6 +70,7 @@ HOST,de-lg.h2.nexus,reject
 HOST,nl.tanhost.com,reject
 HOST,ny1.ocean.host,reject
 HOST,o-uk-1.flwc.cc,reject
+HOST,ookla.alida.it,reject
 HOST-SUFFIX,ookla.bytel.fr,reject
 HOST,owst.gilat.net,reject
 HOST,perf.keyyo.net,reject
@@ -635,6 +636,7 @@ HOST,ookla.snt.utwente.nl,reject
 HOST,ookla.svw.as6453.net,reject
 HOST,ookla.tv2.as6453.net,reject
 HOST,ookla.xponnet.com.br,reject
+HOST,perf1.moji1.sapi.net,reject
 HOST,pl-1.node.delton.ovh,reject
 HOST,qspt.technofiber.net,reject
 HOST,scnx-ng01.homesc.com,reject
@@ -2265,6 +2267,7 @@ HOST,testvelocidadten.orange.es,reject
 HOST,testvelocidadval.orange.es,reject
 HOST,testvelocidadvld.orange.es,reject
 HOST,trtspeedtest.altimatel.com,reject
+HOST,tx.speedtest.openinfra.com,reject
 HOST,txg-speedtest.infinirc.com,reject
 HOST,uptelecom.brsserver.com.br,reject
 HOST,urbanonet.brsserver.com.br,reject
@@ -2743,6 +2746,7 @@ HOST,speedtest.naturalwireless.com,reject
 HOST,speedtest.netgotelecom.com.br,reject
 HOST,speedtest.nexinternett.com.br,reject
 HOST,speedtest.nl-ams.as210558.net,reject
+HOST,speedtest.onetouchexpress.com,reject
 HOST,speedtest.ord1.hivelocity.net,reject
 HOST,speedtest.pa10.fdcservers.net,reject
 HOST,speedtest.parishbroadband.com,reject
@@ -3353,6 +3357,7 @@ HOST,duliajan-speedtest.arrowebonline.com,reject
 HOST,ookla-autazes.amazoniasat-isp.com.br,reject
 HOST,santaclara-speedtest.utopiafiber.com,reject
 HOST,speedtest-ist-34-node.netzone.com.tr,reject
+HOST,speedtest-lenexa.resoundnetworks.com,reject
 HOST,speedtest-london-east.vodafone.co.uk,reject
 HOST,speedtest-losangeles.ripplefiber.com,reject
 HOST,speedtest-marseille-10g.emtelnet.com,reject

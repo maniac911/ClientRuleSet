@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-22T05:29:05.376Z
-# Size: 4698
+# Last Updated: 2026-10-24T05:07:45.356Z
+# Size: 4705
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:KK9hEIk4E1zCWBRvO43RZ5f3vejQUZFoezQDMIJk9X0$
+# $content-hash-v1$:LEPBRo8HRSC474kcskJZv7yljWgmHogzgjpvF_eHMFw$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -331,6 +331,7 @@ HOST,p.sda1.dev,reject
 HOST-SUFFIX,pagecdn.io,reject
 HOST-SUFFIX,pgimgs.com,reject
 HOST-SUFFIX,phncdn.com,reject
+HOST,pic2.99.co,reject
 HOST-SUFFIX,pinimg.com,reject
 HOST-SUFFIX,pixhost.to,reject
 HOST,pixoraa.cc,reject
@@ -1431,6 +1432,7 @@ HOST,api.bintray.com,reject
 HOST,api.weather.com,reject
 HOST-SUFFIX,app.gitbook.com,reject
 HOST,asset.chase.com,reject
+HOST,assets-v2.99.co,reject
 HOST,assets.about.me,reject
 HOST,assets.bbhub.io,reject
 HOST,assets.canny.io,reject
@@ -1438,6 +1440,7 @@ HOST,assets.cello.so,reject
 HOST,assets.clibo.tw,reject
 HOST,assets.game8.co,reject
 HOST,assets.goat.com,reject
+HOST,assets.grab.com,reject
 HOST,assets.habr.com,reject
 HOST,assets.jable.tv,reject
 HOST,assets.kagi.com,reject
@@ -2821,6 +2824,7 @@ HOST,archive.mozilla.org,reject
 HOST,assets-cdn.jable.tv,reject
 HOST,assets-cdn.porn.com,reject
 HOST,assets-docs.dify.ai,reject
+HOST,assets-static.99.co,reject
 HOST,assets-www.xbox.com,reject
 HOST,assets.adobedtm.com,reject
 HOST,assets.airbuddy.app,reject
@@ -3990,6 +3994,7 @@ HOST,s3media.squarespace.com,reject
 HOST,safebrowsing.google.com,reject
 HOST-SUFFIX,sciencedirectassets.com,reject
 HOST,screenshots.webflow.com,reject
+HOST,scribe-web-sdk.grab.com,reject
 HOST,scripts.dailymail.co.uk,reject
 HOST,server.arcgisonline.com,reject
 HOST,static-assets.juksy.com,reject
@@ -4426,6 +4431,7 @@ HOST,static-production.npmjs.com,reject
 HOST,static-webfonts.myfonts.com,reject
 HOST,static.acm.account.sony.com,reject
 HOST,static.captcha-delivery.com,reject
+HOST,static1.straitstimes.com.sg,reject
 HOST,sts.online.visualstudio.com,reject
 HOST,tvdownloaddw-a.akamaihd.net,reject
 HOST,typescript.visualstudio.com,reject
@@ -4691,6 +4697,7 @@ HOST,edge-cloud-resource-static.azureedge.net,reject
 HOST,edgecdn-embza6g8cacagcbn.z01.azurefd.net,reject
 HOST,cdn.mcauto-images-production.sendgrid.net,reject
 HOST,cf-images.ap-northeast-1.prod.boltdns.net,reject
+HOST,cf-images.ap-southeast-1.prod.boltdns.net,reject
 HOST,marfeelexperimentsexperienceengine.mrf.io,reject
 HOST,prod-streaming-video-msn-com.akamaized.net,reject
 HOST,talon-website-prod.ecosec.on.epicgames.com,reject
