@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-24T05:07:44.364Z
-# Size: 3449
+# Last Updated: 2026-10-25T05:25:13.611Z
+# Size: 3453
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:gzmBI9qOe6I6rFQ9qoOdXbkmKRaYmNRv__dS-g5_Jmc$
+# $content-hash-v1$:Ela8MkFmMDGF0hjWguhwTSbyRBVLTbIAQGdci1n-qkQ$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -238,6 +238,7 @@ HOST,speed1.wiatel.net,reject
 HOST,speed10.aitspl.in,reject
 HOST,speed2.dg-sys.net,reject
 HOST,speedapi.race.com,reject
+HOST,speedbng.n-tel.in,reject
 HOST,speedkle.htspl.in,reject
 HOST,speedmum.n-tel.in,reject
 HOST,speedtest.23m.com,reject
@@ -1275,6 +1276,7 @@ HOST,speedtest.techminds.ca,reject
 HOST,speedtest.telemaxx.net,reject
 HOST,speedtest.telmekom.net,reject
 HOST,speedtest.three.com.hk,reject
+HOST,speedtest.thyrakles.de,reject
 HOST,speedtest.tirolnet.com,reject
 HOST,speedtest.toros.edu.tr,reject
 HOST,speedtest.tri-cogo.com,reject
@@ -1874,6 +1876,7 @@ HOST,spd-100g-ookla.stelogy.io,reject
 HOST,spdgnet.gnetserver.com.br,reject
 HOST,speed-br2.gigacomm.net.au,reject
 HOST,speed-mel.gigacomm.net.au,reject
+HOST,speed-pd.dispaisy.systems,reject
 HOST,speed-syd.gigacomm.net.au,reject
 HOST,speed.airmaxbroadband.com,reject
 HOST,speed.newmarket.telmax.ca,reject
@@ -2485,6 +2488,7 @@ HOST,mia-speedtest.northstate.net,reject
 HOST,myspeedtest.atcbroadband.com,reject
 HOST,ookla-mispeed.rackgenius.com,reject
 HOST,ookla.amazoniasat-isp.com.br,reject
+HOST,ookla.lodestarnetworks.co.uk,reject
 HOST,ookla.playmaisreverso.net.br,reject
 HOST,ookla.siditelecom-isp.com.br,reject
 HOST,ooklatins.redeconexaonet.com,reject
