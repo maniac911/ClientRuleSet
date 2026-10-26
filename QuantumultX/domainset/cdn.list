@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-10-25T05:25:14.541Z
-# Size: 4707
+# Last Updated: 2026-10-26T05:28:19.292Z
+# Size: 4695
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:Axf7wA_CkNc2Qfq9vSIz9hX6pOFszLvuOb4kC3p60B4$
+# $content-hash-v1$:LV4enbSf6iJzva65asI2OFDCRgTvUqKVNsYgPn9CkNA$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -659,7 +659,6 @@ HOST-SUFFIX,chasecdn.com,reject
 HOST-SUFFIX,cloudlin.vip,reject
 HOST-SUFFIX,corsproxy.io,reject
 HOST-SUFFIX,crossbell.io,reject
-HOST,css.4jpg.top,reject
 HOST,data.peer.as,reject
 HOST,david-dm.org,reject
 HOST-SUFFIX,dditsadn.com,reject
@@ -1033,7 +1032,6 @@ HOST,pics.vpdmm.cc,reject
 HOST-SUFFIX,picsum.photos,reject
 HOST-SUFFIX,place-hold.it,reject
 HOST,pomf2.lain.la,reject
-HOST,proxy.cors.sh,reject
 HOST,r2.dejavu.moe,reject
 HOST,r2cdn.c7d.dev,reject
 HOST-SUFFIX,randomuser.me,reject
@@ -1092,7 +1090,6 @@ HOST-SUFFIX,webinfcdn.net,reject
 HOST-SUFFIX,wixstatic.com,reject
 HOST-SUFFIX,workoscdn.com,reject
 HOST-SUFFIX,wowmodels.com,reject
-HOST,www.10086.win,reject
 HOST,www.acgpix.de,reject
 HOST-SUFFIX,xdaimages.com,reject
 HOST-SUFFIX,xhpingcdn.com,reject
@@ -1127,7 +1124,6 @@ HOST-SUFFIX,bytebucket.org,reject
 HOST,c.animaapp.com,reject
 HOST,c.marsflag.com,reject
 HOST,c.navattic.com,reject
-HOST,c1.patreon.com,reject
 HOST,c4.patreon.com,reject
 HOST,c5.patreon.com,reject
 HOST,c6.patreon.com,reject
@@ -1309,7 +1305,6 @@ HOST-SUFFIX,liangzipic.com,reject
 HOST-SUFFIX,live-video.net,reject
 HOST-SUFFIX,media-imdb.com,reject
 HOST-SUFFIX,media.ci-en.jp,reject
-HOST,media.evolv.ai,reject
 HOST,media.masto.nu,reject
 HOST,media.mstdn.io,reject
 HOST,media.trakt.tv,reject
@@ -1451,7 +1446,6 @@ HOST,assets.time.com,reject
 HOST,assets.yande.re,reject
 HOST,assets.zpic.biz,reject
 HOST,attach.setn.com,reject
-HOST,avts.wmlabs.net,reject
 HOST-SUFFIX,bestfreecdn.com,reject
 HOST-SUFFIX,bleepstatic.com,reject
 HOST-SUFFIX,bp.blogspot.com,reject
@@ -1808,7 +1802,6 @@ HOST-SUFFIX,bootstrapcdn.com,reject
 HOST-SUFFIX,bugly.qcloud.com,reject
 HOST,bundlephobia.com,reject
 HOST,cache.ip-api.com,reject
-HOST,cache.sgvafs.com,reject
 HOST-SUFFIX,capcutstatic.com,reject
 HOST,cdn-1.porn87.com,reject
 HOST,cdn-1.strava.com,reject
@@ -1858,7 +1851,6 @@ HOST,cdn.playwire.com,reject
 HOST,cdn.roboflow.com,reject
 HOST,cdn.roseperl.com,reject
 HOST,cdn.scaleflex.it,reject
-HOST,cdn.seedance2.ai,reject
 HOST-SUFFIX,cdn.signalfx.com,reject
 HOST,cdn.simplesat.io,reject
 HOST,cdn.skymavis.com,reject
@@ -2427,6 +2419,7 @@ HOST,static.anysex.com,reject
 HOST,static.bbci.co.uk,reject
 HOST,static.beebom.com,reject
 HOST,static.buffer.com,reject
+HOST,static.capcom.com,reject
 HOST,static.carfax.com,reject
 HOST,static.chaika.moe,reject
 HOST,static.change.org,reject
@@ -2478,7 +2471,6 @@ HOST-SUFFIX,travel-assets.com,reject
 HOST,uhf.microsoft.com,reject
 HOST,v2.listenloop.com,reject
 HOST-SUFFIX,videodelivery.net,reject
-HOST,w2.influxdata.com,reject
 HOST,wa.arounddeal.com,reject
 HOST,wa1.aninoapps.com,reject
 HOST-SUFFIX,walmartimages.com,reject
@@ -2644,7 +2636,6 @@ HOST,img.fastcybers.com,reject
 HOST,img.hellofresh.com,reject
 HOST,img.sparknotes.com,reject
 HOST,imgproxy.windy.com,reject
-HOST,imgrs.apkcombo.com,reject
 HOST,imgs3.hcaptcha.com,reject
 HOST-SUFFIX,intercomassets.com,reject
 HOST-SUFFIX,ipfs-gateway.cloud,reject
@@ -2796,7 +2787,6 @@ HOST,videos.elephas.app,reject
 HOST,videos.ohentai.org,reject
 HOST,videos2.edclub.com,reject
 HOST,vids.imagepost.com,reject
-HOST,walter-r2.trakt.tv,reject
 HOST-SUFFIX,warnermediacdn.com,reject
 HOST,web-cdn.bitrise.io,reject
 HOST,webp.frostming.com,reject
@@ -3104,7 +3094,6 @@ HOST,static.zerochan.net,reject
 HOST,storageapi.fleek.co,reject
 HOST,sync.getpublica.com,reject
 HOST,tag.unifyintent.com,reject
-HOST,tags.nationwide.com,reject
 HOST,thumb.wikimedia.org,reject
 HOST,thumbnails.padre.gg,reject
 HOST,thumbs.onlyfans.com,reject
@@ -3184,9 +3173,9 @@ HOST,cdn.boostcommerce.io,reject
 HOST,cdn.botframework.com,reject
 HOST,cdn.buymeacoffee.com,reject
 HOST,cdn.c1.amplience.net,reject
+HOST,cdn.capcom-unity.com,reject
 HOST,cdn.clever-cloud.com,reject
 HOST,cdn.cnx-software.com,reject
-HOST,cdn.downdetector.com,reject
 HOST,cdn.dynamicyield.com,reject
 HOST,cdn.fastcomments.com,reject
 HOST,cdn.forms.office.net,reject
@@ -3381,8 +3370,6 @@ HOST,statics.simpshub.com,reject
 HOST,stats.codesandbox.io,reject
 HOST,status.canarymail.io,reject
 HOST-SUFFIX,steamusercontent.com,reject
-HOST,storage.synctrack.io,reject
-HOST,storageapi.fleek.one,reject
 HOST,storageapi2.fleek.co,reject
 HOST-SUFFIX,superfiliate-cdn.com,reject
 HOST-SUFFIX,superhumanstatic.com,reject
@@ -3483,7 +3470,9 @@ HOST,cdn11.bigcommerce.com,reject
 HOST,cdn2-imgix.macpaw.com,reject
 HOST,cdn2.downdetector.com,reject
 HOST,cdn2.unrealengine.com,reject
+HOST,cdn3.downdetector.com,reject
 HOST,cdn3.unrealengine.com,reject
+HOST,cdn4.downdetector.com,reject
 HOST,cdn77.boyfriendtv.com,reject
 HOST,cdna.pcpartpicker.com,reject
 HOST,cdne-pics.youjizz.com,reject
@@ -3576,7 +3565,6 @@ HOST,oneocsp.microsoft.com,reject
 HOST,opensignal.cdnbye.com,reject
 HOST,organizer.bizzabo.com,reject
 HOST-SUFFIX,parsecusercontent.com,reject
-HOST,participants.evolv.ai,reject
 HOST,pictures-cdn.porn.com,reject
 HOST,pixel-cdn.default.com,reject
 HOST,platform.theverge.com,reject
@@ -3922,6 +3910,7 @@ HOST,cdn-static-1.medium.com,reject
 HOST,cdn-uicons.flaticon.com,reject
 HOST,cdn.northropgrumman.com,reject
 HOST,cdn.prod.www.spiegel.de,reject
+HOST,cdn.promo.capcomusa.com,reject
 HOST,cdn.ready-market.com.tw,reject
 HOST-SUFFIX,cdn.survey.medallia.com,reject
 HOST,cdn.worldvectorlogo.com,reject
@@ -4219,6 +4208,7 @@ HOST,hub-assets.displaycal.net,reject
 HOST,hv-monsterdb-data.skk.moe,reject
 HOST,im.np-payment-gateway.com,reject
 HOST,image-forwarder.notaku.so,reject
+HOST,image.icon-gen.svc.ui.com,reject
 HOST,image.p-c2-x.abema-tv.com,reject
 HOST,images.microcms-assets.io,reject
 HOST,images.opencollective.com,reject
@@ -4228,6 +4218,7 @@ HOST,lastfm.freetls.fastly.net,reject
 HOST,lift-ai-js.marketlinc.com,reject
 HOST,logos.speedtestcustom.com,reject
 HOST,lzd-img-global.slatic.net,reject
+HOST,manifest.prod.boltdns.net,reject
 HOST,marketing.thingiverse.com,reject
 HOST,mir-s3-cdn-cf.behance.net,reject
 HOST,mixin-images.zeromesh.net,reject
@@ -4273,9 +4264,6 @@ HOST,trekcdnprod.azureedge.net,reject
 HOST,tuf-repo-cdn.sigstore.dev,reject
 HOST,ubistatic2-a.akamaihd.net,reject
 HOST,unlimited-cdn.waifu2x.net,reject
-HOST,v-tiles1.downdetector.com,reject
-HOST,v-tiles2.downdetector.com,reject
-HOST,v-tiles3.downdetector.com,reject
 HOST,vz-2222604c-50b.b-cdn.net,reject
 HOST,vz-c0fe498e-5ab.b-cdn.net,reject
 HOST,web-assets.esetstatic.com,reject

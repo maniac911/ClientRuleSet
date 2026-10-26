@@ -109,7 +109,6 @@
       "gotest.tools",
       "lib.ugent.be",
       "mir.linux.kg",
-      "mirror.0x.sg",
       "mirror.5i.fi",
       "mirror.a1.mk",
       "mirror.dc.uz",
@@ -407,7 +406,8 @@
       "debian.otenet.gr",
       "debian.uevora.pt",
       "debian.volia.net",
-      "dl.cloudsmith.io"
+      "dl.cloudsmith.io",
+      "dl.getaurora.dev"
     ]
   },
   {
@@ -419,7 +419,6 @@
     "remark": "ClientRuleSet domainset/download · DOMAIN 2 · direct",
     "isEnable": true,
     "list": [
-      "dl.getaurora.dev",
       "dl.tailscale.com",
       "dl.thorium.rocks",
       "down.filen-1.net",
@@ -724,7 +723,6 @@
       "mirror.karneval.cz",
       "mirror.katapult.io",
       "mirror.liquidrp.de",
-      "mirror.marcusn.net",
       "mirror.papua.go.id",
       "mirror.previder.nl",
       "mirror.reverse.net",
@@ -818,7 +816,9 @@
       "ftp.uni-bayreuth.de",
       "ftp.uni-hannover.de",
       "go.opentelemetry.io",
-      "kali.cs.nycu.edu.tw"
+      "kali.cs.nycu.edu.tw",
+      "launcher.mojang.com",
+      "lethe.chinstrap.org"
     ]
   },
   {
@@ -830,8 +830,6 @@
     "remark": "ClientRuleSet domainset/download · DOMAIN 3 · direct",
     "isEnable": true,
     "list": [
-      "launcher.mojang.com",
-      "lethe.chinstrap.org",
       "level3.blizzard.com",
       "lidsol.fi-b.unam.mx",
       "maven.neoforged.net",
@@ -896,6 +894,7 @@
       "opensource.xtdv.net",
       "packages.termux.dev",
       "pubmirror.plutex.de",
+      "registry.gitlab.com",
       "release.runcloud.io",
       "releases.claude.com",
       "replicate.npmjs.com",
@@ -1124,7 +1123,6 @@
       "downloads.portainer.io",
       "enterprise.proxmox.com",
       "fdroid.tetaneutral.net",
-      "ftp.tsukuba.wide.ad.jp",
       "ftpmirror1.infania.net",
       "gog-cdn-fastly.gog.com",
       "i18n.prismlauncher.org",
@@ -1186,7 +1184,6 @@
       "vfat.classicreload.com",
       "vn-mirrors.techhost.vn",
       "www.gutscheinrausch.de",
-      "www2.aomeisoftware.com",
       "apache.ip-connect.vn.ua",
       "apache.miloslavbrada.cz",
       "archive.raspberrypi.com",
@@ -1229,7 +1226,10 @@
       "mirror.hostafrica.co.za",
       "mirror.ietlucknow.ac.in",
       "mirror.intergrid.com.au",
-      "mirror.internode.on.net"
+      "mirror.internode.on.net",
+      "mirror.math.ucdavis.edu",
+      "mirror.nbtelecom.com.br",
+      "mirror.nl.altushost.com"
     ]
   },
   {
@@ -1241,9 +1241,6 @@
     "remark": "ClientRuleSet domainset/download · DOMAIN 4 · direct",
     "isEnable": true,
     "list": [
-      "mirror.math.ucdavis.edu",
-      "mirror.nbtelecom.com.br",
-      "mirror.nl.altushost.com",
       "mirror.primelink.net.id",
       "mirror.tw.ossplanet.net",
       "mirror.us.oneandone.net",
