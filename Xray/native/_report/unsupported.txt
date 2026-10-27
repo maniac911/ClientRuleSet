@@ -104,8 +104,8 @@ AND,((DOMAIN-KEYWORD,genuine), (DOMAIN-KEYWORD,autodesk))  # Compound source exp
 AND,((PROTOCOL,UDP), (DOMAIN-SUFFIX,googlevideo.com))  # Compound source expressions are not flattened because that could change matching semantics.
 
 # non_ip/reject-url-regex.json
-URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(adgateway|adv)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
-URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(EcomResourceServer/AdPlayPage/adinfo|MobileAdServer/)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^http://\d\d?\d?\.\d\d?\d?\.\d\d?\d?\.\d\d?\d?/(adgateway|adv)/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
+URL-REGEX,^http://\d\d?\d?\.\d\d?\d?\.\d\d?\d?\.\d\d?\d?/(EcomResourceServer/AdPlayPage/adinfo|MobileAdServer/)  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
 URL-REGEX,^https://app\.variflight\.com/v4/advert/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
 URL-REGEX,^https://img-ys011\.didistatic\.com/static/ad_oss/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.
 URL-REGEX,^https?://.+\.58cdn\.com\.cn/brandads/  # Xray attrs can match HTTP headers/path, but not an arbitrary full URL regex losslessly.

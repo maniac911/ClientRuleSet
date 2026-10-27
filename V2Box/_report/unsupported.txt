@@ -171,8 +171,8 @@ USER-AGENT,NeteaseMusic*  # V2Box route-object import has no verified User-Agent
 AND,((PROTOCOL,UDP), (DOMAIN-SUFFIX,googlevideo.com))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 
 # non_ip/reject-url-regex.json
-URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(adgateway|adv)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
-URL-REGEX,^http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/(EcomResourceServer/AdPlayPage/adinfo|MobileAdServer/)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^http://\d\d?\d?\.\d\d?\d?\.\d\d?\d?\.\d\d?\d?/(adgateway|adv)/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
+URL-REGEX,^http://\d\d?\d?\.\d\d?\d?\.\d\d?\d?\.\d\d?\d?/(EcomResourceServer/AdPlayPage/adinfo|MobileAdServer/)  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
 URL-REGEX,^https://app\.variflight\.com/v4/advert/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
 URL-REGEX,^https://img-ys011\.didistatic\.com/static/ad_oss/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
 URL-REGEX,^https?://.+\.58cdn\.com\.cn/brandads/  # V2Box domain-regex routing cannot represent an arbitrary full URL regex losslessly.
