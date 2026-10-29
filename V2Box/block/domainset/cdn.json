@@ -25,6 +25,7 @@
       "i.ibb.co",
       "i.vgy.me",
       "icons.ly",
+      "imgur.la",
       "nodei.co",
       "ps.w.org",
       "rules.ac",
@@ -406,8 +407,7 @@
       "js.pusher.com",
       "js.stripe.com",
       "js.upscope.io",
-      "kh.google.com",
-      "load.csell.co"
+      "kh.google.com"
     ]
   },
   {
@@ -419,6 +419,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 2 · block",
     "isEnable": true,
     "list": [
+      "load.csell.co",
       "logs.blip.net",
       "m.porn3dx.com",
       "media.cnn.com",
@@ -817,8 +818,7 @@
       "events.split.io",
       "fast.wistia.com",
       "fast.wistia.net",
-      "fesdk.nexon.com",
-      "file1.hkepc.net"
+      "fesdk.nexon.com"
     ]
   },
   {
@@ -830,6 +830,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 3 · block",
     "isEnable": true,
     "list": [
+      "file1.hkepc.net",
       "files.readme.io",
       "files.slack.com",
       "fonts.bunny.net",
@@ -1228,8 +1229,7 @@
       "vip.dytt-img.com",
       "w.soundcloud.com",
       "web-cdn.bsky.app",
-      "ws-cdn.nperf.com",
-      "www.fumadocs.dev"
+      "ws-cdn.nperf.com"
     ]
   },
   {
@@ -1241,6 +1241,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 4 · block",
     "isEnable": true,
     "list": [
+      "www.fumadocs.dev",
       "a.kickstarter.com",
       "amp.akamaized.net",
       "api.crashguard.me",
@@ -1639,8 +1640,7 @@
       "favicon.yandex.net",
       "files.gempages.net",
       "flows.trysavvy.com",
-      "fonts.codeberg.org",
-      "genesis-cdn.ff.com"
+      "fonts.codeberg.org"
     ]
   },
   {
@@ -1652,6 +1652,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 5 · block",
     "isEnable": true,
     "list": [
+      "genesis-cdn.ff.com",
       "global.divhunt.com",
       "graph.facebook.com",
       "hawk.tomsguide.com",
@@ -2050,8 +2051,7 @@
       "static.getbutton.io",
       "static.giffgaff.com",
       "static.gigabyte.com",
-      "static.goaffpro.com",
-      "static.mendeley.com"
+      "static.goaffpro.com"
     ]
   },
   {
@@ -2063,6 +2063,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 6 · block",
     "isEnable": true,
     "list": [
+      "static.mendeley.com",
       "static.monotype.com",
       "static.mypikpak.com",
       "static.narrativ.com",
@@ -2461,8 +2462,7 @@
       "files.scamadviser.com",
       "files.writefreely.org",
       "font-public.canva.com",
-      "front-resource.fs.com",
-      "frontend2.locally.com"
+      "front-resource.fs.com"
     ]
   },
   {
@@ -2474,6 +2474,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 7 · block",
     "isEnable": true,
     "list": [
+      "frontend2.locally.com",
       "gitpkg-fork.vercel.sh",
       "i.creativecommons.org",
       "icms-image.slatic.net",
@@ -2872,8 +2873,7 @@
       "media-cdn.epicgames.com",
       "media-cms.onesignal.com",
       "media-process.hibob.com",
-      "media.contentapi.ea.com",
-      "media.geeksforgeeks.org"
+      "media.contentapi.ea.com"
     ]
   },
   {
@@ -2885,6 +2885,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · block",
     "isEnable": true,
     "list": [
+      "media.geeksforgeeks.org",
       "media.nbclosangeles.com",
       "media.pointandplace.com",
       "ni-assets.azureedge.net",
@@ -3283,8 +3284,7 @@
       "rum-ingest.us1.signalfx.com",
       "safebrowsing.googleapis.com",
       "sessions-bugsnag.docker.com",
-      "solve-widget.forethought.ai",
-      "sourcepoint.theguardian.com"
+      "solve-widget.forethought.ai"
     ]
   },
   {
@@ -3296,6 +3296,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · block",
     "isEnable": true,
     "list": [
+      "sourcepoint.theguardian.com",
       "static-homepage-en.pluto.tv",
       "static-mh.content.disney.io",
       "static-production.npmjs.com",
@@ -3847,6 +3848,7 @@
       "regexp:(^|\\.)sndcdn\\.com$",
       "regexp:(^|\\.)sndimg\\.com$",
       "regexp:(^|\\.)ss-cdn\\.com$",
+      "regexp:(^|\\.)static\\.pub$",
       "regexp:(^|\\.)strpst\\.com$",
       "regexp:(^|\\.)surrit\\.com$",
       "regexp:(^|\\.)sxccdn\\.com$",
@@ -3967,8 +3969,7 @@
       "regexp:(^|\\.)sqspcdn\\.com$",
       "regexp:(^|\\.)sstatic\\.net$",
       "regexp:(^|\\.)stripst\\.com$",
-      "regexp:(^|\\.)supabase\\.co$",
-      "regexp:(^|\\.)tags\\.f5\\.com$"
+      "regexp:(^|\\.)supabase\\.co$"
     ]
   },
   {
@@ -3980,6 +3981,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 2 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)tags\\.f5\\.com$",
       "regexp:(^|\\.)teo-rum\\.com$",
       "regexp:(^|\\.)tile\\.osm\\.ch$",
       "regexp:(^|\\.)ttcache\\.com$",
@@ -4378,8 +4380,7 @@
       "regexp:(^|\\.)rum\\.cronitor\\.io$",
       "regexp:(^|\\.)schemastore\\.org$",
       "regexp:(^|\\.)shoplineimg\\.com$",
-      "regexp:(^|\\.)skypeassets\\.com$",
-      "regexp:(^|\\.)splunkcloud\\.com$"
+      "regexp:(^|\\.)skypeassets\\.com$"
     ]
   },
   {
@@ -4391,6 +4392,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 3 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)splunkcloud\\.com$",
       "regexp:(^|\\.)stack\\.imgur\\.com$",
       "regexp:(^|\\.)stackassets\\.com$",
       "regexp:(^|\\.)staticblitz\\.com$",
@@ -4789,8 +4791,7 @@
       "regexp:(^|\\.)hubspotusercontent-eu1\\.net$",
       "regexp:(^|\\.)hubspotusercontent-na1\\.net$",
       "regexp:(^|\\.)myanalytics\\.cdn\\.office\\.net$",
-      "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$",
-      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$"
+      "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$"
     ]
   },
   {
@@ -4802,6 +4803,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 4 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$",
       "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
       "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$",
       "regexp:(^|\\.)design-system\\.economist\\.com$",

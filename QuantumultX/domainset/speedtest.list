@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-27T05:43:30.939Z
-# Size: 3455
+# Last Updated: 2026-10-29T06:33:23.642Z
+# Size: 3459
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:Yi052BV-9ZjalhXWAXZ6tpFAbsdm6HmlD4NzZ0cVfH0$
+# $content-hash-v1$:ZE1gGNcIHc7Sq3qnZqKblqka9EiDvAbzpY2Sb5NlkFU$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -1234,6 +1234,7 @@ HOST-SUFFIX,speedtest.kansuiun.com,reject
 HOST,speedtest.keiminem.com,reject
 HOST,speedtest.komogoto.com,reject
 HOST,speedtest.layra.web.tr,reject
+HOST,speedtest.lecrintv.com,reject
 HOST,speedtest.me.mycci.net,reject
 HOST,speedtest.meghlink.com,reject
 HOST,speedtest.meric.net.tr,reject
@@ -2162,6 +2163,7 @@ HOST,speedtest.gv.shawcable.net,reject
 HOST,speedtest.heartofiowa.coop,reject
 HOST,speedtest.inovewifi.com.br,reject
 HOST,speedtest.jcnettelecom.com,reject
+HOST,speedtest.jdtelecom.com.br,reject
 HOST,speedtest.jonasdevries.net,reject
 HOST,speedtest.kappenhagen.tech,reject
 HOST,speedtest.kouten.barcelona,reject
@@ -3325,6 +3327,7 @@ HOST,speedtest1.mia.fl.us.convergia.net,reject
 HOST,speedtest4.fastfortechnologies.com,reject
 HOST,speedtestmera.vs.mythic-beasts.com,reject
 HOST,speedtestpnp.infolinkbroadband.com,reject
+HOST,srv01-speedtest-pa5.ptr.corenix.fr,reject
 HOST,st-balikesir-1.turksatkablo.com.tr,reject
 HOST,st-eskisehir-1.turksatkablo.com.tr,reject
 HOST,st-gaziantep-1.turksatkablo.com.tr,reject
@@ -3362,6 +3365,7 @@ HOST-SUFFIX,wifiman-stability-test.ubncloud.com,reject
 HOST,duliajan-speedtest.arrowebonline.com,reject
 HOST,ookla-autazes.amazoniasat-isp.com.br,reject
 HOST,santaclara-speedtest.utopiafiber.com,reject
+HOST,speedtest-34-1g.mustafasevinc.com.tr,reject
 HOST,speedtest-ist-34-node.netzone.com.tr,reject
 HOST,speedtest-lenexa.resoundnetworks.com,reject
 HOST,speedtest-london-east.vodafone.co.uk,reject
