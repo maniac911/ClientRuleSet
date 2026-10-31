@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-10-29T06:33:23.642Z
-# Size: 3459
+# Last Updated: 2026-10-31T06:23:32.134Z
+# Size: 3461
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:ZE1gGNcIHc7Sq3qnZqKblqka9EiDvAbzpY2Sb5NlkFU$
+# $content-hash-v1$:qwcHaRIGAFoVChY9AVCAhmmdpW7jeGXoEw14NDwvisI$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -20,6 +20,7 @@ HOST,speedme.ir,reject
 HOST-SUFFIX,wifiman.me,reject
 HOST,hv1.juce.ca,reject
 HOST,spa.lvh.lol,reject
+HOST,stealth.net,reject
 HOST-SUFFIX,wifiman.com,reject
 HOST,babeltik.com,reject
 HOST,fast.kabi.tk,reject
@@ -1214,6 +1215,7 @@ HOST,speedtest.ftmojave.net,reject
 HOST,speedtest.galaxynet.in,reject
 HOST,speedtest.ggcmedia.net,reject
 HOST-SUFFIX,speedtest.gibir.net.tr,reject
+HOST,speedtest.hh.addix.net,reject
 HOST,speedtest.hlinknet.com,reject
 HOST,speedtest.homestube.de,reject
 HOST,speedtest.hostabil.net,reject
