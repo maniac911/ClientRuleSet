@@ -8,6 +8,7 @@
     "remark": "ClientRuleSet non_ip/reject-drop · DOMAIN · block",
     "isEnable": true,
     "list": [
+      "api.segment.io",
       "data.bilibili.com",
       "stats.grafana.org",
       "stat.youpin.mi.com",
@@ -33,6 +34,7 @@
       "regexp:(^|\\.)gepush\\.com$",
       "regexp:(^|\\.)slackb\\.com$",
       "regexp:(^|\\.)trace\\.qq\\.com$",
+      "regexp:(^|\\.)amplitude\\.com$",
       "regexp:(^|\\.)beacon\\.qq\\.com$",
       "regexp:(^|\\.)geo2\\.adobe\\.com$",
       "regexp:(^|\\.)easytomessage\\.com$",
