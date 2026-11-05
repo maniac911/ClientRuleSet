@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-02T06:57:14.115Z
-# Size: 3462
+# Last Updated: 2026-11-05T07:29:12.753Z
+# Size: 3467
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:ol_okwkGVVKfdpr94F9QeENMfjCuPsP443QlMIipQRc$
+# $content-hash-v1$:gLpgrMJTeQ1V68jrSJYXc6q6GmMoANLJSoFi13OAeoQ$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -160,6 +160,7 @@ HOST,sp3.atcc-gns.net,reject
 HOST,sp7.atcc-gns.net,reject
 HOST,speed.fiber23.it,reject
 HOST-SUFFIX,speed.misaka.one,reject
+HOST,speed.open.ad.jp,reject
 HOST,speed.sparcs.net,reject
 HOST,speed2.suitit.nl,reject
 HOST,speed3.aitspl.in,reject
@@ -844,6 +845,7 @@ HOST,dallas1.cabospeed.com,reject
 HOST,duncan1.cabospeed.com,reject
 HOST,ellsworth.from-ks.com,reject
 HOST,fibertest.soipl.co.in,reject
+HOST,fra-de-008.xvperf.net,reject
 HOST,guwahati.neconnect.in,reject
 HOST,hiztesti.codit.com.tr,reject
 HOST,hiztesti.turbo.net.tr,reject
@@ -1653,6 +1655,7 @@ HOST,ookla.me1.neptune.net.au,reject
 HOST,ookla.radishnetworks.net,reject
 HOST,ookla.sy1.neptune.net.au,reject
 HOST,ookla1.ccspublichost.com,reject
+HOST,ooklaspdtstsvr.zitel.com,reject
 HOST,reflector.aberythmic.com,reject
 HOST,riorancho1.cabospeed.com,reject
 HOST,seacaftest.aptalaska.net,reject
@@ -2158,6 +2161,7 @@ HOST,speedtest.embrasnet.com.br,reject
 HOST,speedtest.empireaccess.com,reject
 HOST,speedtest.fiberlink.com.pe,reject
 HOST,speedtest.fiberlink.net.ua,reject
+HOST,speedtest.geniusnetwork.in,reject
 HOST,speedtest.gilarivertel.com,reject
 HOST,speedtest.global-layer.com,reject
 HOST,speedtest.grr1-mi.incx.net,reject
@@ -2563,6 +2567,7 @@ HOST,speedtest.iad.fdcservers.net,reject
 HOST,speedtest.impactusnet.net.br,reject
 HOST,speedtest.inclusivebytes.org,reject
 HOST,speedtest.infogamesvr.net.br,reject
+HOST,speedtest.interligpro.com.br,reject
 HOST,speedtest.internetbolaget.nu,reject
 HOST,speedtest.internetsubway.com,reject
 HOST,speedtest.isppapagaio.com.br,reject

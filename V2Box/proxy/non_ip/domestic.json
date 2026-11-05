@@ -660,6 +660,7 @@
       "regexp:(^|\\.)dcarlive\\.com$",
       "regexp:(^|\\.)dianping\\.com$",
       "regexp:(^|\\.)dingtalk\\.com$",
+      "regexp:(^|\\.)dittocdn\\.com$",
       "regexp:(^|\\.)dizzylab\\.net$",
       "regexp:(^|\\.)doubanio\\.com$",
       "regexp:(^|\\.)douyucdn2\\.cn$",
@@ -854,8 +855,7 @@
       "regexp:(^|\\.)xiaohongshu\\.com$",
       "regexp:(^|\\.)aicoinstorge\\.com$",
       "regexp:(^|\\.)baiducontent\\.com$",
-      "regexp:(^|\\.)byted-static\\.com$",
-      "regexp:(^|\\.)cailianpress\\.com$"
+      "regexp:(^|\\.)byted-static\\.com$"
     ]
   },
   {
@@ -867,6 +867,7 @@
     "remark": "ClientRuleSet non_ip/domestic · DOMAIN-SUFFIX 3 · proxy",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)cailianpress\\.com$",
       "regexp:(^|\\.)douyinliving\\.com$",
       "regexp:(^|\\.)douyinstatic\\.com$",
       "regexp:(^|\\.)hihonorcloud\\.com$",
