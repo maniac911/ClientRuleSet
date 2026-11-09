@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-05T07:29:12.753Z
-# Size: 3467
+# Last Updated: 2026-11-09T07:17:47.375Z
+# Size: 3479
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:gLpgrMJTeQ1V68jrSJYXc6q6GmMoANLJSoFi13OAeoQ$
+# $content-hash-v1$:gqrBT-Ym_0z4ruzOCc8aJuovnXJ7-UcPUpEh9GRV8Rw$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -246,6 +246,7 @@ HOST,speedmum.n-tel.in,reject
 HOST,speedtest.23m.com,reject
 HOST,speedtest.4isp.it,reject
 HOST,speedtest.asvt.ru,reject
+HOST,speedtest.bgsi.io,reject
 HOST,speedtest.cfu.net,reject
 HOST,speedtest.ddl.red,reject
 HOST,speedtest.ddps.jp,reject
@@ -1779,6 +1780,7 @@ HOST,speedtest.sunucum.net.tr,reject
 HOST,speedtest.tcaexpress.net,reject
 HOST,speedtest.te.citywest.ca,reject
 HOST,speedtest.technofiber.co,reject
+HOST,speedtest.tefenet.com.br,reject
 HOST,speedtest.twinvalley.net,reject
 HOST,speedtest.unifica.net.br,reject
 HOST,speedtest.vanciscloud.nl,reject
@@ -1902,6 +1904,7 @@ HOST,speedtest-hk.tgb-host.com,reject
 HOST,speedtest-ict.ideatek.com,reject
 HOST,speedtest-jp.tgb-host.com,reject
 HOST,speedtest-london.start.ca,reject
+HOST,speedtest-net.hyprnode.de,reject
 HOST,speedtest-satt.pr-link.at,reject
 HOST,speedtest-tf.masmovil.com,reject
 HOST,speedtest.603.sbaedge.net,reject
@@ -2659,6 +2662,7 @@ HOST,ty-bgp-speedtest.nearoute.io,reject
 HOST,ty-speedtest.homeplus.net.tw,reject
 HOST,uplinkfibra.brsserver.com.br,reject
 HOST,velocidade.csrnetwork.com.br,reject
+HOST,velocidade.danieltechpro.com,reject
 HOST,velocidade.exytelecom.com.br,reject
 HOST,velocidade.gtmtelecom.com.br,reject
 HOST,velocidade.hnaconecta.com.br,reject
@@ -2727,6 +2731,7 @@ HOST,speedtest-nl.cloudlease.co.il,reject
 HOST,speedtest-ntt-fra.as20011.net,reject
 HOST,speedtest-ntt-ldn.as20011.net,reject
 HOST,speedtest-obd.redeconecta.com,reject
+HOST,speedtest-par.flowhardware.ch,reject
 HOST,speedtest-srv-a.homeworks.org,reject
 HOST,speedtest-stm.redeconecta.com,reject
 HOST,speedtest-syd.optusnet.com.au,reject
@@ -2742,6 +2747,7 @@ HOST,speedtest.citycom-austria.com,reject
 HOST,speedtest.clicknconnect.co.in,reject
 HOST,speedtest.drw2.launtel.net.au,reject
 HOST,speedtest.fc-fra4.as51202.net,reject
+HOST,speedtest.fenixtelecom.net.br,reject
 HOST,speedtest.fibernetwork.com.br,reject
 HOST,speedtest.fra1.hivelocity.net,reject
 HOST,speedtest.heartland-fiber.com,reject
@@ -2800,6 +2806,7 @@ HOST,speedtest1.indosatooredoo.com,reject
 HOST,speedtest1.lax1-us.gozfly.net,reject
 HOST,speedtest1.sc.chinamobile.com,reject
 HOST,speedtest2.comvergence.com.au,reject
+HOST,speedtest2.honeybroadband.com,reject
 HOST,speedtestacibadem.netspeed.tr,reject
 HOST,speedtestboca.gethotwired.com,reject
 HOST,speedtestdelhi.digiwaynet.com,reject
@@ -2862,6 +2869,7 @@ HOST,mrutooklaspeed1.jioconnect.com,reject
 HOST,mumbooklaspeed1.jioconnect.com,reject
 HOST,nvmbooklaspeed1.jioconnect.com,reject
 HOST,ookla-estepona.aerioncloud.com,reject
+HOST,ooklaserver.dlls.tx.ogital.net,reject
 HOST,seawa00-speedtest.etstelco.com,reject
 HOST,seveninternet.brsserver.com.br,reject
 HOST,sgarooklaspeed1.jioconnect.com,reject
@@ -3049,6 +3057,7 @@ HOST,speedtest.amsterdam.valtrix.org,reject
 HOST,speedtest.bradfordbroadband.com,reject
 HOST,speedtest.conectstelecom.com.br,reject
 HOST,speedtest.deltatelecomam.com.br,reject
+HOST,speedtest.dreamnetgigafiber.com,reject
 HOST,speedtest.euronettelecom.com.br,reject
 HOST,speedtest.extremanetwork.com.br,reject
 HOST,speedtest.g5nortetelecom.com.br,reject
@@ -3071,6 +3080,7 @@ HOST,speedtest01.per1.spintel.net.au,reject
 HOST,speedtest01.syd1.spintel.net.au,reject
 HOST,speedtest02.bluestreamfiber.net,reject
 HOST,speedtest03.bluestreamfiber.net,reject
+HOST,speedtest1-phnyazjv.as20055.net,reject
 HOST,speedtest1-qupra-ams-nl.ebgp.fi,reject
 HOST,speedtest1-sttlwawb.as20055.net,reject
 HOST,speedtest1.ewr.nj.us.planet.net,reject
@@ -3139,6 +3149,7 @@ HOST,puteaux3.d2m.c2d.liveservices.fr,reject
 HOST,qoeookla-mimi-01.sys.comcast.net,reject
 HOST,qoeookla-ncst-01.sys.comcast.net,reject
 HOST,qoeookla-rmnd-01.sys.comcast.net,reject
+HOST,qoeookla-seat-01.sys.comcast.net,reject
 HOST,ran-r450-speedtest.metrocomm.com,reject
 HOST,reunion3.d2m.c2d.liveservices.fr,reject
 HOST,sam1speedtest.turktelekom.com.tr,reject
@@ -3219,6 +3230,7 @@ HOST,velocidade.netshowtelecom.com.br,reject
 HOST,velocidade.phinfortelecom.com.br,reject
 HOST,velocidade.webzoomtelecom.com.br,reject
 HOST,velocimetro.speednetworks.com.br,reject
+HOST,yyc-speedtest.xeronetworks.co.uk,reject
 HOST,btlr-speedtest-02.brightspeed.com,reject
 HOST,buft-speedtest-02.brightspeed.com,reject
 HOST,chvl-speedtest-02.brightspeed.com,reject
