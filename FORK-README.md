@@ -1,23 +1,23 @@
 # maniac911/ClientRuleSet generated rules
 
-Built from fork source commit: 1a9186480d6644365da13b2aca7adf2287d25df8
-Upstream base commit: b97e062e447701434b27141231710c4078355fdd
-Build-input fingerprint: 2813a0688146501208f718501f7b19fc084c408d0c8d6089ec8215ec042772e6
-Build timestamp (UTC): 2026-11-10T07:51:15Z
-GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/42777759593
+Built from fork source commit: 47fe8c23b7dca2bbdf544db9715ead80d54e9620
+Upstream base commit: d3b5d42081ae134e9ebf3efa74be58c14fc3ec9c
+Build-input fingerprint: 8cde28f1b90eb1383186ad86386e82e6db747880acbf02068cbe51093b358997
+Build timestamp (UTC): 2026-11-11T07:17:28Z
+GitHub Actions run: https://github.com/maniac911/ClientRuleSet/actions/runs/42977989493
 
 Dependency lock upstream-valid: true
 Dependency lock auto-repaired: false
-Dependency source lock SHA256: 47759aa9759883221f825770f91cb00fcffdf71e0ba728fcbdadd36ff21fd020
-Dependency resolved lock SHA256: 47759aa9759883221f825770f91cb00fcffdf71e0ba728fcbdadd36ff21fd020
+Dependency source lock SHA256: d61d1e1c4e7197e5a15e5a20a3d9bfe502f8b8a74a610aaade02c49cc133554c
+Dependency resolved lock SHA256: d61d1e1c4e7197e5a15e5a20a3d9bfe502f8b8a74a610aaade02c49cc133554c
 
 sing-box compiler release: v1.14.4
 sing-box compiler image: ghcr.io/sagernet/sing-box:v1.14.4
 sing-box image digest: ghcr.io/sagernet/sing-box@sha256:0788ffbddab2c68a99a2dd4780bbc50902f159af6f589df3ee74a8389d278279
 
-Mihomo compiler release: v1.19.33
-Mihomo compiler image: docker.io/metacubex/mihomo:v1.19.33
-Mihomo image digest: metacubex/mihomo@sha256:9211361a3ed85305383288d38c05e85862d6d5a590c10007c37fc059cca82e9c
+Mihomo compiler release: v1.19.34
+Mihomo compiler image: docker.io/metacubex/mihomo:v1.19.34
+Mihomo image digest: metacubex/mihomo@sha256:4c2495d705f152897a58eac410350f243835fd01ce2fe44949a571faa824d532
 
 Strict binary compilation: enabled
 sing-box summary: {"srs":72,"jsonFallback":0}

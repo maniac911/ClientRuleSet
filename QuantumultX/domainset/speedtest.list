@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-10T07:50:05.669Z
-# Size: 3483
+# Last Updated: 2026-11-11T07:16:16.195Z
+# Size: 3487
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:hNCaF70XdgNKn3_x57-YxbKenviEI4vtmhMf68o2vv4$
+# $content-hash-v1$:IvOsAtJblewPoBspDz0ZSiN0r57vAPj9805wr6va_n8$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -2097,6 +2097,7 @@ HOST,speed-mix.dispaisy.systems,reject
 HOST,speed.airwavesinternet.com,reject
 HOST,speed.connextelecom.com.br,reject
 HOST,speed.cyborgtelecom.com.br,reject
+HOST,speed.isrcomunicaciones.es,reject
 HOST,speed.matrixtelecon.com.br,reject
 HOST,speed.vm.brs.marcusn.co.uk,reject
 HOST,speedbodrum.fizynet.com.tr,reject
@@ -2310,6 +2311,7 @@ HOST,h1-speedtest-ba.htelecom.es,reject
 HOST,ham.wsqm.telekom-dienste.de,reject
 HOST,hizbalikesir.durunet.com.tr,reject
 HOST,hizgaziantep.durunet.com.tr,reject
+HOST,ihgtelecom.brsserver.com.br,reject
 HOST,ipl3pt.syd.ops.aspac.uu.net,reject
 HOST,itanetwork.brsserver.com.br,reject
 HOST,lax-cos2-ookla-1.99.network,reject
@@ -2872,6 +2874,7 @@ HOST,mumbooklaspeed1.jioconnect.com,reject
 HOST,nvmbooklaspeed1.jioconnect.com,reject
 HOST,ookla-estepona.aerioncloud.com,reject
 HOST,ooklaserver.asbn.va.ogital.net,reject
+HOST,ooklaserver.atln.ga.ogital.net,reject
 HOST,ooklaserver.dlls.tx.ogital.net,reject
 HOST,seawa00-speedtest.etstelco.com,reject
 HOST,seveninternet.brsserver.com.br,reject
@@ -3428,6 +3431,7 @@ HOST,sfosj0096speedtestserver01.wiline.com,reject
 HOST,sfosj0096speedtestserver02.wiline.com,reject
 HOST,speedtest-eastburwood.optusnet.com.au,reject
 HOST,speedtest-germany.veribarindir.com.tr,reject
+HOST,speedtest-phoenix.resoundnetworks.com,reject
 HOST,speedtest-sydney.macquarietelecom.com,reject
 HOST,speedtest.fiberlinksolutionsltd.co.ke,reject
 HOST,speedtest.mumbai.charotarbroadband.in,reject
