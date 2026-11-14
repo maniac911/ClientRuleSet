@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2026-11-13T07:25:33.569Z
-# Size: 873
+# Last Updated: 2026-11-14T07:06:42.173Z
+# Size: 875
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains known addresses that are avaliable in the Mainland China.
 #
-# $content-hash-v1$:1lrocIG7CqZQLjFKvgDcwGz-4Nr09rxv8Yd_hl4b-TI$
+# $content-hash-v1$:T2JH4w4R4mTMJcs-z0t0u3Mjmuy5edUP2Y745YkzHhU$
 #########################################
 HOST-SUFFIX,3.cn,reject
 HOST-SUFFIX,6.cn,reject
@@ -859,6 +859,7 @@ HOST-SUFFIX,pphimalayanrt.com,reject
 HOST-SUFFIX,tencent-cloud.com,reject
 HOST-SUFFIX,tencent-cloud.net,reject
 HOST-SUFFIX,toutiaostatic.com,reject
+HOST,app.jianguoyun.com,reject
 HOST-SUFFIX,chinanetcenter.com,reject
 HOST-SUFFIX,dl.pinyuncloud.com,reject
 HOST-SUFFIX,heytapdownload.com,reject
@@ -871,6 +872,7 @@ HOST,assets2.xboxlive.cn,reject
 HOST-SUFFIX,cm.steampowered.com,reject
 HOST-SUFFIX,luckincoffeecdn.com,reject
 HOST,ocsp.globalsign.com,reject
+HOST,comet.jianguoyun.com,reject
 HOST,ocsp2.globalsign.com,reject
 HOST-SUFFIX,alibabausercontent.com,reject
 HOST,cn.download.nvidia.com,reject
