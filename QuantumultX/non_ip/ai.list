@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - AIGC Domains
-# Last Updated: 2026-11-14T07:06:42.054Z
-# Size: 55
+# Last Updated: 2026-11-16T07:23:48.375Z
+# Size: 58
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains domains of OpenAI, Claude.
 #
-# $content-hash-v1$:TGOuidLz8lh3ce9ZzwmkZ3maQxLfJD7IPT5Xkj_PDsY$
+# $content-hash-v1$:nlc6ZyyZEZwDAyoX3okM3Du8A4PRhbVXAC1pRDloiDU$
 #########################################
 HOST-SUFFIX,g.ai,reject
 HOST-SUFFIX,x.ai,reject
@@ -32,6 +32,7 @@ HOST-SUFFIX,chatgpt.site,reject
 HOST-SUFFIX,deepmind.com,reject
 HOST,ai.google.dev,reject
 HOST-SUFFIX,anthropic.com,reject
+HOST,cloud.zed.dev,reject
 HOST-SUFFIX,gemini.google,reject
 HOST-SUFFIX,oaistatic.com,reject
 HOST,openrouter.ai,reject
@@ -48,6 +49,7 @@ HOST,server.codeium.com,reject
 HOST,aida.googleapis.com,reject
 HOST-SUFFIX,aistudio.google.com,reject
 HOST-SUFFIX,generativeai.google,reject
+HOST,aicode.googleapis.com,reject
 HOST,inference.codeium.com,reject
 HOST-SUFFIX,makersuite.google.com,reject
 HOST-SUFFIX,notebooklm.google.com,reject
@@ -62,6 +64,7 @@ HOST,alkalicore-pa.clients6.google.com,reject
 HOST,daily-cloudcode-pa.googleapis.com,reject
 HOST-SUFFIX,generativelanguage.googleapis.com,reject
 HOST-SUFFIX,proactivebackend-pa.googleapis.com,reject
+HOST,daily-cloudcode-pa.sandbox.googleapis.com,reject
 HOST-KEYWORD,openai,reject
 HOST-KEYWORD,alkalimakersuite-pa.clients6.google.com,reject
 ################## EOF ##################

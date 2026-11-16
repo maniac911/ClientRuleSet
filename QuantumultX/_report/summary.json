@@ -2,21 +2,21 @@
   "source": "Sukka FileOutput universal rule model",
   "policy_placeholder": "reject",
   "generated_files": 66,
-  "emitted_rules": 388714,
+  "emitted_rules": 386493,
   "emitted_by_type": {
-    "HOST": 9825,
+    "HOST": 9831,
     "HOST-KEYWORD": 211,
-    "HOST-SUFFIX": 377035,
+    "HOST-SUFFIX": 374937,
     "HOST-WILDCARD": 99,
     "IP-ASN": 21,
-    "IP-CIDR": 1420,
+    "IP-CIDR": 1291,
     "IP6-CIDR": 25,
     "USER-AGENT": 78
   },
-  "unsupported_rules": 304,
+  "unsupported_rules": 316,
   "unsupported_by_type": {
     "#": 4,
-    "AND": 42,
+    "AND": 54,
     "DST-PORT": 1,
     "PROCESS-NAME": 74,
     "URL-REGEX": 183

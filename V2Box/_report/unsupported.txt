@@ -68,6 +68,14 @@ AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(PROCESS-NAME,*CloudMounter
 AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.dev),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
@@ -92,6 +100,10 @@ AND,((DOMAIN,api.onedrive.com),(PROCESS-NAME,*CloudMounter))  # No verified loss
 AND,((DOMAIN,api.onedrive.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN,api.onedrive.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN,api.onedrive.com),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,app.drime.cloud),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,192.168.0.0/16))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN,www.googleapis.com),(PROCESS-NAME,*CloudMounter))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN,www.googleapis.com),(SRC-IP,10.0.0.0/8))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.
 AND,((DOMAIN,www.googleapis.com),(SRC-IP,172.16.0.0/12))  # No verified lossless mapping is enabled for this field in V2Box route-object/deep-link imports.

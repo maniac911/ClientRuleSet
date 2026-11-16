@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - AIGC Domains
-# Last Updated: 2026-11-14T07:06:42.054Z
-# Size: 55
+# Last Updated: 2026-11-16T07:23:48.375Z
+# Size: 58
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains domains of OpenAI, Claude.
 #
-# $content-hash-v1$:k3jdGOEgP9VH0STMoQT1aInHFKBCqtLsUrrcfyz3kDM$
+# $content-hash-v1$:pZ_HJoeOgzupTJixrckgHiRcmWQtCwnu7sAP2BVChUk$
 #########################################
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,x.ai
@@ -32,6 +32,7 @@ DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN,ai.google.dev
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN,cloud.zed.dev
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN,openrouter.ai
@@ -48,6 +49,7 @@ DOMAIN,server.codeium.com
 DOMAIN,aida.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,generativeai.google
+DOMAIN,aicode.googleapis.com
 DOMAIN,inference.codeium.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,notebooklm.google.com
@@ -62,6 +64,7 @@ DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+

@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-11-14T07:06:43.455Z
-# Size: 4700
+# Last Updated: 2026-11-16T07:23:49.591Z
+# Size: 4702
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:OeOmFoigsSn7TExxgXsOYcryU5KMIFA5bb0AuWL_Jw8$
+# $content-hash-v1$:A3XKx_QCf2kcaoiRLpDpEekWeHSbhm7RIkl47-4mZM8$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -2661,6 +2661,7 @@ HOST,maps.wikimedia.org,reject
 HOST,maptile.osmand.net,reject
 HOST,media-cms.ayoba.me,reject
 HOST,media.cgtrader.com,reject
+HOST,media.datacamp.com,reject
 HOST,media.flaticon.com,reject
 HOST,media.formula1.com,reject
 HOST,media.gamestop.com,reject
@@ -3355,6 +3356,7 @@ HOST,static.grammarly.com,reject
 HOST,static.helpjuice.com,reject
 HOST,static.incapsula.com,reject
 HOST,static.infomaniak.ch,reject
+HOST,static.karousell.com,reject
 HOST,static.macupdate.com,reject
 HOST,static.mediafire.com,reject
 HOST,static.meteoblue.com,reject

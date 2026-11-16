@@ -5,14 +5,14 @@
   "source_files": 66,
   "generated_files": 57,
   "emitted_rules": 150,
-  "unsupported_rules": 256,
+  "unsupported_rules": 268,
   "unsupported_by_type": {
-    "AND": 42,
+    "AND": 54,
     "IP-ASN": 21,
     "PROCESS-NAME": 1,
     "URL-REGEX": 192
   },
-  "warnings": 810,
+  "warnings": 681,
   "notes": [
     "Each file is a routing fragment shaped as { routing: { rules: [...] } }; merge it into a complete Xray config before running it.",
     "sourceIP/sourcePort are preserved natively.",

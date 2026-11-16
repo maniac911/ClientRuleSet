@@ -1,12 +1,12 @@
 #########################################
 # Sukka's Ruleset - CloudMounter / RaiDrive
-# Last Updated: 2026-11-14T07:06:41.713Z
-# Size: 40
+# Last Updated: 2026-11-16T07:23:47.911Z
+# Size: 52
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
-# $content-hash-v1$:39dlEByj9IDQZQxAQp1yyoz5ClzJiw68MvZb5EjO7cg$
+# $content-hash-v1$:niqHgisJi8mB3Fkqty0KNQhLEKLeW0xegFAp72bUnto$
 #########################################
 AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))
 AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))
@@ -48,4 +48,16 @@ AND,((DOMAIN-SUFFIX,upload.app.box.com),(PROCESS-NAME,*CloudMounter))
 AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,10.0.0.0/8))
 AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,172.16.0.0/12))
 AND,((DOMAIN-SUFFIX,upload.app.box.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN,app.drime.cloud),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,192.168.0.0/16))
+AND,((DOMAIN-SUFFIX,r2.dev),(PROCESS-NAME,*CloudMounter))
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,10.0.0.0/8))
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,172.16.0.0/12))
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,192.168.0.0/16))
 ################## EOF ##################

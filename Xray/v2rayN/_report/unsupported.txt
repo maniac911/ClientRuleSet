@@ -58,6 +58,14 @@ AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(PROCESS-NAME,*CloudMounter
 AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN-SUFFIX,my.microsoftpersonalcontent.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.cloudflarestorage.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.dev),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN-SUFFIX,r2.dev),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
@@ -82,6 +90,10 @@ AND,((DOMAIN,api.onedrive.com),(PROCESS-NAME,*CloudMounter))  # Compound source 
 AND,((DOMAIN,api.onedrive.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN,api.onedrive.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN,api.onedrive.com),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,app.drime.cloud),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
+AND,((DOMAIN,app.drime.cloud),(SRC-IP,192.168.0.0/16))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN,www.googleapis.com),(PROCESS-NAME,*CloudMounter))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN,www.googleapis.com),(SRC-IP,10.0.0.0/8))  # Compound source expressions are not flattened because that could change matching semantics.
 AND,((DOMAIN,www.googleapis.com),(SRC-IP,172.16.0.0/12))  # Compound source expressions are not flattened because that could change matching semantics.
