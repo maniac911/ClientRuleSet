@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-11-16T07:23:49.591Z
-# Size: 4702
+# Last Updated: 2026-11-19T08:01:33.537Z
+# Size: 4705
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:A3XKx_QCf2kcaoiRLpDpEekWeHSbhm7RIkl47-4mZM8$
+# $content-hash-v1$:zN1PWn4x7BYB85V6Ku-_RRmezpsV5XEaT6krV0np49c$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -3485,7 +3485,6 @@ HOST,cdne-pics.youjizz.com,reject
 HOST,cdnjs.betterstack.com,reject
 HOST-SUFFIX,chargebeestaticv2.com,reject
 HOST,chat-assets.front.app,reject
-HOST-SUFFIX,claudeusercontent.com,reject
 HOST,cloud.typenetwork.com,reject
 HOST-SUFFIX,cloud1.influxdata.com,reject
 HOST-SUFFIX,cloud2.influxdata.com,reject
@@ -4389,6 +4388,7 @@ HOST,encrypted-vtbn0.gstatic.com,reject
 HOST,encrypted-vtbn1.gstatic.com,reject
 HOST,encrypted-vtbn2.gstatic.com,reject
 HOST,encrypted-vtbn3.gstatic.com,reject
+HOST-SUFFIX,frame.claudeusercontent.com,reject
 HOST,images-eds-ssl.xboxlive.com,reject
 HOST,images-ext-1.discordapp.net,reject
 HOST,images-ext-2.discordapp.net,reject
@@ -4442,6 +4442,7 @@ HOST-SUFFIX,agechecker-northern-apps.com,reject
 HOST-SUFFIX,agechecker.northern-apps.com,reject
 HOST-SUFFIX,applicationinsights.azure.cn,reject
 HOST,assets-cdn.watchdisneyfe.com,reject
+HOST,assets.claudeusercontent.com,reject
 HOST,assets.positional-bucket.com,reject
 HOST,assets4.mist-train-girls.com,reject
 HOST,cdn-dynmedia-1.microsoft.com,reject
@@ -4488,6 +4489,7 @@ HOST,static-oforms.onlyoffice.com,reject
 HOST-SUFFIX,static-prod-web.miniclip.com,reject
 HOST,static-r.kamihimeproject.net,reject
 HOST,static-secure-uploads.ui.com,reject
+HOST,static.claudeusercontent.com,reject
 HOST,static.community.workday.com,reject
 HOST,static.edge.microsoftapp.net,reject
 HOST,static2.sharepointonline.com,reject
@@ -4496,6 +4498,7 @@ HOST,store-images.s-microsoft.com,reject
 HOST-SUFFIX,tunnels.api.visualstudio.com,reject
 HOST,ui-statics-cf.streamable.com,reject
 HOST,uos-support-files.svc.ui.com,reject
+HOST,upload.claudeusercontent.com,reject
 HOST,vsmarketplacebadge.apphb.com,reject
 HOST,wctour-images.worldchess.com,reject
 HOST,akamai-assets.squarespace.com,reject

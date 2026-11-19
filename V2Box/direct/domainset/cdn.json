@@ -3317,6 +3317,7 @@
       "xpaywalletcdn.azureedge.net",
       "account-widget-mfe.gcore.com",
       "assets-cdn.watchdisneyfe.com",
+      "assets.claudeusercontent.com",
       "assets.positional-bucket.com",
       "assets4.mist-train-girls.com",
       "cdn-dynmedia-1.microsoft.com",
@@ -3358,6 +3359,7 @@
       "static-oforms.onlyoffice.com",
       "static-r.kamihimeproject.net",
       "static-secure-uploads.ui.com",
+      "static.claudeusercontent.com",
       "static.community.workday.com",
       "static.edge.microsoftapp.net",
       "static2.sharepointonline.com",
@@ -3365,6 +3367,7 @@
       "store-images.s-microsoft.com",
       "ui-statics-cf.streamable.com",
       "uos-support-files.svc.ui.com",
+      "upload.claudeusercontent.com",
       "vsmarketplacebadge.apphb.com",
       "wctour-images.worldchess.com",
       "akamai-assets.squarespace.com",
@@ -4690,7 +4693,6 @@
       "regexp:(^|\\.)cdn\\.autoevolution\\.com$",
       "regexp:(^|\\.)cdn\\.printfriendly\\.com$",
       "regexp:(^|\\.)chargebeestaticv2\\.com$",
-      "regexp:(^|\\.)claudeusercontent\\.com$",
       "regexp:(^|\\.)cloud1\\.influxdata\\.com$",
       "regexp:(^|\\.)cloud2\\.influxdata\\.com$",
       "regexp:(^|\\.)content001\\.bet365\\.com$",
@@ -4796,7 +4798,8 @@
       "regexp:(^|\\.)hubspotusercontent-eu1\\.net$",
       "regexp:(^|\\.)hubspotusercontent-na1\\.net$",
       "regexp:(^|\\.)myanalytics\\.cdn\\.office\\.net$",
-      "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$"
+      "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$",
+      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$"
     ]
   },
   {
@@ -4808,10 +4811,10 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 4 · direct",
     "isEnable": true,
     "list": [
-      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$",
       "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
       "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$",
       "regexp:(^|\\.)design-system\\.economist\\.com$",
+      "regexp:(^|\\.)frame\\.claudeusercontent\\.com$",
       "regexp:(^|\\.)ipfsgateway\\.makersplace\\.com$",
       "regexp:(^|\\.)siteintercept\\.qualtrics\\.com$",
       "regexp:(^|\\.)widget\\.cluster\\.groovehq\\.com$",

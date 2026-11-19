@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - AIGC Domains
-# Last Updated: 2026-11-16T07:23:48.375Z
-# Size: 58
+# Last Updated: 2026-11-19T08:01:33.074Z
+# Size: 60
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains domains of OpenAI, Claude.
 #
-# $content-hash-v1$:pZ_HJoeOgzupTJixrckgHiRcmWQtCwnu7sAP2BVChUk$
+# $content-hash-v1$:hmlmncYMt9AfahuVDX2YDbuobJX939ksV1H_bPpCO5s$
 #########################################
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,x.ai
@@ -27,6 +27,7 @@ DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN,claude.site
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,deepmind.com
@@ -58,6 +59,7 @@ DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,aisandbox-pa.googleapis.com
 DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN,bridge.claudeusercontent.com
 DOMAIN,server.self-serve.windsurf.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,alkalicore-pa.clients6.google.com

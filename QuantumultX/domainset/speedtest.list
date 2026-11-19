@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-16T07:23:47.886Z
-# Size: 3494
+# Last Updated: 2026-11-19T08:01:32.774Z
+# Size: 3498
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:x95EJ7udJjWo_WoYquhYg16MvFlkOJVRVKHG6mCgcVQ$
+# $content-hash-v1$:WiDN4S58xEEihU1BvXRfBLhdqPsKYmdmtfTKij4GVxo$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -745,6 +745,7 @@ HOST,speedtest.nethiz.net,reject
 HOST,speedtest.netpool.in,reject
 HOST,speedtest.netrack.ru,reject
 HOST,speedtest.oopaya.com,reject
+HOST,speedtest.opiquad.it,reject
 HOST,speedtest.quadro.net,reject
 HOST,speedtest.quickqc.nl,reject
 HOST-SUFFIX,speedtest.railtel.in,reject
@@ -1410,6 +1411,7 @@ HOST,perf-01.ixn.as42689.net,reject
 HOST,prescott1.cabospeed.com,reject
 HOST,seednet-tc1.seed.net.tw,reject
 HOST,seednet-tn1.seed.net.tw,reject
+HOST,seednet-tp1.seed.net.tw,reject
 HOST,seednet-ty1.seed.net.tw,reject
 HOST,sp-chi-01.ezeefiber.net,reject
 HOST,sp-sea-01.ezeefiber.net,reject
@@ -1636,6 +1638,7 @@ HOST,bytp-speedtest-1.123.net,reject
 HOST,cbpuspeed.aspensmart.net,reject
 HOST,cesu-hz.zjtelecom.com.cn,reject
 HOST,cesu-nb.zjtelecom.com.cn,reject
+HOST,dallas.outboundrix.cloud,reject
 HOST,dc1-speed1.alpha-tech.us,reject
 HOST,fla-st01.provenet.com.br,reject
 HOST,fra-eq5-tptest1.31173.se,reject
@@ -2339,6 +2342,7 @@ HOST,spdtest.omegatelecom.net.br,reject
 HOST,speed.kansas.smishcraft.com,reject
 HOST,speed.lax-1.serverforge.org,reject
 HOST,speedtest-asiago.wifiweb.it,reject
+HOST,speedtest-bne0.encoo.com.au,reject
 HOST,speedtest-ist1.netlojik.com,reject
 HOST,speedtest-lax.perfectip.net,reject
 HOST,speedtest-lhr-01.pdx.net.uk,reject
