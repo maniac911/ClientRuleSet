@@ -3072,6 +3072,7 @@
       "asset-cdn.uscardforum.com",
       "assets.map.brightcove.com",
       "assets.media-platform.com",
+      "assets.monetizationos.com",
       "assets.openalternative.co",
       "assets.squarewebsites.org",
       "assets.visioncritical.net",
@@ -3283,8 +3284,7 @@
       "platform-assets.typekit.net",
       "player-frontend.cnevids.com",
       "prego-cache.prod.sketch.com",
-      "public-pages.cbinsights.com",
-      "resources-live.sketch.cloud"
+      "public-pages.cbinsights.com"
     ]
   },
   {
@@ -3296,6 +3296,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · block",
     "isEnable": true,
     "list": [
+      "resources-live.sketch.cloud",
       "rum-ingest.us1.signalfx.com",
       "safebrowsing.googleapis.com",
       "sessions-bugsnag.docker.com",
@@ -4768,6 +4769,7 @@
       "regexp:(^|\\.)assets\\.as2\\.amazonaws\\.com$",
       "regexp:(^|\\.)buildkiteusercontent\\.com$",
       "regexp:(^|\\.)bundle\\.thimatic-apps\\.com$",
+      "regexp:(^|\\.)butterfly-effect-cdn\\.dev$",
       "regexp:(^|\\.)firestore\\.googleapis\\.com$",
       "regexp:(^|\\.)hubspotusercontent00\\.net$",
       "regexp:(^|\\.)hubspotusercontent10\\.net$",
@@ -4798,8 +4800,7 @@
       "regexp:(^|\\.)hubspotusercontent-eu1\\.net$",
       "regexp:(^|\\.)hubspotusercontent-na1\\.net$",
       "regexp:(^|\\.)myanalytics\\.cdn\\.office\\.net$",
-      "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$",
-      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$"
+      "regexp:(^|\\.)static\\.dash\\.cloudflare\\.com$"
     ]
   },
   {
@@ -4811,6 +4812,7 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN-SUFFIX 4 · block",
     "isEnable": true,
     "list": [
+      "regexp:(^|\\.)telemetry\\.services\\.yofi\\.ai$",
       "regexp:(^|\\.)cdn-lfs-us-1\\.huggingface\\.co$",
       "regexp:(^|\\.)dam-cdn\\.atl\\.orangelogic\\.com$",
       "regexp:(^|\\.)design-system\\.economist\\.com$",

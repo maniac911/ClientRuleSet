@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-11-19T08:01:33.537Z
-# Size: 4705
+# Last Updated: 2026-11-20T07:50:52.887Z
+# Size: 4707
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:zN1PWn4x7BYB85V6Ku-_RRmezpsV5XEaT6krV0np49c$
+# $content-hash-v1$:Z-C7cb-EIxrt1KpeM1hYVYbEFqInIN6zqZ2PQcdpIcE$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -4071,6 +4071,7 @@ HOST,axiecdn.axieinfinity.com,reject
 HOST,brick.freetls.fastly.net,reject
 HOST-SUFFIX,buildkiteusercontent.com,reject
 HOST-SUFFIX,bundle.thimatic-apps.com,reject
+HOST-SUFFIX,butterfly-effect-cdn.dev,reject
 HOST,cache.omnicalculator.com,reject
 HOST,cdn-image01.casetify.com,reject
 HOST,cdn-image02.casetify.com,reject
@@ -4177,6 +4178,7 @@ HOST,app-static.sendsafely.com,reject
 HOST,asset-cdn.uscardforum.com,reject
 HOST,assets.map.brightcove.com,reject
 HOST,assets.media-platform.com,reject
+HOST,assets.monetizationos.com,reject
 HOST,assets.openalternative.co,reject
 HOST-SUFFIX,assets.shortbread.aws.dev,reject
 HOST,assets.squarewebsites.org,reject

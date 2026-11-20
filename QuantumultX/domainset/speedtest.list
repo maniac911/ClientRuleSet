@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-19T08:01:32.774Z
-# Size: 3498
+# Last Updated: 2026-11-20T07:50:51.566Z
+# Size: 3500
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:WiDN4S58xEEihU1BvXRfBLhdqPsKYmdmtfTKij4GVxo$
+# $content-hash-v1$:V0dpF-0GmZ91Bi16Hzl-cpP9rJEhbvgmv5p_fUYwVZU$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -1409,6 +1409,7 @@ HOST,ookla.soc.atharva.co.id,reject
 HOST,ookla.speedtest.cnix.cn,reject
 HOST,perf-01.ixn.as42689.net,reject
 HOST,prescott1.cabospeed.com,reject
+HOST,seednet-hc1.seed.net.tw,reject
 HOST,seednet-tc1.seed.net.tw,reject
 HOST,seednet-tn1.seed.net.tw,reject
 HOST,seednet-tp1.seed.net.tw,reject
@@ -1666,6 +1667,7 @@ HOST,ooklaspdtstsvr.zitel.com,reject
 HOST,reflector.aberythmic.com,reject
 HOST,riorancho1.cabospeed.com,reject
 HOST,seacaftest.aptalaska.net,reject
+HOST,seednet-ntp2.seed.net.tw,reject
 HOST,sg-speedtest.fast.net.id,reject
 HOST,siouxcity1.cabospeed.com,reject
 HOST,sirsa.softechinfosol.com,reject
