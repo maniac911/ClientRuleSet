@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-20T07:50:51.566Z
-# Size: 3500
+# Last Updated: 2026-11-26T08:58:33.374Z
+# Size: 3507
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:V0dpF-0GmZ91Bi16Hzl-cpP9rJEhbvgmv5p_fUYwVZU$
+# $content-hash-v1$:m7Uh-SHpLDsZjd0AtKdBkDjcJ7n2ePfJ1nBegiv5qv0$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -300,7 +300,9 @@ HOST,www.librespeed.fi,reject
 HOST,ch1.chtm.hinet.net,reject
 HOST,ds19.vipconnect.mx,reject
 HOST,eregli.flix.net.tr,reject
+HOST,fetdl2.seed.net.tw,reject
 HOST,fetkt1.seed.net.tw,reject
+HOST,fetml1.seed.net.tw,reject
 HOST,fetnt1.seed.net.tw,reject
 HOST,fetsz1.seed.net.tw,reject
 HOST,fetyl1.seed.net.tw,reject
@@ -659,6 +661,7 @@ HOST,sp1.jdmbroadband.com,reject
 HOST,sp1.vilanetce.com.br,reject
 HOST,spd-ookla.stelogy.io,reject
 HOST,spdt.voenetworks.com,reject
+HOST,speed-fra.laudat.org,reject
 HOST,speed.alsalamnet.net,reject
 HOST-SUFFIX,speed.cloudflare.com,reject
 HOST,speed.coralis.net.au,reject
@@ -717,6 +720,7 @@ HOST,speedtest.grootop.in,reject
 HOST,speedtest.honest.net,reject
 HOST,speedtest.ibertic.es,reject
 HOST,speedtest.idsi.co.uk,reject
+HOST,speedtest.ilitha.com,reject
 HOST,speedtest.imcloud.tw,reject
 HOST,speedtest.infraly.co,reject
 HOST,speedtest.ipcore.com,reject
@@ -2509,6 +2513,7 @@ HOST,ks-speedtest.homeplus.net.tw,reject
 HOST,kzspeedtest01.aunalytics.com,reject
 HOST,ldc01-speedtest.whipcord.com,reject
 HOST,lg-speedtest.homeplus.net.tw,reject
+HOST,lhr.speedtest.rustbanned.net,reject
 HOST,lifitelecom.brsserver.com.br,reject
 HOST,mia-speedtest.northstate.net,reject
 HOST,myspeedtest.atcbroadband.com,reject
@@ -2704,6 +2709,7 @@ HOST,edgemark-lax.cust.edgemark.io,reject
 HOST,exc-speedtest.unitedfiber.com,reject
 HOST,ga-speedtest.liveoakfiber.com,reject
 HOST,ksc11-speedtest01.as15108.com,reject
+HOST,librespeed-dtw.rackgenius.com,reject
 HOST,librespeed.lukas-heinrich.com,reject
 HOST,lnk11-speedtest01.as15108.com,reject
 HOST,lsv11-speedtest01.as15108.com,reject
@@ -3090,6 +3096,7 @@ HOST,speedtest.peariverbroadband.com,reject
 HOST,speedtest.pinguimtelecom.net.br,reject
 HOST,speedtest.saidnettelecom.com.br,reject
 HOST,speedtest.southernfiberworx.com,reject
+HOST,speedtest.speednetmacapa.com.br,reject
 HOST,speedtest.vienna.nodescrape.net,reject
 HOST,speedtest.xxs-speedtest-zxxy.me,reject
 HOST,speedtest01.adl1.spintel.net.au,reject
