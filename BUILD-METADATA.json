@@ -2,8 +2,8 @@
   "source_sha": "13a27d7f6552e53c09606e0f3add89b70ebb3252",
   "upstream_sha": "03e8353579dee3d9dd47c3e253db7b81ccad6f3b",
   "build_input_fingerprint": "3125b770ee085fb73071ad4354ebb4aefef2361340ae4110a57168765772ef19",
-  "built_at": "2026-11-26T08:59:45Z",
-  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/45787403105",
+  "built_at": "2026-11-27T09:11:35Z",
+  "run_url": "https://github.com/maniac911/ClientRuleSet/actions/runs/45971171039",
   "strict_binary_compilation": true,
   "dependency_lock": {
     "upstream_lockfile_was_valid": true,
@@ -16,9 +16,9 @@
     "mrs": 38
   },
   "sing_box": {
-    "release": "v1.14.4",
-    "image": "ghcr.io/sagernet/sing-box:v1.14.4",
-    "digest": "ghcr.io/sagernet/sing-box@sha256:0788ffbddab2c68a99a2dd4780bbc50902f159af6f589df3ee74a8389d278279",
+    "release": "v1.14.5",
+    "image": "ghcr.io/sagernet/sing-box:v1.14.5",
+    "digest": "ghcr.io/sagernet/sing-box@sha256:8bf984a2c4e2ee61b0cb4097560ba72dac3406d2827a3b554b07ab80a3507e63",
     "summary": {
       "srs": 72,
       "jsonFallback": 0
