@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Large Files Hosting Domains
-# Last Updated: 2026-11-27T09:10:49.383Z
-# Size: 1969
+# Last Updated: 2026-11-28T08:32:11.262Z
+# Size: 1964
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains domains for software updating & large file hosting.
 #
-# $content-hash-v1$:Mv2Heisft8oUoS0Vgthe8QPrlY7e1zPQEk8UvyWU38E$
+# $content-hash-v1$:W2PdD9KOJ6QF-mClW9XcwgPsNSiJLo0k7a6RshEtuNA$
 #########################################
 HOST-SUFFIX,gcr.io,reject
 HOST,ghp.ci,reject
@@ -127,7 +127,6 @@ HOST,ftp.daum.net,reject
 HOST,ftp.eq.uc.pt,reject
 HOST,ftp.funet.fi,reject
 HOST,ftp.is.co.za,reject
-HOST,ftp.ktug.org,reject
 HOST,ftp.lanet.kr,reject
 HOST,ftp.linux.cz,reject
 HOST,ftp.linux.it,reject
@@ -773,7 +772,6 @@ HOST,cdimage.ubuntu.com,reject
 HOST,cisco.yuntu.com.tw,reject
 HOST,cpan-mirror.rbc.ru,reject
 HOST,cpan.dcc.uchile.cl,reject
-HOST,cpan.mines-albi.fr,reject
 HOST,ctan.dcc.uchile.cl,reject
 HOST,ctan.math.utah.edu,reject
 HOST,ctan.mines-albi.fr,reject
@@ -1462,10 +1460,8 @@ HOST,mirror.debian.ikoula.com,reject
 HOST,mirror.digitaloceans.dev,reject
 HOST,mirror.dimensiondata.com,reject
 HOST,mirror.grid.uchicago.edu,reject
-HOST,mirror.library.ucy.ac.cy,reject
 HOST-SUFFIX,mirror.liquidtelecom.com,reject
 HOST,mirror.mythic-beasts.com,reject
-HOST,mirror.netcologne.de.org,reject
 HOST,mirror.ubuntu.ikoula.com,reject
 HOST,mirror.unix-solutions.be,reject
 HOST,mirror.us.mirhosting.net,reject
@@ -1604,7 +1600,6 @@ HOST,mirror.bharatdatacenter.com,reject
 HOST,mirror.domainhizmetleri.com,reject
 HOST,mirror.improve.nordlo.cloud,reject
 HOST,mirror.retentionrange.co.bw,reject
-HOST,mirror.thunderhosting.cloud,reject
 HOST,mirror.united-gameserver.de,reject
 HOST,mirrors.advancedhosters.com,reject
 HOST-SUFFIX,oss-ap-south-1.aliyuncs.com,reject

@@ -437,7 +437,6 @@
       "pics.vpdmm.cc",
       "pomf2.lain.la",
       "r2.dejavu.moe",
-      "r2cdn.c7d.dev",
       "rdr.windy.com",
       "s.abcnews.com",
       "s.imgflip.com",
@@ -639,7 +638,6 @@
       "s1.divhunt.com",
       "s3.2233778.xyz",
       "scache.vzw.com",
-      "scdn.clerk.com",
       "sdata.ndtv.com",
       "sdk.qikify.com",
       "sites.super.so",
@@ -659,7 +657,6 @@
       "static.snyk.io",
       "static.toss.im",
       "static.xns.one",
-      "static.yfsp.tv",
       "stc.utdstc.com",
       "stream.mux.com",
       "t0.gstatic.com",
@@ -818,7 +815,10 @@
       "events.split.io",
       "fast.wistia.com",
       "fast.wistia.net",
-      "fesdk.nexon.com"
+      "fesdk.nexon.com",
+      "file1.hkepc.net",
+      "files.readme.io",
+      "files.slack.com"
     ]
   },
   {
@@ -830,9 +830,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 3 · proxy",
     "isEnable": true,
     "list": [
-      "file1.hkepc.net",
-      "files.readme.io",
-      "files.slack.com",
       "fonts.bunny.net",
       "fonts.gishan.cc",
       "fonts.reown.com",
@@ -888,7 +885,6 @@
       "mta.newfold.com",
       "object.innei.in",
       "objects.hit.moe",
-      "pacdn.500px.org",
       "pcz.javidol.org",
       "ph.langfuse.com",
       "piccdn.7mmtv.sx",
@@ -1059,7 +1055,6 @@
       "crl.verisign.com",
       "crt.comodoca.com",
       "css.yymanhua.com",
-      "drscdn.500px.org",
       "e.deviantart.net",
       "embed.lantern.io",
       "embed.reddit.com",
@@ -1175,7 +1170,6 @@
       "s3.sitepoint.com",
       "s8.maxstream.org",
       "sdk.customfit.ai",
-      "segapi.clerk.com",
       "shots.codepen.io",
       "static.arxiv.org",
       "static.axios.com",
@@ -1229,7 +1223,13 @@
       "vip.dytt-img.com",
       "w.soundcloud.com",
       "web-cdn.bsky.app",
-      "ws-cdn.nperf.com"
+      "ws-cdn.nperf.com",
+      "www.fumadocs.dev",
+      "a.kickstarter.com",
+      "amp.akamaized.net",
+      "api.crashguard.me",
+      "api.fontshare.com",
+      "api.simplesvg.com"
     ]
   },
   {
@@ -1241,12 +1241,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 4 · proxy",
     "isEnable": true,
     "list": [
-      "www.fumadocs.dev",
-      "a.kickstarter.com",
-      "amp.akamaized.net",
-      "api.crashguard.me",
-      "api.fontshare.com",
-      "api.simplesvg.com",
       "app-api.vidjet.io",
       "app.1password.com",
       "app.cookieyes.com",
@@ -1640,7 +1634,13 @@
       "favicon.yandex.net",
       "files.gempages.net",
       "flows.trysavvy.com",
-      "fonts.codeberg.org"
+      "fonts.codeberg.org",
+      "genesis-cdn.ff.com",
+      "global.divhunt.com",
+      "graph.facebook.com",
+      "hawk.tomsguide.com",
+      "headway-widget.net",
+      "hls.hentaicity.com"
     ]
   },
   {
@@ -1652,12 +1652,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 5 · proxy",
     "isEnable": true,
     "list": [
-      "genesis-cdn.ff.com",
-      "global.divhunt.com",
-      "graph.facebook.com",
-      "hawk.tomsguide.com",
-      "headway-widget.net",
-      "hls.hentaicity.com",
       "home.integrate.com",
       "icons.ferndocs.com",
       "icons.veryicon.com",
@@ -1725,7 +1719,6 @@
       "proxy.spigotmc.org",
       "public.hare200.com",
       "public.popclip.app",
-      "r2cdn.corespeed.io",
       "reader.readmoo.com",
       "registry.oomol.com",
       "res.cloudinary.com",
@@ -2051,7 +2044,14 @@
       "static.euronews.com",
       "static.formula1.com",
       "static.getbutton.io",
-      "static.giffgaff.com"
+      "static.giffgaff.com",
+      "static.gigabyte.com",
+      "static.goaffpro.com",
+      "static.mendeley.com",
+      "static.monotype.com",
+      "static.mypikpak.com",
+      "static.narrativ.com",
+      "static.nicehash.com"
     ]
   },
   {
@@ -2063,13 +2063,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 6 · proxy",
     "isEnable": true,
     "list": [
-      "static.gigabyte.com",
-      "static.goaffpro.com",
-      "static.mendeley.com",
-      "static.monotype.com",
-      "static.mypikpak.com",
-      "static.narrativ.com",
-      "static.nicehash.com",
       "static.onlyfans.com",
       "static.opensuse.org",
       "static.politico.com",
@@ -2422,6 +2415,7 @@
       "cdn.freebiesupply.com",
       "cdn.heapanalytics.com",
       "cdn.joincommunity.xyz",
+      "cdn.protect.clerk.com",
       "cdn.prowritingaid.com",
       "cdn.shoppinggives.com",
       "cdn.simplelocalize.io",
@@ -2462,7 +2456,13 @@
       "event-assets.gsma.com",
       "events-live.apple.com",
       "files.mastodon.online",
-      "files.mastodon.social"
+      "files.mastodon.social",
+      "files.scamadviser.com",
+      "files.writefreely.org",
+      "font-public.canva.com",
+      "front-resource.fs.com",
+      "frontend2.locally.com",
+      "gitpkg-fork.vercel.sh"
     ]
   },
   {
@@ -2474,12 +2474,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 7 · proxy",
     "isEnable": true,
     "list": [
-      "files.scamadviser.com",
-      "files.writefreely.org",
-      "font-public.canva.com",
-      "front-resource.fs.com",
-      "frontend2.locally.com",
-      "gitpkg-fork.vercel.sh",
       "i.creativecommons.org",
       "icms-image.slatic.net",
       "image-cdn.porndig.com",
@@ -2510,7 +2504,6 @@
       "media.games.dmm.co.jp",
       "media.gettyimages.com",
       "media.graphassets.com",
-      "media.hentaifreak.org",
       "media.identity.ui.com",
       "media.invisioncic.com",
       "media.istockphoto.com",
@@ -2797,7 +2790,6 @@
       "assets.clever-cloud.com",
       "assets.clickfunnels.com",
       "assets.lemonsqueezy.com",
-      "assets.mcp.corespeed.io",
       "assets.science.nasa.gov",
       "assets.singaporeair.com",
       "assets.streamlinehq.com",
@@ -2873,7 +2865,15 @@
       "lecontent.sololearn.com",
       "livemap-tiles1.waze.com",
       "mangaz-static.j-comi.jp",
-      "media-cdn.atlassian.com"
+      "media-cdn.atlassian.com",
+      "media-cdn.epicgames.com",
+      "media-cms.onesignal.com",
+      "media-process.hibob.com",
+      "media.contentapi.ea.com",
+      "media.geeksforgeeks.org",
+      "media.nbclosangeles.com",
+      "media.pointandplace.com",
+      "ni-assets.azureedge.net"
     ]
   },
   {
@@ -2885,14 +2885,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 8 · proxy",
     "isEnable": true,
     "list": [
-      "media-cdn.epicgames.com",
-      "media-cms.onesignal.com",
-      "media-process.hibob.com",
-      "media.contentapi.ea.com",
-      "media.geeksforgeeks.org",
-      "media.nbclosangeles.com",
-      "media.pointandplace.com",
-      "ni-assets.azureedge.net",
       "p-cdnstatic.svc.litv.tv",
       "packages.jetbrains.team",
       "pplx-res.cloudinary.com",
@@ -3039,9 +3031,7 @@
       "segment.digitalocean.com",
       "service-icons.zeabur.com",
       "sf-coze-web-cdn.coze.com",
-      "showcase.abovemarket.com",
       "sp-spiegel-de.spiegel.de",
-      "spotlightimage.biggo.com",
       "static-assets.mapbox.com",
       "static-assets.vinted.com",
       "static-forms.klaviyo.com",
@@ -3155,7 +3145,6 @@
       "trekcdnprod.azureedge.net",
       "tuf-repo-cdn.sigstore.dev",
       "ubistatic2-a.akamaihd.net",
-      "unlimited-cdn.waifu2x.net",
       "vz-2222604c-50b.b-cdn.net",
       "vz-c0fe498e-5ab.b-cdn.net",
       "web-assets.esetstatic.com",
@@ -3284,7 +3273,18 @@
       "platform-assets.typekit.net",
       "player-frontend.cnevids.com",
       "prego-cache.prod.sketch.com",
-      "public-pages.cbinsights.com"
+      "public-pages.cbinsights.com",
+      "resources-live.sketch.cloud",
+      "rum-ingest.us1.signalfx.com",
+      "safebrowsing.googleapis.com",
+      "sessions-bugsnag.docker.com",
+      "solve-widget.forethought.ai",
+      "sourcepoint.theguardian.com",
+      "static-homepage-en.pluto.tv",
+      "static-mh.content.disney.io",
+      "static-production.npmjs.com",
+      "static-webfonts.myfonts.com",
+      "static.acm.account.sony.com"
     ]
   },
   {
@@ -3296,17 +3296,6 @@
     "remark": "ClientRuleSet domainset/cdn · DOMAIN 9 · proxy",
     "isEnable": true,
     "list": [
-      "resources-live.sketch.cloud",
-      "rum-ingest.us1.signalfx.com",
-      "safebrowsing.googleapis.com",
-      "sessions-bugsnag.docker.com",
-      "solve-widget.forethought.ai",
-      "sourcepoint.theguardian.com",
-      "static-homepage-en.pluto.tv",
-      "static-mh.content.disney.io",
-      "static-production.npmjs.com",
-      "static-webfonts.myfonts.com",
-      "static.acm.account.sony.com",
       "static.captcha-delivery.com",
       "static1.straitstimes.com.sg",
       "sts.online.visualstudio.com",
@@ -3449,6 +3438,7 @@
       "bookface-static.ycombinator.com",
       "brand-assets.cne.ngc.nvidia.com",
       "bunnycdn-video-assets.b-cdn.net",
+      "cdn-resize-prod-com.500px.cloud",
       "cdn-widgetsrepository.yotpo.com",
       "cdn.playersupport.riotgames.com",
       "cdn.techcommunity.microsoft.com",

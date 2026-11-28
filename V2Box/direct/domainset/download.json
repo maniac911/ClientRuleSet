@@ -96,7 +96,6 @@
       "ftp.eq.uc.pt",
       "ftp.funet.fi",
       "ftp.is.co.za",
-      "ftp.ktug.org",
       "ftp.lanet.kr",
       "ftp.linux.cz",
       "ftp.linux.it",
@@ -407,7 +406,8 @@
       "debian.otenet.gr",
       "debian.uevora.pt",
       "debian.volia.net",
-      "dl.cloudsmith.io"
+      "dl.cloudsmith.io",
+      "dl.getaurora.dev"
     ]
   },
   {
@@ -419,7 +419,6 @@
     "remark": "ClientRuleSet domainset/download · DOMAIN 2 · direct",
     "isEnable": true,
     "list": [
-      "dl.getaurora.dev",
       "dl.tailscale.com",
       "dl.thorium.rocks",
       "down.filen-1.net",
@@ -667,7 +666,6 @@
       "cisco.yuntu.com.tw",
       "cpan-mirror.rbc.ru",
       "cpan.dcc.uchile.cl",
-      "cpan.mines-albi.fr",
       "ctan.dcc.uchile.cl",
       "ctan.math.utah.edu",
       "ctan.mines-albi.fr",
@@ -818,7 +816,9 @@
       "ftp.uni-hannover.de",
       "go.opentelemetry.io",
       "kali.cs.nycu.edu.tw",
-      "launcher.mojang.com"
+      "launcher.mojang.com",
+      "lethe.chinstrap.org",
+      "level3.blizzard.com"
     ]
   },
   {
@@ -830,8 +830,6 @@
     "remark": "ClientRuleSet domainset/download · DOMAIN 3 · direct",
     "isEnable": true,
     "list": [
-      "lethe.chinstrap.org",
-      "level3.blizzard.com",
       "lidsol.fi-b.unam.mx",
       "maven.neoforged.net",
       "merlin.fit.vutbr.cz",
@@ -1229,7 +1227,9 @@
       "mirror.intergrid.com.au",
       "mirror.internode.on.net",
       "mirror.math.ucdavis.edu",
-      "mirror.nbtelecom.com.br"
+      "mirror.nbtelecom.com.br",
+      "mirror.nl.altushost.com",
+      "mirror.primelink.net.id"
     ]
   },
   {
@@ -1241,8 +1241,6 @@
     "remark": "ClientRuleSet domainset/download · DOMAIN 4 · direct",
     "isEnable": true,
     "list": [
-      "mirror.nl.altushost.com",
-      "mirror.primelink.net.id",
       "mirror.tw.ossplanet.net",
       "mirror.us.oneandone.net",
       "mirrors.arpnetworks.com",
@@ -1296,9 +1294,7 @@
       "mirror.digitaloceans.dev",
       "mirror.dimensiondata.com",
       "mirror.grid.uchicago.edu",
-      "mirror.library.ucy.ac.cy",
       "mirror.mythic-beasts.com",
-      "mirror.netcologne.de.org",
       "mirror.ubuntu.ikoula.com",
       "mirror.unix-solutions.be",
       "mirror.us.mirhosting.net",
@@ -1399,7 +1395,6 @@
       "mirror.domainhizmetleri.com",
       "mirror.improve.nordlo.cloud",
       "mirror.retentionrange.co.bw",
-      "mirror.thunderhosting.cloud",
       "mirror.united-gameserver.de",
       "mirrors.advancedhosters.com",
       "plug-mirror.rcac.purdue.edu",

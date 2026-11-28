@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-11-27T09:10:49.381Z
-# Size: 4706
+# Last Updated: 2026-11-28T08:32:11.261Z
+# Size: 4696
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains object storage and static assets CDN domains.
 #
-# $content-hash-v1$:gPjueJXd9nDM7VM3x8i_SmSW5GUxiKlOcS_s4Jyzuww$
+# $content-hash-v1$:0U6wlW7KrO3YHdPNQLcfc34sV3T-LY0Tm-EIsZQwSvU$
 #########################################
 HOST,0x0.st,reject
 HOST,eep.io,reject
@@ -1035,7 +1035,6 @@ HOST-SUFFIX,picsum.photos,reject
 HOST-SUFFIX,place-hold.it,reject
 HOST,pomf2.lain.la,reject
 HOST,r2.dejavu.moe,reject
-HOST,r2cdn.c7d.dev,reject
 HOST-SUFFIX,randomuser.me,reject
 HOST-SUFFIX,rawgithub.com,reject
 HOST-SUFFIX,rcsobjects.it,reject
@@ -1352,7 +1351,6 @@ HOST,s1.divhunt.com,reject
 HOST,s3.2233778.xyz,reject
 HOST-SUFFIX,sbcdnvideo.com,reject
 HOST,scache.vzw.com,reject
-HOST,scdn.clerk.com,reject
 HOST,sdata.ndtv.com,reject
 HOST,sdk.qikify.com,reject
 HOST-SUFFIX,sentry-cdn.com,reject
@@ -1380,7 +1378,6 @@ HOST,static.reo.dev,reject
 HOST,static.snyk.io,reject
 HOST,static.toss.im,reject
 HOST,static.xns.one,reject
-HOST,static.yfsp.tv,reject
 HOST,stc.utdstc.com,reject
 HOST-SUFFIX,sthlstatic.com,reject
 HOST,stream.mux.com,reject
@@ -1653,7 +1650,6 @@ HOST-SUFFIX,net.anydesk.com,reject
 HOST-SUFFIX,nftstorage.link,reject
 HOST,object.innei.in,reject
 HOST,objects.hit.moe,reject
-HOST,pacdn.500px.org,reject
 HOST-SUFFIX,parastorage.com,reject
 HOST,pcz.javidol.org,reject
 HOST-SUFFIX,permaweb.eu.org,reject
@@ -1884,7 +1880,6 @@ HOST-SUFFIX,dc-telemetry.net,reject
 HOST-SUFFIX,directupload.net,reject
 HOST-SUFFIX,dockerstatic.com,reject
 HOST-SUFFIX,dreamscape.cloud,reject
-HOST,drscdn.500px.org,reject
 HOST,e.deviantart.net,reject
 HOST,embed.lantern.io,reject
 HOST,embed.reddit.com,reject
@@ -2048,7 +2043,6 @@ HOST-SUFFIX,s3.wasabisys.com,reject
 HOST,s8.maxstream.org,reject
 HOST-SUFFIX,scribdassets.com,reject
 HOST,sdk.customfit.ai,reject
-HOST,segapi.clerk.com,reject
 HOST,shots.codepen.io,reject
 HOST-SUFFIX,sny.monosnap.com,reject
 HOST,static.arxiv.org,reject
@@ -2701,7 +2695,6 @@ HOST,proxy.spigotmc.org,reject
 HOST,public.hare200.com,reject
 HOST,public.popclip.app,reject
 HOST-SUFFIX,quip-marketing.com,reject
-HOST,r2cdn.corespeed.io,reject
 HOST,reader.readmoo.com,reject
 HOST,registry.oomol.com,reject
 HOST-SUFFIX,replicate.delivery,reject
@@ -3461,6 +3454,7 @@ HOST,cdn.freebiesupply.com,reject
 HOST,cdn.heapanalytics.com,reject
 HOST,cdn.joincommunity.xyz,reject
 HOST-SUFFIX,cdn.printfriendly.com,reject
+HOST,cdn.protect.clerk.com,reject
 HOST,cdn.prowritingaid.com,reject
 HOST,cdn.shoppinggives.com,reject
 HOST,cdn.simplelocalize.io,reject
@@ -3554,7 +3548,6 @@ HOST,media.cleanshot.cloud,reject
 HOST,media.games.dmm.co.jp,reject
 HOST,media.gettyimages.com,reject
 HOST,media.graphassets.com,reject
-HOST,media.hentaifreak.org,reject
 HOST,media.identity.ui.com,reject
 HOST,media.invisioncic.com,reject
 HOST,media.istockphoto.com,reject
@@ -3886,7 +3879,6 @@ HOST,assets.clever-cloud.com,reject
 HOST,assets.clickfunnels.com,reject
 HOST-SUFFIX,assets.digitalocean.com,reject
 HOST,assets.lemonsqueezy.com,reject
-HOST,assets.mcp.corespeed.io,reject
 HOST,assets.science.nasa.gov,reject
 HOST,assets.singaporeair.com,reject
 HOST,assets.streamlinehq.com,reject
@@ -4143,9 +4135,7 @@ HOST,segment.digitalocean.com,reject
 HOST,service-icons.zeabur.com,reject
 HOST-SUFFIX,settings.crashlytics.com,reject
 HOST,sf-coze-web-cdn.coze.com,reject
-HOST,showcase.abovemarket.com,reject
 HOST,sp-spiegel-de.spiegel.de,reject
-HOST,spotlightimage.biggo.com,reject
 HOST,static-assets.mapbox.com,reject
 HOST,static-assets.vinted.com,reject
 HOST,static-forms.klaviyo.com,reject
@@ -4270,7 +4260,6 @@ HOST,tiles.maps.opensearch.org,reject
 HOST,trekcdnprod.azureedge.net,reject
 HOST,tuf-repo-cdn.sigstore.dev,reject
 HOST,ubistatic2-a.akamaihd.net,reject
-HOST,unlimited-cdn.waifu2x.net,reject
 HOST,vz-2222604c-50b.b-cdn.net,reject
 HOST,vz-c0fe498e-5ab.b-cdn.net,reject
 HOST,web-assets.esetstatic.com,reject
@@ -4587,6 +4576,7 @@ HOST,android-safebrowsing.google.com,reject
 HOST,bookface-static.ycombinator.com,reject
 HOST,brand-assets.cne.ngc.nvidia.com,reject
 HOST,bunnycdn-video-assets.b-cdn.net,reject
+HOST,cdn-resize-prod-com.500px.cloud,reject
 HOST,cdn-widgetsrepository.yotpo.com,reject
 HOST,cdn.playersupport.riotgames.com,reject
 HOST,cdn.techcommunity.microsoft.com,reject

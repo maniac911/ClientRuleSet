@@ -1,14 +1,14 @@
 #########################################
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-11-27T09:10:48.790Z
-# Size: 3508
+# Last Updated: 2026-11-28T08:32:10.686Z
+# Size: 3512
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:bjZprIyU9bL2ZAeEp4EAhhEYYImOBBkc_iVa9Ql7aRo$
+# $content-hash-v1$:viD-NNgOaOhXWsxL8IxGH7kf-8C-1_pTXvAn4lk6Hjc$
 #########################################
 HOST-SUFFIX,fast.com,reject
 HOST,fastme.ir,reject
@@ -2494,6 +2494,7 @@ HOST,vitesse3.alliancetelecom.ca,reject
 HOST,wa01svp-speed11.svc.tds.net,reject
 HOST,whvl-ga-st.highlinefast.com,reject
 HOST,afyonspeedtest.fixnet.com.tr,reject
+HOST,ams.speedtest.rustbanned.net,reject
 HOST,atl-speedtest.northstate.net,reject
 HOST,chi-speedtest.northstate.net,reject
 HOST,dal-speedtest.transtelco.net,reject
@@ -2760,6 +2761,7 @@ HOST,speedtest-stm.redeconecta.com,reject
 HOST,speedtest-syd.optusnet.com.au,reject
 HOST,speedtest-tac1.gigabitnow.com,reject
 HOST,speedtest-valdagno.wifiweb.it,reject
+HOST,speedtest.10gtelecomindia.com,reject
 HOST,speedtest.ams0.nl.as61049.net,reject
 HOST,speedtest.ams1.hivelocity.net,reject
 HOST,speedtest.artofautomation.net,reject
@@ -2916,6 +2918,7 @@ HOST,speedtest-ldn.voxtelecom.co.za,reject
 HOST,speedtest-lil.one-elephant.org,reject
 HOST,speedtest-p1.interphone.com.au,reject
 HOST,speedtest-perth.launtel.net.au,reject
+HOST,speedtest-spo.fibranort.com.br,reject
 HOST,speedtest-tdc3.tasmanet.com.au,reject
 HOST,speedtest-tls.one-elephant.org,reject
 HOST,speedtest-vsbu.rolimnet.com.br,reject
@@ -3502,6 +3505,7 @@ HOST,ukms-speedtest-newyork.tropicalgames.net,reject
 HOST,speedtest-mel.vic.au.hostuniversal.com.au,reject
 HOST,speedtest-syd.nsw.au.hostuniversal.com.au,reject
 HOST,chich0003ooklaspeedtestserver01.wiline.com,reject
+HOST,ookla.speedtest.freethought-internet.co.uk,reject
 HOST,speedtest-baltimore.greenlightnetworks.com,reject
 HOST,speedtest-bethlehem.greenlightnetworks.com,reject
 HOST,speedtest-rochester.greenlightnetworks.com,reject
